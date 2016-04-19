@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8571F7B-5FA8-418F-945E-877CFDBBCB50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COMSSmobilerDemo</RootNamespace>
+    <AssemblyName>COMSSmobilerDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SmobilerDemo.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Smobiler.Core">
+      <HintPath>D:\SearchingProject\BaseProject\APP\Code\Smobiler.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Smobiler.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a049c84bba5d5e7a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="common\ConsumptionInfo.cs" />
+    <Compile Include="common\CostCenterInfo.cs" />
+    <Compile Include="common\LeaveInfo.cs" />
+    <Compile Include="common\MessageInfo.cs" />
+    <Compile Include="common\ReimbursementInfo.cs" />
+    <Compile Include="common\SignIninfo.cs" />
+    <Compile Include="common\TypeInfo.cs" />
+    <Compile Include="common\WorkDInfo.cs" />
+    <Compile Include="frmLogon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmLogon.Designer.cs">
+      <DependentUpon>frmLogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainLeftLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmMainLeftLayout.Designer.cs">
+      <DependentUpon>frmMainLeftLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOtherMune.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmOtherMune.Designer.cs">
+      <DependentUpon>frmOtherMune.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRBMune.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmRBMune.Designer.cs">
+      <DependentUpon>frmRBMune.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmUserDetail.Designer.cs">
+      <DependentUpon>frmUserDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\frmLCopyToUser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\frmLCopyToUser.Designer.cs">
+      <DependentUpon>frmLCopyToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\frmLeaveConfirm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\frmLeaveConfirm.Designer.cs">
+      <DependentUpon>frmLeaveConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\frmLeaveCreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\frmLeaveCreate.Designer.cs">
+      <DependentUpon>frmLeaveCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\frmLeaveDef.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\frmLeaveDef.Designer.cs">
+      <DependentUpon>frmLeaveDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\frmLeaveDef1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\frmLeaveDef1.Designer.cs">
+      <DependentUpon>frmLeaveDef1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\frmLeaveEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\frmLeaveEdit.Designer.cs">
+      <DependentUpon>frmLeaveEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\frmLeaveGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\frmLeaveGrid.Designer.cs">
+      <DependentUpon>frmLeaveGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\frmLeaveType.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\frmLeaveType.Designer.cs">
+      <DependentUpon>frmLeaveType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\Layout\frmLCopyToUserLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\Layout\frmLCopyToUserLayout.Designer.cs">
+      <DependentUpon>frmLCopyToUserLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\Layout\frmLeaveGrid_Layout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\Layout\frmLeaveGrid_Layout.Designer.cs">
+      <DependentUpon>frmLeaveGrid_Layout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leave\Layout\frmLeaveTypeLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Leave\Layout\frmLeaveTypeLayout.Designer.cs">
+      <DependentUpon>frmLeaveTypeLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\frmMessage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Message\frmMessage.Designer.cs">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\frmMessageLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Message\frmMessageLayout.Designer.cs">
+      <DependentUpon>frmMessageLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="common\OperationalInfo.cs" />
+    <Compile Include="Operational\frmOperationalLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Operational\frmOperationalLayout.Designer.cs">
+      <DependentUpon>frmOperationalLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operational\frmOperationalRCreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Operational\frmOperationalRCreate.Designer.cs">
+      <DependentUpon>frmOperationalRCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operational\frmOperationalREdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Operational\frmOperationalREdit.Designer.cs">
+      <DependentUpon>frmOperationalREdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operational\frmOperationalRMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Operational\frmOperationalRMain.Designer.cs">
+      <DependentUpon>frmOperationalRMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reimbursement\CostCenter\frmAttentionCC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\frmAttentionCC.Designer.cs">
+      <DependentUpon>frmAttentionCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\frmCostCenter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\frmCostCenter.Designer.cs">
+      <DependentUpon>frmCostCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmConsumption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmConsumption.Designer.cs">
+      <DependentUpon>frmConsumption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmConsumptionMainRight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmConsumptionMainRight.Designer.cs">
+      <DependentUpon>frmConsumptionMainRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBCheck2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBCheck2.Designer.cs">
+      <DependentUpon>frmRBCheck2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBCheck3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBCheck3.Designer.cs">
+      <DependentUpon>frmRBCheck3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBCheck4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBCheck4.Designer.cs">
+      <DependentUpon>frmRBCheck4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBConfirm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBConfirm.Designer.cs">
+      <DependentUpon>frmRBConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBCreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBCreate.Designer.cs">
+      <DependentUpon>frmRBCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBDetail.Designer.cs">
+      <DependentUpon>frmRBDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBDetail1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBDetail1.Designer.cs">
+      <DependentUpon>frmRBDetail1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBEdit.Designer.cs">
+      <DependentUpon>frmRBEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBMain.Designer.cs">
+      <DependentUpon>frmRBMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBMainRight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBMainRight.Designer.cs">
+      <DependentUpon>frmRBMainRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBPostDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBPostDetail.Designer.cs">
+      <DependentUpon>frmRBPostDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBPostMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBPostMain.Designer.cs">
+      <DependentUpon>frmRBPostMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBRowType.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmRBRowType.Designer.cs">
+      <DependentUpon>frmRBRowType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\Layout\frmAttentionCCDt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\Layout\frmAttentionCCDt.Designer.cs">
+      <DependentUpon>frmAttentionCCDt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\Layout\frmCCDt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\Layout\frmCCDt.Designer.cs">
+      <DependentUpon>frmCCDt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\Layout\frmCCleft.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\Layout\frmCCleft.Designer.cs">
+      <DependentUpon>frmCCleft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmConsumption1Layout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmConsumption1Layout.Designer.cs">
+      <DependentUpon>frmConsumption1Layout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmConsumptionLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmConsumptionLayout.Designer.cs">
+      <DependentUpon>frmConsumptionLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmConsumptionRightLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmConsumptionRightLayout.Designer.cs">
+      <DependentUpon>frmConsumptionRightLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBlayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBlayout.Designer.cs">
+      <DependentUpon>frmRBlayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBRightLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBRightLayout.Designer.cs">
+      <DependentUpon>frmRBRightLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBROWLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBROWLayout.Designer.cs">
+      <DependentUpon>frmRBROWLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBTypeLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBTypeLayout.Designer.cs">
+      <DependentUpon>frmRBTypeLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn\frmSignInCreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SignIn\frmSignInCreate.Designer.cs">
+      <DependentUpon>frmSignInCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn\frmSignInLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SignIn\frmSignInLayout.Designer.cs">
+      <DependentUpon>frmSignInLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn\frmSignInMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SignIn\frmSignInMain.Designer.cs">
+      <DependentUpon>frmSignInMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDMain.Designer.cs">
+      <DependentUpon>frmWorkDMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDocumentCreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDocumentCreate.Designer.cs">
+      <DependentUpon>frmWorkDocumentCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDocumentDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDocumentDetail.Designer.cs">
+      <DependentUpon>frmWorkDocumentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDocumentDetail1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDocumentDetail1.Designer.cs">
+      <DependentUpon>frmWorkDocumentDetail1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDocumentEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDocumentEdit.Designer.cs">
+      <DependentUpon>frmWorkDocumentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDocumentMainRight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkDocument\frmWorkDocumentMainRight.Designer.cs">
+      <DependentUpon>frmWorkDocumentMainRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDocument\Layout\frmWorkDLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkDocument\Layout\frmWorkDLayout.Designer.cs">
+      <DependentUpon>frmWorkDLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDocument\Layout\frmWorkDocumentRightLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkDocument\Layout\frmWorkDocumentRightLayout.Designer.cs">
+      <DependentUpon>frmWorkDocumentRightLayout.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmLogon.resx">
+      <DependentUpon>frmLogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainLeftLayout.resx">
+      <DependentUpon>frmMainLeftLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOtherMune.resx">
+      <DependentUpon>frmOtherMune.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRBMune.resx">
+      <DependentUpon>frmRBMune.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserDetail.resx">
+      <DependentUpon>frmUserDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave\frmLCopyToUser.resx">
+      <DependentUpon>frmLCopyToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave\frmLeaveConfirm.resx">
+      <DependentUpon>frmLeaveConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave\frmLeaveCreate.resx">
+      <DependentUpon>frmLeaveCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave\frmLeaveDef.resx">
+      <DependentUpon>frmLeaveDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave\frmLeaveDef1.resx">
+      <DependentUpon>frmLeaveDef1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave\frmLeaveEdit.resx">
+      <DependentUpon>frmLeaveEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave\frmLeaveGrid.resx">
+      <DependentUpon>frmLeaveGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave\frmLeaveType.resx">
+      <DependentUpon>frmLeaveType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leave\Layout\frmLeaveGrid_Layout.resx">
+      <DependentUpon>frmLeaveGrid_Layout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message\frmMessage.resx">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operational\frmOperationalRCreate.resx">
+      <DependentUpon>frmOperationalRCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operational\frmOperationalREdit.resx">
+      <DependentUpon>frmOperationalREdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operational\frmOperationalRMain.resx">
+      <DependentUpon>frmOperationalRMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\CostCenter\frmAttentionCC.resx">
+      <DependentUpon>frmAttentionCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\CostCenter\frmCostCenter.resx">
+      <DependentUpon>frmCostCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\CostCenter\Layout\frmAttentionCCDt.resx">
+      <DependentUpon>frmAttentionCCDt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\CostCenter\Layout\frmCCleft.resx">
+      <DependentUpon>frmCCleft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmConsumption.resx">
+      <DependentUpon>frmConsumption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmConsumptionMainRight.resx">
+      <DependentUpon>frmConsumptionMainRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBCheck2.resx">
+      <DependentUpon>frmRBCheck2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBCheck3.resx">
+      <DependentUpon>frmRBCheck3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBCheck4.resx">
+      <DependentUpon>frmRBCheck4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBConfirm.resx">
+      <DependentUpon>frmRBConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBCreate.resx">
+      <DependentUpon>frmRBCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBDetail.resx">
+      <DependentUpon>frmRBDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBDetail1.resx">
+      <DependentUpon>frmRBDetail1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBEdit.resx">
+      <DependentUpon>frmRBEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBMain.resx">
+      <DependentUpon>frmRBMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBMainRight.resx">
+      <DependentUpon>frmRBMainRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBPostDetail.resx">
+      <DependentUpon>frmRBPostDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBPostMain.resx">
+      <DependentUpon>frmRBPostMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmRBRowType.resx">
+      <DependentUpon>frmRBRowType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\Layout\frmConsumption1Layout.resx">
+      <DependentUpon>frmConsumption1Layout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\Layout\frmConsumptionLayout.resx">
+      <DependentUpon>frmConsumptionLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\Layout\frmConsumptionRightLayout.resx">
+      <DependentUpon>frmConsumptionRightLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\Layout\frmRBlayout.resx">
+      <DependentUpon>frmRBlayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\Layout\frmRBRightLayout.resx">
+      <DependentUpon>frmRBRightLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\Layout\frmRBROWLayout.resx">
+      <DependentUpon>frmRBROWLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\Layout\frmRBTypeLayout.resx">
+      <DependentUpon>frmRBTypeLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn\frmSignInCreate.resx">
+      <DependentUpon>frmSignInCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn\frmSignInLayout.resx">
+      <DependentUpon>frmSignInLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn\frmSignInMain.resx">
+      <DependentUpon>frmSignInMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkDocument\frmWorkDMain.resx">
+      <DependentUpon>frmWorkDMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkDocument\frmWorkDocumentCreate.resx">
+      <DependentUpon>frmWorkDocumentCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkDocument\frmWorkDocumentDetail.resx">
+      <DependentUpon>frmWorkDocumentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkDocument\frmWorkDocumentDetail1.resx">
+      <DependentUpon>frmWorkDocumentDetail1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkDocument\frmWorkDocumentEdit.resx">
+      <DependentUpon>frmWorkDocumentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkDocument\frmWorkDocumentMainRight.resx">
+      <DependentUpon>frmWorkDocumentMainRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkDocument\Layout\frmWorkDLayout.resx">
+      <DependentUpon>frmWorkDLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkDocument\Layout\frmWorkDocumentRightLayout.resx">
+      <DependentUpon>frmWorkDocumentRightLayout.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
