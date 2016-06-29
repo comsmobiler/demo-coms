@@ -68,6 +68,7 @@ public partial class frmRBTypeLayout : Smobiler.Core.MobileForm
             // 
             // frmRBTypeLayout
             // 
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.lblTypeName,
             this.Line1,

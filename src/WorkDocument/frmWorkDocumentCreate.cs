@@ -74,25 +74,25 @@ namespace COMSSmobilerDemo.WorkDocument
             switch (Type)
             {
                 case "001":
-                    this.txtworkday1.Visible = false;
-                    this.txtworkday2.Visible = true;
+                    this.txtworkday.Visible = false;
+                    this.txtworkday1.Visible = true;
                     this.lblCDNO.Visible = true;
                     this.txtCDNO.Visible = true;
                     this.lblworkday.Text = "工单其他人天";
                     this.txtCDNO.Top = 48;
-                    this.txtworkday1.Text = "";
+                    this.txtworkday.Text = "";
                     this.TxtNote.Top = this.txtCDNO.Top + this.txtCDNO.Height + 3;
                     this.lblNote.Top = this.TxtNote.Top;
                     break;
                 case "002":
-                    this.txtworkday1.Visible = true;
-                    this.txtworkday2.Visible = false;
+                    this.txtworkday.Visible = true;
+                    this.txtworkday1.Visible = false;
                     this.lblCDNO.Visible = false;
                     this.txtCDNO.Visible = false;
                     this.lblworkday.Text = "工单业务人天";
                     this.TxtNote.Top = 65 - this.txtCDNO.Height;
                     this.lblNote.Top = this.TxtNote.Top;
-                    this.txtworkday2.Text = "";
+                    this.txtworkday1.Text = "";
                     this.txtCDNO.Text = "";
                     break;
             }
@@ -163,19 +163,7 @@ namespace COMSSmobilerDemo.WorkDocument
         {
             try
             {
-                if (e.Name.Equals(tExit.Name))
-                {
-                    MessageBox.Show("是否确定返回？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
-                    {
-                        if (args.Result == Smobiler.Core.ShowResult.Yes)
-                        {
-                            this.Close();
-                        }
-                    }
-                    );
-
-                }
-                else if (e.Name.Equals(save.Name))
+                if (e.Name.Equals(save.Name))
                 {
                     MessageBox.Show("工单创建成功！", (Object s, MessageBoxHandlerArgs args) =>
                     {
@@ -187,6 +175,39 @@ namespace COMSSmobilerDemo.WorkDocument
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private DateTime taosttime;
+        private bool handleExit = false;
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            if (handleExit == true && taosttime.AddSeconds(3) >= DateTime.Now)
+            {
+                handleExit = false;
+                this.Close();
+            }
+            else
+            {
+                handleExit = true;
+                taosttime = DateTime.Now;
+                this.Toast("再按一次退出界面", ToastLength.SHORT);
+            }
+        }
+        /// <summary>
+        /// TitleImage点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
         }
     }
 }

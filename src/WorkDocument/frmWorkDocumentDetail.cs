@@ -24,9 +24,31 @@ namespace COMSSmobilerDemo.WorkDocument
             lblState.Text = "已提交";
         }
 
-        private void frmWorkDocumentDetail_ToolbarItemClick(object sender, ToolbarClickEventArgs e)
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
         {
-            Close();
+            HandleToast();
         }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
 }

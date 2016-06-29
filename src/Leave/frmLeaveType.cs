@@ -37,28 +37,7 @@ namespace COMSSmobilerDemo.Leave
             }
         }
 
-
-        /// <summary>
-        /// toolbar事件
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void frmRBRowType_ToolbarItemClick(object sender, ToolbarClickEventArgs e)
-        {
-            try
-            {
-               if (e.Name .Equals ( tExit.Name))
-               {
-                        this.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
+       
         private void GridView1_CellClick(object sender, GridViewCellEventArgs e)
         {
             try
@@ -72,6 +51,31 @@ namespace COMSSmobilerDemo.Leave
                 MessageBox.Show(ex.Message);
             }
         }
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
 
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
 }

@@ -34,38 +34,43 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             try
             {
                 Bind();
-                this.btnALLRB.Text = "所有报销单（" + totalQty.ToString() + "）";
-                this.btntotalAmount.Text = "￥" + totalAmount.ToString();
+                this.btnALLRB1.Text = "（" + totalQty.ToString() + "）";
+                this.btntotalAmount1.Text = "￥" + totalAmount.ToString();
+                dynamic setColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230))); 
                 if (string.IsNullOrWhiteSpace(STATE) == true)
                 {
-                    this.btnALLRB.BackColor = System.Drawing.Color.Gainsboro;
-                    this.btnALLRB.ForeColor = System.Drawing.Color.Gray;
-                    this.btntotalAmount.BackColor = System.Drawing.Color.Gainsboro;
+                    btnALLRB.BackColor = setColor;
+                    btnALLRB1.BackColor = setColor;
+                    btntotalAmount.BackColor = setColor;
+                    btntotalAmount1.BackColor = setColor;
                 }
                 else
                 {
-                    this.btnALLRB.BackColor = System.Drawing.Color.White;
-                    this.btnALLRB.ForeColor = System.Drawing.Color.Silver;
-                    this.btntotalAmount.BackColor = System.Drawing.Color.White;
+                    
+                    btnALLRB.BackColor = System.Drawing.Color.White;
+                    btnALLRB1.BackColor = System.Drawing.Color.White;
+                    btntotalAmount.BackColor = System.Drawing.Color.White;
+                    btntotalAmount1.BackColor = System.Drawing.Color.White;
                     foreach (GridViewRow ROW in GridView1.Rows)
                     {
                         ROW.Cell.Items["ImageButton1"].DefaultValue = ROW.Cell.Items["ImageButton1"].Value;
-                        if (ROW.Cell.Items["STATE"].Value == STATE)
+                        if (ROW.Cell.Items["STATE"].Value== STATE)
                         {
-                            ROW.Cell.Items["STATE"].BackColor = System.Drawing.Color.Gainsboro;
-                            ROW.Cell.Items["STATE"].ForeColor = System.Drawing.Color.Gray;
-                            ROW.Cell.Items["AMOUNT"].BackColor = System.Drawing.Color.Gainsboro;
-                            ROW.Cell.Items["ImageButton1"].BackColor = System.Drawing.Color.Gainsboro;
+                            ROW.Cell.Items["STATE"].BackColor = setColor;
+                            ROW.Cell.Items["AMOUNT"].BackColor = setColor;
+                            ROW.Cell.Items["ImageButton1"].BackColor = setColor;
                         }
                         else
                         {
                             ROW.Cell.Items["STATE"].BackColor = System.Drawing.Color.White;
-                            ROW.Cell.Items["STATE"].ForeColor = System.Drawing.Color.Silver;
                             ROW.Cell.Items["AMOUNT"].BackColor = System.Drawing.Color.White;
                             ROW.Cell.Items["ImageButton1"].BackColor = System.Drawing.Color.White;
                         }
                     }
                 }
+
+              
+               
             }
             catch (Exception ex)
             {
@@ -82,70 +87,40 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             try
             {
                 DataTable table = new DataTable();
-                List<int> listRBState = new List<int>();
-                listRBState.Add(0);
-                listRBState.Add(1);
-                listRBState.Add(2);
-                listRBState.Add(3);
-                listRBState.Add(4);
-                listRBState.Add(-1);
                 table.Columns.Add("RB_STATE", typeof(System.Int32));
                 table.Columns.Add("STATENAME", typeof(System.String));
                 table.Columns.Add("AMOUNT", typeof(System.Decimal));
-                table.Columns.Add("STATENAMECOUNT", typeof(System.String));
+                table.Columns.Add("COUNT", typeof(System.String));
+                table.Columns.Add("STATENAME1", typeof(System.String));
                 table.Columns.Add("AMOUNTFIELD", typeof(System.String));
-                if (listRBState.Count > 0)
-                {
-                    foreach (int RBState in listRBState)
-                    {
-                        table.Rows.Add(RBState, "", 0, 0, "");
-                    }
-                }
-                string STATENAME = "";
-                string STATENAME1 = "";
+                table.Columns.Add("STATENAMECOUNT", typeof(System.String));
+                table.Rows.Add(0, "Created", 250.00, 1, "已创建(可编辑)");
+                table.Rows.Add(1, "Posted", 400.00, 1, "已提交");
+                table.Rows.Add(2, "Confirmed", 300.00, 1, "责任人已审核");
+                table.Rows.Add(3, "Checked", 1000.00, 1, "行政已审核");
+                table.Rows.Add(4, "Accounted", 600.00, 1, "财务已审核");
+                table.Rows.Add(-1, "Refused", 100.00, 1, "已拒绝");
 
+                DataTable matTable = new DataTable();
+                matTable.Columns.Add("XMember", typeof(string));
+                matTable.Columns.Add("YMember", typeof(int));
                 foreach (DataRow row in table.Rows)
                 {
-                    if (row["RB_STATE"].Equals(0))
-                    {
-                        STATENAME = "已创建(可编辑)";
-                        STATENAME1 = "Created";
-                    }
-                    else if (row["RB_STATE"].Equals(1))
-                    {
-                        STATENAME = "已提交";
-                        STATENAME1 = "Posted";
-                    }
-                    else if (row["RB_STATE"].Equals(2))
-                    {
-                        STATENAME = "已审批(责任人已审核)";
-                        STATENAME1 = "Confirmed";
-                    }
-                    else if (row["RB_STATE"].Equals(3))
-                    {
-                        STATENAME = "已审批(行政已审核)";
-                        STATENAME1 = "Checked";
-                    }
-                    else if (row["RB_STATE"].Equals(4))
-                    {
-                        STATENAME = "已完成(财务已审核)";
-                        STATENAME1 = "Accounted";
-                    }
-                    else if (row["RB_STATE"].Equals(-1))
-                    {
-                        STATENAME = "已拒绝";
-                        STATENAME1 = "Refused";
-                    }
-
-                    row["STATENAME"] = STATENAME1;
-                    row["STATENAMECOUNT"] = STATENAME + "（0）";
-                    totalAmount = 0;
+                    row["STATENAMECOUNT"] = row["STATENAME1"].ToString() + "（" + row["COUNT"].ToString() + "）";
+                    totalQty += Convert.ToInt32(row["COUNT"]);
+                    totalAmount += Convert.ToDecimal(row["AMOUNT"]);
                     row["AMOUNTFIELD"] = "￥" + row["AMOUNT"].ToString();
+                    string XMember = row["STATENAME1"].ToString();
+                    decimal YMember = (decimal)(row["AMOUNT"]);
+                    matTable.Rows.Add(XMember, YMember);
                 }
+
                 this.GridView1.Rows.Clear();
                 this.GridView1.DataSource = table;
                 this.GridView1.DataBind();
-
+                //报销金额分析统计表
+                this.PieChart1.DataSource = matTable;
+                this.PieChart1.DataBind();
             }
             catch (Exception ex)
             {
@@ -153,26 +128,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             }
         }
 
-        /// <summary>
-        /// toolbar按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void frmRBMainRightLayout_ToolbarItemClick(object sender, ToolbarClickEventArgs e)
-        {
-            try
-            {
-                if (e.Name.Equals(tExit.Name))
-                {
-                    this.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+        
 
         private void GridView1_ItemClick(object sender, GridViewCellItemEventArgs e)
         {
@@ -200,6 +156,32 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 MessageBox.Show(ex.Message);
             }
         }
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
 }
 

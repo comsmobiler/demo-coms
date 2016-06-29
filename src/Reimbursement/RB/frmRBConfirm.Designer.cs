@@ -34,6 +34,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         //NOTE: The following procedure is required by the VTForm Designer
         //It can be modified using the VTForm Designer.  
         //Do not modify it using the code editor.
+
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
@@ -46,190 +47,180 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label2 = new Smobiler.Core.Controls.Label();
             this.CheckBox2 = new Smobiler.Core.Controls.CheckBox();
             this.Label3 = new Smobiler.Core.Controls.Label();
-            this.tExit = new Smobiler.Core.Controls.ToolbarItem();
             this.save = new Smobiler.Core.Controls.ToolbarItem();
-            this.lblREASON = new Smobiler.Core.Controls.Label();
-            this.Label8 = new Smobiler.Core.Controls.Label();
             this.Line3 = new Smobiler.Core.Controls.Line();
             this.Label9 = new Smobiler.Core.Controls.Label();
             // 
             // Label1
             // 
             this.Label1.Border = new Smobiler.Core.Border(0, 0, 0, 1);
-            this.Label1.BorderColor = System.Drawing.Color.DarkGray;
-            this.Label1.ForeColor = System.Drawing.Color.Gray;
+            this.Label1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label1.Name = "Label1";
-            this.Label1.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.SizeF(40F, 14F);
+            this.Label1.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
+            this.Label1.Size = new System.Drawing.SizeF(35F, 24F);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "成本中心";
+            this.Label1.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
+            this.Label1.ZIndex = 1;
             // 
             // lblRB_COSTCENTER
             // 
             this.lblRB_COSTCENTER.Border = new Smobiler.Core.Border(0, 0, 0, 1);
-            this.lblRB_COSTCENTER.BorderColor = System.Drawing.Color.DarkGray;
+            this.lblRB_COSTCENTER.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblRB_COSTCENTER.DataMember = "RB_COSTCENTER";
             this.lblRB_COSTCENTER.DisplayMember = "RB_COSTCENTER";
-            this.lblRB_COSTCENTER.FontSize = 7F;
-            this.lblRB_COSTCENTER.Location = new Smobiler.Core.PointS(40F, 0F);
+            this.lblRB_COSTCENTER.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.lblRB_COSTCENTER.Location = new Smobiler.Core.PointS(35F, 0F);
             this.lblRB_COSTCENTER.Name = "lblRB_COSTCENTER";
-            this.lblRB_COSTCENTER.Size = new System.Drawing.SizeF(80F, 14F);
+            this.lblRB_COSTCENTER.Padding = new Smobiler.Core.Padding(0F, 5F, 12F, 0F);
+            this.lblRB_COSTCENTER.Size = new System.Drawing.SizeF(85F, 24F);
             this.lblRB_COSTCENTER.TabIndex = 3;
-            this.lblRB_COSTCENTER.Text = "2015年项目预算";
+            this.lblRB_COSTCENTER.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
+            this.lblRB_COSTCENTER.ZIndex = 2;
             // 
             // Label4
             // 
-            this.Label4.ForeColor = System.Drawing.Color.Gray;
-            this.Label4.Location = new Smobiler.Core.PointS(0F, 14F);
+            this.Label4.Border = new Smobiler.Core.Border(0, 1, 0, 1);
+            this.Label4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.Label4.Location = new Smobiler.Core.PointS(0F, 27F);
             this.Label4.Name = "Label4";
             this.Label4.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label4.Size = new System.Drawing.SizeF(40F, 14F);
+            this.Label4.Size = new System.Drawing.SizeF(35F, 14F);
             this.Label4.TabIndex = 4;
             this.Label4.Text = "报销金额";
+            this.Label4.ZIndex = 3;
             // 
             // lblRB_AMOUNT
             // 
+            this.lblRB_AMOUNT.Border = new Smobiler.Core.Border(0, 1, 0, 1);
+            this.lblRB_AMOUNT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblRB_AMOUNT.DataMember = "RBROW_AMOUNT";
             this.lblRB_AMOUNT.DisplayMember = "RBROW_AMOUNT";
-            this.lblRB_AMOUNT.FontSize = 7F;
-            this.lblRB_AMOUNT.Location = new Smobiler.Core.PointS(40F, 14F);
+            this.lblRB_AMOUNT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.lblRB_AMOUNT.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
+            this.lblRB_AMOUNT.Location = new Smobiler.Core.PointS(35F, 27F);
             this.lblRB_AMOUNT.Name = "lblRB_AMOUNT";
-            this.lblRB_AMOUNT.Size = new System.Drawing.SizeF(80F, 14F);
+            this.lblRB_AMOUNT.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
+            this.lblRB_AMOUNT.Size = new System.Drawing.SizeF(85F, 14F);
             this.lblRB_AMOUNT.TabIndex = 5;
-            this.lblRB_AMOUNT.Text = "500";
+            this.lblRB_AMOUNT.Text = "250.00";
+            this.lblRB_AMOUNT.ZIndex = 4;
             // 
             // txtRB_REASON
             // 
-            this.txtRB_REASON.BorderColor = System.Drawing.Color.DarkGray;
-            this.txtRB_REASON.FontSize = 7F;
-            this.txtRB_REASON.Location = new Smobiler.Core.PointS(0F, 66F);
+            this.txtRB_REASON.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.txtRB_REASON.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.txtRB_REASON.Location = new Smobiler.Core.PointS(0F, 71F);
             this.txtRB_REASON.Multiline = true;
             this.txtRB_REASON.Name = "txtRB_REASON";
+            this.txtRB_REASON.Padding = new Smobiler.Core.Padding(2F, 5F, 12F, 0F);
             this.txtRB_REASON.Size = new System.Drawing.SizeF(120F, 35F);
             this.txtRB_REASON.TabIndex = 9;
             this.txtRB_REASON.Visible = false;
-            this.txtRB_REASON.WaterMarkText = "点击填写拒绝报销理由";
+            this.txtRB_REASON.WaterMarkText = "填写理由";
+            this.txtRB_REASON.ZIndex = 10;
             // 
             // CheckBox1
             // 
             this.CheckBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(121)))), ((int)(((byte)(252)))));
             this.CheckBox1.Border = new Smobiler.Core.Border(1);
-            this.CheckBox1.Location = new Smobiler.Core.PointS(41F, 34F);
+            this.CheckBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.CheckBox1.Location = new Smobiler.Core.PointS(100F, 46F);
             this.CheckBox1.Name = "CheckBox1";
             this.CheckBox1.Size = new System.Drawing.SizeF(8F, 8F);
             this.CheckBox1.TabIndex = 10;
             this.CheckBox1.UnCheckedBackColor = System.Drawing.Color.White;
+            this.CheckBox1.ZIndex = 6;
+            this.CheckBox1.CheckChanged += new Smobiler.Core.Controls.CheckdControlBase.CheckChangedEventHandler(this.CheckBox1_CheckChanged);
             // 
             // Label2
             // 
-            this.Label2.ForeColor = System.Drawing.Color.Gray;
-            this.Label2.Location = new Smobiler.Core.PointS(0F, 31F);
+            this.Label2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.Label2.Location = new Smobiler.Core.PointS(0F, 43F);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.SizeF(40F, 14F);
+            this.Label2.Size = new System.Drawing.SizeF(120F, 14F);
             this.Label2.TabIndex = 11;
             this.Label2.Text = "通过审批";
+            this.Label2.ZIndex = 5;
             // 
             // CheckBox2
             // 
             this.CheckBox2.BackColor = System.Drawing.Color.White;
             this.CheckBox2.Border = new Smobiler.Core.Border(1);
+            this.CheckBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.CheckBox2.Checked = false;
-            this.CheckBox2.Location = new Smobiler.Core.PointS(41F, 48F);
+            this.CheckBox2.Location = new Smobiler.Core.PointS(100F, 60F);
             this.CheckBox2.Name = "CheckBox2";
             this.CheckBox2.Size = new System.Drawing.SizeF(8F, 8F);
             this.CheckBox2.TabIndex = 12;
             this.CheckBox2.UnCheckedBackColor = System.Drawing.Color.White;
+            this.CheckBox2.ZIndex = 9;
+            this.CheckBox2.CheckChanged += new Smobiler.Core.Controls.CheckdControlBase.CheckChangedEventHandler(this.CheckBox2_CheckChanged);
             // 
             // Label3
             // 
-            this.Label3.ForeColor = System.Drawing.Color.Gray;
-            this.Label3.Location = new Smobiler.Core.PointS(0F, 45F);
+            this.Label3.Border = new Smobiler.Core.Border(0, 0, 0, 1);
+            this.Label3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.Label3.Location = new Smobiler.Core.PointS(0F, 57F);
             this.Label3.Name = "Label3";
             this.Label3.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label3.Size = new System.Drawing.SizeF(40F, 14F);
+            this.Label3.Size = new System.Drawing.SizeF(120F, 14F);
             this.Label3.TabIndex = 13;
             this.Label3.Text = "拒绝报销";
-            // 
-            // tExit
-            // 
-            this.tExit.IconID = "Exit";
-            this.tExit.Name = "tExit";
-            this.tExit.Text = "返回";
+            this.Label3.ZIndex = 8;
             // 
             // save
             // 
-            this.save.IconID = "shenpi";
+            this.save.IconID = "!\\ue065043146223";
             this.save.Name = "save";
             this.save.Text = "审核";
             // 
-            // lblREASON
-            // 
-            this.lblREASON.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblREASON.Border = new Smobiler.Core.Border(0, 1, 0, 0);
-            this.lblREASON.BorderColor = System.Drawing.Color.DarkGray;
-            this.lblREASON.FontSize = 5F;
-            this.lblREASON.ForeColor = System.Drawing.Color.Gray;
-            this.lblREASON.Location = new Smobiler.Core.PointS(0F, 58F);
-            this.lblREASON.Name = "lblREASON";
-            this.lblREASON.Padding = new Smobiler.Core.Padding(3F, 0F, 0F, 0F);
-            this.lblREASON.Size = new System.Drawing.SizeF(120F, 8F);
-            this.lblREASON.TabIndex = 14;
-            this.lblREASON.Text = "拒绝理由";
-            this.lblREASON.Visible = false;
-            // 
-            // Label8
-            // 
-            this.Label8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Label8.Border = new Smobiler.Core.Border(0, 1, 0, 1);
-            this.Label8.BorderColor = System.Drawing.Color.DarkGray;
-            this.Label8.FontSize = 7F;
-            this.Label8.ForeColor = System.Drawing.Color.Gray;
-            this.Label8.Location = new Smobiler.Core.PointS(0F, 28F);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.SizeF(120F, 3F);
-            this.Label8.TabIndex = 17;
-            // 
             // Line3
             // 
-            this.Line3.BackColor = System.Drawing.Color.DarkGray;
-            this.Line3.Location = new Smobiler.Core.PointS(2F, 45F);
+            this.Line3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.Line3.Location = new Smobiler.Core.PointS(0F, 57F);
             this.Line3.Name = "Line3";
-            this.Line3.Size = new System.Drawing.SizeF(118F, 1F);
+            this.Line3.Size = new System.Drawing.SizeF(120F, 1F);
             this.Line3.TabIndex = 21;
+            this.Line3.ZIndex = 7;
             // 
             // Label9
             // 
             this.Label9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Label9.Border = new Smobiler.Core.Border(0, 0, 0, 1);
-            this.Label9.BorderColor = System.Drawing.Color.DarkGray;
+            this.Label9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label9.FontSize = 1F;
             this.Label9.Name = "Label9";
             this.Label9.Size = new System.Drawing.SizeF(120F, 5F);
             this.Label9.TabIndex = 18;
             // 
-            // frmRBConfirm1
+            // frmRBConfirm
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.Label1,
             this.lblRB_COSTCENTER,
             this.Label4,
             this.lblRB_AMOUNT,
-            this.txtRB_REASON,
-            this.CheckBox1,
             this.Label2,
-            this.CheckBox2,
+            this.CheckBox1,
+            this.Line3,
             this.Label3,
-            this.lblREASON,
-            this.Label8,
-            this.Line3});
-            this.TitleBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.TitleImage = "formimg";
-            this.TitleText = " 报销审核";
+            this.CheckBox2,
+            this.txtRB_REASON});
+            this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
+            this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
+            this.TitleText = "报销审核";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
-            this.tExit,
             this.save});
+            this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmRBConfirm_ToolbarItemClick);
+            this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
+            this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
 
         }
         internal Smobiler.Core.Controls.Label Label1;
@@ -241,12 +232,8 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         internal Smobiler.Core.Controls.Label Label2;
         internal Smobiler.Core.Controls.CheckBox CheckBox2;
         internal Smobiler.Core.Controls.Label Label3;
-        internal Smobiler.Core.Controls.ToolbarItem tExit;
         internal Smobiler.Core.Controls.ToolbarItem save;
-        internal Smobiler.Core.Controls.Label lblREASON;
-        internal Smobiler.Core.Controls.Label Label8;
         internal Smobiler.Core.Controls.Line Line3;
-
         internal Smobiler.Core.Controls.Label Label9;
         #endregion
 

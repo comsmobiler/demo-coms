@@ -37,7 +37,6 @@ namespace COMSSmobilerDemo.Leave
         private void InitializeComponent()
         {
             this.GridView1 = new Smobiler.Core.Controls.GridView();
-            this.tExit = new Smobiler.Core.Controls.ToolbarItem();
             // 
             // GridView1
             // 
@@ -49,28 +48,20 @@ namespace COMSSmobilerDemo.Leave
             this.GridView1.TabIndex = 2;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             // 
-            // tExit
-            // 
-            this.tExit.IconID = "Exit";
-            this.tExit.Name = "tExit";
-            this.tExit.Text = "返回";
-            // 
             // frmLeaveType
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.GridView1});
-            this.TitleBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.TitleImage = "formimg";
+            this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
+            this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
             this.TitleText = "请假类型选择";
-            this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
-            this.tExit});
+            this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));
             this.Load += new System.EventHandler(this.frmRBRowType_Load);
-            this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmRBRowType_ToolbarItemClick);
+            this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
+            this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
 
         }
         internal Smobiler.Core.Controls.GridView GridView1;
-
-        internal Smobiler.Core.Controls.ToolbarItem tExit;
         #endregion
 
     }

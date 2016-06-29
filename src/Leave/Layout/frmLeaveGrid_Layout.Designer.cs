@@ -34,14 +34,14 @@ namespace COMSSmobilerDemo.Leave.Layout
         //It can be modified using the SmobilerForm Designer.  
         //Do not modify it using the code editor.
         [System.Diagnostics.DebuggerStepThrough()]
+
         private void InitializeComponent()
         {
             this.lblLDay = new Smobiler.Core.Controls.Label();
-            this.lbldate = new Smobiler.Core.Controls.Label();
             this.lblNo = new Smobiler.Core.Controls.Label();
-            this.lblnote = new Smobiler.Core.Controls.Label();
             this.imgType = new Smobiler.Core.Controls.ImageButton();
             this.lblState = new Smobiler.Core.Controls.Label();
+            this.Line1 = new Smobiler.Core.Controls.Line();
             // 
             // lblLDay
             // 
@@ -51,84 +51,77 @@ namespace COMSSmobilerDemo.Leave.Layout
             this.lblLDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblLDay.Location = new Smobiler.Core.PointS(14F, 0F);
             this.lblLDay.Name = "lblLDay";
-            this.lblLDay.Size = new System.Drawing.SizeF(20F, 12F);
+            this.lblLDay.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
+            this.lblLDay.Size = new System.Drawing.SizeF(46F, 12F);
             this.lblLDay.TabIndex = 4;
-            // 
-            // lbldate
-            // 
-            this.lbldate.DataMember = "LUSERDATE";
-            this.lbldate.DisplayMember = "LUSERDATE";
-            this.lbldate.FontSize = 5F;
-            this.lbldate.ForeColor = System.Drawing.Color.LightGray;
-            this.lbldate.Location = new Smobiler.Core.PointS(14F, 12F);
-            this.lbldate.Name = "lbldate";
-            this.lbldate.Padding = new Smobiler.Core.Padding(0F, 2F, 0F, 0F);
-            this.lbldate.Size = new System.Drawing.SizeF(66F, 8F);
-            this.lbldate.TabIndex = 5;
+            this.lblLDay.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
+            this.lblLDay.ZIndex = 2;
             // 
             // lblNo
             // 
-            this.lblNo.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
-            this.lblNo.Location = new Smobiler.Core.PointS(34F, 0F);
+            this.lblNo.DataMember = "L_REASON";
+            this.lblNo.DisplayMember = "L_REASON";
+            this.lblNo.FontSize = 5F;
+            this.lblNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.lblNo.Location = new Smobiler.Core.PointS(14F, 12F);
             this.lblNo.Name = "lblNo";
-            this.lblNo.Size = new System.Drawing.SizeF(20F, 12F);
-            this.lblNo.TabIndex = 6;
-            this.lblNo.Text = "事由：";
-            // 
-            // lblnote
-            // 
-            this.lblnote.DataMember = "L_REASON";
-            this.lblnote.DisplayMember = "L_REASON";
-            this.lblnote.FontSize = 4F;
-            this.lblnote.Location = new Smobiler.Core.PointS(54F, 0F);
-            this.lblnote.Name = "lblnote";
-            this.lblnote.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblnote.Size = new System.Drawing.SizeF(66F, 12F);
-            this.lblnote.TabIndex = 7;
+            this.lblNo.Padding = new Smobiler.Core.Padding(2F, 2F, 0F, 0F);
+            this.lblNo.Size = new System.Drawing.SizeF(106F, 8F);
+            this.lblNo.TabIndex = 5;
+            this.lblNo.ZIndex = 4;
             // 
             // imgType
             // 
             this.imgType.DataMember = "L_TYPEDESC";
             this.imgType.DisplayMember = "L_TYPEDESC";
             this.imgType.FontSize = 4F;
-            this.imgType.Location = new Smobiler.Core.PointS(0F, 2F);
+            this.imgType.Location = new Smobiler.Core.PointS(0F, 3F);
             this.imgType.Name = "imgType";
             this.imgType.Size = new System.Drawing.SizeF(14F, 14F);
             this.imgType.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.imgType.TabIndex = 8;
             this.imgType.TextMember = "L_TYPEDESC";
+            this.imgType.ZIndex = 1;
             // 
             // lblState
             // 
             this.lblState.DataMember = "L_STATE";
             this.lblState.DisplayMember = "L_STATE_FORMAT";
-            this.lblState.FontSize = 5F;
-            this.lblState.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblState.Location = new Smobiler.Core.PointS(80F, 12F);
+            this.lblState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
+            this.lblState.Location = new Smobiler.Core.PointS(60F, 0F);
             this.lblState.Name = "lblState";
-            this.lblState.Padding = new Smobiler.Core.Padding(2F, 2F, 0F, 0F);
-            this.lblState.Size = new System.Drawing.SizeF(40F, 8F);
+            this.lblState.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
+            this.lblState.Size = new System.Drawing.SizeF(60F, 12F);
             this.lblState.TabIndex = 9;
+            this.lblState.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
+            this.lblState.ZIndex = 5;
+            // 
+            // Line1
+            // 
+            this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.Line1.Location = new Smobiler.Core.PointS(0F, 20F);
+            this.Line1.Name = "Line1";
+            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.TabIndex = 10;
+            this.Line1.ZIndex = 6;
             // 
             // frmLeaveGrid_Layout
             // 
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.lblLDay,
-            this.lbldate,
-            this.lblNo,
-            this.lblnote,
             this.imgType,
-            this.lblState});
+            this.lblLDay,
+            this.lblNo,
+            this.lblState,
+            this.Line1});
             this.Size = new System.Drawing.Size(120, 20);
 
         }
         internal Smobiler.Core.Controls.Label lblLDay;
-        internal Smobiler.Core.Controls.Label lbldate;
         internal Smobiler.Core.Controls.Label lblNo;
-        internal Smobiler.Core.Controls.Label lblnote;
         internal Smobiler.Core.Controls.ImageButton imgType;
-
         internal Smobiler.Core.Controls.Label lblState;
+        internal Smobiler.Core.Controls.Line Line1;
         #endregion
 
     }

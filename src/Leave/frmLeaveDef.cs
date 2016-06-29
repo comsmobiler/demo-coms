@@ -9,6 +9,11 @@ namespace COMSSmobilerDemo.Leave
 {
     partial class frmLeaveDef : Smobiler.Core.MobileForm
     {
+        /// <summary>
+        /// 初始化事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmLeaveDef_Load(object sender, EventArgs e)
         {
             Bind();
@@ -27,16 +32,30 @@ namespace COMSSmobilerDemo.Leave
         }
 
         /// <summary>
-        /// toolbar
+        /// TitleImage事件
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void frmLeaveDef_ToolbarItemClick(object sender, ToolbarClickEventArgs e)
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
         {
-            if (e.Name.Equals(tExit.Name))
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
             {
-                this.Close();
+                HandleToast();
             }
         }
+
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
 }

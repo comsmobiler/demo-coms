@@ -28,9 +28,9 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             {
                 //获取报销单信息
                 this.lblRBNO.Text = "RB0001";
-                this.lblRBCC.Text = "2015年项目预算/MobilerUser";
-                this.lblRBUser.Text = "MobilerUser";
-                int top = 85;
+                this.lblRBCC.Text = "2015年项目预算";
+                this.lblRBUser.Text = "Demo";
+             
                 int RB_STATE = 1;
                 switch (RB_STATE)
                 {
@@ -38,24 +38,19 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                         string REASON = "报销不符合";
                         if (REASON.Length > 0)
                         {
-                            txtRB_REASON.Text = "拒绝理由:" + REASON;
+                            txtRB_REASON.Text =  REASON;
                         }
-                        else
-                        {
-                            txtRB_REASON.Text = "拒绝理由:无";
-                        }
+                        
                       txtRB_REASON.Visible = true;
                         lblRB_REASON1.Visible = true;
-                        lblRBAmount.Top = top + txtRB_REASON.Height + 3;
-                        lblRBState.Top = lblRBAmount.Top + lblRBAmount.Height;
-                        GridView1.Top = lblRBState.Top + lblRBState.Height;
+                       
+                        GridView1.Top = 161;
                         break;
                     default:
                        txtRB_REASON.Visible =false;
                         lblRB_REASON1.Visible = false;
-                        lblRBAmount.Top = top + 3;
-                        lblRBState.Top = lblRBAmount.Top + lblRBAmount.Height;
-                        GridView1.Top = lblRBState.Top + lblRBState.Height;
+                       
+                        GridView1.Top =118;
                         break;
                 }
                 switch (RB_STATE)
@@ -67,20 +62,20 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                         this.lblRBState.Text = "已提交";
                         break;
                     case 2:
-                        this.lblRBState.Text = "已审批(责任人已审核)";
+                        this.lblRBState.Text = "责任人已审核";
                         break;
                     case 3:
-                        this.lblRBState.Text = "已审批(行政已审核)";
+                        this.lblRBState.Text = "行政已审核";
                         break;
                     case 4:
-                        this.lblRBState.Text = "已完成(财务已审核)";
+                        this.lblRBState.Text = "财务已审核";
                         break;
                     case -1:
                         this.lblRBState.Text = "已拒绝";
                         break;
                 }
                 this.lblnote.Text = "无";
-                this.lblRBAmount.Text = "￥250.00";
+                FooterBarLayoutData.Items["lblAmount"].DefaultValue = "￥250.00";
                 //获取报销行项
                 ConsumptionInfo Consumptioninfo = new ConsumptionInfo();
                 DataTable rbrowtable = Consumptioninfo.GetConsumptioninfo();
@@ -94,10 +89,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                         {
                             row["ROW_NOTE"] = row["RBROW_NOTE"];
                         }
-                        else
-                        {
-                            row["ROW_NOTE"] = "无";
-                        }
+                      
                         row["ROW_DATE"] = Convert.ToDateTime(row["RBROW_DATE"]).ToShortDateString();
                     }
                     this.GridView1.DataSource = rbrowtable;
@@ -139,17 +131,39 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                             Bind();
                         });
                 }
-                if (e.Name.Equals(tExit.Name))
-                {
-                    this.Close();
-                }
+               
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
 
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
 }
 

@@ -31,34 +31,19 @@ namespace COMSSmobilerDemo.SignIn
             try
             {
                 pageIndex = 0;
+                pagesCount =2;
                 switch (btnMode)
                 {
                     case 1:
-                        this.btnDaySign.ForeColor = System.Drawing.Color.DeepSkyBlue;
-                        this.btnSDaySign.ForeColor = System.Drawing.Color.Gray;
-                        this.btnMonthSign.ForeColor = System.Drawing.Color.Gray;
-                        this.l_DaySign.BackColor = System.Drawing.Color.DeepSkyBlue;
-                        this.L_SDaySign.BackColor = System.Drawing.Color.White;
-                        this.L_MonthSign.BackColor = System.Drawing.Color.White;
+                        TextTabBar1.SelectItemIndex = 0;
                         break;
                     case 2:
-                        this.btnDaySign.ForeColor = System.Drawing.Color.Gray;
-                        this.btnSDaySign.ForeColor = System.Drawing.Color.DeepSkyBlue;
-                        this.btnMonthSign.ForeColor = System.Drawing.Color.Gray;
-                        this.l_DaySign.BackColor = System.Drawing.Color.White;
-                        this.L_SDaySign.BackColor = System.Drawing.Color.DeepSkyBlue;
-                        this.L_MonthSign.BackColor = System.Drawing.Color.White;
+                        TextTabBar1.SelectItemIndex = 1;
                         break;
                     case 3:
-                        this.btnDaySign.ForeColor = System.Drawing.Color.Gray;
-                        this.btnSDaySign.ForeColor = System.Drawing.Color.Gray;
-                        this.btnMonthSign.ForeColor = System.Drawing.Color.DeepSkyBlue;
-                        this.l_DaySign.BackColor = System.Drawing.Color.White;
-                        this.L_SDaySign.BackColor = System.Drawing.Color.White;
-                        this.L_MonthSign.BackColor = System.Drawing.Color.DeepSkyBlue;
+                        TextTabBar1.SelectItemIndex = 2;
                         break;
-                }               
-                pagesCount =2;
+                }
                 DataTable table = getSignIninfoData();
                 if (table.Rows.Count > 0)
                 {
@@ -91,41 +76,10 @@ namespace COMSSmobilerDemo.SignIn
             return table;
         }
 
-        /// <summary>
-        /// 今天签到的
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void btnDaySign_Click(object sender, EventArgs e)
-        {
-            btnMode = 1;
-            Bind();
-        }
 
-        /// <summary>
-        /// 最近七天签到
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void btnSDaySign_Click(object sender, EventArgs e)
-        {
-            btnMode = 2;
-            Bind();
-        }
 
-        /// <summary>
-        /// 最近一个月签到
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void btnMonthSign_Click(object sender, EventArgs e)
-        {
-            btnMode = 3;
-            Bind();
-        }
+
+     
 
         /// <summary>
         /// GridView上拉事件
@@ -148,7 +102,7 @@ namespace COMSSmobilerDemo.SignIn
                 }
                 else
                 {
-                    MessageBox.Show("数据已加载完成!");
+                    Toast("数据已加载完成!");
                 }
             }
             catch (Exception ex)
@@ -157,12 +111,21 @@ namespace COMSSmobilerDemo.SignIn
             }
 
         }
-
+        /// <summary>
+        /// GridView下拉事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <remarks></remarks>
         private void GridView1_DownSlippling(object sender, EventArgs e)
         {
-            MessageBox.Show("数据已加载完成!");
+           Toast("数据已加载完成!");
         }
-
+        /// <summary>
+        /// 左滑事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmSignIn_LeftSlipping(object sender, EventArgs e)
         {
             try
@@ -178,7 +141,11 @@ namespace COMSSmobilerDemo.SignIn
                 MessageBox.Show(ex.Message);
             }
         }
-
+        /// <summary>
+        /// 右滑事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmSignIn_RightSlipping(object sender, EventArgs e)
         {
             try
@@ -195,6 +162,11 @@ namespace COMSSmobilerDemo.SignIn
             }
         }
 
+        /// <summary>
+        /// Toolbar事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmSignIn_ToolbarItemClick(object sender, ToolbarClickEventArgs e)
         {
             switch (e.Name)
@@ -209,13 +181,65 @@ namespace COMSSmobilerDemo.SignIn
                         }
                     });
                     break;
-                case "tExit":
-                    this.Close();
-                    break;
             }
 
 
         }
 
+        /// <summary>
+        /// TextTabBar点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TextTabBar1_ItemClick(object sender, TabBarItemClickEventArgs e)
+        {
+
+            try
+            {
+                switch (e.Item.Value)
+                {
+                    case "DaySign":
+                        btnMode = 1;
+                        break;
+                    case "SDaySign":
+                        btnMode = 2;
+                        break;
+                    case "MDaySign":
+                        btnMode = 3;
+                        break;
+                }
+                Bind();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void frmSignInMain_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            this.Close();
+        }
     }
 }

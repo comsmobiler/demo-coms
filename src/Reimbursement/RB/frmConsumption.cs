@@ -133,22 +133,52 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 {
                     if (string.IsNullOrWhiteSpace(COSPID) == false)
                     {
-                        MessageBox.Show("消费记录删除成功!", (Object s, MessageBoxHandlerArgs args) =>
+                        MessageBox.Show("消费记录删除成功!","删除", (Object s, MessageBoxHandlerArgs args) =>
                             {
                                 this.Close();
                             });
 
                     }
                 }
-                if (e.Name.Equals(tExit.Name))
-                {
-                    this.Close();
-                }
+              
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private DateTime taosttime;
+        private bool handleExit = false;
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            if (handleExit == true && taosttime.AddSeconds(3) >= DateTime.Now)
+            {
+                handleExit = false;
+                this.Close();
+            }
+            else
+            {
+                handleExit = true;
+                taosttime = DateTime.Now;
+                this.Toast("再按一次退出界面", ToastLength.SHORT);
+            }
+        }
+        /// <summary>
+        /// TitleImage点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
         }
     }
 }

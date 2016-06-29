@@ -9,9 +9,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>COMSSmobilerDemo</RootNamespace>
     <AssemblyName>COMSSmobilerDemo</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -60,6 +59,24 @@
     <Compile Include="common\SignIninfo.cs" />
     <Compile Include="common\TypeInfo.cs" />
     <Compile Include="common\WorkDInfo.cs" />
+    <Compile Include="frmGif.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmGif.Designer.cs">
+      <DependentUpon>frmGif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmInfoEdit.Designer.cs">
+      <DependentUpon>frmInfoEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogon.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -72,23 +89,29 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMainLeftLayout.cs">
+    <Compile Include="Layout\frmGifLayoutvb.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="frmMainLeftLayout.Designer.cs">
-      <DependentUpon>frmMainLeftLayout.cs</DependentUpon>
+    <Compile Include="Layout\frmGifLayoutvb.Designer.cs">
+      <DependentUpon>frmGifLayoutvb.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmOtherMune.cs">
+    <Compile Include="Layout\frminfoFootBarLayout.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="frmOtherMune.Designer.cs">
-      <DependentUpon>frmOtherMune.cs</DependentUpon>
+    <Compile Include="Layout\frminfoFootBarLayout.Designer.cs">
+      <DependentUpon>frminfoFootBarLayout.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRBMune.cs">
+    <Compile Include="Layout\frmMenuLayout.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="frmRBMune.Designer.cs">
-      <DependentUpon>frmRBMune.cs</DependentUpon>
+    <Compile Include="Layout\frmMenuLayout.Designer.cs">
+      <DependentUpon>frmMenuLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMune.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmMune.Designer.cs">
+      <DependentUpon>frmMune.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSetting.cs">
       <SubType>Form</SubType>
@@ -96,11 +119,11 @@
     <Compile Include="frmSetting.Designer.cs">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUserDetail.cs">
+    <Compile Include="frmInfo.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="frmUserDetail.Designer.cs">
-      <DependentUpon>frmUserDetail.cs</DependentUpon>
+    <Compile Include="frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Leave\frmLCopyToUser.cs">
       <SubType>Component</SubType>
@@ -168,19 +191,20 @@
     <Compile Include="Leave\Layout\frmLeaveTypeLayout.Designer.cs">
       <DependentUpon>frmLeaveTypeLayout.cs</DependentUpon>
     </Compile>
-    <Compile Include="Message\frmMessage.cs">
+    <Compile Include="frmMessage.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Message\frmMessage.Designer.cs">
+    <Compile Include="frmMessage.Designer.cs">
       <DependentUpon>frmMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Message\frmMessageLayout.cs">
+    <Compile Include="Layout\frmMessageLayout.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Message\frmMessageLayout.Designer.cs">
+    <Compile Include="Layout\frmMessageLayout.Designer.cs">
       <DependentUpon>frmMessageLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="common\OperationalInfo.cs" />
+    <Compile Include="LeftLayoutExtension.cs" />
     <Compile Include="Operational\frmOperationalLayout.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -218,6 +242,12 @@
     </Compile>
     <Compile Include="Reimbursement\CostCenter\frmCostCenter.Designer.cs">
       <DependentUpon>frmCostCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\Layout\frmCCFootbarLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\CostCenter\Layout\frmCCFootbarLayout.Designer.cs">
+      <DependentUpon>frmCCFootbarLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="Reimbursement\RB\frmConsumption.cs">
       <SubType>Component</SubType>
@@ -321,12 +351,6 @@
     <Compile Include="Reimbursement\CostCenter\Layout\frmCCDt.Designer.cs">
       <DependentUpon>frmCCDt.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reimbursement\CostCenter\Layout\frmCCleft.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reimbursement\CostCenter\Layout\frmCCleft.Designer.cs">
-      <DependentUpon>frmCCleft.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reimbursement\RB\Layout\frmConsumption1Layout.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -344,6 +368,18 @@
     </Compile>
     <Compile Include="Reimbursement\RB\Layout\frmConsumptionRightLayout.Designer.cs">
       <DependentUpon>frmConsumptionRightLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBDefFootbarLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBDefFootbarLayout.Designer.cs">
+      <DependentUpon>frmRBDefFootbarLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBFootbarLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRBFootbarLayout.Designer.cs">
+      <DependentUpon>frmRBFootbarLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="Reimbursement\RB\Layout\frmRBlayout.cs">
       <SubType>Component</SubType>
@@ -440,23 +476,35 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmGif.resx">
+      <DependentUpon>frmGif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoEdit.resx">
+      <DependentUpon>frmInfoEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogon.resx">
       <DependentUpon>frmLogon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMainLeftLayout.resx">
-      <DependentUpon>frmMainLeftLayout.cs</DependentUpon>
+    <EmbeddedResource Include="Layout\frmGifLayoutvb.resx">
+      <DependentUpon>frmGifLayoutvb.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmOtherMune.resx">
-      <DependentUpon>frmOtherMune.cs</DependentUpon>
+    <EmbeddedResource Include="Layout\frminfoFootBarLayout.resx">
+      <DependentUpon>frminfoFootBarLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRBMune.resx">
-      <DependentUpon>frmRBMune.cs</DependentUpon>
+    <EmbeddedResource Include="Layout\frmMenuLayout.resx">
+      <DependentUpon>frmMenuLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUserDetail.resx">
-      <DependentUpon>frmUserDetail.cs</DependentUpon>
+    <EmbeddedResource Include="frmMune.resx">
+      <DependentUpon>frmMune.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Leave\frmLCopyToUser.resx">
       <DependentUpon>frmLCopyToUser.cs</DependentUpon>
@@ -485,8 +533,17 @@
     <EmbeddedResource Include="Leave\Layout\frmLeaveGrid_Layout.resx">
       <DependentUpon>frmLeaveGrid_Layout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Message\frmMessage.resx">
+    <EmbeddedResource Include="Leave\Layout\frmLeaveTypeLayout.resx">
+      <DependentUpon>frmLeaveTypeLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessage.resx">
       <DependentUpon>frmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\frmMessageLayout.resx">
+      <DependentUpon>frmMessageLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operational\frmOperationalLayout.resx">
+      <DependentUpon>frmOperationalLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Operational\frmOperationalRCreate.resx">
       <DependentUpon>frmOperationalRCreate.cs</DependentUpon>
@@ -505,9 +562,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reimbursement\CostCenter\Layout\frmAttentionCCDt.resx">
       <DependentUpon>frmAttentionCCDt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reimbursement\CostCenter\Layout\frmCCleft.resx">
-      <DependentUpon>frmCCleft.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reimbursement\RB\frmConsumption.resx">
       <DependentUpon>frmConsumption.cs</DependentUpon>
@@ -562,6 +616,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reimbursement\RB\Layout\frmConsumptionRightLayout.resx">
       <DependentUpon>frmConsumptionRightLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\Layout\frmRBDefFootbarLayout.resx">
+      <DependentUpon>frmRBDefFootbarLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\Layout\frmRBFootbarLayout.resx">
+      <DependentUpon>frmRBFootbarLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reimbursement\RB\Layout\frmRBlayout.resx">
       <DependentUpon>frmRBlayout.cs</DependentUpon>

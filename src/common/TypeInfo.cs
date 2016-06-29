@@ -36,8 +36,10 @@ namespace COMSSmobilerDemo.common
         DataTable table = new DataTable();
         table.Columns.Add("RBROW_TYPE", typeof(System.String));
         table.Columns.Add("TYPENAME", typeof(System.String));
-        table.Rows.Add("CF", "餐费");
-        table.Rows.Add("JT", "交通费");
+        table.Columns.Add("AMOUNT", typeof(System.Decimal));
+        table.Columns.Add("TYPECOUNT", typeof(System.Int32 ));
+        table.Rows.Add("CF", "餐费", 50.00,1);
+        table.Rows.Add("JT", "交通费",200.00,1);
         return table;
     }
     }

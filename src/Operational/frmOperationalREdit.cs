@@ -206,9 +206,32 @@ namespace COMSSmobilerDemo.Operational
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void OR_IMG_Click(object sender, EventArgs e)
+        private void btnupPhoto_Click(object sender, EventArgs e)
         {
             Camera1.GetPhoto();
+        }
+        /// <summary>
+        /// 图片删除
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btndelPhoto_Click(object sender, EventArgs e)
+        {
+            if (OR_IMG .ResourceID .Length >0)
+            {
+            MessageBox.Show("是否确定删除图片？", "删除", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
+            {
+                if (args.Result == Smobiler.Core.ShowResult.Yes)
+                {
+                    OR_IMG.ResourceID = "";
+                }
+            }
+                   );
+            }
+            else
+            {
+                MessageBox.Show("您没有上传图片，不能删除！");
+            }
         }
         /// <summary>
         /// 图片上传赋值
@@ -243,19 +266,7 @@ namespace COMSSmobilerDemo.Operational
         {
             try
             {
-                if (e.Name.Equals(tExit.Name))
-                {
-                    MessageBox.Show("是否确定返回？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
-                    {
-                        if (args.Result == Smobiler.Core.ShowResult.Yes)
-                        {
-                            this.Close();
-                        }
-                    }
-                    );
-
-                }
-                else if (e.Name.Equals(save.Name))
+                if (e.Name.Equals(save.Name))
                 {
                     if (txtOR_DECLARANT.Text.Length < 0)
                     {
@@ -276,6 +287,39 @@ namespace COMSSmobilerDemo.Operational
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private DateTime taosttime;
+        private bool handleExit = false;
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            if (handleExit == true && taosttime.AddSeconds(3) >= DateTime.Now)
+            {
+                handleExit = false;
+                this.Close();
+            }
+            else
+            {
+                handleExit = true;
+                taosttime = DateTime.Now;
+                this.Toast("再按一次退出界面", ToastLength.SHORT);
+            }
+        }
+        /// <summary>
+        /// TitleImage点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
         }
     }
 }

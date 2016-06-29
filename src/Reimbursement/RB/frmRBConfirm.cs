@@ -23,13 +23,13 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 {
                     CheckBox2.Checked = false;
                     txtRB_REASON.Visible = false;
-                    lblREASON.Visible = false;
+                   
                 }
                 else
                 {
                     CheckBox2.Checked = true;
                     txtRB_REASON.Visible = true;
-                    lblREASON.Visible = true;
+              
                 }
             }
             catch (Exception ex)
@@ -50,13 +50,13 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 {
                     CheckBox1.Checked = false;
                     txtRB_REASON.Visible = true;
-                    lblREASON.Visible = true;
+                   
                 }
                 else
                 {
                     CheckBox1.Checked = true;
                     txtRB_REASON.Visible = false;
-                    lblREASON.Visible = false;
+                  
                 }
             }
             catch (Exception ex)
@@ -90,22 +90,45 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                        });
                     }
                 }
-                if (e.Name.Equals(tExit.Name))
-                {
-
-                    MessageBox.Show("是否确定返回？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
-                         {
-                             if (args.Result == Smobiler.Core.ShowResult.Yes)
-                             {
-                                 this.Close();
-                             }
-                         });
-                }
+               
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private DateTime taosttime;
+        private bool handleExit = false;
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            if (handleExit == true && taosttime.AddSeconds(3) >= DateTime.Now)
+            {
+                handleExit = false;
+                this.Close();
+            }
+            else
+            {
+                handleExit = true;
+                taosttime = DateTime.Now;
+                this.Toast("再按一次退出界面", ToastLength.SHORT);
+            }
+        }
+        /// <summary>
+        /// TitleImage点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
         }
     }
 }

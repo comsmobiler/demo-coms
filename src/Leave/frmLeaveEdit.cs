@@ -81,6 +81,8 @@ namespace COMSSmobilerDemo.Leave
                             string[] Ltype = TYPEIDs.Split(new char[] { '/' });
                             Type = Ltype[0];
                             this.btntype.Text = Ltype[1];
+                            setbtnColor();
+                           
                         }
                     }
                 }
@@ -103,13 +105,13 @@ namespace COMSSmobilerDemo.Leave
 
             switch (((Button)sender).Name)
             {
-                case "BtnCUser":
+                case "btnCUser":
                 case "BtnCUser2":
                     PopList1.MultiSelect = false;
                     poli.Text = "审批人";
                     break;
                 case "Btnccuser2":
-                case "Btnccuser1":
+                case "btnccuser1":
                     PopList1.MultiSelect = true;
                     poli.Text = "抄送人";
                     break;
@@ -120,7 +122,7 @@ namespace COMSSmobilerDemo.Leave
                 poli.Items.Add(rowli["USER_ID"].ToString(), rowli["USER_ID"].ToString());
                 switch (((Button)sender).Name)
                 {
-                    case "BtnCUser":
+                    case "btnCUser":
                     case "BtnCUser2":
                         if (CUser.Trim().Length > 0)
                         {
@@ -131,7 +133,7 @@ namespace COMSSmobilerDemo.Leave
                         }
                         break;
                     case "Btnccuser2":
-                    case "Btnccuser1":
+                    case "btnccuser1":
                         if (CCUser.Trim().Length > 0)
                         {
                             if (CCUser.Trim().ToUpper() == rowli["USER_ID"].ToString().Trim().ToUpper())
@@ -157,16 +159,18 @@ namespace COMSSmobilerDemo.Leave
             {
                 switch (((Button)btn).Name)
                 {
-                    case "BtnCUser":
+                    case "btnCUser":
                     case "BtnCUser2":
                         if (PopList1.Selection != null)
                         {
                             CUser = PopList1.Selection.Value;
-                            this.BtnCUser.Text = PopList1.Selection.Text.Trim();
+                            this.btnCUser.Text = PopList1.Selection.Text.Trim();
+                            setbtnCUserColor();
+                         
                         }
                         break;
                     case "Btnccuser2":
-                    case "Btnccuser1":
+                    case "btnccuser1":
                         if (PopList1.Selections != null)
                         {
                             CCUser = "";
@@ -183,7 +187,8 @@ namespace COMSSmobilerDemo.Leave
                             }
                             if (CCUser.Length > 0)
                             {
-                                this.Btnccuser1.Text = CCUser;
+                                this.btnccuser1.Text = CCUser;
+                                setbtnCCUserColor();
                             }
                         }
                         break;
@@ -205,19 +210,7 @@ namespace COMSSmobilerDemo.Leave
         {
             try
             {
-                if (e.Name.Equals(tExit.Name))
-                {
-                    MessageBox.Show("是否确定返回？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
-                    {
-                        if (args.Result == Smobiler.Core.ShowResult.Yes)
-                        {
-                            this.Close();
-                        }
-                    }
-                    );
-
-                }
-                else if (e.Name.Equals(save.Name))
+                if (e.Name.Equals(save.Name))
                 {
                     if (LDAY.Text .Length <0)
                     {
@@ -238,7 +231,7 @@ namespace COMSSmobilerDemo.Leave
                 }
                 else if (e.Name.Equals(Post.Name))
                 {
-                    MessageBox.Show("请假条送审成功！", (Object s, MessageBoxHandlerArgs args) =>
+                    MessageBox.Show("请假条送审成功！", "送审", (Object s, MessageBoxHandlerArgs args) =>
                     {
                         Close();
                     });
@@ -250,5 +243,114 @@ namespace COMSSmobilerDemo.Leave
             }
         }
 
+        /// <summary>
+        /// 删除图片
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btndelPhoto_Click(object sender, EventArgs e)
+        {
+            if (LIMG .ResourceID .Length >0)
+            {
+            MessageBox.Show("是否确定删除图片？", "删除", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
+            {
+                if (args.Result == Smobiler.Core.ShowResult.Yes)
+                {
+                    LIMG.ResourceID = "";
+                }
+            }
+                   );
+             }
+            else
+            {
+                MessageBox.Show("您没有上传图片，不能删除！");
+            }
+        }
+        private DateTime taosttime;
+        private bool handleExit = false;
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            if (handleExit == true && taosttime.AddSeconds(3) >= DateTime.Now)
+            {
+                handleExit = false;
+                this.Close();
+            }
+            else
+            {
+                handleExit = true;
+                taosttime = DateTime.Now;
+                this.Toast("再按一次退出界面", ToastLength.SHORT);
+            }
+        }
+        /// <summary>
+        /// TitleImage点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+
+        private void frmLeaveEdit_Load(object sender, EventArgs e)
+        {
+            btntype.Text = "事假";
+            setbtnColor();
+            setbtnCUserColor();
+            setbtnCCUserColor();
+        }
+        /// <summary>
+        /// 动态更改类型控件字体颜色
+        /// </summary>
+        /// <remarks></remarks>
+        private void setbtnColor()
+        {
+            if (string.IsNullOrWhiteSpace(Type) == false)
+            {
+                btntype.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
+            }
+            else
+            {
+                btntype.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)));
+            }
+        }
+        /// <summary>
+        /// 动态更改类型控件字体颜色
+        /// </summary>
+        /// <remarks></remarks>
+        private void setbtnCUserColor()
+        {
+            if (string.IsNullOrWhiteSpace(CUser) == false)
+            {
+                btnCUser.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
+            }
+            else
+            {
+                btnCUser.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)));
+            }
+        }
+        /// <summary>
+        /// 动态更改类型控件字体颜色
+        /// </summary>
+        /// <remarks></remarks>
+        private void setbtnCCUserColor()
+        {
+            if (string.IsNullOrWhiteSpace(CCUser) == false)
+            {
+                btnccuser1.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
+            }
+            else
+            {
+                btnccuser1.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)));
+            }
+        }
     }
 }

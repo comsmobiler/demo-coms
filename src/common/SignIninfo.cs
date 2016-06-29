@@ -27,40 +27,40 @@ namespace COMSSmobilerDemo.common
                     case 1:
                         if (pageIndex==0)
                         {
-                         table.Rows.Add(DateTime .Now .ToString (), "公司下班签到","浙江省嘉兴市南湖区");
-                         table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省上海市");
-                         table.Rows.Add(DateTime.Now.ToString(), "公司上班签到", "浙江省上海市");
+                         table.Rows.Add(DateTime .Now .ToString (), "下班签到","浙江省嘉兴市南湖区");
+                         table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省上海市");
+                         table.Rows.Add(DateTime.Now.ToString(), "上班签到", "浙江省上海市");
                         }
                         if (pageIndex == 1)
                         {
-                            table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省嘉兴市南湖区12");
+                            table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省嘉兴市南湖区12");
                         }
                         break;
                     case 2:
                         if (pageIndex==0)
                         {
-                            table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省嘉兴市南湖区2");
-                            table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省上海市2");
-                            table.Rows.Add(DateTime.Now.ToString(), "公司上班签到", "浙江省上海市2");
+                            table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省嘉兴市南湖区2");
+                            table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省上海市2");
+                            table.Rows.Add(DateTime.Now.ToString(), "上班签到", "浙江省上海市2");
                         }
                         if (pageIndex == 1)
                         {
-                            table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省嘉兴市南湖区12");
-                            table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省嘉兴市南湖区42");
+                            table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省嘉兴市南湖区12");
+                            table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省嘉兴市南湖区42");
                         }
                         break;
                     case 3:
                         if (pageIndex == 0)
                         {
-                            table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省嘉兴市南湖区3");
-                            table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省上海市3");
-                            table.Rows.Add(DateTime.Now.ToString(), "公司上班签到", "浙江省上海市3");
+                            table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省嘉兴市南湖区3");
+                            table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省上海市3");
+                            table.Rows.Add(DateTime.Now.ToString(), "上班签到", "浙江省上海市3");
                         }
                         if (pageIndex == 1)
                         {
-                            table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省嘉兴市南湖区12");
-                            table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省嘉兴市南湖区23");
-                            table.Rows.Add(DateTime.Now.ToString(), "公司下班签到", "浙江省嘉兴市南湖区45");
+                            table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省嘉兴市南湖区12");
+                            table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省嘉兴市南湖区23");
+                            table.Rows.Add(DateTime.Now.ToString(), "下班签到", "浙江省嘉兴市南湖区45");
                         }
                         break;
                 }

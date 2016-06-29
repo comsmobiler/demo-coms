@@ -41,21 +41,12 @@ namespace COMSSmobilerDemo.WorkDocument
                 switch (btnMode)
                 {
                     case 1:
-                        //我创建的
-                        this.btnWorkDCreate.ForeColor = System.Drawing.Color.DeepSkyBlue;
-                        this.l_WorkR.BackColor = System.Drawing.Color.DeepSkyBlue;
-                        this.btnWorkDCheck.ForeColor = System.Drawing.Color.Gray;
-                        this.l_WorkD.BackColor = System.Drawing.Color.White;
+                        TextTabBar1.SelectItemIndex = 0;
                         break;
                     case 2:
-                        //我审批的
-                        this.btnWorkDCreate.ForeColor = System.Drawing.Color.Gray;
-                        this.l_WorkR.BackColor = System.Drawing.Color.White;
-                        this.btnWorkDCheck.ForeColor = System.Drawing.Color.DeepSkyBlue;
-                        this.l_WorkD.BackColor = System.Drawing.Color.DeepSkyBlue;
+                        TextTabBar1.SelectItemIndex = 1;
                         break;
                 }
-
                 pagesCount =2;
                 //获取我创建或我审批工作单的总条数
                 DataTable table = GetData();
@@ -121,9 +112,26 @@ namespace COMSSmobilerDemo.WorkDocument
             {
                 switch (e.Name)
                 {
-                    case "tExit":
-                        //返回
-                        this.Close();
+                    case "SX":
+                        //筛选
+                         frmWorkDocumentMainRight frmD = new frmWorkDocumentMainRight();
+                         frmD.STATE = STATE;
+                         frmD.btnMode = btnMode;
+                         this.Redirect(frmD, (MobileForm form, object args) =>
+                {
+                    try
+                    {
+                        if (frmD.ShowResult == Smobiler.Core.ShowResult.Yes)
+                        {
+                            STATE = frmD.STATE;
+                            Bind();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                });
                         break;
                     case "add":
                         //新增工作单
@@ -145,30 +153,7 @@ namespace COMSSmobilerDemo.WorkDocument
         }
 
 
-        /// <summary>
-        /// 工作单我创建的按钮事件
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void btnWorkDCreate_Click(object sender, EventArgs e)
-        {
-            btnMode = 1;
-            Bind();
-        }
-
-        /// <summary>
-        /// 工作单我待审批的按钮事件
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void btnWorkDCheck_Click(object sender, EventArgs e)
-        {
-            btnMode = 2;
-            Bind();
-        }
-
+     
         /// <summary>
         /// 左滑事件
         /// </summary>
@@ -212,7 +197,7 @@ namespace COMSSmobilerDemo.WorkDocument
         {
             try
             {
-                MessageBox.Show("数据已加载完成！");
+                Toast ("数据已加载完成！");
             }
             catch (Exception ex)
             {
@@ -241,7 +226,7 @@ namespace COMSSmobilerDemo.WorkDocument
                 }
                 else
                 {
-                    MessageBox.Show("数据已加载完成！");
+                    Toast ("数据已加载完成！");
                 }
             }
             catch (Exception ex)
@@ -299,46 +284,58 @@ namespace COMSSmobilerDemo.WorkDocument
                 MessageBox.Show(ex.Message);
             }
         }
-
-
-       
-    
-
         /// <summary>
-        /// 工作单筛选
+        /// TextTabBar事件
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void frmWorkDMain_TitleImageClick(object sender, EventArgs e)
+        private void TextTabBar1_ItemClick(object sender, TabBarItemClickEventArgs e)
         {
             try
             {
-                frmWorkDocumentMainRight frm = new frmWorkDocumentMainRight();
-                frm.STATE = STATE;
-                frm.btnMode = btnMode;
-                this.Redirect(frm, (MobileForm form ,object args) =>
+                switch (e.Item.Value)
                 {
-                    try
-                    {
-                        if (frm.ShowResult == Smobiler.Core.ShowResult.Yes)
-                        {
-                            STATE = frm.STATE;
-                            Bind();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                });
+                    case "WDCreate":
+                        btnMode = 1;
+                        break;
+                    case "WDCheck":
+                        btnMode = 2;
+                        break;
+                }
+                Bind();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
+
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            this.Close();
+        }
     }
 }

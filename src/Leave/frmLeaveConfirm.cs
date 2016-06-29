@@ -26,15 +26,14 @@ namespace COMSSmobilerDemo.Leave
             {
                 if (CheckBox2.Checked)
                 {
-                    CheckBox3.Checked = false;
+                    CheckBox1.Checked = false;
                     txtL_REASON.Visible = true;
-                    lblREASON.Visible = true;
+                    
                 }
                 else
                 {
-                    CheckBox3.Checked = true;
+                    CheckBox1.Checked = true;
                     txtL_REASON.Visible = false;
-                    lblREASON.Visible = false;
                 }
             }
             catch (Exception ex)
@@ -47,18 +46,18 @@ namespace COMSSmobilerDemo.Leave
         {
             try
             {
-                if (CheckBox3.Checked)
+                if (CheckBox1.Checked)
                 {
                     CheckBox2.Checked = false;
                     txtL_REASON.Visible = false;
-                    lblREASON.Visible = false;
+                    
 
                 }
                 else
                 {
                     CheckBox2.Checked = true;
                     txtL_REASON.Visible = true;
-                    lblREASON.Visible = true;
+                   
                 }
             }
             catch (Exception ex)
@@ -72,21 +71,9 @@ namespace COMSSmobilerDemo.Leave
             try
             {
 
-                if (e.Name.Equals(tExit.Name))
-                {
-                    MessageBox.Show("是否确定返回？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
-                    {
-                        if (args.Result == Smobiler.Core.ShowResult.Yes)
-                        {
-                            this.Close();
-                        }
-                    }
-                    );
-
-                }
                 if (e.Name.Equals(Confirm.Name))
                 {
-                    if(CheckBox3.Checked.Equals (true))
+                    if (CheckBox1.Checked.Equals(true))
                     {
                         MessageBox.Show("审批成功！", (Object s, MessageBoxHandlerArgs args) =>
                         {
@@ -107,6 +94,39 @@ namespace COMSSmobilerDemo.Leave
                 MessageBox.Show(ex.Message);
             }
 
+        }
+        private DateTime taosttime;
+        private bool handleExit = false;
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            if (handleExit == true && taosttime.AddSeconds(3) >= DateTime.Now)
+            {
+                handleExit = false;
+                this.Close();
+            }
+            else
+            {
+                handleExit = true;
+                taosttime = DateTime.Now;
+                this.Toast("再按一次退出界面", ToastLength.SHORT);
+            }
+        }
+        /// <summary>
+        /// TitleImage点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
         }
     }
 }

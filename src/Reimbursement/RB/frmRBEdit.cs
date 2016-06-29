@@ -43,6 +43,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                             string[] CCS = CC_ID.Split(new char[] { '/' });
                             RBCC = CCS[0];
                             this.btnRBCC.Text = CCS[1];
+                            setbtnColor();
                         }
                     }
                     catch (Exception ex)
@@ -67,10 +68,26 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             try
             {
                 Bind();
+                setbtnColor();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// 动态更改控件字体颜色
+        /// </summary>
+        /// <remarks></remarks>
+        private void setbtnColor()
+        {
+            if (string.IsNullOrWhiteSpace(RBCC) == false)
+            {
+                btnRBCC.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
+            }
+            else
+            {
+                btnRBCC.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)));
             }
         }
         /// <summary>
@@ -81,26 +98,17 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             try
             {
                 this.lblRBNO.Text = "RB0001";
-                this.btnRBCC.Text = "2015年项目预算/MobilerUser";
-                this.lblAmount.Text = "￥50.00";
+                this.btnRBCC.Text = "2015年项目预算";
+                FooterBarLayoutData.Items["lblAmount"].DefaultValue = "￥50.00";
                 ConsumptionInfo Consumptioninfo = new ConsumptionInfo();
                 DataTable rowTable = Consumptioninfo.GetConsumptioninfo();
                 if (rowTable.Rows.Count > 0)
                 {
                     rowTable.Columns.Add("RBCHECKED", typeof(System.Boolean));
-                    rowTable.Columns.Add("RBROW_AMOUNT_FORMAT", typeof(System.String));
                     rowTable.Columns.Add("ROW_NOTE", typeof(System.String));
                     rowTable.Columns.Add("ROW_DATE", typeof(System.String));
                     foreach (DataRow row in rowTable.Rows)
                     {
-                        if (row["RBROW_AMOUNT"].ToString().Length > 0)
-                        {
-                            row["RBROW_AMOUNT_FORMAT"] = "￥" + row["RBROW_AMOUNT"].ToString();
-                        }
-                        else
-                        {
-                            row["RBROW_AMOUNT_FORMAT"] = "￥0.0";
-                        }
 
                         if (row["RB_NO"].ToString().Length <= 0)
                         {
@@ -127,6 +135,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                     {
                         rowItem.Cell.Items["Check"].DefaultValue = true ;
                     }
+                    getAmount();
                 }
             }
             catch (Exception ex)
@@ -177,33 +186,23 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                     }
 
                 }
-                lblAmount.Text = "￥" + sumAmount.ToString();
+                FooterBarLayoutData.Items["lblAmount"].DefaultValue = "￥" + sumAmount.ToString();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        private void btnCheckall_Click(object sender, EventArgs e)
-        {
-            switch (Checkall.Checked)
-            {
-                case true:
-                    Checkall.Checked = false;
-                    break;
-                case false:
-                    Checkall.Checked = true;
-                    break;
-            }
-            getcheckall();
-        }
 
+        /// <summary>
+        /// 全选
+        /// </summary>
         private void getcheckall()
         {
-            switch (Checkall.Checked)
+            switch ((bool)FooterBarLayoutData.Items["Checkall"].DefaultValue)
             {
                 case true:
-                    this.btnCheckall.Text = "全不选";
+                    FooterBarLayoutData.Items["lblCheckall"].DefaultValue = "全不选";
                     foreach (GridViewRow rows in GridView1.Rows)
                     {
                         rows.Cell.Items["Check"].DefaultValue = true;
@@ -211,7 +210,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
 
                     break;
                 case false:
-                    this.btnCheckall.Text = "全选";
+                    FooterBarLayoutData.Items["lblCheckall"].DefaultValue = "全选";
                     foreach (GridViewRow rows in GridView1.Rows)
                     {
                         rows.Cell.Items["Check"].DefaultValue = false;
@@ -230,23 +229,13 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         {
             try
             {
-                if (e.Name.Equals(tExit.Name))
-                {
-                    MessageBox.Show("是否确定返回？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
-                    {
-                        if (args.Result == Smobiler.Core.ShowResult.Yes)
-                        {
-                            this.Close();
-                        }
-                    });
-                }
-                else if (e.Name.Equals(save.Name))
+               if (e.Name.Equals(save.Name))
                 {
                     MessageBox.Show("报销修改保存成功！");
                 }
                 else if (e.Name.Equals(post.Name))
                 {
-                    MessageBox.Show("报销已提交！", (Object s, MessageBoxHandlerArgs args) =>
+                    MessageBox.Show("报销已送审！","送审", (Object s, MessageBoxHandlerArgs args) =>
                     {
                         this.Close();
                     });
@@ -254,7 +243,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 else if (e.Name.Equals(delete.Name))
                 {
 
-                    MessageBox.Show("是否确定删除报销？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
+                    MessageBox.Show("是否确定删除报销？","删除", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
                     {
                         try
                         {
@@ -290,6 +279,49 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         private void Checkall_CheckChanged(object sender, CheckEventArgs e)
         {
             getcheckall();
+        }
+
+        /// <summary>
+        /// FooterBar点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void frmRBEdit_FooterBarLayoutItemClick(object sender, MobileFormLayoutItemEventArgs e)
+        {
+            getcheckall();
+        }
+        private DateTime taosttime;
+        private bool handleExit = false;
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            if (handleExit == true && taosttime.AddSeconds(3) >= DateTime.Now)
+            {
+                handleExit = false;
+                this.Close();
+            }
+            else
+            {
+                handleExit = true;
+                taosttime = DateTime.Now;
+                this.Toast("再按一次退出界面", ToastLength.SHORT);
+            }
+        }
+        /// <summary>
+        /// TitleImage点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
         }
     }
 }

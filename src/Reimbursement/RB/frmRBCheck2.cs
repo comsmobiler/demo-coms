@@ -31,20 +31,16 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                     table.Columns.Add("NOTE", typeof(System.String));
                     foreach (DataRow row in table.Rows)
                     {
-                        row["RB_COSTCENTERNAME"] = row["RB_COSTCENTER"] + "/MobilerUser";
+                        row["RB_COSTCENTERNAME"] = row["RB_COSTCENTER"] + " Demo";
                         row["RBROW_AMOUNT_FORMAT"] = "￥" + row["RBROW_AMOUNT"].ToString();
 
-                        if (row["RB_NOTE"].ToString().Length > 20)
-                        {
-                            row["NOTE"] = "备注：" + row["NOTE"].ToString().Substring(0, 20) + "…";
-                        }
-                        else if (row["RB_NOTE"].ToString().Length <= 20 & row["RB_NOTE"].ToString().Length > 0)
+                        if (row["RB_NOTE"].ToString().Length > 0)
                         {
                             row["NOTE"] = "备注：" + row["RB_NOTE"];
                         }
                         else
                         {
-                            row["NOTE"] = "备注：无";
+                            row["NOTE"] = "备注：";
                         }
 
                         row["RBUSERDATE"] = row["RB_USER"] + " " + Convert.ToDateTime(row["CREATEDATE"]).ToShortDateString();
@@ -80,28 +76,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 MessageBox.Show(ex.Message);
             }
         }
-
-
-        /// <summary>
-        /// Toolbar按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void frmRBCheck2_ToolbarItemClick(object sender, ToolbarClickEventArgs e)
-        {
-            try
-            {
-                if (e.Name.Equals(tExit.Name))
-                {
-                    this.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+     
         /// <summary>
         /// GridView点击事件
         /// </summary>
@@ -120,5 +95,31 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 MessageBox.Show(ex.Message);
             }
         }
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
 }

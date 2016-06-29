@@ -29,34 +29,34 @@ namespace COMSSmobilerDemo.WorkDocument
             try
             {
                 Bind();
-                this.btnAllWorkD.Text = "所有工作单（6）";
-                this.btntotalDay.Text =  "30天";
+                this.btnAllWorkD1.Text = "（6）";
+                this.btntotalDay1.Text =  "30天";
+                dynamic setColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230))); 
                 if (string.IsNullOrWhiteSpace(STATE) == true)
                 {
-                    this.btnAllWorkD.BackColor = System.Drawing.Color.Gainsboro;
-                    this.btnAllWorkD.ForeColor = System.Drawing.Color.Gray;
-                    this.btntotalDay.BackColor = System.Drawing.Color.Gainsboro;
+                    btnAllWorkD.BackColor = setColor;
+                    btnAllWorkD1.BackColor = setColor;
+                    btntotalDay.BackColor = setColor;
+                    btntotalDay1.BackColor = setColor;
                 }
                 else
                 {
                     this.btnAllWorkD.BackColor = System.Drawing.Color.White;
-                    this.btnAllWorkD.ForeColor = System.Drawing.Color.Silver;
+                    this.btnAllWorkD1.BackColor = System.Drawing.Color.White;
                     this.btntotalDay.BackColor = System.Drawing.Color.White;
-
+                    this.btntotalDay1.BackColor = System.Drawing.Color.White;
                     foreach (GridViewRow ROW in GridView1.Rows)
                     {
                         ROW.Cell.Items["ImageButton1"].DefaultValue = ROW.Cell.Items["ImageButton1"].Value;
                         if (ROW.Cell.Items["STATE"].Value == STATE)
                         {
-                            ROW.Cell.Items["STATE"].BackColor = System.Drawing.Color.Gainsboro;
-                            ROW.Cell.Items["STATE"].ForeColor = System.Drawing.Color.Gray;
-                            ROW.Cell.Items["MENDAYV"].BackColor = System.Drawing.Color.Gainsboro;
-                            ROW.Cell.Items["ImageButton1"].BackColor = System.Drawing.Color.Gainsboro;
+                            ROW.Cell.Items["STATE"].BackColor = setColor;
+                            ROW.Cell.Items["MENDAYV"].BackColor = setColor;
+                            ROW.Cell.Items["ImageButton1"].BackColor = setColor;
                         }
                         else
                         {
                             ROW.Cell.Items["STATE"].BackColor = System.Drawing.Color.White;
-                            ROW.Cell.Items["STATE"].ForeColor = System.Drawing.Color.Silver;
                             ROW.Cell.Items["MENDAYV"].BackColor = System.Drawing.Color.White;
                             ROW.Cell.Items["ImageButton1"].BackColor = System.Drawing.Color.White;
                         }
@@ -118,6 +118,32 @@ namespace COMSSmobilerDemo.WorkDocument
             this.ShowResult = Smobiler.Core.ShowResult.Yes;
             this.Close();
         }
+          /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
 
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
+    
 }

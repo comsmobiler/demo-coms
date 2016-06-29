@@ -23,33 +23,7 @@ namespace COMSSmobilerDemo.Leave
         public int pagesize = 5;
       
         #endregion
-        //选择我审批的
-        private void btnLCHECK_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                btnMode = 2;
-                Bind();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        //选择我创建的
-        private void btnLME_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                btnMode = 1;
-                Bind();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+    
         //窗体左滑时
         private void frmLeaveGrid_LeftSlipping(object sender, EventArgs e)
         {
@@ -101,24 +75,16 @@ namespace COMSSmobilerDemo.Leave
         {
             try
             {
+                pagesCount = 2;
                 switch (btnMode)
                 {
                     case 1:
-                        //设定样式并获取数据，我创建的
-                        this.btnLME.ForeColor = System.Drawing.Color.DeepSkyBlue;
-                        this.l_LMe.BackColor = System.Drawing.Color.DeepSkyBlue;
-                        this.btnLCHECK.ForeColor = System.Drawing.Color.Gray;
-                        this.l_LMeCheck.BackColor = System.Drawing.Color.White;
+                        TextTabBar1.SelectItemIndex = 0;
                         break;
                     case 2:
-                        //设定样式并获取数据，我审批的
-                        this.btnLME.ForeColor = System.Drawing.Color.Gray;
-                        this.l_LMe.BackColor = System.Drawing.Color.White;
-                        this.btnLCHECK.ForeColor = System.Drawing.Color.DeepSkyBlue;
-                        this.l_LMeCheck.BackColor = System.Drawing.Color.DeepSkyBlue;
+                        TextTabBar1.SelectItemIndex = 1;
                         break;
                 }
-                pagesCount = 2;
                 DataTable table = GetLeaveData();
                 if (table.Rows.Count > 0)
                 {
@@ -168,9 +134,6 @@ namespace COMSSmobilerDemo.Leave
                             frmLeaveCreate frmLeaveCreate1 = new frmLeaveCreate();
                             this.Redirect(frmLeaveCreate1, (MobileForm form, object args) => Bind());
                             break;
-                        case "tExit":
-                            this.Close();
-                            break;
                     }
                 }
                 catch (Exception ex)
@@ -210,7 +173,7 @@ namespace COMSSmobilerDemo.Leave
         /// <remarks></remarks>
         private void GridView1_DownSlippling(object sender, EventArgs e)
         {
-            MessageBox.Show("数据已加载完成");
+            Toast ("数据已加载完成");
         }
 
         /// <summary>
@@ -287,7 +250,7 @@ namespace COMSSmobilerDemo.Leave
                 }
                 else
                 {
-                    MessageBox.Show("数据已加载完成!");
+                    Toast("数据已加载完成!");
                 }
             }
             catch (Exception ex)
@@ -296,5 +259,57 @@ namespace COMSSmobilerDemo.Leave
             }
 
         }
+        /// <summary>
+        /// TextTabBar点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TextTabBar1_ItemClick(object sender, TabBarItemClickEventArgs e)
+        {
+            try
+            {
+                switch (e.Item.Value)
+                {
+                    case "LCreate":
+                        btnMode = 1;
+                        break;
+                    case "LCheck":
+                        btnMode = 2;
+                        break;
+                }
+                Bind();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
+    
 }

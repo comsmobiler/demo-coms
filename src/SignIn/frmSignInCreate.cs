@@ -14,7 +14,11 @@ namespace COMSSmobilerDemo.SignIn
         private string Type = "";
         private string PunchCardType = "";
         private object  btn;
-       
+        //经度
+        private decimal Longitude = 0;
+        //纬度
+        private decimal Latitude = 0;
+        private string addressInfo = "";
 
         /// <summary>
         /// 初始化事件
@@ -24,8 +28,34 @@ namespace COMSSmobilerDemo.SignIn
         private void frmSignInCreate_Load(object sender, EventArgs e)
         {
             lblDate.Text =DateTime .Now.ToString();
-            Gps1.GetGps();
-        }
+	Gps1.GetGps();
+	setbtnColor();
+	setbtnColorP();
+}
+/// <summary>
+/// 动态更改控件字体颜色
+/// </summary>
+/// <remarks></remarks>
+private void setbtnColor()
+{
+	if (string.IsNullOrWhiteSpace(Type) == false) {
+		btntype.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
+	} else {
+		btntype.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)));
+	}
+}
+/// <summary>
+/// 动态更改控件字体颜色
+/// </summary>
+/// <remarks></remarks>
+private void setbtnColorP()
+{
+	if (string.IsNullOrWhiteSpace(PunchCardType) == false) {
+		btnPunchCardType.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
+	} else {
+		btnPunchCardType.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)));
+	}
+}
 
         /// <summary>
         /// 打卡地方赋值
@@ -38,9 +68,20 @@ namespace COMSSmobilerDemo.SignIn
             {
                 if (e.Longitude != 0 & e.Latitude != 0)
                 {
-                    txtAddress.Text = e.Location;
-                   
+                    Longitude = e.Longitude;
+                    Latitude = e.Latitude;
+                    addressInfo = e.Location;
+                    lblAddress.Text = e.Location;
                 }
+                else
+                {
+                    lblAddress.Text = "定位失败";
+                }
+
+            }
+            else
+            {
+                lblAddress.Text = "定位失败";
             }
         }
         /// <summary>
@@ -124,11 +165,13 @@ namespace COMSSmobilerDemo.SignIn
                     case "btntype2":
                         Type = PopList1.Selection.Value;
                         btntype.Text = PopList1.Selection.Text;
+                        setbtnColor();
                         break;
                     case "btnPunchCardType":
                     case "btnPunchCardType2":
                         PunchCardType = PopList1.Selection.Value;
                         btnPunchCardType.Text = PopList1.Selection.Text;
+                        setbtnColorP();
                         break;
                 }
             }
@@ -138,19 +181,7 @@ namespace COMSSmobilerDemo.SignIn
         {
             try 
    {
-                if (e.Name.Equals(tExit.Name))
-                {
-                    MessageBox.Show("是否确定返回？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
-                    {
-                        if (args.Result == Smobiler.Core.ShowResult.Yes)
-                        {
-                            this.Close();
-                        }
-                    }
-                    );
-
-                }
-                else if (e.Name.Equals(SignIn.Name))
+                 if (e.Name.Equals(SignIn.Name))
                 {
                     MessageBox.Show("签到成功！", (Object s, MessageBoxHandlerArgs args) =>
                     {
@@ -163,5 +194,64 @@ namespace COMSSmobilerDemo.SignIn
                 MessageBox.Show(ex.Message);
             }
         }
+
+        /// <summary>
+        /// 地点微调
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnAddress_Click(object sender, EventArgs e)
+        {
+            if (Longitude != 0 & Latitude != 0 & addressInfo.Trim().Length > 0)
+            {
+                this.Gps1.GetEditGps(new GPSData(Longitude, Latitude, addressInfo));
+            }
+            else
+            {
+                Toast("定位失败");
+            }
+
+        }
+
+        /// <summary>
+        /// 返回
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void frmSignInCreate_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        private DateTime taosttime;
+        private bool handleExit = false;
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            if (handleExit == true && taosttime.AddSeconds(3) >= DateTime.Now)
+            {
+                handleExit = false;
+                this.Close();
+
+            }
+            else
+            {
+                handleExit = true;
+                taosttime = DateTime.Now;
+                this.Toast("再按一次退出界面", ToastLength.SHORT);
+            }
+        }
+
     }
 }

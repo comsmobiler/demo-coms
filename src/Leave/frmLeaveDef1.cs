@@ -28,16 +28,12 @@ namespace COMSSmobilerDemo.Leave
         }
 
         /// <summary>
-        /// toolbar
+        /// toolbar事件
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void frmLeaveDef1_ToolbarItemClick(object sender, ToolbarClickEventArgs e)
         {
-            if (e.Name.Equals(tExit.Name))
-            {
-                this.Close();
-            }
             if (e.Name.Equals(Confirm .Name ))
             {
                 frmLeaveConfirm frm = new frmLeaveConfirm();
@@ -49,5 +45,31 @@ namespace COMSSmobilerDemo.Leave
                 Redirect(frm);
             }
         }
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
 }

@@ -18,8 +18,8 @@ namespace COMSSmobilerDemo.common
             table.Columns.Add("CC_ID", typeof(System.String));
             table.Columns.Add("CC_NAME", typeof(System.String));
             table.Columns.Add("CC_USER", typeof(System.String));
-            table.Rows.Add("C0001", "2015年项目预算", "MobilerUser");
-            table.Rows.Add("C0002", "2015年项目预算2", "MobilerUser");
+            table.Rows.Add("C0001", "2015年项目预算", "Demo");
+            table.Rows.Add("C0002", "2015年项目预算2", "Demo");
             return table;
         }
     }

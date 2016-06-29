@@ -34,89 +34,41 @@ namespace COMSSmobilerDemo.WorkDocument
         //It can be modified using the SmobilerForm Designer.  
         //Do not modify it using the code editor.
         [System.Diagnostics.DebuggerStepThrough()]
+
         private void InitializeComponent()
         {
-            this.btnWorkDCreate = new Smobiler.Core.Controls.Button();
-            this.btnWorkDCheck = new Smobiler.Core.Controls.Button();
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem1 = new Smobiler.Core.Controls.TextTabBarItem();
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem2 = new Smobiler.Core.Controls.TextTabBarItem();
             this.GridView1 = new Smobiler.Core.Controls.GridView();
-            this.Line1 = new Smobiler.Core.Controls.Line();
             this.add = new Smobiler.Core.Controls.ToolbarItem();
-            this.l_WorkR = new Smobiler.Core.Controls.Line();
-            this.l_WorkD = new Smobiler.Core.Controls.Line();
-            this.tExit = new Smobiler.Core.Controls.ToolbarItem();
+            this.SX = new Smobiler.Core.Controls.ToolbarItem();
             this.add1 = new Smobiler.Core.Controls.ToolbarItem();
-            // 
-            // btnWorkDCreate
-            // 
-            this.btnWorkDCreate.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnWorkDCreate.Name = "btnWorkDCreate";
-            this.btnWorkDCreate.Size = new System.Drawing.SizeF(60F, 12F);
-            this.btnWorkDCreate.Style = Smobiler.Core.Controls.ButtonStyle.custom;
-            this.btnWorkDCreate.TabIndex = 7;
-            this.btnWorkDCreate.Text = "我创建的";
-            this.btnWorkDCreate.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnWorkDCreate_Click);
-            // 
-            // btnWorkDCheck
-            // 
-            this.btnWorkDCheck.ForeColor = System.Drawing.Color.Gray;
-            this.btnWorkDCheck.Location = new Smobiler.Core.PointS(60F, 0F);
-            this.btnWorkDCheck.Name = "btnWorkDCheck";
-            this.btnWorkDCheck.Size = new System.Drawing.SizeF(60F, 12F);
-            this.btnWorkDCheck.Style = Smobiler.Core.Controls.ButtonStyle.custom;
-            this.btnWorkDCheck.TabIndex = 8;
-            this.btnWorkDCheck.Text = "我审批的";
-            this.btnWorkDCheck.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnWorkDCheck_Click);
+            this.TextTabBar1 = new Smobiler.Core.Controls.TextTabBar();
             // 
             // GridView1
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Layout = "frmWorkDLayout";
-            this.GridView1.Location = new Smobiler.Core.PointS(0F, 13F);
+            this.GridView1.Location = new Smobiler.Core.PointS(0F, 23F);
             this.GridView1.Name = "GridView1";
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 184F);
+            this.GridView1.ShowGridLines = false;
+            this.GridView1.Size = new System.Drawing.SizeF(120F, 175F);
             this.GridView1.TabIndex = 9;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             this.GridView1.UpSlippling += new System.EventHandler(this.GridView1_UpSlippling);
             this.GridView1.DownSlippling += new System.EventHandler(this.GridView1_DownSlippling);
             // 
-            // Line1
-            // 
-            this.Line1.BackColor = System.Drawing.Color.Gray;
-            this.Line1.LineSize = 0.5F;
-            this.Line1.Location = new Smobiler.Core.PointS(0F, 12.5F);
-            this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
-            this.Line1.TabIndex = 10;
-            // 
             // add
             // 
-            this.add.IconID = "add";
+            this.add.IconID = "!\\ue148043146223";
             this.add.Name = "add";
             this.add.Text = "新增";
             // 
-            // l_WorkR
+            // SX
             // 
-            this.l_WorkR.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.l_WorkR.LineSize = 0.6F;
-            this.l_WorkR.Location = new Smobiler.Core.PointS(0F, 12F);
-            this.l_WorkR.Name = "l_WorkR";
-            this.l_WorkR.Size = new System.Drawing.SizeF(60F, 1F);
-            this.l_WorkR.TabIndex = 11;
-            // 
-            // l_WorkD
-            // 
-            this.l_WorkD.BackColor = System.Drawing.Color.White;
-            this.l_WorkD.LineSize = 0.6F;
-            this.l_WorkD.Location = new Smobiler.Core.PointS(60F, 12F);
-            this.l_WorkD.Name = "l_WorkD";
-            this.l_WorkD.Size = new System.Drawing.SizeF(60F, 1F);
-            this.l_WorkD.TabIndex = 12;
-            // 
-            // tExit
-            // 
-            this.tExit.IconID = "Exit";
-            this.tExit.Name = "tExit";
-            this.tExit.Text = "返回";
+            this.SX.IconID = "!\\ue88b043146223";
+            this.SX.Name = "SX";
+            this.SX.Text = "筛选";
             // 
             // add1
             // 
@@ -125,40 +77,56 @@ namespace COMSSmobilerDemo.WorkDocument
             this.add1.Text = "日志转工单";
             this.add1.Visible = false;
             // 
+            // TextTabBar1
+            // 
+            this.TextTabBar1.BackColor = System.Drawing.Color.White;
+            this.TextTabBar1.Border = new Smobiler.Core.Border(1);
+            this.TextTabBar1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
+            this.TextTabBar1.BorderRadius = 2;
+            this.TextTabBar1.BorderSize = 0.2F;
+            this.TextTabBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
+            textTabBarItem1.Text = "我创建的";
+            textTabBarItem1.Value = "WDCreate";
+            textTabBarItem2.Text = "我审批的";
+            textTabBarItem2.Value = "WDCheck";
+            this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
+            textTabBarItem1,
+            textTabBarItem2});
+            this.TextTabBar1.Location = new Smobiler.Core.PointS(10F, 5F);
+            this.TextTabBar1.Name = "TextTabBar1";
+            this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
+            this.TextTabBar1.SelectForeColor = System.Drawing.Color.White;
+            this.TextTabBar1.Size = new System.Drawing.SizeF(100F, 14F);
+            this.TextTabBar1.TabIndex = 13;
+            this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
+            // 
             // frmWorkDMain
             // 
             this.AllowSlip = true;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.btnWorkDCreate,
-            this.btnWorkDCheck,
             this.GridView1,
-            this.Line1,
-            this.l_WorkR,
-            this.l_WorkD});
-            this.TitleBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.TitleImage = "iconfont-filter1";
-            this.TitleText = "工作单";
+            this.TextTabBar1});
+            this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
+            this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
+            this.TitleText = "工单";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
-            this.tExit,
             this.add,
-            this.add1});
+            this.add1,
+            this.SX});
+            this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));
             this.Load += new System.EventHandler(this.frmWorkDocumentMain_Load);
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmWorkDocumentMain_ToolbarItemClick);
             this.LeftSlipping += new System.EventHandler(this.frmWorkDocumentMain_LeftSlipping);
             this.RightSlipping += new System.EventHandler(this.frmWorkDocumentMain_RightSlipping);
-            this.TitleImageClick += new System.EventHandler(this.frmWorkDMain_TitleImageClick);
+            this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
+            this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
 
         }
-        internal Smobiler.Core.Controls.Button btnWorkDCreate;
-        internal Smobiler.Core.Controls.Button btnWorkDCheck;
         internal Smobiler.Core.Controls.GridView GridView1;
-        internal Smobiler.Core.Controls.Line Line1;
         internal Smobiler.Core.Controls.ToolbarItem @add;
-        internal Smobiler.Core.Controls.Line l_WorkR;
-        internal Smobiler.Core.Controls.Line l_WorkD;
-        internal Smobiler.Core.Controls.ToolbarItem tExit;
-
+        internal Smobiler.Core.Controls.ToolbarItem SX;
         internal Smobiler.Core.Controls.ToolbarItem add1;
+        internal Smobiler.Core.Controls.TextTabBar TextTabBar1;
         #endregion
 
     }

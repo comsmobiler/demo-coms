@@ -15,8 +15,8 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter
 {
     public partial class frmAttentionCC : Smobiler.Core.MobileForm
     {
-        internal string leftItemname = "";
-        internal int muneMode;
+      
+    
         /// <summary>
         /// bind方法
         /// </summary>
@@ -116,79 +116,40 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter
             }
         }
 
-        /// <summary>
-        /// 显示左侧栏菜单
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void frmAttentionCC_TitleImageClick(object sender, EventArgs e)
+       
+
+        private DateTime taosttime;
+        private bool handleExit = false;
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
         {
-            try
+            if (e.KeyCode == KeyCode.Back)
             {
-                this.ShowSlider(Slider.Left);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                HandleToast();
             }
         }
 
+        private void HandleToast()
+        {
+            if (handleExit == true && taosttime.AddSeconds(3) >= DateTime.Now)
+            {
+                handleExit = false;
+                this.Close();
+            }
+            else
+            {
+                handleExit = true;
+                taosttime = DateTime.Now;
+                this.Toast("再按一次退出界面", ToastLength.SHORT);
+            }
+        }
         /// <summary>
-        /// 左侧栏点击事件
+        /// TitleImage点击事件
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void frmAttentionCC_LeftLayoutItemClick(object sender, MobileFormLayoutItemEventArgs e)
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
         {
-            try
-            {
-                switch (e.CellItem.Name)
-                {
-                    case "imgbtnMain":
-                    case "btnMain":
-                        switch (muneMode)
-                        {
-                            case 0:
-                                frmMessage frm = new frmMessage();
-                                this.Redirect(frm, (MobileForm form, object args) => this.Close());
-                                break;
-                            case 1:
-                                frmRBMune frmRBMune = new frmRBMune();
-                                this.Redirect(frmRBMune, (MobileForm form, object args) => this.Close());
-                                break;
-                            case 2:
-                                frmOtherMune frmOtherMune = new frmOtherMune();
-                                this.Redirect(frmOtherMune, (MobileForm form, object args) => this.Close());
-                                break;
-                        }
-                        break;
-                    case "imgbtnUserCC":
-                    case "btnUserCC":
-                        this.CloseSlider();
-                        break;
-                    case "imgbtnUser":
-                    case "btnUser":
-                        frmUserDetail frmUserDetail = new frmUserDetail();
-                        frmUserDetail.muneMode = muneMode;
-                        this.Redirect(frmUserDetail, (MobileForm form, object args) =>
-                        {
-                            if (frmUserDetail.ShowResult == Smobiler.Core.ShowResult.Yes)
-                            {
-                                ((ImageButton)LeftLayoutData.Items["imgUser"].DefaultValue).Refresh();
-                            }
-                            this.Close();
-                        });
-                        break;
-                    case "imgbtnHelp":
-                    case "btnHelp":
-                        this.RedirectUrl("帮助", "http://www.searching-info.com/coms/ComsSmobiler.html");
-                        break;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            HandleToast();
         }
 
         

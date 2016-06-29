@@ -82,9 +82,6 @@ namespace COMSSmobilerDemo.Operational
                             }
                         });
                         break;
-                    case "tExit":
-                        this.Close();
-                        break;
                 }
             }
             catch (Exception ex)
@@ -139,7 +136,7 @@ namespace COMSSmobilerDemo.Operational
         /// <remarks></remarks>
         private void GridView1_DownSlippling(object sender, EventArgs e)
         {
-            MessageBox.Show("数据加载完成");
+            Toast ("数据加载完成");
         }
 
         /// <summary>
@@ -163,7 +160,7 @@ namespace COMSSmobilerDemo.Operational
                 }
                 else
                 {
-                    MessageBox.Show("数据已加载完成!");
+                    Toast("数据已加载完成!");
                 }
             }
             catch (Exception ex)
@@ -172,5 +169,31 @@ namespace COMSSmobilerDemo.Operational
             }
 
         }
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
 }

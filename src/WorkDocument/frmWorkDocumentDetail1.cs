@@ -28,19 +28,7 @@ namespace COMSSmobilerDemo.WorkDocument
         {
             try
             {
-                if (e.Name.Equals(tExit.Name))
-                {
-                    MessageBox.Show("是否确定返回？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
-                    {
-                        if (args.Result == Smobiler.Core.ShowResult.Yes)
-                        {
-                            this.Close();
-                        }
-                    }
-                    );
-
-                }
-                else if (e.Name.Equals(save.Name))
+                 if (e.Name.Equals(save.Name))
                 {
                     MessageBox.Show("工单审批成功！", (Object s, MessageBoxHandlerArgs args) =>
                     {
@@ -53,5 +41,32 @@ namespace COMSSmobilerDemo.WorkDocument
                 MessageBox.Show(ex.Message);
             }
         }
+
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
 }

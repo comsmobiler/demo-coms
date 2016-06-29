@@ -23,8 +23,9 @@ namespace COMSSmobilerDemo.common
             table.Columns.Add("RBROW_TYPENAME", typeof(System.String));
             table.Columns.Add("RBROW_AMOUNT", typeof(System.Decimal));
             table.Columns.Add("RBROW_NOTE", typeof(System.String));
-            table.Rows.Add(1, string.Empty, DateTime.Now, "CF", "餐费", 50, "中餐+晚餐");
-            table.Rows.Add(2, string.Empty, DateTime.Now, "JT", "交通费", 200, "的士+火车票");
+            table.Columns.Add("RBROW_AMOUNT_FORMAT", typeof(System.String));
+            table.Rows.Add(1, string.Empty, DateTime.Now, "CF", "餐费", 50, "中餐+晚餐","￥50.00");
+            table.Rows.Add(2, string.Empty, DateTime.Now, "JT", "交通费", 200, "的士+火车票", "￥200.00");
             return table;
         }
     }

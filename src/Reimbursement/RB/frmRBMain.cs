@@ -48,19 +48,14 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 switch (btnMode)
                 {
                     case 1:
-                        this.btnRBConsumption.ForeColor = System.Drawing.Color.DeepSkyBlue;//更改消费记录按钮字体颜色
-                        this.l_RBConsumption.BackColor = System.Drawing.Color.DeepSkyBlue;
-                        this.btnRB.ForeColor = System.Drawing.Color.Gray;
-                        this.l_RB.BackColor = System.Drawing.Color.White;
+                        TextTabBar1.SelectItemIndex = 0;
                         this.GridView1.Layout = "frmConsumptionLayout";
                         ConsumptionInfo Consumptioninfo = new ConsumptionInfo();
                         table = Consumptioninfo.GetConsumptioninfo();
                         break;
+                       
                     case 2:
-                        this.btnRBConsumption.ForeColor = System.Drawing.Color.Gray;
-                        this.l_RBConsumption.BackColor = System.Drawing.Color.White;
-                        this.btnRB.ForeColor = System.Drawing.Color.DeepSkyBlue;
-                        this.l_RB.BackColor = System.Drawing.Color.DeepSkyBlue;
+                        TextTabBar1.SelectItemIndex = 1;
                         this.GridView1.Layout = "frmRBlayout";
                         ReimbursementInfo ReimbursementInfo = new ReimbursementInfo();
                         table = ReimbursementInfo.GetRBinfo();
@@ -71,19 +66,12 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                     switch (btnMode)
                     {
                         case 1:
-                            table.Columns.Add("RBROW_AMOUNT_FORMAT", typeof(System.String));
+                           
                             table.Columns.Add("ROW_DATE", typeof(System.String));
                             table.Columns.Add("ROW_NOTE", typeof(System.String));
                             foreach (DataRow row in table.Rows)
                             {
-                                if (table.Rows[0]["RBROW_AMOUNT"].ToString().Length <= 0)
-                                {
-                                    row["RBROW_AMOUNT_FORMAT"] = "￥0.00";
-                                }
-                                if (table.Rows[0]["RBROW_AMOUNT"].ToString().Length > 0)
-                                {
-                                    row["RBROW_AMOUNT_FORMAT"] = "￥" + row["RBROW_AMOUNT"].ToString();
-                                }
+                                
 
                                 if (row["RBROW_NOTE"].ToString().Length > 0)
                                 {
@@ -105,23 +93,20 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                             table.Columns.Add("NOTE", typeof(System.String));
                             foreach (DataRow row in table.Rows)
                             {
-                                row["RB_COSTCENTERNAME"] = row["RB_COSTCENTER"] + "/Demo";
+                                row["RB_COSTCENTERNAME"] = row["RB_COSTCENTER"] + " Demo";
                                 row["RBROW_AMOUNT_FORMAT"] = "￥" + row["RBROW_AMOUNT"].ToString();
 
-                                if (row["RB_NOTE"].ToString().Length > 20)
+                                if (row["RB_NOTE"].ToString().Length > 0)
                                 {
-                                    row["NOTE"] = "备注：" + row["RB_NOTE"].ToString().Substring(0, 20) + "…";
-                                }
-                                else if (row["RB_NOTE"].ToString().Length <= 20 & row["RB_NOTE"].ToString().Length > 0)
-                                {
+                                  
                                     row["NOTE"] = "备注：" + row["RB_NOTE"];
                                 }
                                 else
                                 {
-                                    row["NOTE"] = "备注：无";
+                                    row["NOTE"] = "备注：";
                                 }
 
-                                row["RBUSERDATE"] = row["RB_USER"] + " " + Convert.ToDateTime(row["CREATEDATE"]).ToShortDateString();
+                                row["RBUSERDATE"] = Convert.ToDateTime(row["CREATEDATE"]).ToShortDateString();
                             }
 
                             break;
@@ -151,17 +136,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         {
             try
             {
-                if (e.Name.Equals(tExit.Name))
-                {
-                    MessageBox.Show("是否确定返回？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
-                    {
-                        if (args.Result == Smobiler.Core.ShowResult.Yes)
-                        {
-                            this.Close();
-                        }
-                    }
-                    );
-                }
+                
                 if (e.Name.Equals(xfadd.Name))
                 {
                     frmConsumption frm = new frmConsumption();
@@ -184,7 +159,51 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                             Bind();
                         }
                     });
-                }                     
+                }
+                if (e.Name.Equals(SX.Name))//消费记录或报销筛选
+                {
+                    switch (btnMode)
+                    {
+                        case 1:
+                            frmConsumptionMainRight frm = new frmConsumptionMainRight();
+                            frm.ROWTYPE = ROWTYPE;
+                            this.Redirect(frm, (MobileForm sender1, object args) =>
+                            {
+                                try
+                                {
+                                    if (frm.ShowResult == Smobiler.Core.ShowResult.Yes)
+                                    {
+                                        ROWTYPE = frm.ROWTYPE;
+                                        Bind();
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show(ex.Message);
+                                }
+                            });
+                            break;
+                        case 2:
+                            frmRBMainRight frm1 = new frmRBMainRight();
+                            frm1.STATE = STATE;
+                            this.Redirect(frm1, (MobileForm sender1, object args) =>
+                            {
+                                try
+                                {
+                                    if (frm1.ShowResult == Smobiler.Core.ShowResult.Yes)
+                                    {
+                                        STATE = frm1.STATE;
+                                        Bind();
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show(ex.Message);
+                                }
+                            });
+                            break;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -192,24 +211,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             }
         }
 
-        /// <summary>
-        /// 消费记录显示
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void btnRBConsumption_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                btnMode = 1;
-                Bind();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+       
         /// <summary>
         /// 初始化事件
         /// </summary>
@@ -230,84 +232,11 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 MessageBox.Show(ex.Message);
             }
         }
-        /// <summary>
-        /// 报销单显示
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void btnRB_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                btnMode = 2;
-                Bind();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+       
 
    
 
-        /// <summary>
-        /// 消费记录类型或报销单状态筛选
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks></remarks>
-        private void ImageButton2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                switch (btnMode)
-                {
-                    case 1:
-                        frmConsumptionMainRight frm = new frmConsumptionMainRight();
-                        frm.ROWTYPE = ROWTYPE;
-                        this.Redirect(frm, (MobileForm sender1, object args) =>
-                        {
-                            try
-                            {
-                                if (frm.ShowResult == Smobiler.Core.ShowResult.Yes)
-                                {
-                                    ROWTYPE = frm.ROWTYPE;
-                                    Bind();
-                                }
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show(ex.Message);
-                            }
-                        });
-                        break;
-                    case 2:
-                        frmRBMainRight frm1 = new frmRBMainRight();
-                        frm1.STATE = STATE;
-                        this.Redirect(frm1, (MobileForm sender1, object args) =>
-                        {
-                            try
-                            {
-                                if (frm1.ShowResult == Smobiler.Core.ShowResult.Yes)
-                                {
-                                    STATE = frm1.STATE;
-                                    Bind();
-                                }
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show(ex.Message);
-                            }
-                        });
-                        break;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+      
 
         /// <summary>
         /// 左滑事件
@@ -364,26 +293,6 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         }
 
         /// <summary>
-        /// 责任人审批按钮
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ImageButton3_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                frmRBCheck2 frm = new frmRBCheck2();
-                this.Redirect(frm, (MobileForm sender1, object args) =>
-                {
-                    Bind();
-                });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        /// <summary>
         /// gridview点击事件
         /// </summary>
         /// <param name="sender"></param>
@@ -433,5 +342,56 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 MessageBox.Show(ex.Message);
             }
         }
+        /// <summary>
+        /// TextTabBar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TextTabBar1_ItemClick(object sender, TabBarItemClickEventArgs e)
+        {
+            try
+            {
+                switch (e.Item.Value)
+                {
+                    case "xf":
+                        btnMode = 1;
+                        break;
+                    case "bx":
+                        btnMode = 2;
+                        break;
+                }
+                Bind();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// TitleImage事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
+        }
+        /// <summary>
+        /// 手机自带回退按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            this.Close();
+        } 
     }
 }

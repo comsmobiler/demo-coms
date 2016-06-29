@@ -33,20 +33,12 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         //NOTE: The following procedure is required by the SmobilerForm Designer
         //It can be modified using the SmobilerForm Designer.  
         //Do not modify it using the code editor.
+
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            this.Line6 = new Smobiler.Core.Controls.Line();
             this.GridView1 = new Smobiler.Core.Controls.GridView();
-            this.tExit = new Smobiler.Core.Controls.ToolbarItem();
-            // 
-            // Line6
-            // 
-            this.Line6.BackColor = System.Drawing.Color.Gray;
-            this.Line6.LineSize = 0.5F;
-            this.Line6.Name = "Line6";
-            this.Line6.Size = new System.Drawing.SizeF(120F, 1F);
-            this.Line6.TabIndex = 3;
+            this.Line6 = new Smobiler.Core.Controls.Line();
             // 
             // GridView1
             // 
@@ -59,30 +51,29 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.GridView1.TabIndex = 4;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             // 
-            // tExit
+            // Line6
             // 
-            this.tExit.IconID = "Exit";
-            this.tExit.Name = "tExit";
-            this.tExit.Text = "返回";
+            this.Line6.BackColor = System.Drawing.Color.Gray;
+            this.Line6.LineSize = 0.5F;
+            this.Line6.Name = "Line6";
+            this.Line6.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line6.TabIndex = 3;
             // 
             // frmRBPostMain
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.Line6,
             this.GridView1});
-            this.TitleBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.TitleImage = "formimg";
+            this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
+            this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
             this.TitleText = "送审";
-            this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
-            this.tExit});
+            this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));
             this.Load += new System.EventHandler(this.frmRBPostMain_Load);
-            this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmRBPostMain_ToolbarItemClick);
+            this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
+            this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
 
         }
-        internal Smobiler.Core.Controls.Line Line6;
         internal Smobiler.Core.Controls.GridView GridView1;
-
-        internal Smobiler.Core.Controls.ToolbarItem tExit;
+        internal Smobiler.Core.Controls.Line Line6;
         #endregion
 
     }

@@ -42,7 +42,7 @@ namespace COMSSmobilerDemo
                     });
                 }
 
-                frmMessage frm = new frmMessage();
+                frmMune  frm = new frmMune ();
                 this.Redirect(frm, (MobileForm sender1, object args) =>
                 {
                     LblMsg.Text = "";

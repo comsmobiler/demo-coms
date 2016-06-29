@@ -43,6 +43,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                             string[] CCS = CC_ID.Split(new char[] { '/' });
                             RBCC = CCS[0];
                             this.btnRBCC.Text = CCS[1];
+                            setbtnColor();
                         }
                     }
                     catch (Exception ex)
@@ -67,10 +68,27 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             try
             {
                 Bind();
+                setbtnColor();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 动态更改控件字体颜色
+        /// </summary>
+        /// <remarks></remarks>
+        private void setbtnColor()
+        {
+            if (string.IsNullOrWhiteSpace(RBCC) == false)
+            {
+                btnRBCC.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
+            }
+            else
+            {
+                btnRBCC.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)), Convert.ToInt32(Convert.ToByte(193)));
             }
         }
         /// <summary>
@@ -85,20 +103,11 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 if (table.Rows.Count > 0)
                 {
                     this.GridView1.Rows.Clear();
-                    table.Columns.Add("RBROW_AMOUNT_FORMAT", typeof(System.String));
                     table.Columns.Add("RBCHECKED", typeof(System.Boolean));
                     table.Columns.Add("ROW_NOTE", typeof(System.String));
                     table.Columns.Add("ROW_DATE", typeof(System.String));
                     foreach (DataRow row in table.Rows)
                     {
-                        if (row["RBROW_AMOUNT"].ToString().Length > 0)
-                        {
-                            row["RBROW_AMOUNT_FORMAT"] = "￥" + row["RBROW_AMOUNT"].ToString();
-                        }
-                        else
-                        {
-                            row["RBROW_AMOUNT_FORMAT"] = "￥0.0";
-                        }
 
                         if (row["RB_NO"].ToString().Length <= 0)
                         {
@@ -137,18 +146,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         private void frmRBCreate_ToolbarItemClick(object sender, ToolbarClickEventArgs e)
         {
             try
-            {   //返回
-                if (e.Name.Equals(tExit.Name))
-                {
-                    MessageBox.Show("是否确定返回？", MessageBoxButtons.YesNo, (Object s, MessageBoxHandlerArgs args) =>
-                       {
-                           if (args.Result == Smobiler.Core.ShowResult.Yes)
-                           {
-                               this.Close();
-                           }
-                       });
-
-                }
+            {   
                 //保存
                 if (e.Name.Equals(save.Name))
                 {
@@ -206,7 +204,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                         }
                     }
                 }
-                lblAmount.Text = "￥" + sumAmount.ToString();
+                FooterBarLayoutData.Items["lblAmount"].DefaultValue = "￥" + sumAmount.ToString();
             }
             catch (Exception ex)
             {
@@ -214,26 +212,15 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             }
         }
 
-        private void btnCheckall_Click(object sender, EventArgs e)
-        {
-            switch (Checkall.Checked)
-            {
-                case true:
-                    Checkall.Checked = false;
-                    break;
-                case false:
-                    Checkall.Checked = true;
-                    break;
-            }
-            getcheckall();
-        }
-
+        /// <summary>
+        /// 全选
+        /// </summary>
         private void getcheckall()
         {
-            switch (Checkall.Checked)
+            switch ((bool )FooterBarLayoutData.Items["Checkall"].DefaultValue)
             {
                 case true:
-                    this.btnCheckall.Text = "全不选";
+                    FooterBarLayoutData.Items["lblCheckall"].DefaultValue = "全不选";
                     foreach (GridViewRow rows in GridView1.Rows)
                     {
                         rows.Cell.Items["Check"].DefaultValue = true;
@@ -241,7 +228,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
 
                     break;
                 case false:
-                    this.btnCheckall.Text = "全选";
+                    FooterBarLayoutData.Items["lblCheckall"].DefaultValue = "全选";
                     foreach (GridViewRow rows in GridView1.Rows)
                     {
                         rows.Cell.Items["Check"].DefaultValue  = false;
@@ -252,9 +239,49 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             getAmount();
         }
 
-        private void Checkall_CheckChanged(object sender, CheckEventArgs e)
+
+        /// <summary>
+        /// FooterBar点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void frmRBCreate_FooterBarLayoutItemClick(object sender, MobileFormLayoutItemEventArgs e)
         {
             getcheckall();
+        }
+
+        private DateTime taosttime;
+        private bool handleExit = false;
+        private void MobileForm_KeyDown(object sender, KeyDownEventArgs e)
+        {
+            if (e.KeyCode == KeyCode.Back)
+            {
+                HandleToast();
+            }
+        }
+
+        private void HandleToast()
+        {
+            if (handleExit == true && taosttime.AddSeconds(3) >= DateTime.Now)
+            {
+                handleExit = false;
+                this.Close();
+            }
+            else
+            {
+                handleExit = true;
+                taosttime = DateTime.Now;
+                this.Toast("再按一次退出界面", ToastLength.SHORT);
+            }
+        }
+        /// <summary>
+        /// TitleImage点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MobileForm_TitleImageClick(object sender, EventArgs e)
+        {
+            HandleToast();
         }
     }
 }
