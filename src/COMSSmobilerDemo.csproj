@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>COMSSmobilerDemo</RootNamespace>
     <AssemblyName>COMSSmobilerDemo</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -59,12 +60,6 @@
     <Compile Include="common\SignIninfo.cs" />
     <Compile Include="common\TypeInfo.cs" />
     <Compile Include="common\WorkDInfo.cs" />
-    <Compile Include="frmGif.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="frmGif.Designer.cs">
-      <DependentUpon>frmGif.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmHelp.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -476,9 +471,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmGif.resx">
-      <DependentUpon>frmGif.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmHelp.resx">
       <DependentUpon>frmHelp.cs</DependentUpon>
     </EmbeddedResource>
