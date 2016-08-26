@@ -41,7 +41,6 @@ namespace COMSSmobilerDemo.SignIn
             this.btntype = new Smobiler.Core.Controls.Button();
             this.btntype2 = new Smobiler.Core.Controls.Button();
             this.Label2 = new Smobiler.Core.Controls.Label();
-            this.Label3 = new Smobiler.Core.Controls.Label();
             this.Label4 = new Smobiler.Core.Controls.Label();
             this.btnPunchCardType = new Smobiler.Core.Controls.Button();
             this.btnPunchCardType2 = new Smobiler.Core.Controls.Button();
@@ -51,6 +50,9 @@ namespace COMSSmobilerDemo.SignIn
             this.Gps1 = new Smobiler.Core.Controls.GPS();
             this.PopList1 = new Smobiler.Core.Controls.PopList();
             this.btnAddress = new Smobiler.Core.Controls.Button();
+            this.MapView1 = new Smobiler.Core.Controls.MapView();
+            this.Line1 = new Smobiler.Core.Controls.Line();
+            this.line2 = new Smobiler.Core.Controls.Line();
             // 
             // Label1
             // 
@@ -106,20 +108,6 @@ namespace COMSSmobilerDemo.SignIn
             this.Label2.TabIndex = 5;
             this.Label2.Text = "时间";
             this.Label2.ZIndex = 4;
-            // 
-            // Label3
-            // 
-            this.Label3.Border = new Smobiler.Core.Border(0, 0, 0, 1);
-            this.Label3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label3.Location = new Smobiler.Core.PointS(0F, 31F);
-            this.Label3.Name = "Label3";
-            this.Label3.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.Label3.Size = new System.Drawing.SizeF(35F, 34F);
-            this.Label3.TabIndex = 6;
-            this.Label3.Text = "地点";
-            this.Label3.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
-            this.Label3.ZIndex = 6;
             // 
             // Label4
             // 
@@ -180,7 +168,7 @@ namespace COMSSmobilerDemo.SignIn
             this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.lblAddress.Location = new Smobiler.Core.PointS(35F, 31F);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Padding = new Smobiler.Core.Padding(0F, 5F, 12F, 0F);
+            this.lblAddress.Padding = new Smobiler.Core.Padding(2F, 5F, 12F, 0F);
             this.lblAddress.Size = new System.Drawing.SizeF(85F, 24F);
             this.lblAddress.TabIndex = 11;
             this.lblAddress.Text = "正在定位...";
@@ -205,7 +193,6 @@ namespace COMSSmobilerDemo.SignIn
             // 
             // btnAddress
             // 
-            this.btnAddress.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnAddress.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.btnAddress.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
@@ -213,12 +200,36 @@ namespace COMSSmobilerDemo.SignIn
             this.btnAddress.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.btnAddress.Location = new Smobiler.Core.PointS(35F, 55F);
             this.btnAddress.Name = "btnAddress";
+            this.btnAddress.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
             this.btnAddress.Size = new System.Drawing.SizeF(85F, 10F);
             this.btnAddress.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnAddress.TabIndex = 12;
             this.btnAddress.Text = "地点微调";
             this.btnAddress.ZIndex = 8;
             this.btnAddress.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnAddress_Click);
+            // 
+            // MapView1
+            // 
+            this.MapView1.Location = new Smobiler.Core.PointS(0F, 31F);
+            this.MapView1.Name = "MapView1";
+            this.MapView1.Size = new System.Drawing.SizeF(35F, 34F);
+            this.MapView1.TabIndex = 13;
+            // 
+            // Line1
+            // 
+            this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.Line1.Location = new Smobiler.Core.PointS(2F, 65F);
+            this.Line1.Name = "Line1";
+            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.TabIndex = 14;
+            // 
+            // line2
+            // 
+            this.line2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.line2.Location = new Smobiler.Core.PointS(0F, 31F);
+            this.line2.Name = "line2";
+            this.line2.Size = new System.Drawing.SizeF(120F, 1F);
+            this.line2.TabIndex = 15;
             // 
             // frmSignInCreate
             // 
@@ -234,9 +245,11 @@ namespace COMSSmobilerDemo.SignIn
             this.btntype2,
             this.Label2,
             this.lblDate,
-            this.Label3,
             this.lblAddress,
-            this.btnAddress});
+            this.btnAddress,
+            this.MapView1,
+            this.Line1,
+            this.line2});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
             this.TitleText = "签到录入";
@@ -247,13 +260,13 @@ namespace COMSSmobilerDemo.SignIn
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmSignInCreate_ToolbarItemClick);
             this.TitleImageClick += new System.EventHandler(this.frmSignInCreate_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmSignInCreate";
 
         }
         internal Smobiler.Core.Controls.Label Label1;
         internal Smobiler.Core.Controls.Button btntype;
         internal Smobiler.Core.Controls.Button btntype2;
         internal Smobiler.Core.Controls.Label Label2;
-        internal Smobiler.Core.Controls.Label Label3;
         internal Smobiler.Core.Controls.Label Label4;
         internal Smobiler.Core.Controls.Button btnPunchCardType;
         internal Smobiler.Core.Controls.Button btnPunchCardType2;
@@ -264,6 +277,9 @@ namespace COMSSmobilerDemo.SignIn
         internal Smobiler.Core.Controls.PopList PopList1;
         internal Smobiler.Core.Controls.Button btnAddress;
         #endregion
+        internal Smobiler.Core.Controls.MapView MapView1;
+        internal Smobiler.Core.Controls.Line Line1;
+        private Smobiler.Core.Controls.Line line2;
 
     }
 

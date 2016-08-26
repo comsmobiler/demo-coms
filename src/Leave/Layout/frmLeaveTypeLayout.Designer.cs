@@ -51,8 +51,9 @@ namespace COMSSmobilerDemo.Leave.Layout
             // 
             // Image1
             // 
-            this.Image1.DataMember = "L_TYPEDESC";
-            this.Image1.DisplayMember = "L_TYPEDESC";
+            this.Image1.DataMember = "L_TYPE";
+            this.Image1.DisplayMember = "L_TYPE";
+            this.Image1.ID = "";
             this.Image1.Location = new Smobiler.Core.PointS(3F, 5F);
             this.Image1.Name = "Image1";
             this.Image1.Size = new System.Drawing.SizeF(10F, 10F);
@@ -65,6 +66,7 @@ namespace COMSSmobilerDemo.Leave.Layout
             this.lblTypeName,
             this.Image1});
             this.Size = new System.Drawing.Size(120, 20);
+            this.Name = "frmLeaveTypeLayout";
 
         }
         internal Smobiler.Core.Controls.Label lblTypeName;

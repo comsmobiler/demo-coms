@@ -9,9 +9,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>COMSSmobilerDemo</RootNamespace>
     <AssemblyName>COMSSmobilerDemo</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,14 +51,140 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="common\BookInfo.cs" />
+    <Compile Include="common\BookLogInfo.cs" />
+    <Compile Include="common\BookSNInfo.cs" />
     <Compile Include="common\ConsumptionInfo.cs" />
     <Compile Include="common\CostCenterInfo.cs" />
     <Compile Include="common\LeaveInfo.cs" />
     <Compile Include="common\MessageInfo.cs" />
+    <Compile Include="common\NBInfo.cs" />
+    <Compile Include="common\NBRecordInfo.cs" />
+    <Compile Include="common\RecipientsItemsInfo.cs" />
     <Compile Include="common\ReimbursementInfo.cs" />
     <Compile Include="common\SignIninfo.cs" />
     <Compile Include="common\TypeInfo.cs" />
     <Compile Include="common\WorkDInfo.cs" />
+    <Compile Include="FixedAssets\Books\frmBookCreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookCreate.Designer.cs">
+      <DependentUpon>frmBookCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookDetail.Designer.cs">
+      <DependentUpon>frmBookDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookEdit.Designer.cs">
+      <DependentUpon>frmBookEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookLogbyNOMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookLogbyNOMain.Designer.cs">
+      <DependentUpon>frmBookLogbyNOMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookLogCheckMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookLogCheckMain.Designer.cs">
+      <DependentUpon>frmBookLogCheckMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookLogCreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookLogCreate.Designer.cs">
+      <DependentUpon>frmBookLogCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookLogDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBookLogDetail.Designer.cs">
+      <DependentUpon>frmBookLogDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBooksMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\frmBooksMain.Designer.cs">
+      <DependentUpon>frmBooksMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\Books\Layout\frmBookLogLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\Layout\frmBookLogLayout.Designer.cs">
+      <DependentUpon>frmBookLogLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\Books\Layout\frmBooksLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\Layout\frmBooksLayout.Designer.cs">
+      <DependentUpon>frmBooksLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\Books\Layout\frmBookSNLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\Books\Layout\frmBookSNLayout.Designer.cs">
+      <DependentUpon>frmBookSNLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBCreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBCreate.Designer.cs">
+      <DependentUpon>frmNBCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBDetail.Designer.cs">
+      <DependentUpon>frmNBDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBEdit.Designer.cs">
+      <DependentUpon>frmNBEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBMain.Designer.cs">
+      <DependentUpon>frmNBMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBRecordCreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBRecordCreate.Designer.cs">
+      <DependentUpon>frmNBRecordCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBRecordDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBRecordDetail.Designer.cs">
+      <DependentUpon>frmNBRecordDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBRecordMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\frmNBRecordMain.Designer.cs">
+      <DependentUpon>frmNBRecordMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\Layout\frmNBLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\Layout\frmNBLayout.Designer.cs">
+      <DependentUpon>frmNBLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\Layout\frmNBRecordLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FixedAssets\NootBooks\Layout\frmNBRecordLayout.Designer.cs">
+      <DependentUpon>frmNBRecordLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHelp.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -83,12 +208,6 @@
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Layout\frmGifLayoutvb.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Layout\frmGifLayoutvb.Designer.cs">
-      <DependentUpon>frmGifLayoutvb.cs</DependentUpon>
     </Compile>
     <Compile Include="Layout\frminfoFootBarLayout.cs">
       <SubType>Component</SubType>
@@ -200,10 +319,22 @@
     </Compile>
     <Compile Include="common\OperationalInfo.cs" />
     <Compile Include="LeftLayoutExtension.cs" />
-    <Compile Include="Operational\frmOperationalLayout.cs">
+    <Compile Include="Operational\frmOperationalRDetail.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Operational\frmOperationalLayout.Designer.cs">
+    <Compile Include="Operational\frmOperationalRDetail.Designer.cs">
+      <DependentUpon>frmOperationalRDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operational\Layout\frmOperationalCULayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Operational\Layout\frmOperationalCULayout.Designer.cs">
+      <DependentUpon>frmOperationalCULayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operational\Layout\frmOperationalLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Operational\Layout\frmOperationalLayout.Designer.cs">
       <DependentUpon>frmOperationalLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="Operational\frmOperationalRCreate.cs">
@@ -226,6 +357,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipientsItems\frmRICreate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RecipientsItems\frmRICreate.Designer.cs">
+      <DependentUpon>frmRICreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecipientsItems\frmRIDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RecipientsItems\frmRIDetail.Designer.cs">
+      <DependentUpon>frmRIDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecipientsItems\frmRIMain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RecipientsItems\frmRIMain.Designer.cs">
+      <DependentUpon>frmRIMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecipientsItems\Layout\frmRItemsLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RecipientsItems\Layout\frmRItemsLayout.Designer.cs">
+      <DependentUpon>frmRItemsLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reimbursement\CostCenter\frmAttentionCC.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -346,6 +501,12 @@
     <Compile Include="Reimbursement\CostCenter\Layout\frmCCDt.Designer.cs">
       <DependentUpon>frmCCDt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reimbursement\RB\frmStatementAnalysis.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\frmStatementAnalysis.Designer.cs">
+      <DependentUpon>frmStatementAnalysis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reimbursement\RB\Layout\frmConsumption1Layout.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -400,6 +561,12 @@
     <Compile Include="Reimbursement\RB\Layout\frmRBTypeLayout.Designer.cs">
       <DependentUpon>frmRBTypeLayout.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRightLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reimbursement\RB\Layout\frmRightLayout.Designer.cs">
+      <DependentUpon>frmRightLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignIn\frmSignInCreate.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -417,6 +584,12 @@
     </Compile>
     <Compile Include="SignIn\frmSignInMain.Designer.cs">
       <DependentUpon>frmSignInMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDocument\frmUserKPI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkDocument\frmUserKPI.Designer.cs">
+      <DependentUpon>frmUserKPI.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkDocument\frmWorkDMain.cs">
       <SubType>Component</SubType>
@@ -471,6 +644,66 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FixedAssets\Books\frmBookCreate.resx">
+      <DependentUpon>frmBookCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\Books\frmBookDetail.resx">
+      <DependentUpon>frmBookDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\Books\frmBookEdit.resx">
+      <DependentUpon>frmBookEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\Books\frmBookLogbyNOMain.resx">
+      <DependentUpon>frmBookLogbyNOMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\Books\frmBookLogCheckMain.resx">
+      <DependentUpon>frmBookLogCheckMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\Books\frmBookLogCreate.resx">
+      <DependentUpon>frmBookLogCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\Books\frmBookLogDetail.resx">
+      <DependentUpon>frmBookLogDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\Books\frmBooksMain.resx">
+      <DependentUpon>frmBooksMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\Books\Layout\frmBookLogLayout.resx">
+      <DependentUpon>frmBookLogLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\Books\Layout\frmBooksLayout.resx">
+      <DependentUpon>frmBooksLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\Books\Layout\frmBookSNLayout.resx">
+      <DependentUpon>frmBookSNLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\NootBooks\frmNBCreate.resx">
+      <DependentUpon>frmNBCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\NootBooks\frmNBDetail.resx">
+      <DependentUpon>frmNBDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\NootBooks\frmNBEdit.resx">
+      <DependentUpon>frmNBEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\NootBooks\frmNBMain.resx">
+      <DependentUpon>frmNBMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\NootBooks\frmNBRecordCreate.resx">
+      <DependentUpon>frmNBRecordCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\NootBooks\frmNBRecordDetail.resx">
+      <DependentUpon>frmNBRecordDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\NootBooks\frmNBRecordMain.resx">
+      <DependentUpon>frmNBRecordMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\NootBooks\Layout\frmNBLayout.resx">
+      <DependentUpon>frmNBLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixedAssets\NootBooks\Layout\frmNBRecordLayout.resx">
+      <DependentUpon>frmNBRecordLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHelp.resx">
       <DependentUpon>frmHelp.cs</DependentUpon>
     </EmbeddedResource>
@@ -482,9 +715,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layout\frmGifLayoutvb.resx">
-      <DependentUpon>frmGifLayoutvb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layout\frminfoFootBarLayout.resx">
       <DependentUpon>frminfoFootBarLayout.cs</DependentUpon>
@@ -534,7 +764,13 @@
     <EmbeddedResource Include="Layout\frmMessageLayout.resx">
       <DependentUpon>frmMessageLayout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Operational\frmOperationalLayout.resx">
+    <EmbeddedResource Include="Operational\frmOperationalRDetail.resx">
+      <DependentUpon>frmOperationalRDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operational\Layout\frmOperationalCULayout.resx">
+      <DependentUpon>frmOperationalCULayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operational\Layout\frmOperationalLayout.resx">
       <DependentUpon>frmOperationalLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Operational\frmOperationalRCreate.resx">
@@ -545,6 +781,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Operational\frmOperationalRMain.resx">
       <DependentUpon>frmOperationalRMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipientsItems\frmRICreate.resx">
+      <DependentUpon>frmRICreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipientsItems\frmRIDetail.resx">
+      <DependentUpon>frmRIDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipientsItems\frmRIMain.resx">
+      <DependentUpon>frmRIMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipientsItems\Layout\frmRItemsLayout.resx">
+      <DependentUpon>frmRItemsLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reimbursement\CostCenter\frmAttentionCC.resx">
       <DependentUpon>frmAttentionCC.cs</DependentUpon>
@@ -600,6 +848,9 @@
     <EmbeddedResource Include="Reimbursement\RB\frmRBRowType.resx">
       <DependentUpon>frmRBRowType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\frmStatementAnalysis.resx">
+      <DependentUpon>frmStatementAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reimbursement\RB\Layout\frmConsumption1Layout.resx">
       <DependentUpon>frmConsumption1Layout.cs</DependentUpon>
     </EmbeddedResource>
@@ -627,6 +878,9 @@
     <EmbeddedResource Include="Reimbursement\RB\Layout\frmRBTypeLayout.resx">
       <DependentUpon>frmRBTypeLayout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reimbursement\RB\Layout\frmRightLayout.resx">
+      <DependentUpon>frmRightLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignIn\frmSignInCreate.resx">
       <DependentUpon>frmSignInCreate.cs</DependentUpon>
     </EmbeddedResource>
@@ -635,6 +889,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignIn\frmSignInMain.resx">
       <DependentUpon>frmSignInMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkDocument\frmUserKPI.resx">
+      <DependentUpon>frmUserKPI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkDocument\frmWorkDMain.resx">
       <DependentUpon>frmWorkDMain.cs</DependentUpon>

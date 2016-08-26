@@ -219,6 +219,7 @@ namespace COMSSmobilerDemo.Leave
             this.imgL.Border = new Smobiler.Core.Border(0, 1, 0, 0);
             this.imgL.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.imgL.Enlarged = true;
+            this.imgL.ID = "";
             this.imgL.Location = new Smobiler.Core.PointS(35F, 102F);
             this.imgL.Name = "imgL";
             this.imgL.Padding = new Smobiler.Core.Padding(0F, 2F, 0F, 0F);
@@ -408,6 +409,7 @@ namespace COMSSmobilerDemo.Leave
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmLeaveCreate_ToolbarItemClick);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmLeaveCreate";
 
         }
         internal Smobiler.Core.Controls.Label Label1;

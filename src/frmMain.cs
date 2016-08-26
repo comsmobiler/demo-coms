@@ -28,7 +28,6 @@ partial class frmMain
             InitialNetworkInterfaces();
             //定义Smobiler服务
             server = new Smobiler.Core.MobileServer();
-            server.SessionStart += new Smobiler.Core.SmobilerSessionEventHandler(this.server_SessionStart);
             //设置默认网卡
             if (networkDict.Count > 0)
             {
@@ -37,8 +36,6 @@ partial class frmMain
                 this.combNets.Items.AddRange(combvalues);
                 this.combNets.SelectedIndex = 0;
             }
-            //模拟Framework初始化代码
-            InitFramework();
             //启动Smobiler服务
             StartServer();
         }
@@ -80,7 +77,7 @@ partial class frmMain
         try
         {
             //服务起始界面
-            server.StartUpForm = typeof(COMSSmobilerDemo.frmLogon );
+            server.StartUpForm = typeof(COMSSmobilerDemo.frmLogon);
             //服务TCP端口，默认为2323   
             this.txtTcpPort.Text = server.Setting.TcpServerPort.ToString();
             //服务HTTP端口，默认为2324  
@@ -146,40 +143,4 @@ partial class frmMain
             Application.Exit();
         }
     }
-
-    #region "Framework Develop Code"
-    //在Framework开发方式下，取消以下代码注释
-
-    /// <summary>
-    /// 初始化Framework
-    /// </summary>
-    /// <remarks></remarks>
-    private void InitFramework()
-    {
-        //Searching.Core.DataBaseConnector co = null;
-        //co = new Searching.Core.SQLServerConnector();
-        ////数据库地址
-        //co.DatabaseSource = "127.0.0.1";
-        ////数据库类型
-        //co.CurrentDataBase = "FrameworkDB";
-        ////用户名
-        //co.User = "sa";
-        ////密码
-        //co.Password = "smobiler";
-        ////将连接给全局连接对象
-        //Searching.Core.SystemSettings.DataConnector = co;
-        ////数据库连接超时时间，单位为秒
-        //Searching.Core.SystemSettings.CommandTimeout = 60;
-
-        ////在SmobilerForm 中可以通过 Searching.Core.SystemSettings.DataConnector.ConnectionString 获取默认连接数据库字符串
-    }
-
-    private void server_SessionStart(object sender, Smobiler.Core.SmobilerSessionEventArgs e)
-    {
-        ////模拟用户登录注册
-        //Searching.Core.SessionObject sobj = Searching.Core.SessionObject.Register("SomeOne", 0, new List<string>(), e.Client.SessionID, "");
-        //e.Client.SetUserSessionID(sobj.ID);
-        ////在SmobilerForm中可以通过SmobilerFramework.SmobilerDefaultValue.Session.UserID 获取登录用户名
-    }
-    #endregion
 }

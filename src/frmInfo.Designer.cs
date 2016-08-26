@@ -207,6 +207,7 @@ namespace COMSSmobilerDemo
             this.imguser.BorderColor = System.Drawing.Color.White;
             this.imguser.BorderRadius = 10;
             this.imguser.Enlarged = true;
+            this.imguser.ID = "lincy";
             this.imguser.Location = new Smobiler.Core.PointS(45F, 0F);
             this.imguser.Name = "imguser";
             this.imguser.Padding = new Smobiler.Core.Padding(0F, 0F, 1F, 0F);
@@ -256,6 +257,7 @@ namespace COMSSmobilerDemo
             this.Load += new System.EventHandler(this.frminfo_Load);
             this.TitleImageClick += new System.EventHandler(this.frminfo_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmInfo";
 
         }
         internal Smobiler.Core.Controls.Label Label1;

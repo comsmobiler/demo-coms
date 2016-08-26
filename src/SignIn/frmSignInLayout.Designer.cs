@@ -39,9 +39,9 @@ namespace COMSSmobilerDemo.SignIn
         private void InitializeComponent()
         {
             this.lblLDay = new Smobiler.Core.Controls.Label();
-            this.Label1 = new Smobiler.Core.Controls.Label();
             this.lblnote = new Smobiler.Core.Controls.Label();
             this.Line1 = new Smobiler.Core.Controls.Line();
+            this.Label1 = new Smobiler.Core.Controls.Image();
             // 
             // lblLDay
             // 
@@ -50,24 +50,10 @@ namespace COMSSmobilerDemo.SignIn
             this.lblLDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.lblLDay.Name = "lblLDay";
             this.lblLDay.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.lblLDay.Size = new System.Drawing.SizeF(60F, 12F);
+            this.lblLDay.Size = new System.Drawing.SizeF(84F, 12F);
             this.lblLDay.TabIndex = 2;
             this.lblLDay.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             this.lblLDay.ZIndex = 1;
-            // 
-            // Label1
-            // 
-            this.Label1.BorderColor = System.Drawing.Color.Gray;
-            this.Label1.DataMember = "TYPEDESC";
-            this.Label1.DisplayMember = "TYPEDESC";
-            this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.Label1.Location = new Smobiler.Core.PointS(60F, 0F);
-            this.Label1.Name = "Label1";
-            this.Label1.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.SizeF(60F, 12F);
-            this.Label1.TabIndex = 3;
-            this.Label1.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
-            this.Label1.ZIndex = 2;
             // 
             // lblnote
             // 
@@ -78,7 +64,7 @@ namespace COMSSmobilerDemo.SignIn
             this.lblnote.Location = new Smobiler.Core.PointS(0F, 12F);
             this.lblnote.Name = "lblnote";
             this.lblnote.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblnote.Size = new System.Drawing.SizeF(120F, 8F);
+            this.lblnote.Size = new System.Drawing.SizeF(84F, 8F);
             this.lblnote.TabIndex = 4;
             this.lblnote.ZIndex = 3;
             // 
@@ -91,21 +77,35 @@ namespace COMSSmobilerDemo.SignIn
             this.Line1.TabIndex = 5;
             this.Line1.ZIndex = 4;
             // 
+            // Label1
+            // 
+            this.Label1.BorderColor = System.Drawing.Color.Gray;
+            this.Label1.DataMember = "TYPEDESC";
+            this.Label1.DisplayMember = "TYPEDESC";
+            this.Label1.ID = "";
+            this.Label1.Location = new Smobiler.Core.PointS(84F, 0F);
+            this.Label1.Name = "Label1";
+            this.Label1.Padding = new Smobiler.Core.Padding(0F, 1F, 0F, 1F);
+            this.Label1.Size = new System.Drawing.SizeF(36F, 20F);
+            this.Label1.TabIndex = 6;
+            this.Label1.ZIndex = 2;
+            // 
             // frmSignInLayout
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.lblLDay,
-            this.Label1,
             this.lblnote,
-            this.Line1});
+            this.Line1,
+            this.Label1});
             this.Size = new System.Drawing.Size(120, 20);
+            this.Name = "frmSignInLayout";
 
         }
         internal Smobiler.Core.Controls.Label lblLDay;
-        internal Smobiler.Core.Controls.Label Label1;
         internal Smobiler.Core.Controls.Label lblnote;
         internal Smobiler.Core.Controls.Line Line1;
         #endregion
+        internal Smobiler.Core.Controls.Image Label1;
 
     }
 

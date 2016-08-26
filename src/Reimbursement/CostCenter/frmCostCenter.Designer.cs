@@ -92,6 +92,7 @@ public partial class frmCostCenter : Smobiler.Core.MobileForm
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmCostCenter_ToolbarItemClick);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmCostCenter";
 
     }
     internal Smobiler.Core.Controls.GridView GridView1;

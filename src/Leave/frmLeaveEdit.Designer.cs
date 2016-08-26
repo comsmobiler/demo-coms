@@ -223,6 +223,7 @@ namespace COMSSmobilerDemo.Leave
             this.LIMG.Border = new Smobiler.Core.Border(0, 1, 0, 0);
             this.LIMG.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.LIMG.Enlarged = true;
+            this.LIMG.ID = "";
             this.LIMG.Location = new Smobiler.Core.PointS(35F, 102F);
             this.LIMG.Name = "LIMG";
             this.LIMG.Padding = new Smobiler.Core.Padding(0F, 2F, 0F, 0F);
@@ -450,6 +451,7 @@ namespace COMSSmobilerDemo.Leave
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmLeaveEdit_ToolbarItemClick);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmLeaveEdit";
 
         }
         internal Smobiler.Core.Controls.Label Label1;

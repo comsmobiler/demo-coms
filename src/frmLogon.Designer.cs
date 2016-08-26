@@ -47,15 +47,15 @@ namespace COMSSmobilerDemo
             this.labSubTitle = new Smobiler.Core.Controls.Label();
             this.Line1 = new Smobiler.Core.Controls.Line();
             this.Line4 = new Smobiler.Core.Controls.Line();
-            this.Image1 = new Smobiler.Core.Controls.Image();
             this.Image2 = new Smobiler.Core.Controls.Image();
             this.Image3 = new Smobiler.Core.Controls.Image();
+            this.btnGestures = new Smobiler.Core.Controls.Button();
+            this.Image1 = new Smobiler.Core.Controls.GifView();
             // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.txtName.BackColorAlpha = 0;
-            this.txtName.Border = new Smobiler.Core.Border(0);
             this.txtName.BorderColor = System.Drawing.Color.White;
             this.txtName.FontSize = 7F;
             this.txtName.ForeColor = System.Drawing.Color.White;
@@ -69,7 +69,6 @@ namespace COMSSmobilerDemo
             // 
             this.txtPwd.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.txtPwd.BackColorAlpha = 0;
-            this.txtPwd.Border = new Smobiler.Core.Border(0);
             this.txtPwd.BorderColor = System.Drawing.Color.White;
             this.txtPwd.FontSize = 7F;
             this.txtPwd.ForeColor = System.Drawing.Color.White;
@@ -166,18 +165,10 @@ namespace COMSSmobilerDemo
             this.Line4.Size = new System.Drawing.SizeF(85F, 1F);
             this.Line4.TabIndex = 16;
             // 
-            // Image1
-            // 
-            this.Image1.BackColorAlpha = 0;
-            this.Image1.Location = new Smobiler.Core.PointS(42.5F, 20F);
-            this.Image1.Name = "Image1";
-            this.Image1.ResourceID = "logo";
-            this.Image1.Size = new System.Drawing.SizeF(35F, 35F);
-            this.Image1.TabIndex = 18;
-            // 
             // Image2
             // 
             this.Image2.BackColorAlpha = 0;
+            this.Image2.ID = "!\\ue8a6255255255";
             this.Image2.Location = new Smobiler.Core.PointS(10F, 76F);
             this.Image2.Name = "Image2";
             this.Image2.Padding = new Smobiler.Core.Padding(0F, 4F, 0F, 2F);
@@ -188,12 +179,42 @@ namespace COMSSmobilerDemo
             // Image3
             // 
             this.Image3.BackColorAlpha = 0;
+            this.Image3.ID = "!\\ue899255255255";
             this.Image3.Location = new Smobiler.Core.PointS(10F, 96F);
             this.Image3.Name = "Image3";
             this.Image3.Padding = new Smobiler.Core.Padding(0F, 4F, 0F, 2F);
             this.Image3.ResourceID = "!\\ue899255255255";
             this.Image3.Size = new System.Drawing.SizeF(10F, 16F);
             this.Image3.TabIndex = 20;
+            // 
+            // btnGestures
+            // 
+            this.btnGestures.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(125)))), ((int)(((byte)(214)))));
+            this.btnGestures.BackColorAlpha = 0;
+            this.btnGestures.BorderColor = System.Drawing.Color.White;
+            this.btnGestures.BorderRadius = 2;
+            this.btnGestures.BorderSize = 0.2F;
+            this.btnGestures.FontSize = 7F;
+            this.btnGestures.ForeColor = System.Drawing.Color.Red;
+            this.btnGestures.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(194)))), ((int)(((byte)(240)))));
+            this.btnGestures.HoverForeColor = System.Drawing.Color.White;
+            this.btnGestures.Location = new Smobiler.Core.PointS(10F, 157F);
+            this.btnGestures.Name = "btnGestures";
+            this.btnGestures.Size = new System.Drawing.SizeF(100F, 16F);
+            this.btnGestures.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnGestures.TabIndex = 21;
+            this.btnGestures.Text = "手势登录";
+            this.btnGestures.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnGestures_Click);
+            // 
+            // Image1
+            // 
+            this.Image1.BackColorAlpha = 0;
+            this.Image1.ID = "logo";
+            this.Image1.Location = new Smobiler.Core.PointS(42.5F, 20F);
+            this.Image1.Name = "Image1";
+            this.Image1.ResourceID = "logo";
+            this.Image1.Size = new System.Drawing.SizeF(35F, 35F);
+            this.Image1.TabIndex = 22;
             // 
             // frmLogon
             // 
@@ -209,11 +230,15 @@ namespace COMSSmobilerDemo
             this.labSubTitle,
             this.Line1,
             this.Line4,
-            this.Image1,
             this.Image2,
-            this.Image3});
-            this.Scrollable = false;
+            this.Image3,
+            this.btnGestures,
+            this.Image1});
+            this.EnableMirrorPattern = false;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("", System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(195)))), ((int)(((byte)(246))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
+            this.Load += new System.EventHandler(this.frmLogon_Load);
+            this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.frmLogon_KeyDown);
+            this.Name = "frmLogon";
 
         }
         internal Smobiler.Core.Controls.TextBox txtName;
@@ -225,9 +250,10 @@ namespace COMSSmobilerDemo
         internal Smobiler.Core.Controls.Label labSubTitle;
         internal Smobiler.Core.Controls.Line Line1;
         internal Smobiler.Core.Controls.Line Line4;
-        internal Smobiler.Core.Controls.Image Image1;
         internal Smobiler.Core.Controls.Image Image2;
         internal Smobiler.Core.Controls.Image Image3;
         #endregion
+        internal Button btnGestures;
+        internal GifView Image1;
     }
 }

@@ -281,6 +281,7 @@ namespace COMSSmobilerDemo.WorkDocument
             this.Load += new System.EventHandler(this.frmWorkDocumentCreate_Load);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmWorkDocumentCreate";
 
         }
         internal Smobiler.Core.Controls.Button btnCC;

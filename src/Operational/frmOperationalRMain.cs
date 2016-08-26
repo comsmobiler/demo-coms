@@ -28,6 +28,17 @@ namespace COMSSmobilerDemo.Operational
             try
             {
                 pagesCount = 2;
+                switch (TextTabBar1.SelectItemIndex)
+                {
+                    case 0:
+                        GridView1.BackColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(239)), Convert.ToInt32(Convert.ToByte(239)), Convert.ToInt32(Convert.ToByte(244)));
+                        GridView1.Layout = "frmOperationalCULayout";
+                        break;
+                    case 1:
+                        GridView1.BackColor = System.Drawing.Color.White;
+                        GridView1.Layout = "frmOperationalLayout";
+                        break;
+                }
                 DataTable table = GetOperationalRData();
                 if (table.Rows.Count > 0)
                 {
@@ -53,7 +64,16 @@ namespace COMSSmobilerDemo.Operational
         private DataTable GetOperationalRData()
         {
             OperationalInfo OperationalInfo = new OperationalInfo();
-            DataTable table = OperationalInfo.GetOperationalRData(pageIndex, pagesize);
+            DataTable table=new DataTable ();
+            switch (TextTabBar1.SelectItemIndex)
+            {
+                case 0:
+                    table = OperationalInfo.GetOperationalRData1(pageIndex, pagesize);
+                    break;
+                case 1:
+                    table = OperationalInfo.GetOperationalRData(pageIndex, pagesize);
+                    break;
+            }
             return table;
         }
 
@@ -111,15 +131,30 @@ namespace COMSSmobilerDemo.Operational
         {
             try
             {
-               
-                frmOperationalREdit frm = new frmOperationalREdit();
-                this.Redirect(frm, (MobileForm form ,object args ) =>
+                switch (TextTabBar1.SelectItemIndex)
                 {
-                    if (frm.ShowResult == Smobiler.Core.ShowResult.Yes)
+                    case 0:
+                        frmOperationalRDetail frm1 = new frmOperationalRDetail();
+                    this.Redirect(frm1, (MobileForm form ,object args ) =>
                     {
-                        Bind();
-                    }
-                });
+                        if (frm1.ShowResult == Smobiler.Core.ShowResult.Yes)
+                        {
+                            Bind();
+                        }
+                    });
+                        break;
+                    case 1:
+                       frmOperationalREdit frm = new frmOperationalREdit();
+                        this.Redirect(frm, (MobileForm form ,object args ) =>
+                        {
+                            if (frm.ShowResult == Smobiler.Core.ShowResult.Yes)
+                            {
+                                Bind();
+                            }
+                        });
+                        break;
+                }
+                
             }
             catch (Exception ex)
             {
@@ -194,6 +229,11 @@ namespace COMSSmobilerDemo.Operational
         private void HandleToast()
         {
             this.Close();
+        }
+
+        private void TextTabBar1_ItemClick(object sender, TabBarItemClickEventArgs e)
+        {
+            Bind();
         } 
     }
 }

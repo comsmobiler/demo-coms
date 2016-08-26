@@ -112,26 +112,30 @@ namespace COMSSmobilerDemo.WorkDocument
             {
                 switch (e.Name)
                 {
+                    case "KPI":
+                        frmUserKPI frmUserKPI = new frmUserKPI();
+                        this.Redirect(frmUserKPI);
+                        break;
                     case "SX":
                         //筛选
                          frmWorkDocumentMainRight frmD = new frmWorkDocumentMainRight();
                          frmD.STATE = STATE;
                          frmD.btnMode = btnMode;
                          this.Redirect(frmD, (MobileForm form, object args) =>
-                {
-                    try
-                    {
-                        if (frmD.ShowResult == Smobiler.Core.ShowResult.Yes)
-                        {
-                            STATE = frmD.STATE;
-                            Bind();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                });
+                                {
+                                    try
+                                    {
+                                        if (frmD.ShowResult == Smobiler.Core.ShowResult.Yes)
+                                        {
+                                            STATE = frmD.STATE;
+                                            Bind();
+                                        }
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        MessageBox.Show(ex.Message);
+                                    }
+                                });
                         break;
                     case "add":
                         //新增工作单
@@ -144,7 +148,9 @@ namespace COMSSmobilerDemo.WorkDocument
                             }
                         });
                         break;
+                    
                 }
+              
             }
             catch (Exception ex)
             {

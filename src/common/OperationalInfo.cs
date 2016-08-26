@@ -32,8 +32,45 @@ namespace COMSSmobilerDemo
             }
             return table;
         }
-    
-
+        /// <summary>
+        /// 获取维护数据
+        /// </summary>
+        /// <returns></returns>
+        public DataTable GetOperationalRData1(int pageIndex, int pagesize)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("CUST_NAME", typeof(System.String));
+            table.Columns.Add("FinishedQTYNote", typeof(System.String));
+            table.Columns.Add("TrackedQtyNote", typeof(System.String));
+            table.Columns.Add("TotalQTY", typeof(System.Int32));
+            if (pageIndex == 0)
+            {
+                table.Rows.Add("客户一", "已完成:1", "待跟踪：2",3);
+                table.Rows.Add("客户二", "已完成:0", "待跟踪：2", 3);
+                table.Rows.Add("客户三", "已完成:0", "待跟踪：0", 3);
+            }
+            if (pageIndex == 1)
+            {
+                table.Rows.Add("客户四", "已完成:1", "待跟踪：2", 3);
+            }
+            return table;
+        }
+        /// <summary>
+        /// 获取维护数据
+        /// </summary>
+        /// <returns></returns>
+        public DataTable GetORDataByCU()
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("OR_NO", typeof(System.String));
+            table.Columns.Add("OR_FAULTINFO", typeof(System.String));
+            table.Columns.Add("OR_PROCESSRESULT", typeof(System.String));
+            table.Columns.Add("OR_DECLAREDATE", typeof(System.DateTime ));
+            table.Rows.Add("OR001", "数据丢失", "!\uf058043146223", DateTime.Now);
+            table.Rows.Add("OR002", "维护系统", "!\uf056255128192", DateTime.Now);
+            table.Rows.Add("OR003", "数据丢失1", "!\uf056255128192", DateTime.Now);
+            return table;
+        }
         /// <summary>
         /// 客户
         /// </summary>

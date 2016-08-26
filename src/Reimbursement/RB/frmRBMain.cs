@@ -204,6 +204,12 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                             break;
                     }
                 }
+                if (e.Name.Equals(Report .Name ))
+                {
+                    frmStatementAnalysis frm = new frmStatementAnalysis();
+                    frm.Mode = btnMode;
+                    this.Redirect(frm);                  
+                }
             }
             catch (Exception ex)
             {

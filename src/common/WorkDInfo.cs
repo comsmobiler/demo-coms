@@ -62,5 +62,34 @@ namespace COMSSmobilerDemo.common
             table.Rows.Add("002", "协同单");
             return table;
         }
+
+
+        /// <summary>
+        /// 绩效
+        /// </summary>
+        /// <returns></returns>
+        public DataTable GetKPI()
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("PERIOD_ID", typeof(System.String));
+            table.Columns.Add("ISWARNING1", typeof(System.String));
+            table.Columns.Add("WDOC_MENDAY", typeof(System.Decimal));
+            table.Columns.Add("USER_OBJMENDAY", typeof(System.Decimal));
+            table.Columns.Add("WDOC_MENDAY1", typeof(System.Decimal));
+            table.Columns.Add("USER_OBJMENDAY1", typeof(System.Decimal));
+            table.Rows.Add("201601", "\\uf087000255128",2,178,0,24);
+            table.Rows.Add("201602", "\\uf087000255128",0, 178, 0, 24);
+            table.Rows.Add("201603", "\\uf087000255128", 0, 178, 0, 24);
+            table.Rows.Add("201604", "\\uf087000255128", 0, 178, 0, 24);
+            table.Rows.Add("201605", "\\uf087000255128", 0, 178, 0, 24);
+            table.Rows.Add("201606", "\\uf087000255128", 0, 178, 0, 24);
+            table.Rows.Add("201607", "\\uf087000255128", 0, 178, 0, 24);
+            table.Rows.Add("201608", "\\uf087000255128", 0, 178, 0, 24);
+            table.Rows.Add("201609", "\\uf087000255128", 0, 178, 0, 24);
+            table.Rows.Add("201610", "\\uf087000255128", 0, 178, 0, 24);
+            table.Rows.Add("201611", "\\uf087000255128", 0, 178, 0, 24);
+            table.Rows.Add("201612", "\\uf087000255128", 0, 178, 0, 24);
+            return table;
+        }
     }
 }

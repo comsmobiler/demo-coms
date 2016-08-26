@@ -38,13 +38,14 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.TextTabBarItem textTabBarItem1 = new Smobiler.Core.Controls.TextTabBarItem();
-            Smobiler.Core.Controls.TextTabBarItem textTabBarItem2 = new Smobiler.Core.Controls.TextTabBarItem();
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem3 = new Smobiler.Core.Controls.TextTabBarItem();
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem4 = new Smobiler.Core.Controls.TextTabBarItem();
             this.SX = new Smobiler.Core.Controls.ToolbarItem();
             this.xfadd = new Smobiler.Core.Controls.ToolbarItem();
             this.GridView1 = new Smobiler.Core.Controls.GridView();
             this.RBadd = new Smobiler.Core.Controls.ToolbarItem();
             this.TextTabBar1 = new Smobiler.Core.Controls.TextTabBar();
+            this.Report = new Smobiler.Core.Controls.ToolbarItem();
             // 
             // SX
             // 
@@ -83,13 +84,13 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.TextTabBar1.BorderRadius = 2;
             this.TextTabBar1.BorderSize = 0.2F;
             this.TextTabBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            textTabBarItem1.Text = "消费记录";
-            textTabBarItem1.Value = "xf";
-            textTabBarItem2.Text = "报销";
-            textTabBarItem2.Value = "bx";
+            textTabBarItem3.Text = "消费记录";
+            textTabBarItem3.Value = "xf";
+            textTabBarItem4.Text = "报销";
+            textTabBarItem4.Value = "bx";
             this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
-            textTabBarItem1,
-            textTabBarItem2});
+            textTabBarItem3,
+            textTabBarItem4});
             this.TextTabBar1.Location = new Smobiler.Core.PointS(10F, 5F);
             this.TextTabBar1.Name = "TextTabBar1";
             this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
@@ -97,6 +98,12 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.TextTabBar1.Size = new System.Drawing.SizeF(100F, 14F);
             this.TextTabBar1.TabIndex = 18;
             this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
+            // 
+            // Report
+            // 
+            this.Report.IconID = "!\\ue01d043146223";
+            this.Report.Name = "Report";
+            this.Report.Text = "报表";
             // 
             // frmRBMain
             // 
@@ -110,7 +117,8 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.xfadd,
             this.RBadd,
-            this.SX});
+            this.SX,
+            this.Report});
             this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));
             this.Load += new System.EventHandler(this.frmRBMain_Load);
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmRBMain_ToolbarItemClick);
@@ -118,6 +126,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.RightSlipping += new System.EventHandler(this.frmRBMain_RightSlipping);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmRBMain";
 
         }
 
@@ -127,6 +136,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         internal Smobiler.Core.Controls.ToolbarItem RBadd;
         internal Smobiler.Core.Controls.TextTabBar TextTabBar1;
         #endregion
+        private Smobiler.Core.Controls.ToolbarItem Report;
 
     }
 }

@@ -118,9 +118,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                 this.GridView1.Rows.Clear();
                 this.GridView1.DataSource = table;
                 this.GridView1.DataBind();
-                //报销金额分析统计表
-                this.PieChart1.DataSource = matTable;
-                this.PieChart1.DataBind();
+               
             }
             catch (Exception ex)
             {

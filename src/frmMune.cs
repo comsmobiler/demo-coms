@@ -125,7 +125,12 @@ namespace COMSSmobilerDemo
                 MessageBox.Show(ex.Message);
             }
         }
-
+     
+        /// <summary>
+        /// 菜单点击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MenuView1_MenuItemClick(object sender, IconMenuItemEventArgs e)
         {
 
@@ -181,11 +186,40 @@ namespace COMSSmobilerDemo
                    COMSSmobilerDemo.Reimbursement.RB.frmRBCheck4 frmRBCheck4 = new COMSSmobilerDemo.Reimbursement.RB.frmRBCheck4();
                    this.Redirect(frmRBCheck4);
                     break;
+                case "MenuRItems":
+                    COMSSmobilerDemo.RecipientsItems.frmRIMain frmRIMain = new COMSSmobilerDemo.RecipientsItems.frmRIMain();
+                    this.Redirect(frmRIMain);
+                    break;
+                case "MenuFixedAssets":
+                    IconMenuViewGroup grp1 = new IconMenuViewGroup();
+                    grp1.Items.Add(new IconMenuViewItem("NBMain", "笔记本", "NBMain"));
+                    grp1.Items.Add(new IconMenuViewItem("BooksMain", "书", "BooksMain"));
+                    grp1.Items.Add(new IconMenuViewItem("BooksLogCheckMain", "图书借阅", "BooksLogCheckMain"));
+                    IconMenuView1.ShowDialogMenu(grp1);
+                    break;
+                case "NBMain":
+                    COMSSmobilerDemo.FixedAssets.NootBooks.frmNBMain frmNBMain = new COMSSmobilerDemo.FixedAssets.NootBooks.frmNBMain();
+                    this.Redirect(frmNBMain);
+                    break;
+                case "BooksMain":
+                    COMSSmobilerDemo.FixedAssets.Books.frmBooksMain frmBooksMain = new COMSSmobilerDemo.FixedAssets.Books.frmBooksMain();
+                    this.Redirect(frmBooksMain);
+                    break;
+                case "BooksLogCheckMain":
+                    COMSSmobilerDemo.FixedAssets.Books.frmBookLogCheckMain frmBookLogCheckMain = new COMSSmobilerDemo.FixedAssets.Books.frmBookLogCheckMain();
+                    this.Redirect(frmBookLogCheckMain);
+                    break;
             }
         }
 
+        /// <summary>
+        /// 初始化事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmMune_Load(object sender, EventArgs e)
         {
+            ScreenGestures();
             Bind();
         }
 
@@ -193,6 +227,27 @@ namespace COMSSmobilerDemo
         {
             LeftLayoutExtension.upleftLayoutbtncolorExt(this);
             Gps1.GetGps();
+        }
+
+        //手势创建
+        private void ScreenGestures()
+        {
+            if (string.IsNullOrWhiteSpace(this.Client.Pattern.Password )== true)
+            {
+                //当设备手势密码为空时，进行手势创建
+                this.Client.Pattern.Create((object s1, Smobiler.Core.API.PatternCreatedEventArgs args) =>
+                {
+                    if (args.IsError == true)
+                    {
+                        MessageBox.Show(args.ErrorInfo);
+                    }
+                    else
+                    {
+                        //赋值手势密码
+                        this.Client.Pattern.Password = args.Password;
+                    }
+                });
+            }
         }
     }
 }

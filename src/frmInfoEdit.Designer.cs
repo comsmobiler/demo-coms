@@ -377,6 +377,7 @@ namespace COMSSmobilerDemo
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmInfoEdit_ToolbarItemClick);
             this.TitleImageClick += new System.EventHandler(this.frmInfoEdit_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmInfoEdit";
 
         }
         internal Smobiler.Core.Controls.Label Label1;

@@ -130,6 +130,7 @@ namespace COMSSmobilerDemo
             this.Load += new System.EventHandler(this.frmMessage_Load);
             this.TitleImageClick += new System.EventHandler(this.frmMessage_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmMessage";
 
         }
         internal Smobiler.Core.Controls.TextBox txtSearchinfo;

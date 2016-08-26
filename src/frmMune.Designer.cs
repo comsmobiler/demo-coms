@@ -44,6 +44,8 @@ namespace COMSSmobilerDemo
             Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem4 = new Smobiler.Core.Controls.IconMenuViewItem();
             Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem5 = new Smobiler.Core.Controls.IconMenuViewItem();
             Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem6 = new Smobiler.Core.Controls.IconMenuViewItem();
+            Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem7 = new Smobiler.Core.Controls.IconMenuViewItem();
+            Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem8 = new Smobiler.Core.Controls.IconMenuViewItem();
             Smobiler.Core.Controls.SliderViewItem sliderViewItem1 = new Smobiler.Core.Controls.SliderViewItem();
             Smobiler.Core.Controls.SliderViewItem sliderViewItem2 = new Smobiler.Core.Controls.SliderViewItem();
             Smobiler.Core.Controls.SliderViewItem sliderViewItem3 = new Smobiler.Core.Controls.SliderViewItem();
@@ -76,13 +78,21 @@ namespace COMSSmobilerDemo
             iconMenuViewItem6.Icon = "MenuOperational";
             iconMenuViewItem6.ID = "MenuOperational";
             iconMenuViewItem6.Text = "运维";
+            iconMenuViewItem7.Icon = "MenuRItems";
+            iconMenuViewItem7.ID = "MenuRItems";
+            iconMenuViewItem7.Text = "物品领用";
+            iconMenuViewItem8.Icon = "MenuFixedAssets";
+            iconMenuViewItem8.ID = "MenuFixedAssets";
+            iconMenuViewItem8.Text = "固定资产";
             iconMenuViewGroup1.Items.AddRange(new Smobiler.Core.Controls.IconMenuViewItem[] {
             iconMenuViewItem1,
             iconMenuViewItem2,
             iconMenuViewItem3,
             iconMenuViewItem4,
             iconMenuViewItem5,
-            iconMenuViewItem6});
+            iconMenuViewItem6,
+            iconMenuViewItem7,
+            iconMenuViewItem8});
             this.IconMenuView1.Groups.AddRange(new Smobiler.Core.Controls.IconMenuViewGroup[] {
             iconMenuViewGroup1});
             this.IconMenuView1.Location = new Smobiler.Core.PointS(0F, 50F);
@@ -136,6 +146,7 @@ namespace COMSSmobilerDemo
             this.Load += new System.EventHandler(this.frmMune_Load);
             this.TitleImageClick += new System.EventHandler(this.frmMune_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmMune";
 
         }
         internal Smobiler.Core.Controls.IconMenuView IconMenuView1;

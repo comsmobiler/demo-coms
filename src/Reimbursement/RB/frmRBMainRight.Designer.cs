@@ -43,7 +43,6 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.GridView1 = new Smobiler.Core.Controls.GridView();
             this.btnALLRB1 = new Smobiler.Core.Controls.Button();
             this.btntotalAmount = new Smobiler.Core.Controls.Button();
-            this.PieChart1 = new Smobiler.Core.Controls.PieChart();
             // 
             // btnALLRB
             // 
@@ -54,7 +53,6 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnALLRB.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.btnALLRB.HoverBackColor = System.Drawing.Color.LightCyan;
             this.btnALLRB.HoverForeColor = System.Drawing.Color.White;
-            this.btnALLRB.Location = new Smobiler.Core.PointS(0F, 124F);
             this.btnALLRB.Name = "btnALLRB";
             this.btnALLRB.Padding = new Smobiler.Core.Padding(4F, 0F, 0F, 0F);
             this.btnALLRB.Size = new System.Drawing.SizeF(30F, 14F);
@@ -73,7 +71,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.btntotalAmount1.HoverBackColor = System.Drawing.Color.White;
             this.btntotalAmount1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btntotalAmount1.Location = new Smobiler.Core.PointS(80F, 124F);
+            this.btntotalAmount1.Location = new Smobiler.Core.PointS(80F, 0F);
             this.btntotalAmount1.Name = "btntotalAmount1";
             this.btntotalAmount1.Size = new System.Drawing.SizeF(40F, 14F);
             this.btntotalAmount1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
@@ -85,7 +83,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // GridView1
             // 
             this.GridView1.Layout = "frmRBRightLayout";
-            this.GridView1.Location = new Smobiler.Core.PointS(0F, 138F);
+            this.GridView1.Location = new Smobiler.Core.PointS(0F, 14F);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
             this.GridView1.Size = new System.Drawing.SizeF(120F, 111F);
@@ -102,7 +100,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnALLRB1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.btnALLRB1.HoverBackColor = System.Drawing.Color.White;
             this.btnALLRB1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btnALLRB1.Location = new Smobiler.Core.PointS(30F, 124F);
+            this.btnALLRB1.Location = new Smobiler.Core.PointS(30F, 0F);
             this.btnALLRB1.Name = "btnALLRB1";
             this.btnALLRB1.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
             this.btnALLRB1.Size = new System.Drawing.SizeF(30F, 14F);
@@ -121,7 +119,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.btntotalAmount.HoverBackColor = System.Drawing.Color.White;
             this.btntotalAmount.HoverForeColor = System.Drawing.Color.White;
-            this.btntotalAmount.Location = new Smobiler.Core.PointS(60F, 124F);
+            this.btntotalAmount.Location = new Smobiler.Core.PointS(60F, 0F);
             this.btntotalAmount.Name = "btntotalAmount";
             this.btntotalAmount.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
             this.btntotalAmount.Size = new System.Drawing.SizeF(20F, 14F);
@@ -131,20 +129,9 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount.ZIndex = 4;
             this.btntotalAmount.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnALLRB_Click);
             // 
-            // PieChart1
-            // 
-            this.PieChart1.Location = new Smobiler.Core.PointS(10F, 0F);
-            this.PieChart1.Name = "PieChart1";
-            this.PieChart1.Size = new System.Drawing.SizeF(100F, 110F);
-            this.PieChart1.TabIndex = 10;
-            this.PieChart1.XAxisLabelMember = "XMember";
-            this.PieChart1.YAxisValueMember = "YMember";
-            this.PieChart1.ZIndex = 1;
-            // 
             // frmRBMainRight
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.PieChart1,
             this.btnALLRB,
             this.btnALLRB1,
             this.btntotalAmount,
@@ -158,6 +145,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Load += new System.EventHandler(this.frmRBMainRightLayout_Load);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmRBMainRight";
 
         }
         internal Smobiler.Core.Controls.Button btnALLRB;
@@ -165,7 +153,6 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         internal Smobiler.Core.Controls.GridView GridView1;
         internal Smobiler.Core.Controls.Button btnALLRB1;
         internal Smobiler.Core.Controls.Button btntotalAmount;
-        internal Smobiler.Core.Controls.PieChart PieChart1;
         #endregion
 
     }

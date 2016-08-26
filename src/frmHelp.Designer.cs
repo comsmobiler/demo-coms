@@ -58,6 +58,7 @@ namespace COMSSmobilerDemo
             this.LeftLayoutItemClick += new Smobiler.Core.MobileFormLayoutItemClickEventHandler(this.frmHelp_LeftLayoutItemClick);
             this.Load += new System.EventHandler(this.frmHelp_Load);
             this.TitleImageClick += new System.EventHandler(this.frmHelp_TitleImageClick);
+            this.Name = "frmHelp";
 
         }
         internal Smobiler.Core.Controls.WebView WebView1;

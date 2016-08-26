@@ -28,25 +28,25 @@ namespace COMSSmobilerDemo.common
             switch (pageIndex) 
             {
                 case 0:
-                    table.Rows.Add("请假一","L001",2,"请假","A在2016年3月27号申请请假");
-                    table.Rows.Add("请假二", "L002", 2, "请假", "A在2016年3月28号申请请假");
-                    table.Rows.Add("工单一", "WD001", 1, "工作单", "B在2016年3月27号送审工作单");
-                    table.Rows.Add("工单二", "WD002", 1, "工作单", "C在2016年3月28号送审工作单");
-                    table.Rows.Add("工单三", "WD003", 1, "工作单", "B在2016年3月28号送审工作单");
+                    table.Rows.Add("请假一","L001",2,"qingjia","A在2016年3月27号申请请假");
+                    table.Rows.Add("请假二", "L002", 2, "qingjia", "A在2016年3月28号申请请假");
+                    table.Rows.Add("工单一", "WD001", 1, "gongdan", "B在2016年3月27号送审工作单");
+                    table.Rows.Add("工单二", "WD002", 1, "gongdan", "C在2016年3月28号送审工作单");
+                    table.Rows.Add("工单三", "WD003", 1, "gongdan", "B在2016年3月28号送审工作单");
                     break;
                 case 1:
-                    table.Rows.Add("请假三", "L003", 2, "请假", "A创建在2016年3月29号申请请假");
-                    table.Rows.Add("工单四", "WD004", 1, "工作单", "B在2016年3月27号送审工作单");
-                    table.Rows.Add("工单五", "WD005", 1, "工作单", "C在2016年3月28号送审工作单");
-                    table.Rows.Add("工单六", "WD006", 1, "工作单", "B在2016年3月28号送审工作单");
-                    table.Rows.Add("工单七", "WD007", 1, "工作单", "B在2016年3月28号送审工作单");
+                    table.Rows.Add("请假三", "L003", 2, "qingjia", "A创建在2016年3月29号申请请假");
+                    table.Rows.Add("工单四", "WD004", 1, "gongdan", "B在2016年3月27号送审工作单");
+                    table.Rows.Add("工单五", "WD005", 1, "gongdan", "C在2016年3月28号送审工作单");
+                    table.Rows.Add("工单六", "WD006", 1, "gongdan", "B在2016年3月28号送审工作单");
+                    table.Rows.Add("工单七", "WD007", 1, "gongdan", "B在2016年3月28号送审工作单");
                     break;
                 case 2:
-                     table.Rows.Add("请假四", "L004", 2, "请假", "A创建在2016年3月30号申请请假");
-                    table.Rows.Add("请假五", "L005", 2, "请假", "A创建在2016年3月31号申请请假");
-                     table.Rows.Add("工单八", "WD008", 1, "工作单", "B在2016年3月27号送审工作单");
-                    table.Rows.Add("工单九", "WD009", 1, "工作单", "C在2016年3月28号送审工作单");
-                    table.Rows.Add("工单十", "WD0010", 1, "工作单", "B在2016年3月28号送审工作单");
+                    table.Rows.Add("请假四", "L004", 2, "qingjia", "A创建在2016年3月30号申请请假");
+                    table.Rows.Add("请假五", "L005", 2, "qingjia", "A创建在2016年3月31号申请请假");
+                    table.Rows.Add("工单八", "WD008", 1, "gongdan", "B在2016年3月27号送审工作单");
+                    table.Rows.Add("工单九", "WD009", 1, "gongdan", "C在2016年3月28号送审工作单");
+                    table.Rows.Add("工单十", "WD0010", 1, "gongdan", "B在2016年3月28号送审工作单");
                     break;
                 
             }
