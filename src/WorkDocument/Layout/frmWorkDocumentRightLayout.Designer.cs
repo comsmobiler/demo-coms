@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -46,9 +46,9 @@ namespace COMSSmobilerDemo.WorkDocument.Layout
             // 
             this.ImageButton1.DataMember = "STATENAME";
             this.ImageButton1.DisplayMember = "STATENAME";
-            this.ImageButton1.FontSize = 4F;
+            this.ImageButton1.FontSize = 8;
             this.ImageButton1.Name = "ImageButton1";
-            this.ImageButton1.Size = new System.Drawing.SizeF(12F, 14F);
+            this.ImageButton1.Size = new System.Drawing.Size(24,28);
             this.ImageButton1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.ImageButton1.TabIndex = 2;
             this.ImageButton1.ZIndex = 1;
@@ -62,10 +62,10 @@ namespace COMSSmobilerDemo.WorkDocument.Layout
             this.STATE.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.STATE.HoverBackColor = System.Drawing.Color.LightCyan;
             this.STATE.HoverForeColor = System.Drawing.Color.White;
-            this.STATE.Location = new Smobiler.Core.PointS(12F, 0F);
+            this.STATE.Location = new System.Drawing.Point(24,0);
             this.STATE.Name = "STATE";
             this.STATE.Padding = new Smobiler.Core.Padding(3F, 0F, 2F, 0F);
-            this.STATE.Size = new System.Drawing.SizeF(68F, 14F);
+            this.STATE.Size = new System.Drawing.Size(136,28);
             this.STATE.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.STATE.TabIndex = 3;
             this.STATE.ZIndex = 2;
@@ -79,9 +79,9 @@ namespace COMSSmobilerDemo.WorkDocument.Layout
             this.MENDAYV.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.MENDAYV.HoverBackColor = System.Drawing.Color.LightCyan;
             this.MENDAYV.HoverForeColor = System.Drawing.Color.White;
-            this.MENDAYV.Location = new Smobiler.Core.PointS(80F, 0F);
+            this.MENDAYV.Location = new System.Drawing.Point(160,0);
             this.MENDAYV.Name = "MENDAYV";
-            this.MENDAYV.Size = new System.Drawing.SizeF(40F, 14F);
+            this.MENDAYV.Size = new System.Drawing.Size(80,28);
             this.MENDAYV.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.MENDAYV.TabIndex = 4;
             this.MENDAYV.ZIndex = 3;
@@ -89,9 +89,9 @@ namespace COMSSmobilerDemo.WorkDocument.Layout
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new Smobiler.Core.PointS(0F, 14F);
+            this.Line1.Location = new System.Drawing.Point(0,28);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.Size = new System.Drawing.Size(240,2);
             this.Line1.TabIndex = 6;
             this.Line1.ZIndex = 4;
             // 
@@ -103,7 +103,7 @@ namespace COMSSmobilerDemo.WorkDocument.Layout
             this.STATE,
             this.MENDAYV,
             this.Line1});
-            this.Size = new System.Drawing.Size(120, 14);
+            this.Size = new System.Drawing.Size(240,28);
 
         }
         internal Smobiler.Core.Controls.ImageButton ImageButton1;

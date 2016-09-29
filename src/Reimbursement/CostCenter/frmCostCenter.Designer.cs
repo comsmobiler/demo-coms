@@ -1,4 +1,4 @@
-Ôªøusing Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -50,7 +50,7 @@ public partial class frmCostCenter : Smobiler.Core.MobileForm
             this.GridView1.Name = "GridView1";
             this.GridView1.PageSize = 10;
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 200F);
+            this.GridView1.Size = new System.Drawing.Size(240,400);
             this.GridView1.TabIndex = 2;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             // 
@@ -58,7 +58,7 @@ public partial class frmCostCenter : Smobiler.Core.MobileForm
             // 
             this.tExit.IconID = "Exit";
             this.tExit.Name = "tExit";
-            this.tExit.Text = "ËøîÂõû";
+            this.tExit.Text = "∑µªÿ";
             this.tExit.Visible = false;
             // 
             // tSearch
@@ -66,7 +66,7 @@ public partial class frmCostCenter : Smobiler.Core.MobileForm
             this.tSearch.IconID = "!\\ue88b043146223";
             this.tSearch.Name = "tSearch";
             this.tSearch.SelectIconID = "!\\ue88b255255255";
-            this.tSearch.Text = "Á≠õÈÄâ";
+            this.tSearch.Text = "…∏—°";
             this.tSearch.Visible = false;
             // 
             // PopList1
@@ -82,7 +82,7 @@ public partial class frmCostCenter : Smobiler.Core.MobileForm
             this.GridView1});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
-            this.TitleText = "ÊàêÊú¨‰∏≠ÂøÉÈÄâÊã©";
+            this.TitleText = "≥…±æ÷––ƒ—°‘Ò";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.tExit,
             this.tSearch});

@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -48,10 +48,10 @@ namespace COMSSmobilerDemo.Leave.Layout
             this.lblUSER_ID.DataMember = "USER_ID";
             this.lblUSER_ID.DisplayMember = "USER_ID";
             this.lblUSER_ID.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(45)), Convert.ToInt32(Convert.ToByte(45)), Convert.ToInt32(Convert.ToByte(45)));
-            this.lblUSER_ID.Location = new Smobiler.Core.PointS(22f, 0f);
+            this.lblUSER_ID.Location = new System.Drawing.Point(44,0);
             this.lblUSER_ID.Name = "lblUSER_ID";
             this.lblUSER_ID.Padding = new Smobiler.Core.Padding(2f, 0f, 0f, 0f);
-            this.lblUSER_ID.Size = new System.Drawing.SizeF(85f, 12f);
+            this.lblUSER_ID.Size = new System.Drawing.Size(170,24);
             this.lblUSER_ID.TabIndex = 3;
             this.lblUSER_ID.VerticalAlignment = Smobiler.Core.VerticalAlignment.Bottom;
             this.lblUSER_ID.ZIndex = 2;
@@ -63,9 +63,9 @@ namespace COMSSmobilerDemo.Leave.Layout
             this.Image1.BorderRadius = 10;
             this.Image1.DataMember = "USER_ID";
             this.Image1.DisplayMember = "USER_ID";
-            this.Image1.Location = new Smobiler.Core.PointS(2f, 1f);
+            this.Image1.Location = new System.Drawing.Point(4,2);
             this.Image1.Name = "Image1";
-            this.Image1.Size = new System.Drawing.SizeF(17.5f, 18f);
+            this.Image1.Size = new System.Drawing.Size(35,36);
             this.Image1.TabIndex = 5;
             this.Image1.ZIndex = 1;
             //
@@ -79,9 +79,9 @@ namespace COMSSmobilerDemo.Leave.Layout
             this.checkUser.CheckedBackColor = System.Drawing.Color.White;
             this.checkUser.CheckedColor = System.Drawing.Color.DeepSkyBlue;
             this.checkUser.ForeColor = System.Drawing.Color.White;
-            this.checkUser.Location = new Smobiler.Core.PointS(108f, 5f);
+            this.checkUser.Location = new System.Drawing.Point(216,10);
             this.checkUser.Name = "checkUser";
-            this.checkUser.Size = new System.Drawing.SizeF(10f, 10f);
+            this.checkUser.Size = new System.Drawing.Size(20,20);
             this.checkUser.TabIndex = 6;
             this.checkUser.UnCheckedBackColor = System.Drawing.Color.White;
             this.checkUser.ZIndex = 4;
@@ -90,21 +90,21 @@ namespace COMSSmobilerDemo.Leave.Layout
             //
             this.lblUSER_NAME.DataMember = "USER_NAME";
             this.lblUSER_NAME.DisplayMember = "USER_NAME";
-            this.lblUSER_NAME.FontSize = 5f;
+            this.lblUSER_NAME.FontSize = 10;
             this.lblUSER_NAME.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(145)), Convert.ToInt32(Convert.ToByte(145)), Convert.ToInt32(Convert.ToByte(145)));
-            this.lblUSER_NAME.Location = new Smobiler.Core.PointS(22f, 12f);
+            this.lblUSER_NAME.Location = new System.Drawing.Point(44,24);
             this.lblUSER_NAME.Name = "lblUSER_NAME";
             this.lblUSER_NAME.Padding = new Smobiler.Core.Padding(2f, 0f, 0f, 0f);
-            this.lblUSER_NAME.Size = new System.Drawing.SizeF(85f, 8f);
+            this.lblUSER_NAME.Size = new System.Drawing.Size(170,16);
             this.lblUSER_NAME.TabIndex = 7;
             this.lblUSER_NAME.ZIndex = 3;
             //
             //Line1
             //
             this.Line1.BackColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)));
-            this.Line1.Location = new Smobiler.Core.PointS(0f, 20f);
+            this.Line1.Location = new System.Drawing.Point(0,40);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120f, 1f);
+            this.Line1.Size = new System.Drawing.Size(240,2);
             this.Line1.TabIndex = 8;
             this.Line1.ZIndex = 5;
             //
@@ -118,7 +118,7 @@ namespace COMSSmobilerDemo.Leave.Layout
 		this.checkUser,
 		this.Line1
 	});
-            this.Size = new System.Drawing.Size(120, 20);
+            this.Size = new System.Drawing.Size(240,40);
 
         }
         internal Smobiler.Core.Controls.Label lblUSER_ID;

@@ -58,7 +58,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label1.Size = new System.Drawing.Size(70,28);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "图书名称";
             this.Label1.ZIndex = 1;
@@ -69,10 +69,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.lblBOOKNAME.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblBOOKNAME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblBOOKNAME.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblBOOKNAME.Location = new Smobiler.Core.PointS(35F, 0F);
+            this.lblBOOKNAME.Location = new System.Drawing.Point(70,0);
             this.lblBOOKNAME.Name = "lblBOOKNAME";
             this.lblBOOKNAME.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblBOOKNAME.Size = new System.Drawing.SizeF(85F, 14F);
+            this.lblBOOKNAME.Size = new System.Drawing.Size(170,28);
             this.lblBOOKNAME.TabIndex = 3;
             this.lblBOOKNAME.ZIndex = 2;
             // 
@@ -81,10 +81,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label2.Location = new Smobiler.Core.PointS(0F, 17F);
+            this.Label2.Location = new System.Drawing.Point(0,34);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label2.Size = new System.Drawing.Size(70,28);
             this.Label2.TabIndex = 4;
             this.Label2.Text = "库存数量";
             this.Label2.ZIndex = 1;
@@ -95,10 +95,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.lblBOOKQUANTITY.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblBOOKQUANTITY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblBOOKQUANTITY.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblBOOKQUANTITY.Location = new Smobiler.Core.PointS(35F, 17F);
+            this.lblBOOKQUANTITY.Location = new System.Drawing.Point(70,34);
             this.lblBOOKQUANTITY.Name = "lblBOOKQUANTITY";
             this.lblBOOKQUANTITY.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblBOOKQUANTITY.Size = new System.Drawing.SizeF(85F, 14F);
+            this.lblBOOKQUANTITY.Size = new System.Drawing.Size(170,28);
             this.lblBOOKQUANTITY.TabIndex = 5;
             this.lblBOOKQUANTITY.ZIndex = 2;
             // 
@@ -107,10 +107,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label4.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label4.Location = new Smobiler.Core.PointS(0F, 31F);
+            this.Label4.Location = new System.Drawing.Point(0,62);
             this.Label4.Name = "Label4";
             this.Label4.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label4.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label4.Size = new System.Drawing.Size(70,28);
             this.Label4.TabIndex = 6;
             this.Label4.Text = "单价";
             this.Label4.ZIndex = 1;
@@ -121,10 +121,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.lblBOOKUNITPRICE.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblBOOKUNITPRICE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblBOOKUNITPRICE.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblBOOKUNITPRICE.Location = new Smobiler.Core.PointS(35F, 31F);
+            this.lblBOOKUNITPRICE.Location = new System.Drawing.Point(70,62);
             this.lblBOOKUNITPRICE.Name = "lblBOOKUNITPRICE";
             this.lblBOOKUNITPRICE.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblBOOKUNITPRICE.Size = new System.Drawing.SizeF(85F, 14F);
+            this.lblBOOKUNITPRICE.Size = new System.Drawing.Size(170,28);
             this.lblBOOKUNITPRICE.TabIndex = 7;
             this.lblBOOKUNITPRICE.ZIndex = 2;
             // 
@@ -133,10 +133,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label6.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label6.Location = new Smobiler.Core.PointS(0F, 45F);
+            this.Label6.Location = new System.Drawing.Point(0,90);
             this.Label6.Name = "Label6";
             this.Label6.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label6.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label6.Size = new System.Drawing.Size(70,28);
             this.Label6.TabIndex = 8;
             this.Label6.Text = "借出数量";
             this.Label6.ZIndex = 1;
@@ -147,10 +147,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.lblBOOKLOADSTOCK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblBOOKLOADSTOCK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblBOOKLOADSTOCK.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblBOOKLOADSTOCK.Location = new Smobiler.Core.PointS(35F, 45F);
+            this.lblBOOKLOADSTOCK.Location = new System.Drawing.Point(70,90);
             this.lblBOOKLOADSTOCK.Name = "lblBOOKLOADSTOCK";
             this.lblBOOKLOADSTOCK.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblBOOKLOADSTOCK.Size = new System.Drawing.SizeF(85F, 14F);
+            this.lblBOOKLOADSTOCK.Size = new System.Drawing.Size(170,28);
             this.lblBOOKLOADSTOCK.TabIndex = 9;
             this.lblBOOKLOADSTOCK.ZIndex = 2;
             // 
@@ -159,10 +159,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label8.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label8.Location = new Smobiler.Core.PointS(0F, 59F);
+            this.Label8.Location = new System.Drawing.Point(0,118);
             this.Label8.Name = "Label8";
             this.Label8.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label8.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label8.Size = new System.Drawing.Size(70,28);
             this.Label8.TabIndex = 10;
             this.Label8.Text = "遗失数量";
             this.Label8.ZIndex = 1;
@@ -173,10 +173,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.lblBOOKLOSEQTY.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblBOOKLOSEQTY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblBOOKLOSEQTY.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblBOOKLOSEQTY.Location = new Smobiler.Core.PointS(35F, 59F);
+            this.lblBOOKLOSEQTY.Location = new System.Drawing.Point(70,118);
             this.lblBOOKLOSEQTY.Name = "lblBOOKLOSEQTY";
             this.lblBOOKLOSEQTY.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblBOOKLOSEQTY.Size = new System.Drawing.SizeF(85F, 14F);
+            this.lblBOOKLOSEQTY.Size = new System.Drawing.Size(170,28);
             this.lblBOOKLOSEQTY.TabIndex = 11;
             this.lblBOOKLOSEQTY.ZIndex = 2;
             // 
@@ -185,10 +185,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label10.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label10.Location = new Smobiler.Core.PointS(0F, 92F);
+            this.Label10.Location = new System.Drawing.Point(0,184);
             this.Label10.Name = "Label10";
             this.Label10.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label10.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label10.Size = new System.Drawing.Size(70,28);
             this.Label10.TabIndex = 12;
             this.Label10.Text = "购买时间";
             this.Label10.ZIndex = 16;
@@ -198,10 +198,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label11.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label11.Location = new Smobiler.Core.PointS(0F, 73F);
+            this.Label11.Location = new System.Drawing.Point(0,146);
             this.Label11.Name = "Label11";
             this.Label11.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label11.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label11.Size = new System.Drawing.Size(70,28);
             this.Label11.TabIndex = 13;
             this.Label11.Text = "总金额";
             this.Label11.ZIndex = 1;
@@ -212,10 +212,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.lblAmount.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblAmount.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblAmount.Location = new Smobiler.Core.PointS(35F, 73F);
+            this.lblAmount.Location = new System.Drawing.Point(70,146);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblAmount.Size = new System.Drawing.SizeF(85F, 14F);
+            this.lblAmount.Size = new System.Drawing.Size(170,28);
             this.lblAmount.TabIndex = 14;
             this.lblAmount.ZIndex = 2;
             // 
@@ -225,10 +225,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.lblBOOKPUBLIDATE.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblBOOKPUBLIDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblBOOKPUBLIDATE.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblBOOKPUBLIDATE.Location = new Smobiler.Core.PointS(35F, 92F);
+            this.lblBOOKPUBLIDATE.Location = new System.Drawing.Point(70,184);
             this.lblBOOKPUBLIDATE.Name = "lblBOOKPUBLIDATE";
             this.lblBOOKPUBLIDATE.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblBOOKPUBLIDATE.Size = new System.Drawing.SizeF(85F, 14F);
+            this.lblBOOKPUBLIDATE.Size = new System.Drawing.Size(170,28);
             this.lblBOOKPUBLIDATE.TabIndex = 15;
             this.lblBOOKPUBLIDATE.ZIndex = 2;
             // 
@@ -238,10 +238,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.lblBOOKBORROWQTY.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblBOOKBORROWQTY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblBOOKBORROWQTY.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblBOOKBORROWQTY.Location = new Smobiler.Core.PointS(35F, 106F);
+            this.lblBOOKBORROWQTY.Location = new System.Drawing.Point(70,212);
             this.lblBOOKBORROWQTY.Name = "lblBOOKBORROWQTY";
             this.lblBOOKBORROWQTY.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblBOOKBORROWQTY.Size = new System.Drawing.SizeF(85F, 14F);
+            this.lblBOOKBORROWQTY.Size = new System.Drawing.Size(170,28);
             this.lblBOOKBORROWQTY.TabIndex = 16;
             this.lblBOOKBORROWQTY.ZIndex = 2;
             // 
@@ -250,10 +250,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label15.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label15.Location = new Smobiler.Core.PointS(0F, 106F);
+            this.Label15.Location = new System.Drawing.Point(0,212);
             this.Label15.Name = "Label15";
             this.Label15.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label15.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label15.Size = new System.Drawing.Size(70,28);
             this.Label15.TabIndex = 17;
             this.Label15.Text = "借阅数";
             this.Label15.ZIndex = 1;
@@ -263,10 +263,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label16.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label16.Location = new Smobiler.Core.PointS(0F, 120F);
+            this.Label16.Location = new System.Drawing.Point(0,240);
             this.Label16.Name = "Label16";
             this.Label16.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label16.Size = new System.Drawing.SizeF(120F, 14F);
+            this.Label16.Size = new System.Drawing.Size(240,28);
             this.Label16.TabIndex = 18;
             this.Label16.Text = "图片";
             this.Label16.ZIndex = 20;
@@ -276,11 +276,11 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.GridView1.AllowSlip = true;
             this.GridView1.AutoHeight = false;
             this.GridView1.Layout = "frmBookSNLayout";
-            this.GridView1.Location = new Smobiler.Core.PointS(0F, 134F);
+            this.GridView1.Location = new System.Drawing.Point(0,268);
             this.GridView1.Name = "GridView1";
             this.GridView1.PageSize = 5;
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 114F);
+            this.GridView1.Size = new System.Drawing.Size(240,228);
             this.GridView1.TabIndex = 19;
             // 
             // Edit
@@ -322,7 +322,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label10,
             this.Label16,
             this.GridView1});
-            this.Size = new System.Drawing.Size(120, 250);
+            this.Size = new System.Drawing.Size(240,500);
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
             this.TitleText = "图书详情";

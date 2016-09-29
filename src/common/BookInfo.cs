@@ -30,17 +30,17 @@ namespace COMSSmobilerDemo.common
             switch (pageIndex)
             {
                 case 0:
-                    table.Rows.Add("B001", "B001", "ASP.NET基础", 50, 2, "好", "!\\ue545255000000", DateTime.Now);
-                    table.Rows.Add("B002", "B002", ".NET高级编程", 40, 2, "较好", "!\\ue545255128064", DateTime.Now);
-                    table.Rows.Add("B003", "B003", "设计模式", 30, 2, "一般", "!\\ue545255255128", DateTime.Now);
+                    table.Rows.Add("Book1", "B001", "ASP.NET基础", 50, 2, "好", "!\\ue545255000000", DateTime.Now);
+                    table.Rows.Add("Book2", "B002", ".NET高级编程", 40, 2, "较好", "!\\ue545255128064", DateTime.Now);
+                    table.Rows.Add("Book3", "B003", "设计模式", 30, 2, "一般", "!\\ue545255255128", DateTime.Now);
                     break;
                 case 1:
-                    table.Rows.Add("B002", "B005", "ASP.NET基础2", 50, 2, "好", "!\\ue545255000000", DateTime.Now);
-                    table.Rows.Add("B001", "B006", ".NET高级编程2", 40, 2, "较好", "!\\ue545255128064", DateTime.Now);
-                    table.Rows.Add("B003", "B007", "设计模式2", 30, 2, "较差", "!\\ue545000128064", DateTime.Now);
+                    table.Rows.Add("Book2", "B005", "ASP.NET基础2", 50, 2, "好", "!\\ue545255000000", DateTime.Now);
+                    table.Rows.Add("Book1", "B006", ".NET高级编程2", 40, 2, "较好", "!\\ue545255128064", DateTime.Now);
+                    table.Rows.Add("Book3", "B007", "设计模式2", 30, 2, "较差", "!\\ue545000128064", DateTime.Now);
                     break;
                 case 2:
-                    table.Rows.Add("B002", "B008", "设计模式3", 30, 2, "一般", "!\\ue545255255128", DateTime.Now);
+                    table.Rows.Add("Book2", "B008", "设计模式3", 30, 2, "一般", "!\\ue545255255128", DateTime.Now);
                     break;
 
             }

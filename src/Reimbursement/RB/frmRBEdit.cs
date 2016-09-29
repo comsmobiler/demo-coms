@@ -199,6 +199,9 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         /// </summary>
         private void getcheckall()
         {
+          
+           // bool a =(bool) this.GridView1.get_Cell(0).Items["Check"].DefaultValue;
+           
             switch ((bool)FooterBarLayoutData.Items["Checkall"].DefaultValue)
             {
                 case true:
@@ -213,9 +216,11 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                     FooterBarLayoutData.Items["lblCheckall"].DefaultValue = "全选";
                     foreach (GridViewRow rows in GridView1.Rows)
                     {
+                    
                         rows.Cell.Items["Check"].DefaultValue = false;
                     }
-
+                   
+                   
                     break;
             }
             getAmount();

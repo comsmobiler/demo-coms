@@ -30,8 +30,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
                     lblBOOKBORROWQTY.Text ="0´Î";
                     lblAmount.Text = "100.00Ôª";
                 //Í¼ÊéÍ¼Æ¬
-                    imglist.Add("B001");
-                    imglist.Add("B002");
+                    imglist.Add("Book1");
+                    imglist.Add("Book2");
                 if (imglist.Count > 0)
                 {
                     CreateImg();
@@ -41,25 +41,25 @@ namespace COMSSmobilerDemo.FixedAssets.Books
                         case 2:
                         case 3:
                         case 4:
-                            GridView1.Top = 134 + 30 + 5;
+                            GridView1.Top = 268 + 60 +10;
                             Height =Convert .ToInt32 ( GridView1.Top) + Height;
                             break;
                         case 5:
                         case 6:
                         case 7:
                         case 8:
-                            GridView1.Top = 134 + (30 * 2) + 5;
+                            GridView1.Top = 268 + (60 * 2) + 10;
                             Height = Convert .ToInt32 (GridView1.Top) + Height;
                             break;
                         case 9:
-                            GridView1.Top = 134 + (30 * 3) + 5;
+                            GridView1.Top = 268 + (60 * 3) + 10;
                             Height = Convert.ToInt32(GridView1.Top) + Height;
                             break;
                     }
                 }
                 else
                 {
-                    GridView1.Top = 134;
+                    GridView1.Top = 268;
                 }
                 COMSSmobilerDemo.common.BookSNInfo BookSNInfo = new COMSSmobilerDemo.common.BookSNInfo();
                 DataTable table = BookSNInfo.GetBookSNbyBookID();
@@ -71,26 +71,26 @@ namespace COMSSmobilerDemo.FixedAssets.Books
                 throw ex;
             }
         }
-        private float  upleft = 0;
-        private int uptop = 134;
+        private int  upleft = 0;
+        private int uptop = 268;
         private void CreateImg()
         {
             for (int i = 1; i <= imglist.Count; i++)
             {
-                if ((upleft + 30) > 120)
+                if ((upleft + 60) > 240)
                 {
                     upleft = 0;
                     if (uptop > Height)
                     {
-                        Height = Height + 30;
+                        Height = Height + 60;
                     }
-                    uptop = uptop + 30;
+                    uptop = uptop + 60;
                 }
                 Image Image1 = new Image();
                 Image1.Left = upleft;
                 Image1.Top = uptop;
-                Image1.Width = 30;
-                Image1.Height = 30;
+                Image1.Width = 60;
+                Image1.Height = 60;
                 upleft = upleft + Image1.Width;
                 Image1.ResourceID = imglist[i - 1];
                 Image1.Name = "imgBook" + i.ToString();

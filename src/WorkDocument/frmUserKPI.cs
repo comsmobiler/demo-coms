@@ -91,7 +91,7 @@ namespace COMSSmobilerDemo.WorkDocument
                         TableViewLabelColumn2.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
                         TableViewLabelColumn2.Text = "工单业务人天";
                         TableViewLabelColumn2.VerticalAlignment = Smobiler.Core.VerticalAlignment.Center;
-                        TableViewLabelColumn2.Width = 30f;
+                        TableViewLabelColumn2.Width = 60;
                         TableViewLabelColumn2.DataMember = "WDOC_MENDAY";
                         TableViewLabelColumn2.DisplayMember = "WDOC_MENDAY";
                         TableViewLabelColumn2.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
@@ -102,7 +102,7 @@ namespace COMSSmobilerDemo.WorkDocument
                         TableViewLabelColumn3.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
                         TableViewLabelColumn3.Text = "目标业务人天";
                         TableViewLabelColumn3.VerticalAlignment = Smobiler.Core.VerticalAlignment.Center;
-                        TableViewLabelColumn3.Width = 30f;
+                        TableViewLabelColumn3.Width = 60;
                         TableViewLabelColumn3.DataMember = "USER_OBJMENDAY";
                         TableViewLabelColumn3.DisplayMember = "USER_OBJMENDAY";
                         TableViewLabelColumn3.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
@@ -116,7 +116,7 @@ namespace COMSSmobilerDemo.WorkDocument
                         TableViewLabelColumn4.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
                         TableViewLabelColumn4.Text = "其他业务人天";
                         TableViewLabelColumn4.VerticalAlignment = Smobiler.Core.VerticalAlignment.Center;
-                        TableViewLabelColumn4.Width = 30f;
+                        TableViewLabelColumn4.Width = 60;
                         TableViewLabelColumn4.DataMember = "WDOC_MENDAY1";
                         TableViewLabelColumn4.DisplayMember = "WDOC_MENDAY1";
                         TableViewLabelColumn4.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
@@ -128,7 +128,7 @@ namespace COMSSmobilerDemo.WorkDocument
                         TableViewLabelColumn5.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
                         TableViewLabelColumn5.Text = "目标其他人天";
                         TableViewLabelColumn5.VerticalAlignment = Smobiler.Core.VerticalAlignment.Center;
-                        TableViewLabelColumn5.Width = 30f;
+                        TableViewLabelColumn5.Width = 60;
                         TableViewLabelColumn5.DataMember = "USER_OBJMENDAY1";
                         TableViewLabelColumn5.DisplayMember = "USER_OBJMENDAY1";
                         TableViewLabelColumn5.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));

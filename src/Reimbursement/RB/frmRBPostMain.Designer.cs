@@ -1,4 +1,4 @@
-Ôªøusing Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -44,10 +44,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Layout = "frmRBlayout";
-            this.GridView1.Location = new Smobiler.Core.PointS(0F, 1F);
+            this.GridView1.Location = new System.Drawing.Point(0,2);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 199F);
+            this.GridView1.Size = new System.Drawing.Size(240,398);
             this.GridView1.TabIndex = 4;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             // 
@@ -56,7 +56,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Line6.BackColor = System.Drawing.Color.Gray;
             this.Line6.LineSize = 0.5F;
             this.Line6.Name = "Line6";
-            this.Line6.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line6.Size = new System.Drawing.Size(240,2);
             this.Line6.TabIndex = 3;
             // 
             // frmRBPostMain
@@ -65,7 +65,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.GridView1});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
-            this.TitleText = "ÈÄÅÂÆ°";
+            this.TitleText = "ÀÕ…Û";
             this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));
             this.Load += new System.EventHandler(this.frmRBPostMain_Load);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);

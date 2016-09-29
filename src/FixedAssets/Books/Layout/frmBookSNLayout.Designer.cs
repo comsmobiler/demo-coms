@@ -40,7 +40,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             this.lblSNID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.lblSNID.Name = "lblSNID";
             this.lblSNID.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblSNID.Size = new System.Drawing.SizeF(80F, 14F);
+            this.lblSNID.Size = new System.Drawing.Size(160,28);
             this.lblSNID.TabIndex = 2;
             this.lblSNID.ZIndex = 1;
             // 
@@ -50,10 +50,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             this.lblState.DisplayMember = "STATENAME";
             this.lblState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.lblState.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblState.Location = new Smobiler.Core.PointS(80F, 0F);
+            this.lblState.Location = new System.Drawing.Point(160,0);
             this.lblState.Name = "lblState";
             this.lblState.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.lblState.Size = new System.Drawing.SizeF(20F, 14F);
+            this.lblState.Size = new System.Drawing.Size(40,28);
             this.lblState.TabIndex = 3;
             this.lblState.Text = "Èë¿â";
             this.lblState.ZIndex = 2;
@@ -61,9 +61,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new Smobiler.Core.PointS(0F, 14F);
+            this.Line1.Location = new System.Drawing.Point(0,28);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.Size = new System.Drawing.Size(240,2);
             this.Line1.TabIndex = 5;
             this.Line1.ZIndex = 4;
             // 
@@ -74,7 +74,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             this.lblSNID,
             this.lblState,
             this.Line1});
-            this.Size = new System.Drawing.Size(120, 14);
+            this.Size = new System.Drawing.Size(240,28);
             this.Name = "frmBookSNLayout";
 
         }

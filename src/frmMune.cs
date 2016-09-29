@@ -243,8 +243,11 @@ namespace COMSSmobilerDemo
                     }
                     else
                     {
-                        //赋值手势密码
-                        this.Client.Pattern.Password = args.Password;
+                        if (string.IsNullOrWhiteSpace(this.Client.Pattern.Password) == false)
+                        {
+                            //赋值手势密码
+                            this.Client.Pattern.Password = args.Password;
+                        }
                     }
                 });
             }

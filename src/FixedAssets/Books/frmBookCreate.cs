@@ -81,6 +81,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books
         {
             if (imglist.Count > 0 & imglist.Count <= 9)
             {
+                ResourceUploader1.MaxSelectCount = 9 - imglist.Count;
                 for (int i = 1; i <= imglist.Count; i++)
                 {
                     switch (i)

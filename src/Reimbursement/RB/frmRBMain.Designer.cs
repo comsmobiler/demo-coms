@@ -1,4 +1,4 @@
-Ôªø
+
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
@@ -51,22 +51,22 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.SX.IconID = "!\\ue88b043146223";
             this.SX.Name = "SX";
-            this.SX.Text = "Á≠õÈÄâ";
+            this.SX.Text = "…∏—°";
             // 
             // xfadd
             // 
             this.xfadd.IconID = "!\\ue148043146223";
             this.xfadd.Name = "xfadd";
-            this.xfadd.Text = "Ê∂àË¥πËÆ∞ÂΩï";
+            this.xfadd.Text = "œ˚∑—º«¬º";
             // 
             // GridView1
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Layout = "frmConsumptionLayout";
-            this.GridView1.Location = new Smobiler.Core.PointS(0F, 23F);
+            this.GridView1.Location = new System.Drawing.Point(0,46);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 174F);
+            this.GridView1.Size = new System.Drawing.Size(240,348);
             this.GridView1.TabIndex = 15;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             // 
@@ -74,7 +74,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.RBadd.IconID = "!\\ue148043146223";
             this.RBadd.Name = "RBadd";
-            this.RBadd.Text = "Êä•ÈîÄÂçï";
+            this.RBadd.Text = "±®œ˙µ•";
             // 
             // TextTabBar1
             // 
@@ -84,18 +84,18 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.TextTabBar1.BorderRadius = 2;
             this.TextTabBar1.BorderSize = 0.2F;
             this.TextTabBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            textTabBarItem3.Text = "Ê∂àË¥πËÆ∞ÂΩï";
+            textTabBarItem3.Text = "œ˚∑—º«¬º";
             textTabBarItem3.Value = "xf";
-            textTabBarItem4.Text = "Êä•ÈîÄ";
+            textTabBarItem4.Text = "±®œ˙";
             textTabBarItem4.Value = "bx";
             this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
             textTabBarItem3,
             textTabBarItem4});
-            this.TextTabBar1.Location = new Smobiler.Core.PointS(10F, 5F);
+            this.TextTabBar1.Location = new System.Drawing.Point(20,10);
             this.TextTabBar1.Name = "TextTabBar1";
             this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.TextTabBar1.SelectForeColor = System.Drawing.Color.White;
-            this.TextTabBar1.Size = new System.Drawing.SizeF(100F, 14F);
+            this.TextTabBar1.Size = new System.Drawing.Size(200,28);
             this.TextTabBar1.TabIndex = 18;
             this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
             // 
@@ -103,7 +103,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.Report.IconID = "!\\ue01d043146223";
             this.Report.Name = "Report";
-            this.Report.Text = "Êä•Ë°®";
+            this.Report.Text = "±®±Ì";
             // 
             // frmRBMain
             // 
@@ -113,7 +113,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.TextTabBar1});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
-            this.TitleText = "Êä•ÈîÄ";
+            this.TitleText = "±®œ˙";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.xfadd,
             this.RBadd,

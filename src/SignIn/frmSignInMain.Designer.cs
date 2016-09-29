@@ -1,4 +1,4 @@
-ï»¿using Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -48,10 +48,10 @@ namespace COMSSmobilerDemo.SignIn
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Layout = "frmSignInLayout";
-            this.GridView1.Location = new Smobiler.Core.PointS(0F, 23F);
+            this.GridView1.Location = new System.Drawing.Point(0,46);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 175F);
+            this.GridView1.Size = new System.Drawing.Size(240,350);
             this.GridView1.TabIndex = 5;
             this.GridView1.UpSlippling += new System.EventHandler(this.GridView1_UpSlippling);
             this.GridView1.DownSlippling += new System.EventHandler(this.GridView1_DownSlippling);
@@ -60,7 +60,7 @@ namespace COMSSmobilerDemo.SignIn
             // 
             this.add.IconID = "!\\ue148043146223";
             this.add.Name = "add";
-            this.add.Text = "ç­¾åˆ°å½•å…¥";
+            this.add.Text = "Ç©µ½Â¼Èë";
             // 
             // TextTabBar1
             // 
@@ -70,21 +70,21 @@ namespace COMSSmobilerDemo.SignIn
             this.TextTabBar1.BorderRadius = 2;
             this.TextTabBar1.BorderSize = 0.2F;
             this.TextTabBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            textTabBarItem1.Text = "ä»Šå¤©";
+            textTabBarItem1.Text = "½ñÌì";
             textTabBarItem1.Value = "DaySign";
-            textTabBarItem2.Text = "æœ€è¿‘ä¸ƒå¤©";
+            textTabBarItem2.Text = "×î½üÆßÌì";
             textTabBarItem2.Value = "SDaySign";
-            textTabBarItem3.Text = "æœ€è¿‘ä¸€ä¸ªæœˆ";
+            textTabBarItem3.Text = "×î½üÒ»¸öÔÂ";
             textTabBarItem3.Value = "MDaySign";
             this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
             textTabBarItem1,
             textTabBarItem2,
             textTabBarItem3});
-            this.TextTabBar1.Location = new Smobiler.Core.PointS(10F, 5F);
+            this.TextTabBar1.Location = new System.Drawing.Point(20,10);
             this.TextTabBar1.Name = "TextTabBar1";
             this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.TextTabBar1.SelectForeColor = System.Drawing.Color.White;
-            this.TextTabBar1.Size = new System.Drawing.SizeF(100F, 14F);
+            this.TextTabBar1.Size = new System.Drawing.Size(200,28);
             this.TextTabBar1.TabIndex = 10;
             this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
             // 
@@ -96,7 +96,7 @@ namespace COMSSmobilerDemo.SignIn
             this.TextTabBar1});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
-            this.TitleText = "ç­¾åˆ°";
+            this.TitleText = "Ç©µ½";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.add});
             this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));

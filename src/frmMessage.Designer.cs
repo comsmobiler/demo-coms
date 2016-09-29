@@ -1,4 +1,4 @@
-Ôªøusing Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -50,22 +50,22 @@ namespace COMSSmobilerDemo
             this.txtSearchinfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtSearchinfo.BorderRadius = 2;
             this.txtSearchinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.txtSearchinfo.Location = new Smobiler.Core.PointS(1F, 5F);
+            this.txtSearchinfo.Location = new System.Drawing.Point(2,10);
             this.txtSearchinfo.Name = "txtSearchinfo";
             this.txtSearchinfo.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.txtSearchinfo.Size = new System.Drawing.SizeF(100F, 14F);
+            this.txtSearchinfo.Size = new System.Drawing.Size(200,28);
             this.txtSearchinfo.TabIndex = 2;
-            this.txtSearchinfo.WaterMarkText = "ÊêúÁ¥¢";
+            this.txtSearchinfo.WaterMarkText = "À—À˜";
             // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Black;
             this.btnSearch.BackColorAlpha = 0;
-            this.btnSearch.FontSize = 4F;
-            this.btnSearch.Location = new Smobiler.Core.PointS(104F, 5F);
+            this.btnSearch.FontSize = 8;
+            this.btnSearch.Location = new System.Drawing.Point(208,10);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.ResourceID = "!\\ue8b6043146223";
-            this.btnSearch.Size = new System.Drawing.SizeF(14F, 14F);
+            this.btnSearch.Size = new System.Drawing.Size(28,28);
             this.btnSearch.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnSearch_Click);
@@ -74,10 +74,10 @@ namespace COMSSmobilerDemo
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Layout = "frmMessageLayout";
-            this.GridView1.Location = new Smobiler.Core.PointS(0F, 21F);
+            this.GridView1.Location = new System.Drawing.Point(0,42);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 163F);
+            this.GridView1.Size = new System.Drawing.Size(240,326);
             this.GridView1.TabIndex = 4;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             this.GridView1.UpSlippling += new System.EventHandler(this.GridView1_UpSlippling);
@@ -87,7 +87,7 @@ namespace COMSSmobilerDemo
             // 
             this.tExit.IconID = "Exit";
             this.tExit.Name = "tExit";
-            this.tExit.Text = "ËøîÂõû";
+            this.tExit.Text = "∑µªÿ";
             this.tExit.Visible = false;
             // 
             // Gps1
@@ -99,14 +99,14 @@ namespace COMSSmobilerDemo
             // 
             this.Label1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Label1.BackColorAlpha = 0;
-            this.Label1.FontSize = 9F;
+            this.Label1.FontSize = 18;
             this.Label1.ForeColor = System.Drawing.Color.Red;
             this.Label1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
-            this.Label1.Location = new Smobiler.Core.PointS(2F, 68F);
+            this.Label1.Location = new System.Drawing.Point(4,136);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.SizeF(120F, 15F);
+            this.Label1.Size = new System.Drawing.Size(240,30);
             this.Label1.TabIndex = 9;
-            this.Label1.Text = "ÁõÆÂâçÊöÇÊó∂Êó†‰ªª‰ΩïÊ∂àÊÅØ";
+            this.Label1.Text = "ƒø«∞‘› ±Œﬁ»Œ∫Œœ˚œ¢";
             this.Label1.Visible = false;
             // 
             // frmMessage
@@ -123,7 +123,7 @@ namespace COMSSmobilerDemo
             this.LeftFormLayout = "frmMenuLayout";
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("menu", System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(97)))), ((int)(((byte)(164))))), System.Drawing.Color.White);
-            this.TitleText = "Ê∂àÊÅØ";
+            this.TitleText = "œ˚œ¢";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.tExit});
             this.LeftLayoutItemClick += new Smobiler.Core.MobileFormLayoutItemClickEventHandler(this.frmMessage_LeftLayoutItemClick);

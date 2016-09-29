@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -43,10 +43,10 @@ namespace COMSSmobilerDemo.Leave.Layout
             // 
             this.lblTypeName.DataMember = "L_TYPE";
             this.lblTypeName.DisplayMember = "L_TYPEDESC";
-            this.lblTypeName.FontSize = 7F;
-            this.lblTypeName.Location = new Smobiler.Core.PointS(16F, 0F);
+            this.lblTypeName.FontSize = 14;
+            this.lblTypeName.Location = new System.Drawing.Point(32,0);
             this.lblTypeName.Name = "lblTypeName";
-            this.lblTypeName.Size = new System.Drawing.SizeF(104F, 20F);
+            this.lblTypeName.Size = new System.Drawing.Size(208,40);
             this.lblTypeName.TabIndex = 3;
             // 
             // Image1
@@ -54,9 +54,9 @@ namespace COMSSmobilerDemo.Leave.Layout
             this.Image1.DataMember = "L_TYPE";
             this.Image1.DisplayMember = "L_TYPE";
             this.Image1.ID = "";
-            this.Image1.Location = new Smobiler.Core.PointS(3F, 5F);
+            this.Image1.Location = new System.Drawing.Point(6,10);
             this.Image1.Name = "Image1";
-            this.Image1.Size = new System.Drawing.SizeF(10F, 10F);
+            this.Image1.Size = new System.Drawing.Size(20,20);
             this.Image1.TabIndex = 5;
             // 
             // frmLeaveTypeLayout
@@ -65,7 +65,7 @@ namespace COMSSmobilerDemo.Leave.Layout
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.lblTypeName,
             this.Image1});
-            this.Size = new System.Drawing.Size(120, 20);
+            this.Size = new System.Drawing.Size(240,40);
             this.Name = "frmLeaveTypeLayout";
 
         }

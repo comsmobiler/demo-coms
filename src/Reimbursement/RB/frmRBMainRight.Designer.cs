@@ -1,4 +1,4 @@
-ï»¿
+
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
@@ -55,10 +55,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnALLRB.HoverForeColor = System.Drawing.Color.White;
             this.btnALLRB.Name = "btnALLRB";
             this.btnALLRB.Padding = new Smobiler.Core.Padding(4F, 0F, 0F, 0F);
-            this.btnALLRB.Size = new System.Drawing.SizeF(30F, 14F);
+            this.btnALLRB.Size = new System.Drawing.Size(60,28);
             this.btnALLRB.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnALLRB.TabIndex = 2;
-            this.btnALLRB.Text = "æ‰€æœ‰æŠ¥é”€";
+            this.btnALLRB.Text = "ËùÓÐ±¨Ïú";
             this.btnALLRB.ZIndex = 2;
             this.btnALLRB.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnALLRB_Click);
             // 
@@ -71,22 +71,22 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.btntotalAmount1.HoverBackColor = System.Drawing.Color.White;
             this.btntotalAmount1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btntotalAmount1.Location = new Smobiler.Core.PointS(80F, 0F);
+            this.btntotalAmount1.Location = new System.Drawing.Point(160,0);
             this.btntotalAmount1.Name = "btntotalAmount1";
-            this.btntotalAmount1.Size = new System.Drawing.SizeF(40F, 14F);
+            this.btntotalAmount1.Size = new System.Drawing.Size(80,28);
             this.btntotalAmount1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btntotalAmount1.TabIndex = 6;
-            this.btntotalAmount1.Text = "ï¿¥0.00";
+            this.btntotalAmount1.Text = "£¤0.00";
             this.btntotalAmount1.ZIndex = 5;
             this.btntotalAmount1.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnALLRB_Click);
             // 
             // GridView1
             // 
             this.GridView1.Layout = "frmRBRightLayout";
-            this.GridView1.Location = new Smobiler.Core.PointS(0F, 14F);
+            this.GridView1.Location = new System.Drawing.Point(0,28);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 111F);
+            this.GridView1.Size = new System.Drawing.Size(240,222);
             this.GridView1.TabIndex = 7;
             this.GridView1.ZIndex = 6;
             this.GridView1.ItemClick += new Smobiler.Core.Controls.GridViewItemClickEventHandler(this.GridView1_ItemClick);
@@ -100,13 +100,13 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnALLRB1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.btnALLRB1.HoverBackColor = System.Drawing.Color.White;
             this.btnALLRB1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btnALLRB1.Location = new Smobiler.Core.PointS(30F, 0F);
+            this.btnALLRB1.Location = new System.Drawing.Point(60,0);
             this.btnALLRB1.Name = "btnALLRB1";
             this.btnALLRB1.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnALLRB1.Size = new System.Drawing.SizeF(30F, 14F);
+            this.btnALLRB1.Size = new System.Drawing.Size(60,28);
             this.btnALLRB1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnALLRB1.TabIndex = 8;
-            this.btnALLRB1.Text = "ï¼ˆ0ï¼‰";
+            this.btnALLRB1.Text = "£¨0£©";
             this.btnALLRB1.ZIndex = 3;
             this.btnALLRB1.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnALLRB_Click);
             // 
@@ -119,13 +119,13 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.btntotalAmount.HoverBackColor = System.Drawing.Color.White;
             this.btntotalAmount.HoverForeColor = System.Drawing.Color.White;
-            this.btntotalAmount.Location = new Smobiler.Core.PointS(60F, 0F);
+            this.btntotalAmount.Location = new System.Drawing.Point(120,0);
             this.btntotalAmount.Name = "btntotalAmount";
             this.btntotalAmount.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btntotalAmount.Size = new System.Drawing.SizeF(20F, 14F);
+            this.btntotalAmount.Size = new System.Drawing.Size(40,28);
             this.btntotalAmount.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btntotalAmount.TabIndex = 9;
-            this.btntotalAmount.Text = "æ€»è®¡ï¼š";
+            this.btntotalAmount.Text = "×Ü¼Æ£º";
             this.btntotalAmount.ZIndex = 4;
             this.btntotalAmount.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnALLRB_Click);
             // 
@@ -137,10 +137,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount,
             this.btntotalAmount1,
             this.GridView1});
-            this.Size = new System.Drawing.Size(120, 250);
+            this.Size = new System.Drawing.Size(240,500);
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
-            this.TitleText = "æŠ¥é”€ç­›é€‰";
+            this.TitleText = "±¨ÏúÉ¸Ñ¡";
             this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.Select, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));
             this.Load += new System.EventHandler(this.frmRBMainRightLayout_Load);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);

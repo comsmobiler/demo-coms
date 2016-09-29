@@ -36,7 +36,7 @@ namespace COMSSmobilerDemo
             // 
             this.WebView1.AutoHeight = true;
             this.WebView1.Name = "WebView1";
-            this.WebView1.Size = new System.Drawing.SizeF(120F, 200F);
+            this.WebView1.Size = new System.Drawing.Size(240,400);
             this.WebView1.TabIndex = 2;
             this.WebView1.Url = "http://www.searching-info.com/coms/ComsSmobiler.html";
             // 

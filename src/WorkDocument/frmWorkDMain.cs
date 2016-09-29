@@ -250,6 +250,9 @@ namespace COMSSmobilerDemo.WorkDocument
         {
             try
             {
+                //更新gridview的cell中，cellitem背景颜色
+                e.Cell.Items["lblState"].BackColor = System.Drawing.Color.Green;
+                e.Cell.Items["lblState"].ForeColor = System.Drawing.Color.White;
                 int state=0;
                 switch (btnMode)
                 {

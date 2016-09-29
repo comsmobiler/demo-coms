@@ -40,7 +40,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB.Layout
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.lblName.Name = "lblName";
             this.lblName.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblName.Size = new System.Drawing.SizeF(80F, 14F);
+            this.lblName.Size = new System.Drawing.Size(160,28);
             this.lblName.TabIndex = 2;
             this.lblName.ZIndex = 2;
             // 
@@ -50,9 +50,9 @@ namespace COMSSmobilerDemo.Reimbursement.RB.Layout
             this.lblAmount.DataMember = "AMOUNT";
             this.lblAmount.DisplayMember = "AMOUNT";
             this.lblAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.lblAmount.Location = new Smobiler.Core.PointS(80F, 0F);
+            this.lblAmount.Location = new System.Drawing.Point(160,0);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.SizeF(40F, 14F);
+            this.lblAmount.Size = new System.Drawing.Size(80,28);
             this.lblAmount.TabIndex = 3;
             this.lblAmount.Text = "гд12.5";
             this.lblAmount.ZIndex = 3;
@@ -60,9 +60,9 @@ namespace COMSSmobilerDemo.Reimbursement.RB.Layout
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new Smobiler.Core.PointS(1F, 14F);
+            this.Line1.Location = new System.Drawing.Point(2,28);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.Size = new System.Drawing.Size(240,2);
             this.Line1.TabIndex = 4;
             this.Line1.ZIndex = 4;
             // 
@@ -72,7 +72,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB.Layout
             this.lblName,
             this.lblAmount,
             this.Line1});
-            this.Size = new System.Drawing.Size(120, 14);
+            this.Size = new System.Drawing.Size(240,28);
             this.Name = "frmRightLayout";
 
         }

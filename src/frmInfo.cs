@@ -114,6 +114,42 @@ namespace COMSSmobilerDemo
             frmInfoEdit frm = new frmInfoEdit();
              this.Redirect(frm);
         }
+        /// <summary>
+        /// 打电话
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void imgbtnPhone_Click(object sender, EventArgs e)
+        {
+            TelCall("10086");
+        }
+        /// <summary>
+        /// 添加到通讯录
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void imgbtnAddTel_Click(object sender, EventArgs e)
+        {
+            Client.Contacts.Add("demo", "10086", "");
+        }
+        /// <summary>
+        /// 发送短信
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void imgbtnSedM_Click(object sender, EventArgs e)
+        {
+            Client.SendSMS("", "10086");
+        }
+        /// <summary>
+        /// 发送邮件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void imgbtnSedEmail_Click(object sender, EventArgs e)
+        {
+            Client.SendEmail("测试", "testEmail", "lincy@smobiler.com");
+        }
        
 
        

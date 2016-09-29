@@ -1,4 +1,4 @@
-Ôªøusing Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -44,7 +44,7 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter
             this.GridView1.Layout = "frmAttentionCCDt";
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 199F);
+            this.GridView1.Size = new System.Drawing.Size(240,398);
             this.GridView1.TabIndex = 3;
             this.GridView1.ItemClick += new Smobiler.Core.Controls.GridViewItemClickEventHandler(this.GridView1_ItemClick);
             // 
@@ -52,7 +52,7 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter
             // 
             this.save.IconID = "!\\ue161043146223";
             this.save.Name = "save";
-            this.save.Text = "‰øùÂ≠ò";
+            this.save.Text = "±£¥Ê";
             // 
             // frmAttentionCC
             // 
@@ -60,7 +60,7 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter
             this.GridView1});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
-            this.TitleText = "ÂÖ≥Ê≥®";
+            this.TitleText = "πÿ◊¢";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.save});
             this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));

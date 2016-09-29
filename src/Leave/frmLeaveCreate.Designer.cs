@@ -1,4 +1,4 @@
-Ôªøusing Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -70,9 +70,9 @@ namespace COMSSmobilerDemo.Leave
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label1.Size = new System.Drawing.Size(70,28);
             this.Label1.TabIndex = 3;
-            this.Label1.Text = "ËØ∑ÂÅáÁ±ªÂûã";
+            this.Label1.Text = "«ÎºŸ¿‡–Õ";
             // 
             // btntype
             // 
@@ -80,13 +80,13 @@ namespace COMSSmobilerDemo.Leave
             this.btntype.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btntype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btntype.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btntype.Location = new Smobiler.Core.PointS(35F, 0F);
+            this.btntype.Location = new System.Drawing.Point(70,0);
             this.btntype.Name = "btntype";
             this.btntype.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btntype.Size = new System.Drawing.SizeF(75F, 14F);
+            this.btntype.Size = new System.Drawing.Size(150,28);
             this.btntype.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btntype.TabIndex = 4;
-            this.btntype.Text = "ÈÄâÊã©ÔºàÂøÖÂ°´Ôºâ";
+            this.btntype.Text = "—°‘Ò£®±ÿÃÓ£©";
             this.btntype.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btntype_Click);
             // 
             // btntype2
@@ -94,9 +94,9 @@ namespace COMSSmobilerDemo.Leave
             this.btntype2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btntype2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btntype2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btntype2.Location = new Smobiler.Core.PointS(110F, 0F);
+            this.btntype2.Location = new System.Drawing.Point(220,0);
             this.btntype2.Name = "btntype2";
-            this.btntype2.Size = new System.Drawing.SizeF(10F, 14F);
+            this.btntype2.Size = new System.Drawing.Size(20,28);
             this.btntype2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btntype2.TabIndex = 5;
             this.btntype2.Text = ">";
@@ -108,10 +108,10 @@ namespace COMSSmobilerDemo.Leave
             this.lblDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.lblDate.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblDate.Location = new Smobiler.Core.PointS(35F, 14F);
+            this.lblDate.Location = new System.Drawing.Point(70,28);
             this.lblDate.Name = "lblDate";
             this.lblDate.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblDate.Size = new System.Drawing.SizeF(85F, 14F);
+            this.lblDate.Size = new System.Drawing.Size(170,28);
             this.lblDate.TabIndex = 6;
             // 
             // Label2
@@ -119,24 +119,24 @@ namespace COMSSmobilerDemo.Leave
             this.Label2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label2.Location = new Smobiler.Core.PointS(0F, 14F);
+            this.Label2.Location = new System.Drawing.Point(0,28);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label2.Size = new System.Drawing.Size(70,28);
             this.Label2.TabIndex = 7;
-            this.Label2.Text = "ÂºÄÂßãÊó∂Èó¥";
+            this.Label2.Text = "ø™ º ±º‰";
             // 
             // Label3
             // 
             this.Label3.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label3.Location = new Smobiler.Core.PointS(0F, 28F);
+            this.Label3.Location = new System.Drawing.Point(0,56);
             this.Label3.Name = "Label3";
             this.Label3.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label3.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label3.Size = new System.Drawing.Size(70,28);
             this.Label3.TabIndex = 8;
-            this.Label3.Text = "ÁªìÊùüÊó∂Èó¥";
+            this.Label3.Text = "Ω· ¯ ±º‰";
             // 
             // lblLedate
             // 
@@ -144,10 +144,10 @@ namespace COMSSmobilerDemo.Leave
             this.lblLedate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblLedate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.lblLedate.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblLedate.Location = new Smobiler.Core.PointS(35F, 28F);
+            this.lblLedate.Location = new System.Drawing.Point(70,56);
             this.lblLedate.Name = "lblLedate";
             this.lblLedate.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblLedate.Size = new System.Drawing.SizeF(85F, 14F);
+            this.lblLedate.Size = new System.Drawing.Size(170,28);
             this.lblLedate.TabIndex = 9;
             // 
             // Label4
@@ -155,12 +155,12 @@ namespace COMSSmobilerDemo.Leave
             this.Label4.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label4.Location = new Smobiler.Core.PointS(0F, 45F);
+            this.Label4.Location = new System.Drawing.Point(0,90);
             this.Label4.Name = "Label4";
             this.Label4.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label4.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label4.Size = new System.Drawing.Size(70,28);
             this.Label4.TabIndex = 10;
-            this.Label4.Text = "ËØ∑ÂÅáÂ§©Êï∞";
+            this.Label4.Text = "«ÎºŸÃÏ ˝";
             // 
             // LDAY
             // 
@@ -169,49 +169,49 @@ namespace COMSSmobilerDemo.Leave
             this.LDAY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.LDAY.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.LDAY.InputType = Smobiler.Core.TextBoxInputType.Number;
-            this.LDAY.Location = new Smobiler.Core.PointS(35F, 45F);
+            this.LDAY.Location = new System.Drawing.Point(70,90);
             this.LDAY.Name = "LDAY";
             this.LDAY.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.LDAY.Size = new System.Drawing.SizeF(67F, 14F);
+            this.LDAY.Size = new System.Drawing.Size(134,28);
             this.LDAY.TabIndex = 11;
-            this.LDAY.WaterMarkText = "ÔºàÂøÖÂ°´Ôºâ";
+            this.LDAY.WaterMarkText = "£®±ÿÃÓ£©";
             // 
             // Label5
             // 
             this.Label5.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label5.Location = new Smobiler.Core.PointS(0F, 59F);
+            this.Label5.Location = new System.Drawing.Point(0,118);
             this.Label5.Name = "Label5";
             this.Label5.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.Label5.Size = new System.Drawing.SizeF(35F, 40F);
+            this.Label5.Size = new System.Drawing.Size(70,80);
             this.Label5.TabIndex = 12;
-            this.Label5.Text = "ËØ∑ÂÅá‰∫ãÁî±";
+            this.Label5.Text = "«ÎºŸ ¬”…";
             this.Label5.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             // 
             // LREASON
             // 
             this.LREASON.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.LREASON.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.LREASON.Location = new Smobiler.Core.PointS(35F, 59F);
+            this.LREASON.Location = new System.Drawing.Point(70,118);
             this.LREASON.Multiline = true;
             this.LREASON.Name = "LREASON";
             this.LREASON.Padding = new Smobiler.Core.Padding(0F, 5F, 12F, 0F);
-            this.LREASON.Size = new System.Drawing.SizeF(85F, 40F);
+            this.LREASON.Size = new System.Drawing.Size(170,80);
             this.LREASON.TabIndex = 13;
-            this.LREASON.WaterMarkText = "ÔºàÂøÖÂ°´Ôºâ";
+            this.LREASON.WaterMarkText = "£®±ÿÃÓ£©";
             // 
             // Label6
             // 
             this.Label6.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label6.Location = new Smobiler.Core.PointS(0F, 102F);
+            this.Label6.Location = new System.Drawing.Point(0,204);
             this.Label6.Name = "Label6";
             this.Label6.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.Label6.Size = new System.Drawing.SizeF(35F, 40F);
+            this.Label6.Size = new System.Drawing.Size(70,80);
             this.Label6.TabIndex = 14;
-            this.Label6.Text = "ÂõæÁâá";
+            this.Label6.Text = "Õº∆¨";
             this.Label6.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             // 
             // imgL
@@ -220,10 +220,10 @@ namespace COMSSmobilerDemo.Leave
             this.imgL.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.imgL.Enlarged = true;
             this.imgL.ID = "";
-            this.imgL.Location = new Smobiler.Core.PointS(35F, 102F);
+            this.imgL.Location = new System.Drawing.Point(70,204);
             this.imgL.Name = "imgL";
             this.imgL.Padding = new Smobiler.Core.Padding(0F, 2F, 0F, 0F);
-            this.imgL.Size = new System.Drawing.SizeF(85F, 28F);
+            this.imgL.Size = new System.Drawing.Size(170,56);
             this.imgL.TabIndex = 15;
             // 
             // Camera1
@@ -236,12 +236,12 @@ namespace COMSSmobilerDemo.Leave
             this.Label7.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label7.Location = new Smobiler.Core.PointS(0F, 145F);
+            this.Label7.Location = new System.Drawing.Point(0,290);
             this.Label7.Name = "Label7";
             this.Label7.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label7.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label7.Size = new System.Drawing.Size(70,28);
             this.Label7.TabIndex = 16;
-            this.Label7.Text = "ÂÆ°Êâπ‰∫∫";
+            this.Label7.Text = "…Û≈˙»À";
             // 
             // btnCUser
             // 
@@ -249,12 +249,12 @@ namespace COMSSmobilerDemo.Leave
             this.btnCUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnCUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnCUser.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnCUser.Location = new Smobiler.Core.PointS(35F, 145F);
+            this.btnCUser.Location = new System.Drawing.Point(70,290);
             this.btnCUser.Name = "btnCUser";
-            this.btnCUser.Size = new System.Drawing.SizeF(75F, 14F);
+            this.btnCUser.Size = new System.Drawing.Size(150,28);
             this.btnCUser.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnCUser.TabIndex = 18;
-            this.btnCUser.Text = "ÔºàÂøÖÂ°´Ôºâ";
+            this.btnCUser.Text = "£®±ÿÃÓ£©";
             this.btnCUser.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.BtnCUser_Click);
             // 
             // BtnCUser2
@@ -262,9 +262,9 @@ namespace COMSSmobilerDemo.Leave
             this.BtnCUser2.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.BtnCUser2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.BtnCUser2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.BtnCUser2.Location = new Smobiler.Core.PointS(110F, 145F);
+            this.BtnCUser2.Location = new System.Drawing.Point(220,290);
             this.BtnCUser2.Name = "BtnCUser2";
-            this.BtnCUser2.Size = new System.Drawing.SizeF(10F, 14F);
+            this.BtnCUser2.Size = new System.Drawing.Size(20,28);
             this.BtnCUser2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.BtnCUser2.TabIndex = 19;
             this.BtnCUser2.Text = ">";
@@ -274,19 +274,19 @@ namespace COMSSmobilerDemo.Leave
             // 
             this.save.IconID = "!\\ue161043146223";
             this.save.Name = "save";
-            this.save.Text = "‰øùÂ≠ò";
+            this.save.Text = "±£¥Ê";
             // 
             // Label8
             // 
             this.Label8.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label8.Location = new Smobiler.Core.PointS(0F, 159F);
+            this.Label8.Location = new System.Drawing.Point(0,318);
             this.Label8.Name = "Label8";
             this.Label8.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label8.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label8.Size = new System.Drawing.Size(70,28);
             this.Label8.TabIndex = 20;
-            this.Label8.Text = "ÊäÑÈÄÅ‰∫∫";
+            this.Label8.Text = "≥≠ÀÕ»À";
             // 
             // btnccuser1
             // 
@@ -294,12 +294,12 @@ namespace COMSSmobilerDemo.Leave
             this.btnccuser1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnccuser1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnccuser1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnccuser1.Location = new Smobiler.Core.PointS(35F, 159F);
+            this.btnccuser1.Location = new System.Drawing.Point(70,318);
             this.btnccuser1.Name = "btnccuser1";
-            this.btnccuser1.Size = new System.Drawing.SizeF(75F, 14F);
+            this.btnccuser1.Size = new System.Drawing.Size(150,28);
             this.btnccuser1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnccuser1.TabIndex = 21;
-            this.btnccuser1.Text = "ÔºàÈÄâÂ°´Ôºâ";
+            this.btnccuser1.Text = "£®—°ÃÓ£©";
             this.btnccuser1.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.BtnCUser_Click);
             // 
             // Btnccuser2
@@ -307,9 +307,9 @@ namespace COMSSmobilerDemo.Leave
             this.Btnccuser2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Btnccuser2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Btnccuser2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.Btnccuser2.Location = new Smobiler.Core.PointS(110F, 159F);
+            this.Btnccuser2.Location = new System.Drawing.Point(220,318);
             this.Btnccuser2.Name = "Btnccuser2";
-            this.Btnccuser2.Size = new System.Drawing.SizeF(10F, 14F);
+            this.Btnccuser2.Size = new System.Drawing.Size(20,28);
             this.Btnccuser2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.Btnccuser2.TabIndex = 22;
             this.Btnccuser2.Text = ">";
@@ -324,9 +324,9 @@ namespace COMSSmobilerDemo.Leave
             // 
             this.Label9.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Label9.Location = new Smobiler.Core.PointS(35F, 130F);
+            this.Label9.Location = new System.Drawing.Point(70,260);
             this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.SizeF(85F, 12F);
+            this.Label9.Size = new System.Drawing.Size(170,24);
             this.Label9.TabIndex = 23;
             // 
             // btnupPhoto
@@ -335,12 +335,12 @@ namespace COMSSmobilerDemo.Leave
             this.btnupPhoto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.btnupPhoto.BorderRadius = 5;
             this.btnupPhoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btnupPhoto.Location = new Smobiler.Core.PointS(49F, 132F);
+            this.btnupPhoto.Location = new System.Drawing.Point(98,264);
             this.btnupPhoto.Name = "btnupPhoto";
-            this.btnupPhoto.Size = new System.Drawing.SizeF(26F, 8F);
+            this.btnupPhoto.Size = new System.Drawing.Size(52,16);
             this.btnupPhoto.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnupPhoto.TabIndex = 24;
-            this.btnupPhoto.Text = "‰∏ä‰º†";
+            this.btnupPhoto.Text = "…œ¥´";
             this.btnupPhoto.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnupPhoto_Click);
             // 
             // btndelPhoto
@@ -349,12 +349,12 @@ namespace COMSSmobilerDemo.Leave
             this.btndelPhoto.BorderColor = System.Drawing.Color.Red;
             this.btndelPhoto.BorderRadius = 5;
             this.btndelPhoto.ForeColor = System.Drawing.Color.Red;
-            this.btndelPhoto.Location = new Smobiler.Core.PointS(80F, 132F);
+            this.btndelPhoto.Location = new System.Drawing.Point(160,264);
             this.btndelPhoto.Name = "btndelPhoto";
-            this.btndelPhoto.Size = new System.Drawing.SizeF(26F, 8F);
+            this.btndelPhoto.Size = new System.Drawing.Size(52,16);
             this.btndelPhoto.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btndelPhoto.TabIndex = 25;
-            this.btndelPhoto.Text = "Âà†Èô§";
+            this.btndelPhoto.Text = "…æ≥˝";
             this.btndelPhoto.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btndelPhoto_Click);
             // 
             // Label10
@@ -363,12 +363,12 @@ namespace COMSSmobilerDemo.Leave
             this.Label10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.Label10.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.Label10.Location = new Smobiler.Core.PointS(102F, 45F);
+            this.Label10.Location = new System.Drawing.Point(204,90);
             this.Label10.Name = "Label10";
             this.Label10.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.Label10.Size = new System.Drawing.SizeF(18F, 14F);
+            this.Label10.Size = new System.Drawing.Size(36,28);
             this.Label10.TabIndex = 26;
-            this.Label10.Text = "Â§©";
+            this.Label10.Text = "ÃÏ";
             // 
             // frmLeaveCreate
             // 
@@ -401,7 +401,7 @@ namespace COMSSmobilerDemo.Leave
             this.Label10});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
-            this.TitleText = "ËØ∑ÂÅáÂàõÂª∫";
+            this.TitleText = "«ÎºŸ¥¥Ω®";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.save});
             this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));

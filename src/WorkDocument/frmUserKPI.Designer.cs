@@ -56,11 +56,11 @@ namespace COMSSmobilerDemo.WorkDocument
             this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
             textTabBarItem1,
             textTabBarItem2});
-            this.TextTabBar1.Location = new Smobiler.Core.PointS(10F, 5F);
+            this.TextTabBar1.Location = new System.Drawing.Point(20,10);
             this.TextTabBar1.Name = "TextTabBar1";
             this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.TextTabBar1.SelectForeColor = System.Drawing.Color.White;
-            this.TextTabBar1.Size = new System.Drawing.SizeF(100F, 14F);
+            this.TextTabBar1.Size = new System.Drawing.Size(200,28);
             this.TextTabBar1.TabIndex = 2;
             this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
             // 
@@ -78,13 +78,13 @@ namespace COMSSmobilerDemo.WorkDocument
             gaugeViewAxisLine3});
             this.GaugeView1.AxisLineWidth = 4F;
             this.GaugeView1.AxisTickLength = 2F;
-            this.GaugeView1.Location = new Smobiler.Core.PointS(0F, 24F);
+            this.GaugeView1.Location = new System.Drawing.Point(0,48);
             this.GaugeView1.MaxValue = 150F;
             this.GaugeView1.Name = "GaugeView1";
             this.GaugeView1.PointerColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.GaugeView1.PointerLength = 40F;
             this.GaugeView1.PointerWidth = 10F;
-            this.GaugeView1.Size = new System.Drawing.SizeF(120F, 90F);
+            this.GaugeView1.Size = new System.Drawing.Size(240,180);
             this.GaugeView1.SplitLineLength = 4F;
             this.GaugeView1.TabIndex = 3;
             this.GaugeView1.Title = "绩效完成率";
@@ -93,9 +93,9 @@ namespace COMSSmobilerDemo.WorkDocument
             // 
             this.Label1.ForeColor = System.Drawing.Color.Red;
             this.Label1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
-            this.Label1.Location = new Smobiler.Core.PointS(0F, 114F);
+            this.Label1.Location = new System.Drawing.Point(0,228);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.SizeF(120F, 10F);
+            this.Label1.Size = new System.Drawing.Size(240,20);
             this.Label1.TabIndex = 4;
             this.Label1.Text = "Label1";
             // 
@@ -112,7 +112,7 @@ namespace COMSSmobilerDemo.WorkDocument
             tableViewLabelColumn1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
             tableViewLabelColumn1.Text = "日期";
             tableViewLabelColumn1.VerticalAlignment = Smobiler.Core.VerticalAlignment.Center;
-            tableViewLabelColumn1.Width = 30F;
+            tableViewLabelColumn1.Width = 60;
             tableViewImageColumn1.DataMember = "ISWARNING1";
             tableViewImageColumn1.DefaultBindPropertyValue = "";
             tableViewImageColumn1.DefaultImageVisible = true;
@@ -125,14 +125,14 @@ namespace COMSSmobilerDemo.WorkDocument
             tableViewImageColumn1.ResourcePath = "";
             tableViewImageColumn1.SizeMode = Smobiler.Core.ImageSizeMode.Zoom;
             tableViewImageColumn1.VerticalAlignment = Smobiler.Core.VerticalAlignment.Center;
-            tableViewImageColumn1.Width = 30F;
+            tableViewImageColumn1.Width = 60;
             this.TableView1.Columns.AddRange(new Smobiler.Core.Controls.TableViewColumn[] {
             tableViewLabelColumn1,
             tableViewImageColumn1});
             this.TableView1.GridLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.TableView1.Location = new Smobiler.Core.PointS(0F, 124F);
+            this.TableView1.Location = new System.Drawing.Point(0,248);
             this.TableView1.Name = "TableView1";
-            this.TableView1.Size = new System.Drawing.SizeF(120F, 80F);
+            this.TableView1.Size = new System.Drawing.Size(240,160);
             this.TableView1.TabIndex = 5;
             // 
             // frmUserKPI

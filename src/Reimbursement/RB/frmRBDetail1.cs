@@ -44,13 +44,13 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                       txtRB_REASON.Visible = true;
                         lblRB_REASON1.Visible = true;
                        
-                        GridView1.Top = 161;
+                        GridView1.Top = 322;
                         break;
                     default:
                        txtRB_REASON.Visible =false;
                         lblRB_REASON1.Visible = false;
                        
-                        GridView1.Top =118;
+                        GridView1.Top =236;
                         break;
                 }
                 switch (RB_STATE)

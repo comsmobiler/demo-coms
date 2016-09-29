@@ -29,10 +29,14 @@ namespace COMSSmobilerDemo.Reimbursement.RB
 
         private void InitializeComponent()
         {
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem1 = new Smobiler.Core.Controls.TextTabBarItem();
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem2 = new Smobiler.Core.Controls.TextTabBarItem();
             Smobiler.Core.Controls.TextTabBarItem textTabBarItem3 = new Smobiler.Core.Controls.TextTabBarItem();
             Smobiler.Core.Controls.TextTabBarItem textTabBarItem4 = new Smobiler.Core.Controls.TextTabBarItem();
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem5 = new Smobiler.Core.Controls.TextTabBarItem();
             this.TextTabBar1 = new Smobiler.Core.Controls.TextTabBar();
             this.GridView1 = new Smobiler.Core.Controls.GridView();
+            this.TextTabBar2 = new Smobiler.Core.Controls.TextTabBar();
             // 
             // TextTabBar1
             // 
@@ -42,37 +46,58 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.TextTabBar1.BorderRadius = 2;
             this.TextTabBar1.BorderSize = 0.2F;
             this.TextTabBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            textTabBarItem3.Text = "趋势";
-            textTabBarItem3.Value = "qs";
-            textTabBarItem4.Text = "分布";
-            textTabBarItem4.Value = "fb";
+            textTabBarItem1.Text = "趋势";
+            textTabBarItem1.Value = "qs";
+            textTabBarItem2.Text = "分布";
+            textTabBarItem2.Value = "fb";
             this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
-            textTabBarItem3,
-            textTabBarItem4});
-            this.TextTabBar1.Location = new Smobiler.Core.PointS(10F, 5F);
+            textTabBarItem1,
+            textTabBarItem2});
+            this.TextTabBar1.Location = new System.Drawing.Point(20, 10);
             this.TextTabBar1.Name = "TextTabBar1";
             this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.TextTabBar1.SelectForeColor = System.Drawing.Color.White;
-            this.TextTabBar1.Size = new System.Drawing.SizeF(100F, 14F);
+            this.TextTabBar1.Size = new System.Drawing.Size(200, 28);
             this.TextTabBar1.TabIndex = 2;
             this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
             // 
             // GridView1
             // 
             this.GridView1.Layout = "frmRightLayout";
-            this.GridView1.Location = new Smobiler.Core.PointS(0F, 127F);
+            this.GridView1.Location = new System.Drawing.Point(0, 254);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 73F);
+            this.GridView1.Size = new System.Drawing.Size(240, 146);
             this.GridView1.TabIndex = 4;
             this.GridView1.ZIndex = 6;
+            // 
+            // TextTabBar2
+            // 
+            this.TextTabBar2.BackColor = System.Drawing.Color.White;
+            this.TextTabBar2.FontSize = 8F;
+            this.TextTabBar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            textTabBarItem3.Text = "Bubble";
+            textTabBarItem4.Text = "Scatter";
+            textTabBarItem5.Text = "Radar";
+            this.TextTabBar2.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
+            textTabBarItem3,
+            textTabBarItem4,
+            textTabBarItem5});
+            this.TextTabBar2.Location = new System.Drawing.Point(0, 38);
+            this.TextTabBar2.Name = "TextTabBar2";
+            this.TextTabBar2.SelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
+            this.TextTabBar2.Size = new System.Drawing.Size(240, 20);
+            this.TextTabBar2.TabIndex = 5;
+            this.TextTabBar2.Visible = false;
+            this.TextTabBar2.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
             // 
             // frmStatementAnalysis
             // 
             this.AllowSlip = true;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.TextTabBar1,
-            this.GridView1});
+            this.GridView1,
+            this.TextTabBar2});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
             this.TitleText = "报表";
@@ -87,5 +112,6 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         internal Smobiler.Core.Controls.TextTabBar TextTabBar1;
         internal Smobiler.Core.Controls.GridView GridView1;
         #endregion
+        internal Smobiler.Core.Controls.TextTabBar TextTabBar2;
     }
 }

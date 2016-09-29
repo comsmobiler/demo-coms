@@ -42,7 +42,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks.Layout
             this.lblID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.lblID.Name = "lblID";
             this.lblID.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.lblID.Size = new System.Drawing.SizeF(90F, 12F);
+            this.lblID.Size = new System.Drawing.Size(180,24);
             this.lblID.TabIndex = 2;
             this.lblID.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             this.lblID.ZIndex = 1;
@@ -53,10 +53,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks.Layout
             this.lblState.DisplayMember = "NBR_OTYPENAME";
             this.lblState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.lblState.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblState.Location = new Smobiler.Core.PointS(90F, 0F);
+            this.lblState.Location = new System.Drawing.Point(180,0);
             this.lblState.Name = "lblState";
             this.lblState.Padding = new Smobiler.Core.Padding(0F, 5F, 2F, 0F);
-            this.lblState.Size = new System.Drawing.SizeF(30F, 12F);
+            this.lblState.Size = new System.Drawing.Size(60,24);
             this.lblState.TabIndex = 3;
             this.lblState.Text = "开始使用";
             this.lblState.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
@@ -66,23 +66,23 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks.Layout
             // 
             this.lblNBR_ODATE.DataMember = "NBR_ODATE";
             this.lblNBR_ODATE.DisplayMember = "NBR_ODATE";
-            this.lblNBR_ODATE.FontSize = 5F;
+            this.lblNBR_ODATE.FontSize = 10;
             this.lblNBR_ODATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.lblNBR_ODATE.Format = "{0:yyyy/MM/dd}";
             this.lblNBR_ODATE.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblNBR_ODATE.Location = new Smobiler.Core.PointS(46F, 12F);
+            this.lblNBR_ODATE.Location = new System.Drawing.Point(92,24);
             this.lblNBR_ODATE.Name = "lblNBR_ODATE";
             this.lblNBR_ODATE.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.lblNBR_ODATE.Size = new System.Drawing.SizeF(74F, 8F);
+            this.lblNBR_ODATE.Size = new System.Drawing.Size(148,16);
             this.lblNBR_ODATE.TabIndex = 4;
             this.lblNBR_ODATE.ZIndex = 4;
             // 
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new Smobiler.Core.PointS(0F, 20F);
+            this.Line1.Location = new System.Drawing.Point(0,40);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.Size = new System.Drawing.Size(240,2);
             this.Line1.TabIndex = 5;
             this.Line1.ZIndex = 5;
             // 
@@ -90,12 +90,12 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks.Layout
             // 
             this.Label1.DataMember = "USER";
             this.Label1.DisplayMember = "USER";
-            this.Label1.FontSize = 5F;
+            this.Label1.FontSize = 10;
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.Label1.Location = new Smobiler.Core.PointS(0F, 12F);
+            this.Label1.Location = new System.Drawing.Point(0,24);
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.SizeF(46F, 8F);
+            this.Label1.Size = new System.Drawing.Size(92,16);
             this.Label1.TabIndex = 6;
             this.Label1.ZIndex = 3;
             // 
@@ -107,7 +107,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks.Layout
             this.Label1,
             this.lblNBR_ODATE,
             this.Line1});
-            this.Size = new System.Drawing.Size(120, 20);
+            this.Size = new System.Drawing.Size(240,40);
             this.Name = "frmNBRecordLayout";
 
         }

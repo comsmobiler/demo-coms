@@ -1,4 +1,4 @@
-Ôªøusing Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -49,23 +49,23 @@ namespace COMSSmobilerDemo.Leave
             // 
             this.txtL_REASON.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtL_REASON.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.txtL_REASON.Location = new Smobiler.Core.PointS(0F, 28F);
+            this.txtL_REASON.Location = new System.Drawing.Point(0,56);
             this.txtL_REASON.Multiline = true;
             this.txtL_REASON.Name = "txtL_REASON";
             this.txtL_REASON.Padding = new Smobiler.Core.Padding(2F, 5F, 12F, 0F);
-            this.txtL_REASON.Size = new System.Drawing.SizeF(120F, 40F);
+            this.txtL_REASON.Size = new System.Drawing.Size(240,80);
             this.txtL_REASON.TabIndex = 2;
             this.txtL_REASON.Visible = false;
-            this.txtL_REASON.WaterMarkText = "Â°´ÂÜôÁêÜÁî±";
+            this.txtL_REASON.WaterMarkText = "ÃÓ–¥¿Ì”…";
             // 
             // Label2
             // 
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.SizeF(120F, 14F);
+            this.Label2.Size = new System.Drawing.Size(240,28);
             this.Label2.TabIndex = 5;
-            this.Label2.Text = "ÈÄöËøáÂÆ°Êâπ";
+            this.Label2.Text = "Õ®π˝…Û≈˙";
             this.Label2.ZIndex = 1;
             // 
             // CheckBox2
@@ -74,9 +74,9 @@ namespace COMSSmobilerDemo.Leave
             this.CheckBox2.Border = new Smobiler.Core.Border(1);
             this.CheckBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.CheckBox2.Checked = false;
-            this.CheckBox2.Location = new Smobiler.Core.PointS(100F, 17F);
+            this.CheckBox2.Location = new System.Drawing.Point(200,34);
             this.CheckBox2.Name = "CheckBox2";
-            this.CheckBox2.Size = new System.Drawing.SizeF(8F, 8F);
+            this.CheckBox2.Size = new System.Drawing.Size(16,16);
             this.CheckBox2.TabIndex = 6;
             this.CheckBox2.UnCheckedBackColor = System.Drawing.Color.White;
             this.CheckBox2.ZIndex = 5;
@@ -87,12 +87,12 @@ namespace COMSSmobilerDemo.Leave
             this.Label3.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label3.Location = new Smobiler.Core.PointS(0F, 14F);
+            this.Label3.Location = new System.Drawing.Point(0,28);
             this.Label3.Name = "Label3";
             this.Label3.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label3.Size = new System.Drawing.SizeF(120F, 14F);
+            this.Label3.Size = new System.Drawing.Size(240,28);
             this.Label3.TabIndex = 7;
-            this.Label3.Text = "ÊãíÁªùÂÆ°Êâπ";
+            this.Label3.Text = "æ‹æ¯…Û≈˙";
             this.Label3.ZIndex = 4;
             // 
             // CheckBox1
@@ -100,9 +100,9 @@ namespace COMSSmobilerDemo.Leave
             this.CheckBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(121)))), ((int)(((byte)(252)))));
             this.CheckBox1.Border = new Smobiler.Core.Border(1);
             this.CheckBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.CheckBox1.Location = new Smobiler.Core.PointS(100F, 3F);
+            this.CheckBox1.Location = new System.Drawing.Point(200,6);
             this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.SizeF(8F, 8F);
+            this.CheckBox1.Size = new System.Drawing.Size(16,16);
             this.CheckBox1.TabIndex = 8;
             this.CheckBox1.UnCheckedBackColor = System.Drawing.Color.White;
             this.CheckBox1.ZIndex = 2;
@@ -112,14 +112,14 @@ namespace COMSSmobilerDemo.Leave
             // 
             this.Confirm.IconID = "!\\ue065043146223";
             this.Confirm.Name = "Confirm";
-            this.Confirm.Text = "ÂÆ°Êâπ";
+            this.Confirm.Text = "…Û≈˙";
             // 
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new Smobiler.Core.PointS(0F, 14F);
+            this.Line1.Location = new System.Drawing.Point(0,28);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.Size = new System.Drawing.Size(240,2);
             this.Line1.TabIndex = 9;
             this.Line1.ZIndex = 3;
             // 
@@ -135,7 +135,7 @@ namespace COMSSmobilerDemo.Leave
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
-            this.TitleText = "ËØ∑ÂÅáÂÆ°Êâπ";
+            this.TitleText = "«ÎºŸ…Û≈˙";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.Confirm});
             this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));

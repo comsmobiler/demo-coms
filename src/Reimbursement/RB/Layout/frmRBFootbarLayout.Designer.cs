@@ -39,10 +39,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB.Layout
             // 
             this.lblAmount.Bold = true;
             this.lblAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.lblAmount.Location = new Smobiler.Core.PointS(64F, 0F);
+            this.lblAmount.Location = new System.Drawing.Point(128,0);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblAmount.Size = new System.Drawing.SizeF(56F, 14F);
+            this.lblAmount.Size = new System.Drawing.Size(112,28);
             this.lblAmount.TabIndex = 2;
             this.lblAmount.Text = "￥0";
             this.lblAmount.ZIndex = 5;
@@ -54,20 +54,20 @@ namespace COMSSmobilerDemo.Reimbursement.RB.Layout
             this.Checkall.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Checkall.Checked = false;
             this.Checkall.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.Checkall.Location = new Smobiler.Core.PointS(4F, 4F);
+            this.Checkall.Location = new System.Drawing.Point(8,8);
             this.Checkall.Name = "Checkall";
-            this.Checkall.Size = new System.Drawing.SizeF(6F, 6F);
+            this.Checkall.Size = new System.Drawing.Size(12,12);
             this.Checkall.TabIndex = 3;
             this.Checkall.UnCheckedBackColor = System.Drawing.Color.White;
             this.Checkall.ZIndex = 2;
             // 
             // lblCheckall
             // 
-            this.lblCheckall.FontSize = 4.5F;
+            this.lblCheckall.FontSize = 9;
             this.lblCheckall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.lblCheckall.Location = new Smobiler.Core.PointS(17F, 0F);
+            this.lblCheckall.Location = new System.Drawing.Point(34,0);
             this.lblCheckall.Name = "lblCheckall";
-            this.lblCheckall.Size = new System.Drawing.SizeF(13F, 14F);
+            this.lblCheckall.Size = new System.Drawing.Size(26,28);
             this.lblCheckall.TabIndex = 4;
             this.lblCheckall.Text = "全选";
             this.lblCheckall.ZIndex = 3;
@@ -77,9 +77,9 @@ namespace COMSSmobilerDemo.Reimbursement.RB.Layout
             this.Label3.Bold = true;
             this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.Label3.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.Label3.Location = new Smobiler.Core.PointS(30F, 0F);
+            this.Label3.Location = new System.Drawing.Point(60,0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.SizeF(34F, 14F);
+            this.Label3.Size = new System.Drawing.Size(68,28);
             this.Label3.TabIndex = 5;
             this.Label3.Text = "总计：";
             this.Label3.ZIndex = 4;
@@ -88,7 +88,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB.Layout
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.Size = new System.Drawing.Size(240,2);
             this.Line1.TabIndex = 6;
             this.Line1.ZIndex = 1;
             // 
@@ -101,7 +101,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB.Layout
             this.lblCheckall,
             this.Label3,
             this.Line1});
-            this.Size = new System.Drawing.Size(120, 14);
+            this.Size = new System.Drawing.Size(240,28);
 
         }
         internal Smobiler.Core.Controls.Label lblAmount;

@@ -1,4 +1,4 @@
-Ôªø
+
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
@@ -52,24 +52,24 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnRBCC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnRBCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnRBCC.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnRBCC.Location = new Smobiler.Core.PointS(35F, 0F);
+            this.btnRBCC.Location = new System.Drawing.Point(70,0);
             this.btnRBCC.Name = "btnRBCC";
             this.btnRBCC.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnRBCC.Size = new System.Drawing.SizeF(75F, 14F);
+            this.btnRBCC.Size = new System.Drawing.Size(150,28);
             this.btnRBCC.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnRBCC.TabIndex = 2;
-            this.btnRBCC.Text = "ÈÄâÊã©ÔºàÂøÖÂ°´Ôºâ";
+            this.btnRBCC.Text = "—°‘Ò£®±ÿÃÓ£©";
             this.btnRBCC.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnChioce_Click);
             // 
             // btnChoice
             // 
             this.btnChoice.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnChoice.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnChoice.FontSize = 8F;
+            this.btnChoice.FontSize = 16;
             this.btnChoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnChoice.Location = new Smobiler.Core.PointS(110F, 0F);
+            this.btnChoice.Location = new System.Drawing.Point(220,0);
             this.btnChoice.Name = "btnChoice";
-            this.btnChoice.Size = new System.Drawing.SizeF(10F, 14F);
+            this.btnChoice.Size = new System.Drawing.Size(20,28);
             this.btnChoice.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnChoice.TabIndex = 3;
             this.btnChoice.Text = ">";
@@ -80,23 +80,23 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.TxtNote.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.TxtNote.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.TxtNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.TxtNote.Location = new Smobiler.Core.PointS(35F, 17F);
+            this.TxtNote.Location = new System.Drawing.Point(70,34);
             this.TxtNote.Multiline = true;
             this.TxtNote.Name = "TxtNote";
             this.TxtNote.Padding = new Smobiler.Core.Padding(0F, 5F, 12F, 0F);
-            this.TxtNote.Size = new System.Drawing.SizeF(85F, 40F);
+            this.TxtNote.Size = new System.Drawing.Size(170,80);
             this.TxtNote.TabIndex = 4;
-            this.TxtNote.WaterMarkText = "ÔºàÈÄâÂ°´Ôºâ";
+            this.TxtNote.WaterMarkText = "£®—°ÃÓ£©";
             // 
             // GridView1
             // 
             this.GridView1.Border = new Smobiler.Core.Border(0, 1, 0, 0);
             this.GridView1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.GridView1.Layout = "frmConsumption1Layout";
-            this.GridView1.Location = new Smobiler.Core.PointS(0F, 60F);
+            this.GridView1.Location = new System.Drawing.Point(0,120);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 140F);
+            this.GridView1.Size = new System.Drawing.Size(240,280);
             this.GridView1.TabIndex = 7;
             this.GridView1.ItemClick += new Smobiler.Core.Controls.GridViewItemClickEventHandler(this.GridView1_ItemClick);
             // 
@@ -104,19 +104,19 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.save.IconID = "!\\ue161043146223";
             this.save.Name = "save";
-            this.save.Text = "‰øùÂ≠ò";
+            this.save.Text = "±£¥Ê";
             // 
             // lblNote
             // 
             this.lblNote.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.lblNote.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.lblNote.Location = new Smobiler.Core.PointS(0F, 17F);
+            this.lblNote.Location = new System.Drawing.Point(0,34);
             this.lblNote.Name = "lblNote";
             this.lblNote.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.lblNote.Size = new System.Drawing.SizeF(35F, 40F);
+            this.lblNote.Size = new System.Drawing.Size(70,80);
             this.lblNote.TabIndex = 11;
-            this.lblNote.Text = "Êä•ÈîÄÂ§áÊ≥®";
+            this.lblNote.Text = "±®œ˙±∏◊¢";
             this.lblNote.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             // 
             // Label4
@@ -126,9 +126,9 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label4.Name = "Label4";
             this.Label4.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label4.Size = new System.Drawing.SizeF(35F, 14F);
+            this.Label4.Size = new System.Drawing.Size(70,28);
             this.Label4.TabIndex = 12;
-            this.Label4.Text = "ÊàêÊú¨‰∏≠ÂøÉ";
+            this.Label4.Text = "≥…±æ÷––ƒ";
             // 
             // frmRBCreate
             // 
@@ -143,7 +143,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.ForeColor = System.Drawing.Color.White;
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
-            this.TitleText = "Êä•ÈîÄÂàõÂª∫";
+            this.TitleText = "±®œ˙¥¥Ω®";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.save});
             this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));

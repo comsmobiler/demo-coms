@@ -66,9 +66,9 @@ namespace COMSSmobilerDemo
             table.Columns.Add("OR_FAULTINFO", typeof(System.String));
             table.Columns.Add("OR_PROCESSRESULT", typeof(System.String));
             table.Columns.Add("OR_DECLAREDATE", typeof(System.DateTime ));
-            table.Rows.Add("OR001", "数据丢失", "!\uf058043146223", DateTime.Now);
-            table.Rows.Add("OR002", "维护系统", "!\uf056255128192", DateTime.Now);
-            table.Rows.Add("OR003", "数据丢失1", "!\uf056255128192", DateTime.Now);
+            table.Rows.Add("OR001", "数据丢失", "node1", DateTime.Now);
+            table.Rows.Add("OR002", "维护系统", "node1", DateTime.Now);
+            table.Rows.Add("OR003", "数据丢失1", "node2", DateTime.Now);
             return table;
         }
         /// <summary>

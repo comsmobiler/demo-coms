@@ -42,7 +42,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             this.lblID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.lblID.Name = "lblID";
             this.lblID.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.lblID.Size = new System.Drawing.SizeF(100F, 12F);
+            this.lblID.Size = new System.Drawing.Size(200,24);
             this.lblID.TabIndex = 2;
             this.lblID.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             this.lblID.ZIndex = 1;
@@ -53,10 +53,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             this.lblState.DisplayMember = "STATENAME";
             this.lblState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.lblState.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblState.Location = new Smobiler.Core.PointS(100F, 0F);
+            this.lblState.Location = new System.Drawing.Point(200,0);
             this.lblState.Name = "lblState";
             this.lblState.Padding = new Smobiler.Core.Padding(0F, 5F, 2F, 0F);
-            this.lblState.Size = new System.Drawing.SizeF(20F, 12F);
+            this.lblState.Size = new System.Drawing.Size(40,24);
             this.lblState.TabIndex = 3;
             this.lblState.Text = "½è³ö";
             this.lblState.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
@@ -66,12 +66,12 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             // 
             this.Label1.DataMember = "BOOKSN";
             this.Label1.DisplayMember = "BOOKSN";
-            this.Label1.FontSize = 5F;
+            this.Label1.FontSize = 10;
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.Label1.Location = new Smobiler.Core.PointS(0F, 12F);
+            this.Label1.Location = new System.Drawing.Point(0,24);
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.SizeF(70F, 8F);
+            this.Label1.Size = new System.Drawing.Size(140,16);
             this.Label1.TabIndex = 4;
             this.Label1.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             this.Label1.ZIndex = 3;
@@ -79,9 +79,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new Smobiler.Core.PointS(0F, 20F);
+            this.Line1.Location = new System.Drawing.Point(0,40);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.Size = new System.Drawing.Size(240,2);
             this.Line1.TabIndex = 5;
             this.Line1.ZIndex = 5;
             // 
@@ -89,14 +89,14 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             // 
             this.Label2.DataMember = "BOOKDATE";
             this.Label2.DisplayMember = "BOOKDATE";
-            this.Label2.FontSize = 5F;
+            this.Label2.FontSize = 10;
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.Label2.Format = "{0:yyyy/MM/dd}";
             this.Label2.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.Label2.Location = new Smobiler.Core.PointS(70F, 12F);
+            this.Label2.Location = new System.Drawing.Point(140,24);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.SizeF(50F, 8F);
+            this.Label2.Size = new System.Drawing.Size(100,16);
             this.Label2.TabIndex = 6;
             this.Label2.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             this.Label2.ZIndex = 4;
@@ -109,7 +109,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             this.Label1,
             this.Label2,
             this.Line1});
-            this.Size = new System.Drawing.Size(120, 20);
+            this.Size = new System.Drawing.Size(240,40);
             this.Name = "frmBookLogLayout";
 
         }

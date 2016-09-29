@@ -1,4 +1,4 @@
-Ôªøusing Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -45,14 +45,14 @@ namespace COMSSmobilerDemo.Leave
             this.GridView1.Layout = "frmLCopyToUserLayout";
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.SizeF(120F, 200F);
+            this.GridView1.Size = new System.Drawing.Size(240,400);
             this.GridView1.TabIndex = 2;
             // 
             // CopyTo
             // 
             this.CopyTo.IconID = "!\\ue2bc043146223";
             this.CopyTo.Name = "CopyTo";
-            this.CopyTo.Text = "ÊäÑÈÄÅ";
+            this.CopyTo.Text = "≥≠ÀÕ";
             // 
             // frmLCopyToUser
             // 
@@ -60,7 +60,7 @@ namespace COMSSmobilerDemo.Leave
             this.GridView1});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
-            this.TitleText = "ÊäÑÈÄÅ‰∫∫Âëò";
+            this.TitleText = "≥≠ÀÕ»À‘±";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.CopyTo});
             this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));

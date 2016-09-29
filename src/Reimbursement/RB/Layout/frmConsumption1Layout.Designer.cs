@@ -1,4 +1,4 @@
-ï»¿
+
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
@@ -48,11 +48,11 @@ public partial class frmConsumption1Layout : Smobiler.Core.MobileForm
         this.lblMoney.DataMember = "RBROW_AMOUNT";
         this.lblMoney.DisplayMember = "RBROW_AMOUNT_FORMAT";
         this.lblMoney.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(45)), Convert.ToInt32(Convert.ToByte(45)), Convert.ToInt32(Convert.ToByte(45)));
-        this.lblMoney.Location = new Smobiler.Core.PointS(28f, 0f);
+        this.lblMoney.Location = new System.Drawing.Point(56,0);
         this.lblMoney.Name = "lblMoney";
-        this.lblMoney.Size = new System.Drawing.SizeF(30f, 12f);
+        this.lblMoney.Size = new System.Drawing.Size(60,24);
         this.lblMoney.TabIndex = 3;
-        this.lblMoney.Text = "ï¿¥15";
+        this.lblMoney.Text = "£¤15";
         this.lblMoney.VerticalAlignment = Smobiler.Core.VerticalAlignment.Bottom;
         this.lblMoney.ZIndex = 3;
         //
@@ -60,12 +60,12 @@ public partial class frmConsumption1Layout : Smobiler.Core.MobileForm
         //
         this.lbldate.DataMember = "RBROW_DATE";
         this.lbldate.DisplayMember = "ROW_DATE";
-        this.lbldate.FontSize = 5f;
+        this.lbldate.FontSize = 10;
         this.lbldate.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(145)), Convert.ToInt32(Convert.ToByte(145)), Convert.ToInt32(Convert.ToByte(145)));
-        this.lbldate.Location = new Smobiler.Core.PointS(28f, 12f);
+        this.lbldate.Location = new System.Drawing.Point(56,24);
         this.lbldate.Name = "lbldate";
         this.lbldate.Padding = new Smobiler.Core.Padding(0f, 2f, 0f, 0f);
-        this.lbldate.Size = new System.Drawing.SizeF(30f, 8f);
+        this.lbldate.Size = new System.Drawing.Size(60,16);
         this.lbldate.TabIndex = 4;
         this.lbldate.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
         this.lbldate.ZIndex = 4;
@@ -73,9 +73,9 @@ public partial class frmConsumption1Layout : Smobiler.Core.MobileForm
         //Line1
         //
         this.Line1.BackColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)));
-        this.Line1.Location = new Smobiler.Core.PointS(0f, 20f);
+        this.Line1.Location = new System.Drawing.Point(0,40);
         this.Line1.Name = "Line1";
-        this.Line1.Size = new System.Drawing.SizeF(120f, 1f);
+        this.Line1.Size = new System.Drawing.Size(240,2);
         this.Line1.TabIndex = 5;
         this.Line1.ZIndex = 6;
         //
@@ -88,9 +88,9 @@ public partial class frmConsumption1Layout : Smobiler.Core.MobileForm
         this.Check.CheckedBackColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(43)), Convert.ToInt32(Convert.ToByte(146)), Convert.ToInt32(Convert.ToByte(223)));
         this.Check.DataMember = "RBCHECKED";
         this.Check.DisplayMember = "RBCHECKED";
-        this.Check.Location = new Smobiler.Core.PointS(4f, 7f);
+        this.Check.Location = new System.Drawing.Point(8,14);
         this.Check.Name = "Check";
-        this.Check.Size = new System.Drawing.SizeF(6f, 6f);
+        this.Check.Size = new System.Drawing.Size(12,12);
         this.Check.TabIndex = 7;
         this.Check.UnCheckedBackColor = System.Drawing.Color.White;
         this.Check.ZIndex = 1;
@@ -99,13 +99,13 @@ public partial class frmConsumption1Layout : Smobiler.Core.MobileForm
         //
         this.imgType.DataMember = "RBROW_TYPE";
         this.imgType.DisplayMember = "RBROW_TYPE";
-        this.imgType.FontSize = 4f;
+        this.imgType.FontSize = 8;
         this.imgType.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(45)), Convert.ToInt32(Convert.ToByte(45)), Convert.ToInt32(Convert.ToByte(45)));
         this.imgType.HoverBackColor = System.Drawing.Color.White;
         this.imgType.HoverForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(45)), Convert.ToInt32(Convert.ToByte(45)), Convert.ToInt32(Convert.ToByte(45)));
-        this.imgType.Location = new Smobiler.Core.PointS(14f, 3f);
+        this.imgType.Location = new System.Drawing.Point(28,6);
         this.imgType.Name = "imgType";
-        this.imgType.Size = new System.Drawing.SizeF(14f, 14f);
+        this.imgType.Size = new System.Drawing.Size(28,28);
         this.imgType.Style = Smobiler.Core.Controls.ButtonStyle.custom;
         this.imgType.TabIndex = 8;
         this.imgType.TextMember = "RBROW_TYPENAME";
@@ -115,12 +115,12 @@ public partial class frmConsumption1Layout : Smobiler.Core.MobileForm
         //
         this.lblnote.DataMember = "ID";
         this.lblnote.DisplayMember = "ROW_NOTE";
-        this.lblnote.FontSize = 3f;
+        this.lblnote.FontSize = 6;
         this.lblnote.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(170)), Convert.ToInt32(Convert.ToByte(170)), Convert.ToInt32(Convert.ToByte(170)));
-        this.lblnote.Location = new Smobiler.Core.PointS(58f, 0f);
+        this.lblnote.Location = new System.Drawing.Point(116,0);
         this.lblnote.Name = "lblnote";
         this.lblnote.Padding = new Smobiler.Core.Padding(2f, 0f, 0f, 0f);
-        this.lblnote.Size = new System.Drawing.SizeF(62f, 20f);
+        this.lblnote.Size = new System.Drawing.Size(124,40);
         this.lblnote.TabIndex = 12;
         this.lblnote.ZIndex = 5;
         //
@@ -135,7 +135,7 @@ public partial class frmConsumption1Layout : Smobiler.Core.MobileForm
 		this.lblnote,
 		this.Line1
 	});
-        this.Size = new System.Drawing.Size(120, 20);
+        this.Size = new System.Drawing.Size(240,40);
 
     }
     internal Smobiler.Core.Controls.Label lblMoney;

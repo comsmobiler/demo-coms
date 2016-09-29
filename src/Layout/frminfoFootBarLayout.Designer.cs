@@ -34,12 +34,12 @@ namespace COMSSmobilerDemo.Layout
             // btnEdit
             // 
             this.btnEdit.BorderRadius = 5;
-            this.btnEdit.FontSize = 8F;
+            this.btnEdit.FontSize = 16;
             this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.btnEdit.HoverBackColor = System.Drawing.Color.White;
             this.btnEdit.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.SizeF(120F, 14F);
+            this.btnEdit.Size = new System.Drawing.Size(240,28);
             this.btnEdit.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnEdit.TabIndex = 2;
             this.btnEdit.Text = "±à¼­×ÊÁÏ";
@@ -50,7 +50,7 @@ namespace COMSSmobilerDemo.Layout
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.Size = new System.Drawing.Size(240,2);
             this.Line1.TabIndex = 3;
             this.Line1.ZIndex = 1;
             // 
@@ -59,7 +59,7 @@ namespace COMSSmobilerDemo.Layout
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.btnEdit,
             this.Line1});
-            this.Size = new System.Drawing.Size(120, 14);
+            this.Size = new System.Drawing.Size(240,28);
 
         }
         #endregion

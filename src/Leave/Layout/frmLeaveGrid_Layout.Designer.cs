@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -47,12 +47,12 @@ namespace COMSSmobilerDemo.Leave.Layout
             // 
             this.lblLDay.DataMember = "L_LEAVEDAY";
             this.lblLDay.DisplayMember = "L_LEAVEDAY";
-            this.lblLDay.FontSize = 7F;
+            this.lblLDay.FontSize = 14;
             this.lblLDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblLDay.Location = new Smobiler.Core.PointS(14F, 0F);
+            this.lblLDay.Location = new System.Drawing.Point(28,0);
             this.lblLDay.Name = "lblLDay";
             this.lblLDay.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.lblLDay.Size = new System.Drawing.SizeF(80F, 12F);
+            this.lblLDay.Size = new System.Drawing.Size(160,24);
             this.lblLDay.TabIndex = 4;
             this.lblLDay.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             this.lblLDay.ZIndex = 2;
@@ -61,12 +61,12 @@ namespace COMSSmobilerDemo.Leave.Layout
             // 
             this.lblNo.DataMember = "L_REASON";
             this.lblNo.DisplayMember = "L_REASON";
-            this.lblNo.FontSize = 5F;
+            this.lblNo.FontSize = 10;
             this.lblNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.lblNo.Location = new Smobiler.Core.PointS(14F, 12F);
+            this.lblNo.Location = new System.Drawing.Point(28,24);
             this.lblNo.Name = "lblNo";
             this.lblNo.Padding = new Smobiler.Core.Padding(2F, 2F, 0F, 0F);
-            this.lblNo.Size = new System.Drawing.SizeF(80F, 8F);
+            this.lblNo.Size = new System.Drawing.Size(160,16);
             this.lblNo.TabIndex = 5;
             this.lblNo.ZIndex = 4;
             // 
@@ -74,10 +74,10 @@ namespace COMSSmobilerDemo.Leave.Layout
             // 
             this.imgType.DataMember = "L_TYPE";
             this.imgType.DisplayMember = "L_TYPE";
-            this.imgType.FontSize = 4F;
-            this.imgType.Location = new Smobiler.Core.PointS(0F, 3F);
+            this.imgType.FontSize = 8;
+            this.imgType.Location = new System.Drawing.Point(0,6);
             this.imgType.Name = "imgType";
-            this.imgType.Size = new System.Drawing.SizeF(14F, 14F);
+            this.imgType.Size = new System.Drawing.Size(28,28);
             this.imgType.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.imgType.TabIndex = 8;
             this.imgType.TextMember = "L_TYPEDESC";
@@ -86,9 +86,9 @@ namespace COMSSmobilerDemo.Leave.Layout
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new Smobiler.Core.PointS(0F, 20F);
+            this.Line1.Location = new System.Drawing.Point(0,40);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.SizeF(120F, 1F);
+            this.Line1.Size = new System.Drawing.Size(240,2);
             this.Line1.TabIndex = 10;
             this.Line1.ZIndex = 6;
             // 
@@ -97,9 +97,9 @@ namespace COMSSmobilerDemo.Leave.Layout
             this.lblState.DataMember = "L_STATE_FORMAT";
             this.lblState.DisplayMember = "L_STATE_FORMAT";
             this.lblState.ID = "";
-            this.lblState.Location = new Smobiler.Core.PointS(93F, 2F);
+            this.lblState.Location = new System.Drawing.Point(186,4);
             this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.SizeF(16F, 16F);
+            this.lblState.Size = new System.Drawing.Size(32,32);
             this.lblState.TabIndex = 11;
             this.lblState.ZIndex = 5;
             // 
@@ -112,7 +112,7 @@ namespace COMSSmobilerDemo.Leave.Layout
             this.lblNo,
             this.Line1,
             this.lblState});
-            this.Size = new System.Drawing.Size(120, 20);
+            this.Size = new System.Drawing.Size(240,40);
             this.Name = "frmLeaveGrid_Layout";
 
         }
