@@ -57,10 +57,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.txtMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.txtMoney.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.txtMoney.InputType = Smobiler.Core.TextBoxInputType.Number;
-            this.txtMoney.Location = new System.Drawing.Point(70, 0);
+            this.txtMoney.Location = new System.Drawing.Point(88, 0);
             this.txtMoney.Name = "txtMoney";
-            this.txtMoney.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.txtMoney.Size = new System.Drawing.Size(134, 28);
+            this.txtMoney.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.txtMoney.Size = new System.Drawing.Size(168, 35);
             this.txtMoney.TabIndex = 4;
             this.txtMoney.WaterMarkText = "0.00";
             // 
@@ -70,10 +70,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.Label1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.Label1.Location = new System.Drawing.Point(204, 0);
+            this.Label1.Location = new System.Drawing.Point(255, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.Label1.Size = new System.Drawing.Size(36, 28);
+            this.Label1.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.Label1.Size = new System.Drawing.Size(45, 35);
             this.Label1.TabIndex = 5;
             this.Label1.Text = "元";
             // 
@@ -82,10 +82,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label2.Location = new System.Drawing.Point(0, 62);
+            this.Label2.Location = new System.Drawing.Point(0, 78);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.Size(70, 28);
+            this.Label2.Size = new System.Drawing.Size(88, 35);
             this.Label2.TabIndex = 7;
             this.Label2.Text = "消费日期";
             // 
@@ -95,10 +95,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.DatePicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.DatePicker.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.DatePicker.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.DatePicker.Location = new System.Drawing.Point(70, 62);
+            this.DatePicker.Location = new System.Drawing.Point(88, 78);
             this.DatePicker.Name = "DatePicker";
-            this.DatePicker.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.DatePicker.Size = new System.Drawing.Size(170, 28);
+            this.DatePicker.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.DatePicker.Size = new System.Drawing.Size(213, 35);
             this.DatePicker.TabIndex = 8;
             // 
             // Label3
@@ -106,10 +106,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label3.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label3.Location = new System.Drawing.Point(0, 96);
+            this.Label3.Location = new System.Drawing.Point(0, 120);
             this.Label3.Name = "Label3";
             this.Label3.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.Label3.Size = new System.Drawing.Size(70, 80);
+            this.Label3.Size = new System.Drawing.Size(88, 100);
             this.Label3.TabIndex = 10;
             this.Label3.Text = "备注";
             this.Label3.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
@@ -119,12 +119,12 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.txtNote.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.txtNote.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.txtNote.Location = new System.Drawing.Point(70, 96);
+            this.txtNote.Location = new System.Drawing.Point(88, 120);
             this.txtNote.MaxLength = 200;
             this.txtNote.Multiline = true;
             this.txtNote.Name = "txtNote";
             this.txtNote.Padding = new Smobiler.Core.Padding(0F, 5F, 12F, 0F);
-            this.txtNote.Size = new System.Drawing.Size(170, 80);
+            this.txtNote.Size = new System.Drawing.Size(213, 100);
             this.txtNote.TabIndex = 12;
             this.txtNote.WaterMarkText = "（必填）";
             // 
@@ -147,7 +147,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label4.Name = "Label4";
             this.Label4.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label4.Size = new System.Drawing.Size(70, 28);
+            this.Label4.Size = new System.Drawing.Size(88, 35);
             this.Label4.TabIndex = 13;
             this.Label4.Text = "消费金额";
             // 
@@ -156,10 +156,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label5.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label5.Location = new System.Drawing.Point(0, 34);
+            this.Label5.Location = new System.Drawing.Point(0, 43);
             this.Label5.Name = "Label5";
             this.Label5.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label5.Size = new System.Drawing.Size(70, 28);
+            this.Label5.Size = new System.Drawing.Size(88, 35);
             this.Label5.TabIndex = 14;
             this.Label5.Text = "消费类别";
             // 
@@ -169,11 +169,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnRBType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnRBType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnRBType.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnRBType.Location = new System.Drawing.Point(70, 34);
+            this.btnRBType.Location = new System.Drawing.Point(88, 43);
             this.btnRBType.Name = "btnRBType";
-            this.btnRBType.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnRBType.Size = new System.Drawing.Size(150, 28);
-            this.btnRBType.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnRBType.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.btnRBType.Size = new System.Drawing.Size(188, 35);
             this.btnRBType.TabIndex = 15;
             this.btnRBType.Text = "选择（必填）";
             this.btnRBType.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnRBType_Click);
@@ -182,12 +181,11 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.btnRBType1.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.btnRBType1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnRBType1.FontSize = 16F;
+            this.btnRBType1.FontSize = 20F;
             this.btnRBType1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnRBType1.Location = new System.Drawing.Point(220, 34);
+            this.btnRBType1.Location = new System.Drawing.Point(275, 43);
             this.btnRBType1.Name = "btnRBType1";
-            this.btnRBType1.Size = new System.Drawing.Size(20, 28);
-            this.btnRBType1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnRBType1.Size = new System.Drawing.Size(25, 35);
             this.btnRBType1.TabIndex = 16;
             this.btnRBType1.Text = ">";
             this.btnRBType1.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnRBType_Click);
@@ -195,13 +193,13 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // Label6
             // 
             this.Label6.BackColorAlpha = 0;
-            this.Label6.FontSize = 10F;
+            this.Label6.FontSize = 13F;
             this.Label6.ForeColor = System.Drawing.Color.Red;
             this.Label6.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.Label6.Location = new System.Drawing.Point(0, 176);
+            this.Label6.Location = new System.Drawing.Point(0, 220);
             this.Label6.Name = "Label6";
             this.Label6.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.Label6.Size = new System.Drawing.Size(240, 20);
+            this.Label6.Size = new System.Drawing.Size(300, 25);
             this.Label6.TabIndex = 17;
             this.Label6.Text = "备注长度不能超过200！";
             // 

@@ -49,11 +49,11 @@ namespace COMSSmobilerDemo.Leave
             // 
             this.txtL_REASON.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtL_REASON.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.txtL_REASON.Location = new System.Drawing.Point(0,56);
+            this.txtL_REASON.Location = new System.Drawing.Point(0,70);
             this.txtL_REASON.Multiline = true;
             this.txtL_REASON.Name = "txtL_REASON";
             this.txtL_REASON.Padding = new Smobiler.Core.Padding(2F, 5F, 12F, 0F);
-            this.txtL_REASON.Size = new System.Drawing.Size(240,80);
+            this.txtL_REASON.Size = new System.Drawing.Size(300,100);
             this.txtL_REASON.TabIndex = 2;
             this.txtL_REASON.Visible = false;
             this.txtL_REASON.WaterMarkText = "填写理由";
@@ -63,7 +63,7 @@ namespace COMSSmobilerDemo.Leave
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.Size(240,28);
+            this.Label2.Size = new System.Drawing.Size(300,35);
             this.Label2.TabIndex = 5;
             this.Label2.Text = "通过审批";
             this.Label2.ZIndex = 1;
@@ -74,9 +74,9 @@ namespace COMSSmobilerDemo.Leave
             this.CheckBox2.Border = new Smobiler.Core.Border(1);
             this.CheckBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.CheckBox2.Checked = false;
-            this.CheckBox2.Location = new System.Drawing.Point(200,34);
+            this.CheckBox2.Location = new System.Drawing.Point(250,43);
             this.CheckBox2.Name = "CheckBox2";
-            this.CheckBox2.Size = new System.Drawing.Size(16,16);
+            this.CheckBox2.Size = new System.Drawing.Size(20,20);
             this.CheckBox2.TabIndex = 6;
             this.CheckBox2.UnCheckedBackColor = System.Drawing.Color.White;
             this.CheckBox2.ZIndex = 5;
@@ -87,10 +87,10 @@ namespace COMSSmobilerDemo.Leave
             this.Label3.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label3.Location = new System.Drawing.Point(0,28);
+            this.Label3.Location = new System.Drawing.Point(0,35);
             this.Label3.Name = "Label3";
             this.Label3.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label3.Size = new System.Drawing.Size(240,28);
+            this.Label3.Size = new System.Drawing.Size(300,35);
             this.Label3.TabIndex = 7;
             this.Label3.Text = "拒绝审批";
             this.Label3.ZIndex = 4;
@@ -100,9 +100,9 @@ namespace COMSSmobilerDemo.Leave
             this.CheckBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(121)))), ((int)(((byte)(252)))));
             this.CheckBox1.Border = new Smobiler.Core.Border(1);
             this.CheckBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.CheckBox1.Location = new System.Drawing.Point(200,6);
+            this.CheckBox1.Location = new System.Drawing.Point(250,8);
             this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.Size(16,16);
+            this.CheckBox1.Size = new System.Drawing.Size(20,20);
             this.CheckBox1.TabIndex = 8;
             this.CheckBox1.UnCheckedBackColor = System.Drawing.Color.White;
             this.CheckBox1.ZIndex = 2;
@@ -117,9 +117,9 @@ namespace COMSSmobilerDemo.Leave
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new System.Drawing.Point(0,28);
+            this.Line1.Location = new System.Drawing.Point(0,35);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.Size(240,2);
+            this.Line1.Size = new System.Drawing.Size(300,3);
             this.Line1.TabIndex = 9;
             this.Line1.ZIndex = 3;
             // 

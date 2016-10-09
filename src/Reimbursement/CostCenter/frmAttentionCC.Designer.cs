@@ -44,7 +44,7 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter
             this.GridView1.Layout = "frmAttentionCCDt";
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240,398);
+            this.GridView1.Size = new System.Drawing.Size(300,498);
             this.GridView1.TabIndex = 3;
             this.GridView1.ItemClick += new Smobiler.Core.Controls.GridViewItemClickEventHandler(this.GridView1_ItemClick);
             // 

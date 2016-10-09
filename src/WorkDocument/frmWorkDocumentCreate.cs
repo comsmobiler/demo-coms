@@ -79,9 +79,9 @@ namespace COMSSmobilerDemo.WorkDocument
                     this.lblCDNO.Visible = true;
                     this.txtCDNO.Visible = true;
                     this.lblworkday.Text = "工单其他人天";
-                    this.txtCDNO.Top = 96;
+                    this.txtCDNO.Top = 120;
                     this.txtworkday.Text = "";
-                    this.TxtNote.Top = this.txtCDNO.Top + this.txtCDNO.Height + 6;
+                    this.TxtNote.Top = this.txtCDNO.Top + this.txtCDNO.Height + 8;
                     this.lblNote.Top = this.TxtNote.Top;
                     break;
                 case "002":
@@ -90,7 +90,7 @@ namespace COMSSmobilerDemo.WorkDocument
                     this.lblCDNO.Visible = false;
                     this.txtCDNO.Visible = false;
                     this.lblworkday.Text = "工单业务人天";
-                    this.TxtNote.Top = 130 - this.txtCDNO.Height;
+                    this.TxtNote.Top = 162 - this.txtCDNO.Height;
                     this.lblNote.Top = this.TxtNote.Top;
                     this.txtworkday1.Text = "";
                     this.txtCDNO.Text = "";

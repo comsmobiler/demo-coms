@@ -53,8 +53,8 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                         //创建BarChart
 						BarChart BarChart1 = new BarChart();
 						chartObj = BarChart1;
-						BarChart1.Size = new System.Drawing.Size(200, 200);
-                        BarChart1.Location = new System.Drawing.Point(20, 50);
+						BarChart1.Size = new System.Drawing.Size(250, 250);
+                        BarChart1.Location = new System.Drawing.Point(25, 63);
 						BarChart1.XAxisLabelMember = "XMember";
 						BarChart1.YAxisValueMember = "YMember";
 						this.Controls.Add(BarChart1);
@@ -92,8 +92,8 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                                     //创建BubbleChart
 							    BubbleChart BubbleChart1 = new BubbleChart();
 							    chartObj = BubbleChart1;
-							    BubbleChart1.Size = new System.Drawing.Size(200, 180);
-                                BubbleChart1.Location = new System.Drawing.Point(20, 70);
+							    BubbleChart1.Size = new System.Drawing.Size(250, 225);
+                                BubbleChart1.Location = new System.Drawing.Point(25, 80);
 							    BubbleChart1.XAxisLabelMember = "XMember";
 							    BubbleChart1.YAxisValueMember = "YMember";
 							    this.Controls.Add(BubbleChart1);
@@ -114,8 +114,8 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                                 //创建ScatterChart
                                 ScatterChart ScatterChart1 = new ScatterChart();
                                 chartObj = ScatterChart1;
-                                ScatterChart1.Size = new System.Drawing.Size(200, 180);
-                                ScatterChart1.Location = new System.Drawing.Point(20, 70);
+                                ScatterChart1.Size = new System.Drawing.Size(250, 225);
+                                ScatterChart1.Location = new System.Drawing.Point(25, 80);
                                 ScatterChart1.SeriesMember = "XMember";
                                 ScatterChart1.SeriesShapMember = "Shape";
                                 ScatterChart1.XAxisLabelMember = "XMember";
@@ -147,8 +147,8 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                                 //创建RadarChart
                                 RadarChart RadarChart1 = new RadarChart();
                                 chartObj = RadarChart1;
-                                RadarChart1.Size = new System.Drawing.Size(200, 180);
-                                RadarChart1.Location = new System.Drawing.Point(20, 70);
+                                RadarChart1.Size = new System.Drawing.Size(250, 225);
+                                RadarChart1.Location = new System.Drawing.Point(25, 80);
                                 RadarChart1.SeriesMember = "XMember";
                                 RadarChart1.XAxisLabelMember = "XMember";
                                 RadarChart1.YAxisValueMember = "YMember";
@@ -188,8 +188,8 @@ namespace COMSSmobilerDemo.Reimbursement.RB
                         //创建LineChart
 						LineChart LineChart1 = new LineChart();
 						chartObj = LineChart1;
-                        LineChart1.Size = new System.Drawing.Size(200, 200);
-                        LineChart1.Location = new System.Drawing.Point(20, 50);
+                        LineChart1.Size = new System.Drawing.Size(250, 250);
+                        LineChart1.Location = new System.Drawing.Point(25, 63);
 						LineChart1.XAxisLabelMember = "XMember";
 						LineChart1.YAxisValueMember = "YMember";
 						this.Controls.Add(LineChart1);
@@ -223,8 +223,8 @@ namespace COMSSmobilerDemo.Reimbursement.RB
 						PieChart PieChart1 = new PieChart();
 						chartObj = PieChart1;
 
-                        PieChart1.Size = new System.Drawing.Size(200, 200);
-                        PieChart1.Location = new System.Drawing.Point(20, 50);
+                        PieChart1.Size = new System.Drawing.Size(250, 250);
+                        PieChart1.Location = new System.Drawing.Point(25, 63);
 						PieChart1.XAxisLabelMember = "XMember";
 						PieChart1.YAxisValueMember = "YMember";
 						this.Controls.Add(PieChart1);

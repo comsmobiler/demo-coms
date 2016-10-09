@@ -50,10 +50,10 @@ namespace COMSSmobilerDemo
             this.txtSearchinfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtSearchinfo.BorderRadius = 2;
             this.txtSearchinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.txtSearchinfo.Location = new System.Drawing.Point(2,10);
+            this.txtSearchinfo.Location = new System.Drawing.Point(3, 13);
             this.txtSearchinfo.Name = "txtSearchinfo";
             this.txtSearchinfo.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.txtSearchinfo.Size = new System.Drawing.Size(200,28);
+            this.txtSearchinfo.Size = new System.Drawing.Size(250, 35);
             this.txtSearchinfo.TabIndex = 2;
             this.txtSearchinfo.WaterMarkText = "搜索";
             // 
@@ -61,12 +61,11 @@ namespace COMSSmobilerDemo
             // 
             this.btnSearch.BackColor = System.Drawing.Color.Black;
             this.btnSearch.BackColorAlpha = 0;
-            this.btnSearch.FontSize = 8;
-            this.btnSearch.Location = new System.Drawing.Point(208,10);
+            this.btnSearch.FontSize = 10F;
+            this.btnSearch.Location = new System.Drawing.Point(260, 13);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.ResourceID = "!\\ue8b6043146223";
-            this.btnSearch.Size = new System.Drawing.Size(28,28);
-            this.btnSearch.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnSearch.Size = new System.Drawing.Size(35, 35);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnSearch_Click);
             // 
@@ -74,10 +73,10 @@ namespace COMSSmobilerDemo
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Layout = "frmMessageLayout";
-            this.GridView1.Location = new System.Drawing.Point(0,42);
+            this.GridView1.Location = new System.Drawing.Point(0, 53);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240,326);
+            this.GridView1.Size = new System.Drawing.Size(300, 408);
             this.GridView1.TabIndex = 4;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             this.GridView1.UpSlippling += new System.EventHandler(this.GridView1_UpSlippling);
@@ -99,12 +98,12 @@ namespace COMSSmobilerDemo
             // 
             this.Label1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Label1.BackColorAlpha = 0;
-            this.Label1.FontSize = 18;
+            this.Label1.FontSize = 23F;
             this.Label1.ForeColor = System.Drawing.Color.Red;
             this.Label1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
-            this.Label1.Location = new System.Drawing.Point(4,136);
+            this.Label1.Location = new System.Drawing.Point(5, 170);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(240,30);
+            this.Label1.Size = new System.Drawing.Size(300, 38);
             this.Label1.TabIndex = 9;
             this.Label1.Text = "目前暂时无任何消息";
             this.Label1.Visible = false;

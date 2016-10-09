@@ -44,10 +44,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             this.lblBOOKID.DataMember = "BOOKNO";
             this.lblBOOKID.DisplayMember = "BOOKNAME";
             this.lblBOOKID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.lblBOOKID.Location = new System.Drawing.Point(60,0);
+            this.lblBOOKID.Location = new System.Drawing.Point(75,0);
             this.lblBOOKID.Name = "lblBOOKID";
             this.lblBOOKID.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblBOOKID.Size = new System.Drawing.Size(180,20);
+            this.lblBOOKID.Size = new System.Drawing.Size(225,25);
             this.lblBOOKID.TabIndex = 2;
             this.lblBOOKID.ZIndex = 2;
             // 
@@ -55,13 +55,13 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             // 
             this.lblMoney.DataMember = "MONEY";
             this.lblMoney.DisplayMember = "MONEY";
-            this.lblMoney.FontSize = 10;
+            this.lblMoney.FontSize = 13;
             this.lblMoney.ForeColor = System.Drawing.Color.Red;
             this.lblMoney.Format = "{0:C}";
-            this.lblMoney.Location = new System.Drawing.Point(60,20);
+            this.lblMoney.Location = new System.Drawing.Point(75,25);
             this.lblMoney.Name = "lblMoney";
             this.lblMoney.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblMoney.Size = new System.Drawing.Size(120,12);
+            this.lblMoney.Size = new System.Drawing.Size(150,15);
             this.lblMoney.TabIndex = 3;
             this.lblMoney.Text = "гд0.00";
             this.lblMoney.ZIndex = 3;
@@ -70,22 +70,22 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             // 
             this.lblNB_BUYDATE.DataMember = "BOOKPUBLIDATE";
             this.lblNB_BUYDATE.DisplayMember = "BOOKPUBLIDATE";
-            this.lblNB_BUYDATE.FontSize = 10;
+            this.lblNB_BUYDATE.FontSize = 13;
             this.lblNB_BUYDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.lblNB_BUYDATE.Format = "{0:yyyy/MM/dd}";
-            this.lblNB_BUYDATE.Location = new System.Drawing.Point(60,32);
+            this.lblNB_BUYDATE.Location = new System.Drawing.Point(75,40);
             this.lblNB_BUYDATE.Name = "lblNB_BUYDATE";
             this.lblNB_BUYDATE.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblNB_BUYDATE.Size = new System.Drawing.Size(120,12);
+            this.lblNB_BUYDATE.Size = new System.Drawing.Size(150,15);
             this.lblNB_BUYDATE.TabIndex = 4;
             this.lblNB_BUYDATE.ZIndex = 4;
             // 
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new System.Drawing.Point(60,56);
+            this.Line1.Location = new System.Drawing.Point(75,70);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.Size(180,2);
+            this.Line1.Size = new System.Drawing.Size(225,3);
             this.Line1.TabIndex = 5;
             this.Line1.ZIndex = 6;
             // 
@@ -94,9 +94,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             this.Image1.DataMember = "BOOKIMG";
             this.Image1.DisplayMember = "BOOKIMG";
             this.Image1.ID = "";
-            this.Image1.Location = new System.Drawing.Point(5,5);
+            this.Image1.Location = new System.Drawing.Point(7,7);
             this.Image1.Name = "Image1";
-            this.Image1.Size = new System.Drawing.Size(50,42);
+            this.Image1.Size = new System.Drawing.Size(63,53);
             this.Image1.SizeMode = Smobiler.Core.ImageSizeMode.StretchImage;
             this.Image1.TabIndex = 6;
             this.Image1.ZIndex = 1;
@@ -105,12 +105,12 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             // 
             this.lblQTY.DataMember = "QTY";
             this.lblQTY.DisplayMember = "QTY";
-            this.lblQTY.FontSize = 8;
+            this.lblQTY.FontSize = 10;
             this.lblQTY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.lblQTY.Location = new System.Drawing.Point(60,44);
+            this.lblQTY.Location = new System.Drawing.Point(75,55);
             this.lblQTY.Name = "lblQTY";
             this.lblQTY.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblQTY.Size = new System.Drawing.Size(180,12);
+            this.lblQTY.Size = new System.Drawing.Size(225,15);
             this.lblQTY.TabIndex = 7;
             this.lblQTY.ZIndex = 5;
             // 
@@ -119,10 +119,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             this.Image2.DataMember = "GRADEIMG";
             this.Image2.DisplayMember = "GRADEIMG";
             this.Image2.ID = "";
-            this.Image2.Location = new System.Drawing.Point(186,20);
+            this.Image2.Location = new System.Drawing.Point(233,25);
             this.Image2.Name = "Image2";
             this.Image2.Padding = new Smobiler.Core.Padding(1F);
-            this.Image2.Size = new System.Drawing.Size(20,20);
+            this.Image2.Size = new System.Drawing.Size(25,25);
             this.Image2.TabIndex = 8;
             this.Image2.ZIndex = 1;
             // 
@@ -130,12 +130,12 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             // 
             this.Label1.DataMember = "GRADE";
             this.Label1.DisplayMember = "GRADE";
-            this.Label1.FontSize = 10;
+            this.Label1.FontSize = 13;
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.Label1.Location = new System.Drawing.Point(206,20);
+            this.Label1.Location = new System.Drawing.Point(258,25);
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.Size(32,20);
+            this.Label1.Size = new System.Drawing.Size(40,25);
             this.Label1.TabIndex = 9;
             this.Label1.Text = "Label1";
             // 
@@ -151,7 +151,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books.Layout
             this.Line1,
             this.Image2,
             this.Label1});
-            this.Size = new System.Drawing.Size(240,56);
+            this.Size = new System.Drawing.Size(300,70);
             this.Name = "frmBooksLayout";
 
         }

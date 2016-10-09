@@ -50,7 +50,7 @@ public partial class frmCostCenter : Smobiler.Core.MobileForm
             this.GridView1.Name = "GridView1";
             this.GridView1.PageSize = 10;
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240,400);
+            this.GridView1.Size = new System.Drawing.Size(300,500);
             this.GridView1.TabIndex = 2;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             // 

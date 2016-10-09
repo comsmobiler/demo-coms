@@ -36,14 +36,14 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             try
             {
 
-                    lblBOOKLOGID.Text = "";
-                    lblBOOKSNID.Text = "";
-                    lblBOOKNAME.Text = "";
-                    lblBORROWER.Text = "";
-                    lblENDDATE.Text = "";
+                    lblBOOKLOGID.Text = "BL001";
+                    lblBOOKSNID.Text = "SN001";
+                    lblBOOKNAME.Text = "ASP.NET»ù´¡";
+                    lblBORROWER.Text = "Demo";
+                    lblENDDATE.Text =DateTime .Now .ToString ();
                     lblRETURNDATE.Text = "";
                     lblLOSEDATE.Text = "";
-                    lblSTATUS.Text = "";
+                    lblSTATUS.Text = "½è³ö";
             }
             catch (Exception ex)
             {

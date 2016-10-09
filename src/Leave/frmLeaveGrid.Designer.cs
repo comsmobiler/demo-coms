@@ -46,10 +46,10 @@ namespace COMSSmobilerDemo.Leave
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Layout = "frmLeaveGrid_Layout";
-            this.GridView1.Location = new System.Drawing.Point(0,46);
+            this.GridView1.Location = new System.Drawing.Point(0,58);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240,350);
+            this.GridView1.Size = new System.Drawing.Size(300,438);
             this.GridView1.TabIndex = 4;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             this.GridView1.UpSlippling += new System.EventHandler(this.GridView1_UpSlippling);
@@ -76,11 +76,11 @@ namespace COMSSmobilerDemo.Leave
             this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
             textTabBarItem1,
             textTabBarItem2});
-            this.TextTabBar1.Location = new System.Drawing.Point(20,10);
+            this.TextTabBar1.Location = new System.Drawing.Point(25,13);
             this.TextTabBar1.Name = "TextTabBar1";
             this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.TextTabBar1.SelectForeColor = System.Drawing.Color.White;
-            this.TextTabBar1.Size = new System.Drawing.Size(200,28);
+            this.TextTabBar1.Size = new System.Drawing.Size(250,35);
             this.TextTabBar1.TabIndex = 8;
             this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
             // 

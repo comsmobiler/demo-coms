@@ -54,7 +54,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.Size(70,28);
+            this.Label1.Size = new System.Drawing.Size(88, 35);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "设备编号";
             this.Label1.ZIndex = 1;
@@ -65,10 +65,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.txtNB_EQNO.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtNB_EQNO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.txtNB_EQNO.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.txtNB_EQNO.Location = new System.Drawing.Point(70,0);
+            this.txtNB_EQNO.Location = new System.Drawing.Point(88, 0);
             this.txtNB_EQNO.Name = "txtNB_EQNO";
             this.txtNB_EQNO.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.txtNB_EQNO.Size = new System.Drawing.Size(130,28);
+            this.txtNB_EQNO.Size = new System.Drawing.Size(163, 35);
             this.txtNB_EQNO.TabIndex = 3;
             this.txtNB_EQNO.WaterMarkText = "（必填）";
             this.txtNB_EQNO.ZIndex = 2;
@@ -78,10 +78,9 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnCODE2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnCODE2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnCODE2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnCODE2.Location = new System.Drawing.Point(200,0);
+            this.btnCODE2.Location = new System.Drawing.Point(250, 0);
             this.btnCODE2.Name = "btnCODE2";
-            this.btnCODE2.Size = new System.Drawing.Size(20,28);
-            this.btnCODE2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnCODE2.Size = new System.Drawing.Size(25, 35);
             this.btnCODE2.TabIndex = 4;
             this.btnCODE2.Text = ">";
             this.btnCODE2.ZIndex = 29;
@@ -93,11 +92,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnUser.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnUser.Location = new System.Drawing.Point(70,34);
+            this.btnUser.Location = new System.Drawing.Point(88, 43);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnUser.Size = new System.Drawing.Size(150,28);
-            this.btnUser.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnUser.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.btnUser.Size = new System.Drawing.Size(188, 35);
             this.btnUser.TabIndex = 6;
             this.btnUser.ZIndex = 18;
             // 
@@ -106,10 +104,9 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnUser2.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.btnUser2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnUser2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnUser2.Location = new System.Drawing.Point(220,34);
+            this.btnUser2.Location = new System.Drawing.Point(275, 43);
             this.btnUser2.Name = "btnUser2";
-            this.btnUser2.Size = new System.Drawing.Size(20,28);
-            this.btnUser2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnUser2.Size = new System.Drawing.Size(25, 35);
             this.btnUser2.TabIndex = 7;
             this.btnUser2.Text = ">";
             this.btnUser2.ZIndex = 19;
@@ -120,10 +117,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label8.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label8.Location = new System.Drawing.Point(0,34);
+            this.Label8.Location = new System.Drawing.Point(0, 43);
             this.Label8.Name = "Label8";
             this.Label8.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label8.Size = new System.Drawing.Size(70,28);
+            this.Label8.Size = new System.Drawing.Size(88, 35);
             this.Label8.TabIndex = 8;
             this.Label8.Text = "用户";
             this.Label8.ZIndex = 17;
@@ -133,10 +130,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label2.Location = new System.Drawing.Point(0,62);
+            this.Label2.Location = new System.Drawing.Point(0, 78);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.Size(70,28);
+            this.Label2.Size = new System.Drawing.Size(88, 35);
             this.Label2.TabIndex = 9;
             this.Label2.Text = "操作类型";
             this.Label2.ZIndex = 17;
@@ -147,11 +144,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnType.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnType.Location = new System.Drawing.Point(70,62);
+            this.btnType.Location = new System.Drawing.Point(88, 78);
             this.btnType.Name = "btnType";
-            this.btnType.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnType.Size = new System.Drawing.Size(150,28);
-            this.btnType.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnType.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.btnType.Size = new System.Drawing.Size(188, 35);
             this.btnType.TabIndex = 10;
             this.btnType.Text = "开始使用";
             this.btnType.ZIndex = 18;
@@ -161,10 +157,9 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnType2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnType2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnType2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnType2.Location = new System.Drawing.Point(220,62);
+            this.btnType2.Location = new System.Drawing.Point(275, 78);
             this.btnType2.Name = "btnType2";
-            this.btnType2.Size = new System.Drawing.Size(20,28);
-            this.btnType2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnType2.Size = new System.Drawing.Size(25, 35);
             this.btnType2.TabIndex = 11;
             this.btnType2.Text = ">";
             this.btnType2.ZIndex = 19;
@@ -175,10 +170,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label3.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label3.Location = new System.Drawing.Point(0,90);
+            this.Label3.Location = new System.Drawing.Point(0, 113);
             this.Label3.Name = "Label3";
             this.Label3.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label3.Size = new System.Drawing.Size(70,28);
+            this.Label3.Size = new System.Drawing.Size(88, 35);
             this.Label3.TabIndex = 12;
             this.Label3.Text = "操作时间";
             this.Label3.ZIndex = 17;
@@ -189,10 +184,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.dpkNBR_ODATE.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.dpkNBR_ODATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.dpkNBR_ODATE.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.dpkNBR_ODATE.Location = new System.Drawing.Point(70,90);
+            this.dpkNBR_ODATE.Location = new System.Drawing.Point(88, 113);
             this.dpkNBR_ODATE.Name = "dpkNBR_ODATE";
-            this.dpkNBR_ODATE.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.dpkNBR_ODATE.Size = new System.Drawing.Size(170,28);
+            this.dpkNBR_ODATE.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.dpkNBR_ODATE.Size = new System.Drawing.Size(213, 35);
             this.dpkNBR_ODATE.TabIndex = 13;
             this.dpkNBR_ODATE.ZIndex = 15;
             // 
@@ -201,10 +196,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label4.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label4.Location = new System.Drawing.Point(0,118);
+            this.Label4.Location = new System.Drawing.Point(0, 148);
             this.Label4.Name = "Label4";
             this.Label4.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label4.Size = new System.Drawing.Size(70,28);
+            this.Label4.Size = new System.Drawing.Size(88, 35);
             this.Label4.TabIndex = 14;
             this.Label4.Text = "所在位置";
             this.Label4.ZIndex = 11;
@@ -224,12 +219,11 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             // 
             this.btnNB_CODE.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnNB_CODE.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnNB_CODE.FontSize = 8;
-            this.btnNB_CODE.Location = new System.Drawing.Point(220,0);
+            this.btnNB_CODE.FontSize = 10F;
+            this.btnNB_CODE.Location = new System.Drawing.Point(275, 0);
             this.btnNB_CODE.Name = "btnNB_CODE";
             this.btnNB_CODE.ResourceID = "!\\uf029000000000";
-            this.btnNB_CODE.Size = new System.Drawing.Size(20,28);
-            this.btnNB_CODE.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnNB_CODE.Size = new System.Drawing.Size(25, 35);
             this.btnNB_CODE.TabIndex = 19;
             // 
             // btnNBR_LOCATION
@@ -238,11 +232,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnNBR_LOCATION.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnNBR_LOCATION.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnNBR_LOCATION.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnNBR_LOCATION.Location = new System.Drawing.Point(70,118);
+            this.btnNBR_LOCATION.Location = new System.Drawing.Point(88, 148);
             this.btnNBR_LOCATION.Name = "btnNBR_LOCATION";
-            this.btnNBR_LOCATION.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnNBR_LOCATION.Size = new System.Drawing.Size(150,28);
-            this.btnNBR_LOCATION.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnNBR_LOCATION.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.btnNBR_LOCATION.Size = new System.Drawing.Size(188, 35);
             this.btnNBR_LOCATION.TabIndex = 20;
             this.btnNBR_LOCATION.Text = "上海";
             this.btnNBR_LOCATION.ZIndex = 28;
@@ -252,10 +245,9 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnNBR_LOCATION2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnNBR_LOCATION2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnNBR_LOCATION2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnNBR_LOCATION2.Location = new System.Drawing.Point(220,118);
+            this.btnNBR_LOCATION2.Location = new System.Drawing.Point(275, 148);
             this.btnNBR_LOCATION2.Name = "btnNBR_LOCATION2";
-            this.btnNBR_LOCATION2.Size = new System.Drawing.Size(20,28);
-            this.btnNBR_LOCATION2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnNBR_LOCATION2.Size = new System.Drawing.Size(25, 35);
             this.btnNBR_LOCATION2.TabIndex = 21;
             this.btnNBR_LOCATION2.Text = ">";
             this.btnNBR_LOCATION2.ZIndex = 29;

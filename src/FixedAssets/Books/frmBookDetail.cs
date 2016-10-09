@@ -41,25 +41,25 @@ namespace COMSSmobilerDemo.FixedAssets.Books
                         case 2:
                         case 3:
                         case 4:
-                            GridView1.Top = 268 + 60 +10;
+                            GridView1.Top = 335 + 75 +13;
                             Height =Convert .ToInt32 ( GridView1.Top) + Height;
                             break;
                         case 5:
                         case 6:
                         case 7:
                         case 8:
-                            GridView1.Top = 268 + (60 * 2) + 10;
+                            GridView1.Top = 335 + (75 * 2) + 13;
                             Height = Convert .ToInt32 (GridView1.Top) + Height;
                             break;
                         case 9:
-                            GridView1.Top = 268 + (60 * 3) + 10;
+                            GridView1.Top = 335 + (75 * 3) + 13;
                             Height = Convert.ToInt32(GridView1.Top) + Height;
                             break;
                     }
                 }
                 else
                 {
-                    GridView1.Top = 268;
+                    GridView1.Top = 335;
                 }
                 COMSSmobilerDemo.common.BookSNInfo BookSNInfo = new COMSSmobilerDemo.common.BookSNInfo();
                 DataTable table = BookSNInfo.GetBookSNbyBookID();
@@ -72,25 +72,25 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             }
         }
         private int  upleft = 0;
-        private int uptop = 268;
+        private int uptop = 335;
         private void CreateImg()
         {
             for (int i = 1; i <= imglist.Count; i++)
             {
-                if ((upleft + 60) > 240)
+                if ((upleft + 75) > 300)
                 {
                     upleft = 0;
                     if (uptop > Height)
                     {
-                        Height = Height + 60;
+                        Height = Height + 75;
                     }
-                    uptop = uptop + 60;
+                    uptop = uptop + 75;
                 }
                 Image Image1 = new Image();
                 Image1.Left = upleft;
                 Image1.Top = uptop;
-                Image1.Width = 60;
-                Image1.Height = 60;
+                Image1.Width = 75;
+                Image1.Height = 75;
                 upleft = upleft + Image1.Width;
                 Image1.ResourceID = imglist[i - 1];
                 Image1.Name = "imgBook" + i.ToString();

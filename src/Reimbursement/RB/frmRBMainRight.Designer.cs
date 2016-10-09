@@ -55,7 +55,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnALLRB.HoverForeColor = System.Drawing.Color.White;
             this.btnALLRB.Name = "btnALLRB";
             this.btnALLRB.Padding = new Smobiler.Core.Padding(4F, 0F, 0F, 0F);
-            this.btnALLRB.Size = new System.Drawing.Size(60,28);
+            this.btnALLRB.Size = new System.Drawing.Size(75,35);
             this.btnALLRB.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnALLRB.TabIndex = 2;
             this.btnALLRB.Text = "所有报销";
@@ -71,9 +71,9 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.btntotalAmount1.HoverBackColor = System.Drawing.Color.White;
             this.btntotalAmount1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btntotalAmount1.Location = new System.Drawing.Point(160,0);
+            this.btntotalAmount1.Location = new System.Drawing.Point(200,0);
             this.btntotalAmount1.Name = "btntotalAmount1";
-            this.btntotalAmount1.Size = new System.Drawing.Size(80,28);
+            this.btntotalAmount1.Size = new System.Drawing.Size(100,35);
             this.btntotalAmount1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btntotalAmount1.TabIndex = 6;
             this.btntotalAmount1.Text = "￥0.00";
@@ -83,10 +83,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // GridView1
             // 
             this.GridView1.Layout = "frmRBRightLayout";
-            this.GridView1.Location = new System.Drawing.Point(0,28);
+            this.GridView1.Location = new System.Drawing.Point(0,35);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240,222);
+            this.GridView1.Size = new System.Drawing.Size(300,278);
             this.GridView1.TabIndex = 7;
             this.GridView1.ZIndex = 6;
             this.GridView1.ItemClick += new Smobiler.Core.Controls.GridViewItemClickEventHandler(this.GridView1_ItemClick);
@@ -100,10 +100,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnALLRB1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.btnALLRB1.HoverBackColor = System.Drawing.Color.White;
             this.btnALLRB1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btnALLRB1.Location = new System.Drawing.Point(60,0);
+            this.btnALLRB1.Location = new System.Drawing.Point(75,0);
             this.btnALLRB1.Name = "btnALLRB1";
             this.btnALLRB1.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnALLRB1.Size = new System.Drawing.Size(60,28);
+            this.btnALLRB1.Size = new System.Drawing.Size(75,35);
             this.btnALLRB1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnALLRB1.TabIndex = 8;
             this.btnALLRB1.Text = "（0）";
@@ -119,10 +119,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.btntotalAmount.HoverBackColor = System.Drawing.Color.White;
             this.btntotalAmount.HoverForeColor = System.Drawing.Color.White;
-            this.btntotalAmount.Location = new System.Drawing.Point(120,0);
+            this.btntotalAmount.Location = new System.Drawing.Point(150,0);
             this.btntotalAmount.Name = "btntotalAmount";
             this.btntotalAmount.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btntotalAmount.Size = new System.Drawing.Size(40,28);
+            this.btntotalAmount.Size = new System.Drawing.Size(50,35);
             this.btntotalAmount.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btntotalAmount.TabIndex = 9;
             this.btntotalAmount.Text = "总计：";
@@ -137,7 +137,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount,
             this.btntotalAmount1,
             this.GridView1});
-            this.Size = new System.Drawing.Size(240,500);
+            this.Size = new System.Drawing.Size(300,625);
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
             this.TitleText = "报销筛选";

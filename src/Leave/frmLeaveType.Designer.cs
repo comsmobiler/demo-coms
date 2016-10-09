@@ -41,10 +41,10 @@ namespace COMSSmobilerDemo.Leave
             // GridView1
             // 
             this.GridView1.Layout = "frmLeaveTypeLayout";
-            this.GridView1.Location = new System.Drawing.Point(2,0);
+            this.GridView1.Location = new System.Drawing.Point(3,0);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240,372);
+            this.GridView1.Size = new System.Drawing.Size(300,465);
             this.GridView1.TabIndex = 2;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             // 

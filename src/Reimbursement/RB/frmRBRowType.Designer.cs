@@ -42,10 +42,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // GridView1
             // 
             this.GridView1.Layout = "frmRBTypeLayout";
-            this.GridView1.Location = new System.Drawing.Point(0,2);
+            this.GridView1.Location = new System.Drawing.Point(0,3);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240,398);
+            this.GridView1.Size = new System.Drawing.Size(300,498);
             this.GridView1.TabIndex = 2;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             // 

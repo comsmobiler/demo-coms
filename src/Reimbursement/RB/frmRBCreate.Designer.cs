@@ -52,11 +52,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnRBCC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnRBCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnRBCC.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnRBCC.Location = new System.Drawing.Point(70,0);
+            this.btnRBCC.Location = new System.Drawing.Point(88, 0);
             this.btnRBCC.Name = "btnRBCC";
-            this.btnRBCC.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnRBCC.Size = new System.Drawing.Size(150,28);
-            this.btnRBCC.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnRBCC.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.btnRBCC.Size = new System.Drawing.Size(188, 35);
             this.btnRBCC.TabIndex = 2;
             this.btnRBCC.Text = "选择（必填）";
             this.btnRBCC.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnChioce_Click);
@@ -65,12 +64,11 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.btnChoice.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnChoice.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnChoice.FontSize = 16;
+            this.btnChoice.FontSize = 20F;
             this.btnChoice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnChoice.Location = new System.Drawing.Point(220,0);
+            this.btnChoice.Location = new System.Drawing.Point(275, 0);
             this.btnChoice.Name = "btnChoice";
-            this.btnChoice.Size = new System.Drawing.Size(20,28);
-            this.btnChoice.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnChoice.Size = new System.Drawing.Size(25, 35);
             this.btnChoice.TabIndex = 3;
             this.btnChoice.Text = ">";
             this.btnChoice.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnChioce_Click);
@@ -80,11 +78,11 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.TxtNote.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.TxtNote.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.TxtNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.TxtNote.Location = new System.Drawing.Point(70,34);
+            this.TxtNote.Location = new System.Drawing.Point(88, 43);
             this.TxtNote.Multiline = true;
             this.TxtNote.Name = "TxtNote";
             this.TxtNote.Padding = new Smobiler.Core.Padding(0F, 5F, 12F, 0F);
-            this.TxtNote.Size = new System.Drawing.Size(170,80);
+            this.TxtNote.Size = new System.Drawing.Size(213, 100);
             this.TxtNote.TabIndex = 4;
             this.TxtNote.WaterMarkText = "（选填）";
             // 
@@ -93,10 +91,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.GridView1.Border = new Smobiler.Core.Border(0, 1, 0, 0);
             this.GridView1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.GridView1.Layout = "frmConsumption1Layout";
-            this.GridView1.Location = new System.Drawing.Point(0,120);
+            this.GridView1.Location = new System.Drawing.Point(0, 150);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240,280);
+            this.GridView1.Size = new System.Drawing.Size(300, 350);
             this.GridView1.TabIndex = 7;
             this.GridView1.ItemClick += new Smobiler.Core.Controls.GridViewItemClickEventHandler(this.GridView1_ItemClick);
             // 
@@ -111,10 +109,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.lblNote.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.lblNote.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.lblNote.Location = new System.Drawing.Point(0,34);
+            this.lblNote.Location = new System.Drawing.Point(0, 43);
             this.lblNote.Name = "lblNote";
             this.lblNote.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.lblNote.Size = new System.Drawing.Size(70,80);
+            this.lblNote.Size = new System.Drawing.Size(88, 100);
             this.lblNote.TabIndex = 11;
             this.lblNote.Text = "报销备注";
             this.lblNote.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
@@ -126,7 +124,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label4.Name = "Label4";
             this.Label4.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label4.Size = new System.Drawing.Size(70,28);
+            this.Label4.Size = new System.Drawing.Size(88, 35);
             this.Label4.TabIndex = 12;
             this.Label4.Text = "成本中心";
             // 
@@ -152,6 +150,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmRBCreate_ToolbarItemClick);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmRBCreate";
 
         }
         internal Smobiler.Core.Controls.Button btnRBCC;

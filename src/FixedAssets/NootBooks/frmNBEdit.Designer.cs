@@ -77,7 +77,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.Size(70,28);
+            this.Label1.Size = new System.Drawing.Size(88, 35);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "设备号";
             this.Label1.ZIndex = 1;
@@ -88,10 +88,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.lblNB_EQNO.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblNB_EQNO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblNB_EQNO.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblNB_EQNO.Location = new System.Drawing.Point(70,0);
+            this.lblNB_EQNO.Location = new System.Drawing.Point(88, 0);
             this.lblNB_EQNO.Name = "lblNB_EQNO";
-            this.lblNB_EQNO.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblNB_EQNO.Size = new System.Drawing.Size(170,28);
+            this.lblNB_EQNO.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.lblNB_EQNO.Size = new System.Drawing.Size(213, 35);
             this.lblNB_EQNO.TabIndex = 3;
             this.lblNB_EQNO.ZIndex = 2;
             // 
@@ -100,10 +100,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label2.Location = new System.Drawing.Point(0,28);
+            this.Label2.Location = new System.Drawing.Point(0, 35);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.Size(70,28);
+            this.Label2.Size = new System.Drawing.Size(88, 35);
             this.Label2.TabIndex = 4;
             this.Label2.Text = "序列号";
             this.Label2.ZIndex = 3;
@@ -114,10 +114,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.txtNB_SN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtNB_SN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.txtNB_SN.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.txtNB_SN.Location = new System.Drawing.Point(70,28);
+            this.txtNB_SN.Location = new System.Drawing.Point(88, 35);
             this.txtNB_SN.Name = "txtNB_SN";
-            this.txtNB_SN.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.txtNB_SN.Size = new System.Drawing.Size(170,28);
+            this.txtNB_SN.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.txtNB_SN.Size = new System.Drawing.Size(213, 35);
             this.txtNB_SN.TabIndex = 5;
             this.txtNB_SN.WaterMarkText = "（必填）";
             this.txtNB_SN.ZIndex = 3;
@@ -127,10 +127,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label3.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label3.Location = new System.Drawing.Point(0,56);
+            this.Label3.Location = new System.Drawing.Point(0, 70);
             this.Label3.Name = "Label3";
             this.Label3.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label3.Size = new System.Drawing.Size(70,28);
+            this.Label3.Size = new System.Drawing.Size(88, 35);
             this.Label3.TabIndex = 6;
             this.Label3.Text = "型号";
             this.Label3.ZIndex = 4;
@@ -141,10 +141,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.txtNB_MODEL.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtNB_MODEL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.txtNB_MODEL.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.txtNB_MODEL.Location = new System.Drawing.Point(70,56);
+            this.txtNB_MODEL.Location = new System.Drawing.Point(88, 70);
             this.txtNB_MODEL.Name = "txtNB_MODEL";
-            this.txtNB_MODEL.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.txtNB_MODEL.Size = new System.Drawing.Size(170,28);
+            this.txtNB_MODEL.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.txtNB_MODEL.Size = new System.Drawing.Size(213, 35);
             this.txtNB_MODEL.TabIndex = 7;
             this.txtNB_MODEL.WaterMarkText = "（必填）";
             this.txtNB_MODEL.ZIndex = 4;
@@ -154,10 +154,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label4.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label4.Location = new System.Drawing.Point(0,90);
+            this.Label4.Location = new System.Drawing.Point(0, 113);
             this.Label4.Name = "Label4";
             this.Label4.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label4.Size = new System.Drawing.Size(70,28);
+            this.Label4.Size = new System.Drawing.Size(88, 35);
             this.Label4.TabIndex = 8;
             this.Label4.Text = "所有者";
             this.Label4.ZIndex = 5;
@@ -170,10 +170,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.txtNB_PRICE.Format = "\"F2\"";
             this.txtNB_PRICE.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.txtNB_PRICE.InputType = Smobiler.Core.TextBoxInputType.Number;
-            this.txtNB_PRICE.Location = new System.Drawing.Point(70,356);
+            this.txtNB_PRICE.Location = new System.Drawing.Point(88, 445);
             this.txtNB_PRICE.Name = "txtNB_PRICE";
-            this.txtNB_PRICE.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.txtNB_PRICE.Size = new System.Drawing.Size(134,28);
+            this.txtNB_PRICE.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.txtNB_PRICE.Size = new System.Drawing.Size(168, 35);
             this.txtNB_PRICE.TabIndex = 9;
             this.txtNB_PRICE.WaterMarkText = "0.00";
             this.txtNB_PRICE.ZIndex = 6;
@@ -183,10 +183,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label5.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label5.Location = new System.Drawing.Point(0,146);
+            this.Label5.Location = new System.Drawing.Point(0, 183);
             this.Label5.Name = "Label5";
             this.Label5.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label5.Size = new System.Drawing.Size(70,28);
+            this.Label5.Size = new System.Drawing.Size(88, 35);
             this.Label5.TabIndex = 10;
             this.Label5.Text = "状态";
             this.Label5.ZIndex = 8;
@@ -199,10 +199,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.txtNB_CONFIRMPRICE.Format = "\"F2\"";
             this.txtNB_CONFIRMPRICE.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.txtNB_CONFIRMPRICE.InputType = Smobiler.Core.TextBoxInputType.Number;
-            this.txtNB_CONFIRMPRICE.Location = new System.Drawing.Point(70,384);
+            this.txtNB_CONFIRMPRICE.Location = new System.Drawing.Point(88, 480);
             this.txtNB_CONFIRMPRICE.Name = "txtNB_CONFIRMPRICE";
-            this.txtNB_CONFIRMPRICE.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.txtNB_CONFIRMPRICE.Size = new System.Drawing.Size(134,28);
+            this.txtNB_CONFIRMPRICE.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.txtNB_CONFIRMPRICE.Size = new System.Drawing.Size(168, 35);
             this.txtNB_CONFIRMPRICE.TabIndex = 11;
             this.txtNB_CONFIRMPRICE.WaterMarkText = "0.00";
             this.txtNB_CONFIRMPRICE.ZIndex = 9;
@@ -213,10 +213,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.Label6.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.Label6.Location = new System.Drawing.Point(204,356);
+            this.Label6.Location = new System.Drawing.Point(255, 445);
             this.Label6.Name = "Label6";
-            this.Label6.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.Label6.Size = new System.Drawing.Size(36,28);
+            this.Label6.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.Label6.Size = new System.Drawing.Size(45, 35);
             this.Label6.TabIndex = 12;
             this.Label6.Text = "元";
             this.Label6.ZIndex = 7;
@@ -227,10 +227,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.Label7.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.Label7.Location = new System.Drawing.Point(204,384);
+            this.Label7.Location = new System.Drawing.Point(255, 480);
             this.Label7.Name = "Label7";
-            this.Label7.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.Label7.Size = new System.Drawing.Size(36,28);
+            this.Label7.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.Label7.Size = new System.Drawing.Size(45, 35);
             this.Label7.TabIndex = 13;
             this.Label7.Text = "元";
             this.Label7.ZIndex = 10;
@@ -240,10 +240,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label8.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label8.Location = new System.Drawing.Point(0,174);
+            this.Label8.Location = new System.Drawing.Point(0, 218);
             this.Label8.Name = "Label8";
             this.Label8.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label8.Size = new System.Drawing.Size(70,28);
+            this.Label8.Size = new System.Drawing.Size(88, 35);
             this.Label8.TabIndex = 14;
             this.Label8.Text = "所在位置";
             this.Label8.ZIndex = 11;
@@ -255,10 +255,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.txtNB_YEAR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.txtNB_YEAR.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.txtNB_YEAR.InputType = Smobiler.Core.TextBoxInputType.Number;
-            this.txtNB_YEAR.Location = new System.Drawing.Point(70,412);
+            this.txtNB_YEAR.Location = new System.Drawing.Point(88, 515);
             this.txtNB_YEAR.Name = "txtNB_YEAR";
-            this.txtNB_YEAR.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.txtNB_YEAR.Size = new System.Drawing.Size(134,28);
+            this.txtNB_YEAR.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.txtNB_YEAR.Size = new System.Drawing.Size(168, 35);
             this.txtNB_YEAR.TabIndex = 15;
             this.txtNB_YEAR.WaterMarkText = "0";
             this.txtNB_YEAR.ZIndex = 12;
@@ -269,10 +269,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.Label9.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.Label9.Location = new System.Drawing.Point(204,412);
+            this.Label9.Location = new System.Drawing.Point(255, 515);
             this.Label9.Name = "Label9";
-            this.Label9.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.Label9.Size = new System.Drawing.Size(36,28);
+            this.Label9.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.Label9.Size = new System.Drawing.Size(45, 35);
             this.Label9.TabIndex = 16;
             this.Label9.Text = "年";
             this.Label9.ZIndex = 13;
@@ -282,10 +282,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label11.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label11.Location = new System.Drawing.Point(0,236);
+            this.Label11.Location = new System.Drawing.Point(0, 295);
             this.Label11.Name = "Label11";
             this.Label11.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label11.Size = new System.Drawing.Size(70,28);
+            this.Label11.Size = new System.Drawing.Size(88, 35);
             this.Label11.TabIndex = 17;
             this.Label11.Text = "保修期";
             this.Label11.ZIndex = 14;
@@ -296,10 +296,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.dpkNB_BUYDATE.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.dpkNB_BUYDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.dpkNB_BUYDATE.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.dpkNB_BUYDATE.Location = new System.Drawing.Point(70,208);
+            this.dpkNB_BUYDATE.Location = new System.Drawing.Point(88, 260);
             this.dpkNB_BUYDATE.Name = "dpkNB_BUYDATE";
-            this.dpkNB_BUYDATE.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.dpkNB_BUYDATE.Size = new System.Drawing.Size(170,28);
+            this.dpkNB_BUYDATE.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.dpkNB_BUYDATE.Size = new System.Drawing.Size(213, 35);
             this.dpkNB_BUYDATE.TabIndex = 18;
             this.dpkNB_BUYDATE.ZIndex = 15;
             // 
@@ -308,10 +308,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label10.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label10.Location = new System.Drawing.Point(0,208);
+            this.Label10.Location = new System.Drawing.Point(0, 260);
             this.Label10.Name = "Label10";
             this.Label10.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label10.Size = new System.Drawing.Size(70,28);
+            this.Label10.Size = new System.Drawing.Size(88, 35);
             this.Label10.TabIndex = 19;
             this.Label10.Text = "购买时间";
             this.Label10.ZIndex = 16;
@@ -322,10 +322,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.txtNB_WARRANTYPERIOD.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtNB_WARRANTYPERIOD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.txtNB_WARRANTYPERIOD.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.txtNB_WARRANTYPERIOD.Location = new System.Drawing.Point(70,236);
+            this.txtNB_WARRANTYPERIOD.Location = new System.Drawing.Point(88, 295);
             this.txtNB_WARRANTYPERIOD.Name = "txtNB_WARRANTYPERIOD";
-            this.txtNB_WARRANTYPERIOD.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.txtNB_WARRANTYPERIOD.Size = new System.Drawing.Size(170,28);
+            this.txtNB_WARRANTYPERIOD.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.txtNB_WARRANTYPERIOD.Size = new System.Drawing.Size(213, 35);
             this.txtNB_WARRANTYPERIOD.TabIndex = 20;
             this.txtNB_WARRANTYPERIOD.WaterMarkText = "（必填）";
             this.txtNB_WARRANTYPERIOD.ZIndex = 17;
@@ -341,10 +341,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label12.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label12.Location = new System.Drawing.Point(0,270);
+            this.Label12.Location = new System.Drawing.Point(0, 338);
             this.Label12.Name = "Label12";
             this.Label12.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.Label12.Size = new System.Drawing.Size(70,80);
+            this.Label12.Size = new System.Drawing.Size(88, 100);
             this.Label12.TabIndex = 21;
             this.Label12.Text = "配置清单";
             this.Label12.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
@@ -355,11 +355,11 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.txtNB_CONFIG.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.txtNB_CONFIG.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtNB_CONFIG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.txtNB_CONFIG.Location = new System.Drawing.Point(68,270);
+            this.txtNB_CONFIG.Location = new System.Drawing.Point(85, 338);
             this.txtNB_CONFIG.Multiline = true;
             this.txtNB_CONFIG.Name = "txtNB_CONFIG";
-            this.txtNB_CONFIG.Padding = new Smobiler.Core.Padding(0F, 5F, 12F, 0F);
-            this.txtNB_CONFIG.Size = new System.Drawing.Size(170,80);
+            this.txtNB_CONFIG.Padding = new Smobiler.Core.Padding(0F, 5F, 30F, 0F);
+            this.txtNB_CONFIG.Size = new System.Drawing.Size(213, 100);
             this.txtNB_CONFIG.TabIndex = 22;
             this.txtNB_CONFIG.WaterMarkText = "（必填）";
             this.txtNB_CONFIG.ZIndex = 19;
@@ -369,10 +369,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label13.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label13.Location = new System.Drawing.Point(0,446);
+            this.Label13.Location = new System.Drawing.Point(0, 558);
             this.Label13.Name = "Label13";
             this.Label13.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.Label13.Size = new System.Drawing.Size(70,80);
+            this.Label13.Size = new System.Drawing.Size(88, 100);
             this.Label13.TabIndex = 23;
             this.Label13.Text = "发票";
             this.Label13.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
@@ -384,10 +384,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.imgNB_INVOCIEIMGID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.imgNB_INVOCIEIMGID.Enlarged = true;
             this.imgNB_INVOCIEIMGID.ID = "";
-            this.imgNB_INVOCIEIMGID.Location = new System.Drawing.Point(70,446);
+            this.imgNB_INVOCIEIMGID.Location = new System.Drawing.Point(88, 558);
             this.imgNB_INVOCIEIMGID.Name = "imgNB_INVOCIEIMGID";
             this.imgNB_INVOCIEIMGID.Padding = new Smobiler.Core.Padding(0F, 2F, 0F, 0F);
-            this.imgNB_INVOCIEIMGID.Size = new System.Drawing.Size(170,56);
+            this.imgNB_INVOCIEIMGID.Size = new System.Drawing.Size(213, 70);
             this.imgNB_INVOCIEIMGID.TabIndex = 24;
             this.imgNB_INVOCIEIMGID.ZIndex = 21;
             // 
@@ -397,10 +397,9 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnupPhoto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.btnupPhoto.BorderRadius = 5;
             this.btnupPhoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btnupPhoto.Location = new System.Drawing.Point(98,506);
+            this.btnupPhoto.Location = new System.Drawing.Point(123, 633);
             this.btnupPhoto.Name = "btnupPhoto";
-            this.btnupPhoto.Size = new System.Drawing.Size(52,16);
-            this.btnupPhoto.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnupPhoto.Size = new System.Drawing.Size(65, 20);
             this.btnupPhoto.TabIndex = 25;
             this.btnupPhoto.Text = "上传";
             this.btnupPhoto.ZIndex = 23;
@@ -412,10 +411,9 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btndelPhoto.BorderColor = System.Drawing.Color.Red;
             this.btndelPhoto.BorderRadius = 5;
             this.btndelPhoto.ForeColor = System.Drawing.Color.Red;
-            this.btndelPhoto.Location = new System.Drawing.Point(160,506);
+            this.btndelPhoto.Location = new System.Drawing.Point(200, 633);
             this.btndelPhoto.Name = "btndelPhoto";
-            this.btndelPhoto.Size = new System.Drawing.Size(52,16);
-            this.btndelPhoto.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btndelPhoto.Size = new System.Drawing.Size(65, 20);
             this.btndelPhoto.TabIndex = 26;
             this.btndelPhoto.Text = "删除";
             this.btndelPhoto.ZIndex = 24;
@@ -425,9 +423,9 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             // 
             this.Label14.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Label14.Location = new System.Drawing.Point(70,502);
+            this.Label14.Location = new System.Drawing.Point(88, 628);
             this.Label14.Name = "Label14";
-            this.Label14.Size = new System.Drawing.Size(170,24);
+            this.Label14.Size = new System.Drawing.Size(213, 30);
             this.Label14.TabIndex = 27;
             this.Label14.ZIndex = 22;
             // 
@@ -436,23 +434,23 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label15.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label15.Location = new System.Drawing.Point(0,356);
+            this.Label15.Location = new System.Drawing.Point(0, 445);
             this.Label15.Name = "Label15";
             this.Label15.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label15.Size = new System.Drawing.Size(70,28);
+            this.Label15.Size = new System.Drawing.Size(88, 35);
             this.Label15.TabIndex = 28;
             this.Label15.Text = "价格";
             this.Label15.ZIndex = 25;
             // 
             // Label16
             // 
-            this.Label16.Border = new Smobiler.Core.Border(0, 1, 0, 1);
+            this.Label16.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label16.Location = new System.Drawing.Point(0,384);
+            this.Label16.Location = new System.Drawing.Point(0, 480);
             this.Label16.Name = "Label16";
             this.Label16.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label16.Size = new System.Drawing.Size(70,28);
+            this.Label16.Size = new System.Drawing.Size(88, 35);
             this.Label16.TabIndex = 30;
             this.Label16.Text = "确认价格";
             this.Label16.ZIndex = 27;
@@ -463,11 +461,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnState.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnState.Location = new System.Drawing.Point(70,146);
+            this.btnState.Location = new System.Drawing.Point(88, 183);
             this.btnState.Name = "btnState";
-            this.btnState.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnState.Size = new System.Drawing.Size(150,28);
-            this.btnState.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnState.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.btnState.Size = new System.Drawing.Size(188, 35);
             this.btnState.TabIndex = 31;
             this.btnState.Text = "正常";
             this.btnState.ZIndex = 28;
@@ -477,10 +474,9 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnState2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnState2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnState2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnState2.Location = new System.Drawing.Point(220,146);
+            this.btnState2.Location = new System.Drawing.Point(275, 183);
             this.btnState2.Name = "btnState2";
-            this.btnState2.Size = new System.Drawing.Size(20,28);
-            this.btnState2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnState2.Size = new System.Drawing.Size(25, 35);
             this.btnState2.TabIndex = 32;
             this.btnState2.Text = ">";
             this.btnState2.ZIndex = 29;
@@ -488,13 +484,13 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             // 
             // Label17
             // 
-            this.Label17.Border = new Smobiler.Core.Border(0, 1, 0, 1);
+            this.Label17.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label17.Location = new System.Drawing.Point(0,412);
+            this.Label17.Location = new System.Drawing.Point(0, 515);
             this.Label17.Name = "Label17";
             this.Label17.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label17.Size = new System.Drawing.Size(70,28);
+            this.Label17.Size = new System.Drawing.Size(88, 35);
             this.Label17.TabIndex = 34;
             this.Label17.Text = "折旧年限";
             this.Label17.ZIndex = 27;
@@ -515,11 +511,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnNB_LOCATION.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnNB_LOCATION.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnNB_LOCATION.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnNB_LOCATION.Location = new System.Drawing.Point(70,174);
+            this.btnNB_LOCATION.Location = new System.Drawing.Point(88, 218);
             this.btnNB_LOCATION.Name = "btnNB_LOCATION";
-            this.btnNB_LOCATION.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnNB_LOCATION.Size = new System.Drawing.Size(150,28);
-            this.btnNB_LOCATION.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnNB_LOCATION.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.btnNB_LOCATION.Size = new System.Drawing.Size(188, 35);
             this.btnNB_LOCATION.TabIndex = 35;
             this.btnNB_LOCATION.Text = "上海";
             this.btnNB_LOCATION.ZIndex = 28;
@@ -529,10 +524,9 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnNB_LOCATION2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnNB_LOCATION2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnNB_LOCATION2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnNB_LOCATION2.Location = new System.Drawing.Point(220,174);
+            this.btnNB_LOCATION2.Location = new System.Drawing.Point(275, 218);
             this.btnNB_LOCATION2.Name = "btnNB_LOCATION2";
-            this.btnNB_LOCATION2.Size = new System.Drawing.Size(20,28);
-            this.btnNB_LOCATION2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnNB_LOCATION2.Size = new System.Drawing.Size(25, 35);
             this.btnNB_LOCATION2.TabIndex = 36;
             this.btnNB_LOCATION2.Text = ">";
             this.btnNB_LOCATION2.ZIndex = 29;
@@ -544,11 +538,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnNB_OWNER.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnNB_OWNER.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnNB_OWNER.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnNB_OWNER.Location = new System.Drawing.Point(70,90);
+            this.btnNB_OWNER.Location = new System.Drawing.Point(88, 113);
             this.btnNB_OWNER.Name = "btnNB_OWNER";
-            this.btnNB_OWNER.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnNB_OWNER.Size = new System.Drawing.Size(150,28);
-            this.btnNB_OWNER.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnNB_OWNER.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.btnNB_OWNER.Size = new System.Drawing.Size(188, 35);
             this.btnNB_OWNER.TabIndex = 37;
             this.btnNB_OWNER.ZIndex = 26;
             // 
@@ -557,10 +550,9 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnNB_OWNER2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnNB_OWNER2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnNB_OWNER2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnNB_OWNER2.Location = new System.Drawing.Point(220,90);
+            this.btnNB_OWNER2.Location = new System.Drawing.Point(275, 113);
             this.btnNB_OWNER2.Name = "btnNB_OWNER2";
-            this.btnNB_OWNER2.Size = new System.Drawing.Size(20,28);
-            this.btnNB_OWNER2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnNB_OWNER2.Size = new System.Drawing.Size(25, 35);
             this.btnNB_OWNER2.TabIndex = 38;
             this.btnNB_OWNER2.Text = ">";
             this.btnNB_OWNER2.ZIndex = 29;
@@ -571,10 +563,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label18.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label18.Location = new System.Drawing.Point(0,118);
+            this.Label18.Location = new System.Drawing.Point(0, 148);
             this.Label18.Name = "Label18";
             this.Label18.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label18.Size = new System.Drawing.Size(70,28);
+            this.Label18.Size = new System.Drawing.Size(88, 35);
             this.Label18.TabIndex = 39;
             this.Label18.Text = "责任人";
             this.Label18.ZIndex = 8;
@@ -585,10 +577,10 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.txtNB_CHECK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtNB_CHECK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.txtNB_CHECK.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.txtNB_CHECK.Location = new System.Drawing.Point(70,118);
+            this.txtNB_CHECK.Location = new System.Drawing.Point(88, 148);
             this.txtNB_CHECK.Name = "txtNB_CHECK";
-            this.txtNB_CHECK.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.txtNB_CHECK.Size = new System.Drawing.Size(170,28);
+            this.txtNB_CHECK.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.txtNB_CHECK.Size = new System.Drawing.Size(213, 35);
             this.txtNB_CHECK.TabIndex = 40;
             this.txtNB_CHECK.WaterMarkText = "（必填）";
             this.txtNB_CHECK.ZIndex = 4;
@@ -636,7 +628,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnNB_LOCATION2,
             this.btnNB_OWNER2,
             this.txtNB_CHECK});
-            this.Size = new System.Drawing.Size(240,580);
+            this.Size = new System.Drawing.Size(300, 725);
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
             this.TitleText = "笔记本编辑";

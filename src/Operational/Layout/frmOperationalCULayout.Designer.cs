@@ -40,10 +40,10 @@ namespace COMSSmobilerDemo.Operational.Layout
             this.lblCUST_ID.DataMember = "CUST_NAME";
             this.lblCUST_ID.DisplayMember = "CUST_NAME";
             this.lblCUST_ID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.lblCUST_ID.Location = new System.Drawing.Point(8,4);
+            this.lblCUST_ID.Location = new System.Drawing.Point(10,5);
             this.lblCUST_ID.Name = "lblCUST_ID";
             this.lblCUST_ID.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.lblCUST_ID.Size = new System.Drawing.Size(224,24);
+            this.lblCUST_ID.Size = new System.Drawing.Size(280,30);
             this.lblCUST_ID.TabIndex = 2;
             this.lblCUST_ID.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             this.lblCUST_ID.ZIndex = 2;
@@ -52,12 +52,12 @@ namespace COMSSmobilerDemo.Operational.Layout
             // 
             this.lblFinishedQTY.DataMember = "FinishedQTYNote";
             this.lblFinishedQTY.DisplayMember = "FinishedQTYNote";
-            this.lblFinishedQTY.FontSize = 10;
+            this.lblFinishedQTY.FontSize = 13;
             this.lblFinishedQTY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.lblFinishedQTY.Location = new System.Drawing.Point(8,28);
+            this.lblFinishedQTY.Location = new System.Drawing.Point(10,35);
             this.lblFinishedQTY.Name = "lblFinishedQTY";
             this.lblFinishedQTY.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblFinishedQTY.Size = new System.Drawing.Size(112,16);
+            this.lblFinishedQTY.Size = new System.Drawing.Size(140,20);
             this.lblFinishedQTY.TabIndex = 3;
             this.lblFinishedQTY.Text = "Label2";
             this.lblFinishedQTY.ZIndex = 3;
@@ -66,12 +66,12 @@ namespace COMSSmobilerDemo.Operational.Layout
             // 
             this.lblTrackedQty.DataMember = "TrackedQtyNote";
             this.lblTrackedQty.DisplayMember = "TrackedQtyNote";
-            this.lblTrackedQty.FontSize = 10;
+            this.lblTrackedQty.FontSize = 13;
             this.lblTrackedQty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.lblTrackedQty.Location = new System.Drawing.Point(120,28);
+            this.lblTrackedQty.Location = new System.Drawing.Point(150,35);
             this.lblTrackedQty.Name = "lblTrackedQty";
             this.lblTrackedQty.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblTrackedQty.Size = new System.Drawing.Size(112,16);
+            this.lblTrackedQty.Size = new System.Drawing.Size(140,20);
             this.lblTrackedQty.TabIndex = 4;
             this.lblTrackedQty.Text = "Label2";
             this.lblTrackedQty.ZIndex = 4;
@@ -86,9 +86,9 @@ namespace COMSSmobilerDemo.Operational.Layout
             this.lblTotalQTY.DisplayMember = "TotalQTY";
             this.lblTotalQTY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.lblTotalQTY.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
-            this.lblTotalQTY.Location = new System.Drawing.Point(190,16);
+            this.lblTotalQTY.Location = new System.Drawing.Point(238,20);
             this.lblTotalQTY.Name = "lblTotalQTY";
-            this.lblTotalQTY.Size = new System.Drawing.Size(20,20);
+            this.lblTotalQTY.Size = new System.Drawing.Size(25,25);
             this.lblTotalQTY.TabIndex = 5;
             this.lblTotalQTY.Text = "Label2";
             this.lblTotalQTY.ZIndex = 5;
@@ -96,9 +96,9 @@ namespace COMSSmobilerDemo.Operational.Layout
             // Label3
             // 
             this.Label3.BorderRadius = 2;
-            this.Label3.Location = new System.Drawing.Point(4,3);
+            this.Label3.Location = new System.Drawing.Point(5,4);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(232,44);
+            this.Label3.Size = new System.Drawing.Size(290,55);
             this.Label3.TabIndex = 6;
             this.Label3.ZIndex = 1;
             // 
@@ -110,7 +110,7 @@ namespace COMSSmobilerDemo.Operational.Layout
             this.lblFinishedQTY,
             this.lblTrackedQty,
             this.lblTotalQTY});
-            this.Size = new System.Drawing.Size(240,50);
+            this.Size = new System.Drawing.Size(300,63);
             this.Name = "frmOperationalCULayout";
 
         }

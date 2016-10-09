@@ -44,7 +44,7 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter.Layout
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(44)), Convert.ToInt32(Convert.ToByte(44)), Convert.ToInt32(Convert.ToByte(44)));
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2f, 0f, 0f, 0f);
-            this.Label1.Size = new System.Drawing.Size(70,28);
+            this.Label1.Size = new System.Drawing.Size(88,35);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "责任人";
             this.Label1.ZIndex = 2;
@@ -52,10 +52,10 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter.Layout
             //Label2
             //
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(44)), Convert.ToInt32(Convert.ToByte(44)), Convert.ToInt32(Convert.ToByte(44)));
-            this.Label2.Location = new System.Drawing.Point(0,28);
+            this.Label2.Location = new System.Drawing.Point(0,35);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2f, 0f, 0f, 0f);
-            this.Label2.Size = new System.Drawing.Size(70,28);
+            this.Label2.Size = new System.Drawing.Size(88,35);
             this.Label2.TabIndex = 3;
             this.Label2.Text = "成本中心";
             this.Label2.ZIndex = 7;
@@ -65,9 +65,9 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter.Layout
             this.txtCCUser.Border = new Smobiler.Core.Border(0);
             this.txtCCUser.BorderColor = System.Drawing.Color.LightGray;
             this.txtCCUser.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
-            this.txtCCUser.Location = new System.Drawing.Point(70,0);
+            this.txtCCUser.Location = new System.Drawing.Point(88,0);
             this.txtCCUser.Name = "txtCCUser";
-            this.txtCCUser.Size = new System.Drawing.Size(114,30);
+            this.txtCCUser.Size = new System.Drawing.Size(143,38);
             this.txtCCUser.TabIndex = 4;
             this.txtCCUser.ZIndex = 3;
             //
@@ -75,9 +75,9 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter.Layout
             //
             this.btnccuser.BorderColor = System.Drawing.Color.Gainsboro;
             this.btnccuser.ForeColor = System.Drawing.Color.Gray;
-            this.btnccuser.Location = new System.Drawing.Point(184,0);
+            this.btnccuser.Location = new System.Drawing.Point(230,0);
             this.btnccuser.Name = "btnccuser";
-            this.btnccuser.Size = new System.Drawing.Size(28,28);
+            this.btnccuser.Size = new System.Drawing.Size(35,35);
             this.btnccuser.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnccuser.TabIndex = 5;
             this.btnccuser.Text = ">";
@@ -87,12 +87,12 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter.Layout
             //
             this.btncurrentUser.Border = new Smobiler.Core.Border(1, 0, 0, 0);
             this.btncurrentUser.BorderColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)));
-            this.btncurrentUser.FontSize = 8;
+            this.btncurrentUser.FontSize = 10;
             this.btncurrentUser.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(43)), Convert.ToInt32(Convert.ToByte(146)), Convert.ToInt32(Convert.ToByte(223)));
-            this.btncurrentUser.Location = new System.Drawing.Point(212,0);
+            this.btncurrentUser.Location = new System.Drawing.Point(265,0);
             this.btncurrentUser.Name = "btncurrentUser";
             this.btncurrentUser.ResourceID = "me";
-            this.btncurrentUser.Size = new System.Drawing.Size(28,28);
+            this.btncurrentUser.Size = new System.Drawing.Size(35,35);
             this.btncurrentUser.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btncurrentUser.TabIndex = 6;
             this.btncurrentUser.Text = "我";
@@ -103,9 +103,9 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter.Layout
             this.txtCCName.Border = new Smobiler.Core.Border(0);
             this.txtCCName.BorderColor = System.Drawing.Color.LightBlue;
             this.txtCCName.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(102)), Convert.ToInt32(Convert.ToByte(99)), Convert.ToInt32(Convert.ToByte(99)));
-            this.txtCCName.Location = new System.Drawing.Point(70,28);
+            this.txtCCName.Location = new System.Drawing.Point(88,35);
             this.txtCCName.Name = "txtCCName";
-            this.txtCCName.Size = new System.Drawing.Size(170,28);
+            this.txtCCName.Size = new System.Drawing.Size(213,35);
             this.txtCCName.TabIndex = 7;
             this.txtCCName.ZIndex = 8;
             //
@@ -113,13 +113,13 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter.Layout
             //
             this.btnsearch.BorderColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(43)), Convert.ToInt32(Convert.ToByte(146)), Convert.ToInt32(Convert.ToByte(223)));
             this.btnsearch.BorderRadius = 4;
-            this.btnsearch.FontSize = 8;
+            this.btnsearch.FontSize = 10;
             this.btnsearch.ForeColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(43)), Convert.ToInt32(Convert.ToByte(146)), Convert.ToInt32(Convert.ToByte(223)));
             this.btnsearch.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnsearch.Location = new System.Drawing.Point(80,64);
+            this.btnsearch.Location = new System.Drawing.Point(100,80);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.ResourceID = "Search";
-            this.btnsearch.Size = new System.Drawing.Size(80,28);
+            this.btnsearch.Size = new System.Drawing.Size(100,35);
             this.btnsearch.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnsearch.TabIndex = 8;
             this.btnsearch.ZIndex = 9;
@@ -127,18 +127,18 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter.Layout
             //Line1
             //
             this.Line1.BackColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)));
-            this.Line1.Location = new System.Drawing.Point(0,28);
+            this.Line1.Location = new System.Drawing.Point(0,35);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.Size(240,2);
+            this.Line1.Size = new System.Drawing.Size(300,3);
             this.Line1.TabIndex = 9;
             this.Line1.ZIndex = 6;
             //
             //Line2
             //
             this.Line2.BackColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)));
-            this.Line2.Location = new System.Drawing.Point(2,56);
+            this.Line2.Location = new System.Drawing.Point(3,70);
             this.Line2.Name = "Line2";
-            this.Line2.Size = new System.Drawing.Size(240,2);
+            this.Line2.Size = new System.Drawing.Size(300,3);
             this.Line2.TabIndex = 10;
             this.Line2.ZIndex = 8;
             //
@@ -146,7 +146,7 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter.Layout
             //
             this.Line3.BackColor = System.Drawing.Color.FromArgb(Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)), Convert.ToInt32(Convert.ToByte(230)));
             this.Line3.Name = "Line3";
-            this.Line3.Size = new System.Drawing.Size(240,2);
+            this.Line3.Size = new System.Drawing.Size(300,3);
             this.Line3.TabIndex = 11;
             this.Line3.ZIndex = 1;
             //
@@ -164,7 +164,7 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter.Layout
 		this.Line2,
 		this.btnsearch
 	});
-            this.Size = new System.Drawing.Size(240,100);
+            this.Size = new System.Drawing.Size(300,125);
 
         }
         internal Smobiler.Core.Controls.Label Label1;

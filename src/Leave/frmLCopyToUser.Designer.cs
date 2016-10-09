@@ -45,7 +45,7 @@ namespace COMSSmobilerDemo.Leave
             this.GridView1.Layout = "frmLCopyToUserLayout";
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240,400);
+            this.GridView1.Size = new System.Drawing.Size(300,500);
             this.GridView1.TabIndex = 2;
             // 
             // CopyTo

@@ -34,13 +34,13 @@ namespace COMSSmobilerDemo.Operational
             // 
             // NodeView1
             // 
-            this.NodeView1.FontSize = 10;
+            this.NodeView1.FontSize = 13F;
             this.NodeView1.ItemBackColor = System.Drawing.Color.White;
             this.NodeView1.ItemDefaultIcon = "";
-            this.NodeView1.Location = new System.Drawing.Point(0,28);
+            this.NodeView1.Location = new System.Drawing.Point(0, 35);
             this.NodeView1.Name = "NodeView1";
             this.NodeView1.ResourcePath = null;
-            this.NodeView1.Size = new System.Drawing.Size(240,352);
+            this.NodeView1.Size = new System.Drawing.Size(300, 440);
             this.NodeView1.TabIndex = 2;
             this.NodeView1.ItemClicked += new System.EventHandler(this.NodeView1_ItemClicked);
             // 
@@ -49,8 +49,8 @@ namespace COMSSmobilerDemo.Operational
             this.lblQty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblQty.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.lblQty.Name = "lblQty";
-            this.lblQty.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblQty.Size = new System.Drawing.Size(240,28);
+            this.lblQty.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.lblQty.Size = new System.Drawing.Size(300, 35);
             this.lblQty.TabIndex = 3;
             this.lblQty.Text = "Label1";
             // 

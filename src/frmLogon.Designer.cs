@@ -57,11 +57,11 @@ namespace COMSSmobilerDemo
             this.txtName.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.txtName.BackColorAlpha = 0;
             this.txtName.BorderColor = System.Drawing.Color.White;
-            this.txtName.FontSize = 14;
+            this.txtName.FontSize = 18;
             this.txtName.ForeColor = System.Drawing.Color.White;
-            this.txtName.Location = new System.Drawing.Point(46,152);
+            this.txtName.Location = new System.Drawing.Point(58,190);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(170,32);
+            this.txtName.Size = new System.Drawing.Size(213,40);
             this.txtName.TabIndex = 3;
             this.txtName.WaterMarkText = "用户名";
             // 
@@ -70,12 +70,12 @@ namespace COMSSmobilerDemo
             this.txtPwd.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.txtPwd.BackColorAlpha = 0;
             this.txtPwd.BorderColor = System.Drawing.Color.White;
-            this.txtPwd.FontSize = 14;
+            this.txtPwd.FontSize = 18;
             this.txtPwd.ForeColor = System.Drawing.Color.White;
-            this.txtPwd.Location = new System.Drawing.Point(46,192);
+            this.txtPwd.Location = new System.Drawing.Point(58,240);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
-            this.txtPwd.Size = new System.Drawing.Size(170,32);
+            this.txtPwd.Size = new System.Drawing.Size(213,40);
             this.txtPwd.TabIndex = 4;
             this.txtPwd.WaterMarkText = "密码";
             // 
@@ -86,13 +86,13 @@ namespace COMSSmobilerDemo
             this.btnLogon.Border = new Smobiler.Core.Border(1);
             this.btnLogon.BorderColor = System.Drawing.Color.White;
             this.btnLogon.BorderRadius = 2;
-            this.btnLogon.FontSize = 14;
+            this.btnLogon.FontSize = 18;
             this.btnLogon.ForeColor = System.Drawing.Color.White;
             this.btnLogon.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(194)))), ((int)(((byte)(240)))));
             this.btnLogon.HoverForeColor = System.Drawing.Color.White;
-            this.btnLogon.Location = new System.Drawing.Point(20,282);
+            this.btnLogon.Location = new System.Drawing.Point(25,353);
             this.btnLogon.Name = "btnLogon";
-            this.btnLogon.Size = new System.Drawing.Size(200,32);
+            this.btnLogon.Size = new System.Drawing.Size(250,40);
             this.btnLogon.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnLogon.TabIndex = 5;
             this.btnLogon.Text = "登录";
@@ -102,12 +102,12 @@ namespace COMSSmobilerDemo
             // 
             this.LblMsg.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.LblMsg.BackColorAlpha = 0;
-            this.LblMsg.FontSize = 10;
+            this.LblMsg.FontSize = 13;
             this.LblMsg.ForeColor = System.Drawing.Color.Red;
-            this.LblMsg.Location = new System.Drawing.Point(40,224);
+            this.LblMsg.Location = new System.Drawing.Point(50,280);
             this.LblMsg.Name = "LblMsg";
             this.LblMsg.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.LblMsg.Size = new System.Drawing.Size(176,20);
+            this.LblMsg.Size = new System.Drawing.Size(220,25);
             this.LblMsg.TabIndex = 6;
             // 
             // Label1
@@ -115,9 +115,9 @@ namespace COMSSmobilerDemo
             this.Label1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.Label1.BackColorAlpha = 0;
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(66,246);
+            this.Label1.Location = new System.Drawing.Point(83,308);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(84,16);
+            this.Label1.Size = new System.Drawing.Size(105,20);
             this.Label1.TabIndex = 8;
             this.Label1.Text = "记住密码";
             // 
@@ -130,9 +130,9 @@ namespace COMSSmobilerDemo
             this.CheckBox1.Checked = false;
             this.CheckBox1.CheckedBackColor = System.Drawing.Color.White;
             this.CheckBox1.CheckedColor = System.Drawing.Color.DeepSkyBlue;
-            this.CheckBox1.Location = new System.Drawing.Point(46,246);
+            this.CheckBox1.Location = new System.Drawing.Point(58,308);
             this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.Size(16,16);
+            this.CheckBox1.Size = new System.Drawing.Size(20,20);
             this.CheckBox1.TabIndex = 12;
             this.CheckBox1.UnCheckedBackColor = System.Drawing.Color.White;
             // 
@@ -142,9 +142,9 @@ namespace COMSSmobilerDemo
             this.labSubTitle.BackColorAlpha = 0;
             this.labSubTitle.ForeColor = System.Drawing.Color.White;
             this.labSubTitle.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Center;
-            this.labSubTitle.Location = new System.Drawing.Point(0,114);
+            this.labSubTitle.Location = new System.Drawing.Point(0,143);
             this.labSubTitle.Name = "labSubTitle";
-            this.labSubTitle.Size = new System.Drawing.Size(240,32);
+            this.labSubTitle.Size = new System.Drawing.Size(300,40);
             this.labSubTitle.TabIndex = 14;
             this.labSubTitle.Text = "报销管理系统";
             this.labSubTitle.Visible = false;
@@ -152,39 +152,39 @@ namespace COMSSmobilerDemo
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.White;
-            this.Line1.Location = new System.Drawing.Point(46,224);
+            this.Line1.Location = new System.Drawing.Point(58,280);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.Size(170,2);
+            this.Line1.Size = new System.Drawing.Size(213,3);
             this.Line1.TabIndex = 15;
             // 
             // Line4
             // 
             this.Line4.BackColor = System.Drawing.Color.White;
-            this.Line4.Location = new System.Drawing.Point(46,184);
+            this.Line4.Location = new System.Drawing.Point(58,230);
             this.Line4.Name = "Line4";
-            this.Line4.Size = new System.Drawing.Size(170,2);
+            this.Line4.Size = new System.Drawing.Size(213,3);
             this.Line4.TabIndex = 16;
             // 
             // Image2
             // 
             this.Image2.BackColorAlpha = 0;
             this.Image2.ID = "!\\ue8a6255255255";
-            this.Image2.Location = new System.Drawing.Point(20,152);
+            this.Image2.Location = new System.Drawing.Point(25,190);
             this.Image2.Name = "Image2";
             this.Image2.Padding = new Smobiler.Core.Padding(0F, 4F, 0F, 2F);
             this.Image2.ResourceID = "!\\ue8a6255255255";
-            this.Image2.Size = new System.Drawing.Size(20,32);
+            this.Image2.Size = new System.Drawing.Size(25,40);
             this.Image2.TabIndex = 19;
             // 
             // Image3
             // 
             this.Image3.BackColorAlpha = 0;
             this.Image3.ID = "!\\ue899255255255";
-            this.Image3.Location = new System.Drawing.Point(20,192);
+            this.Image3.Location = new System.Drawing.Point(25,240);
             this.Image3.Name = "Image3";
             this.Image3.Padding = new Smobiler.Core.Padding(0F, 4F, 0F, 2F);
             this.Image3.ResourceID = "!\\ue899255255255";
-            this.Image3.Size = new System.Drawing.Size(20,32);
+            this.Image3.Size = new System.Drawing.Size(25,40);
             this.Image3.TabIndex = 20;
             // 
             // btnGestures
@@ -194,13 +194,13 @@ namespace COMSSmobilerDemo
             this.btnGestures.BorderColor = System.Drawing.Color.White;
             this.btnGestures.BorderRadius = 2;
             this.btnGestures.BorderSize = 0.2F;
-            this.btnGestures.FontSize = 14;
+            this.btnGestures.FontSize = 18;
             this.btnGestures.ForeColor = System.Drawing.Color.Red;
             this.btnGestures.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(194)))), ((int)(((byte)(240)))));
             this.btnGestures.HoverForeColor = System.Drawing.Color.White;
-            this.btnGestures.Location = new System.Drawing.Point(20,314);
+            this.btnGestures.Location = new System.Drawing.Point(25,393);
             this.btnGestures.Name = "btnGestures";
-            this.btnGestures.Size = new System.Drawing.Size(200,32);
+            this.btnGestures.Size = new System.Drawing.Size(250,40);
             this.btnGestures.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnGestures.TabIndex = 21;
             this.btnGestures.Text = "手势登录";
@@ -210,10 +210,10 @@ namespace COMSSmobilerDemo
             // 
             this.Image1.BackColorAlpha = 0;
             this.Image1.ID = "logo";
-            this.Image1.Location = new System.Drawing.Point(85,40);
+            this.Image1.Location = new System.Drawing.Point(107,50);
             this.Image1.Name = "Image1";
             this.Image1.ResourceID = "logo";
-            this.Image1.Size = new System.Drawing.Size(70,70);
+            this.Image1.Size = new System.Drawing.Size(88,88);
             this.Image1.TabIndex = 22;
             // 
             // frmLogon

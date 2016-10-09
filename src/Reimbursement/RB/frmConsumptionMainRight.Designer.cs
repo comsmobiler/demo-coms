@@ -55,7 +55,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnALLtype.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.btnALLtype.Name = "btnALLtype";
             this.btnALLtype.Padding = new Smobiler.Core.Padding(4F, 0F, 0F, 0F);
-            this.btnALLtype.Size = new System.Drawing.Size(60,28);
+            this.btnALLtype.Size = new System.Drawing.Size(75,35);
             this.btnALLtype.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnALLtype.TabIndex = 2;
             this.btnALLtype.Text = "所有消费";
@@ -70,9 +70,9 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.btntotalAmount1.HoverBackColor = System.Drawing.Color.White;
             this.btntotalAmount1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btntotalAmount1.Location = new System.Drawing.Point(160,0);
+            this.btntotalAmount1.Location = new System.Drawing.Point(200,0);
             this.btntotalAmount1.Name = "btntotalAmount1";
-            this.btntotalAmount1.Size = new System.Drawing.Size(80,28);
+            this.btntotalAmount1.Size = new System.Drawing.Size(100,35);
             this.btntotalAmount1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btntotalAmount1.TabIndex = 6;
             this.btntotalAmount1.Text = "￥0.00";
@@ -81,10 +81,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // GridView1
             // 
             this.GridView1.Layout = "frmConsumptionRightLayout";
-            this.GridView1.Location = new System.Drawing.Point(0,28);
+            this.GridView1.Location = new System.Drawing.Point(0,35);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240,372);
+            this.GridView1.Size = new System.Drawing.Size(300,465);
             this.GridView1.TabIndex = 7;
             this.GridView1.ItemClick += new Smobiler.Core.Controls.GridViewItemClickEventHandler(this.GridView1_ItemClick);
             // 
@@ -97,10 +97,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btnALLtype1.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.btnALLtype1.HoverBackColor = System.Drawing.Color.White;
             this.btnALLtype1.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btnALLtype1.Location = new System.Drawing.Point(60,0);
+            this.btnALLtype1.Location = new System.Drawing.Point(75,0);
             this.btnALLtype1.Name = "btnALLtype1";
             this.btnALLtype1.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnALLtype1.Size = new System.Drawing.Size(60,28);
+            this.btnALLtype1.Size = new System.Drawing.Size(75,35);
             this.btnALLtype1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btnALLtype1.TabIndex = 8;
             this.btnALLtype1.Text = "（0）";
@@ -115,10 +115,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.btntotalAmount.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.btntotalAmount.HoverBackColor = System.Drawing.Color.White;
             this.btntotalAmount.HoverForeColor = System.Drawing.Color.White;
-            this.btntotalAmount.Location = new System.Drawing.Point(120,0);
+            this.btntotalAmount.Location = new System.Drawing.Point(150,0);
             this.btntotalAmount.Name = "btntotalAmount";
             this.btntotalAmount.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btntotalAmount.Size = new System.Drawing.Size(40,28);
+            this.btntotalAmount.Size = new System.Drawing.Size(50,35);
             this.btntotalAmount.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btntotalAmount.TabIndex = 9;
             this.btntotalAmount.Text = "总计：";

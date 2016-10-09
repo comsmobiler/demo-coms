@@ -49,7 +49,7 @@ namespace COMSSmobilerDemo.Operational
             this.lblOR_NO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.lblOR_NO.Name = "lblOR_NO";
             this.lblOR_NO.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.lblOR_NO.Size = new System.Drawing.Size(240,24);
+            this.lblOR_NO.Size = new System.Drawing.Size(300,30);
             this.lblOR_NO.TabIndex = 2;
             this.lblOR_NO.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             this.lblOR_NO.ZIndex = 1;
@@ -58,12 +58,12 @@ namespace COMSSmobilerDemo.Operational
             // 
             this.lblOR_FAULTINFO.DataMember = "OR_FAULTINFO";
             this.lblOR_FAULTINFO.DisplayMember = "OR_FAULTINFO";
-            this.lblOR_FAULTINFO.FontSize = 10;
+            this.lblOR_FAULTINFO.FontSize = 13;
             this.lblOR_FAULTINFO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.lblOR_FAULTINFO.Location = new System.Drawing.Point(0,40);
+            this.lblOR_FAULTINFO.Location = new System.Drawing.Point(0,50);
             this.lblOR_FAULTINFO.Name = "lblOR_FAULTINFO";
             this.lblOR_FAULTINFO.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblOR_FAULTINFO.Size = new System.Drawing.Size(240,16);
+            this.lblOR_FAULTINFO.Size = new System.Drawing.Size(300,20);
             this.lblOR_FAULTINFO.TabIndex = 3;
             this.lblOR_FAULTINFO.Text = "Label2";
             this.lblOR_FAULTINFO.ZIndex = 3;
@@ -72,21 +72,21 @@ namespace COMSSmobilerDemo.Operational
             // 
             this.lblNote.DataMember = "NOTE";
             this.lblNote.DisplayMember = "NOTE";
-            this.lblNote.FontSize = 10;
+            this.lblNote.FontSize = 13;
             this.lblNote.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.lblNote.Location = new System.Drawing.Point(0,24);
+            this.lblNote.Location = new System.Drawing.Point(0,30);
             this.lblNote.Name = "lblNote";
             this.lblNote.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.lblNote.Size = new System.Drawing.Size(240,16);
+            this.lblNote.Size = new System.Drawing.Size(300,20);
             this.lblNote.TabIndex = 4;
             this.lblNote.ZIndex = 2;
             // 
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new System.Drawing.Point(0,56);
+            this.Line1.Location = new System.Drawing.Point(0,70);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.Size(240,2);
+            this.Line1.Size = new System.Drawing.Size(300,3);
             this.Line1.TabIndex = 5;
             this.Line1.ZIndex = 4;
             // 
@@ -98,7 +98,7 @@ namespace COMSSmobilerDemo.Operational
             this.lblNote,
             this.lblOR_FAULTINFO,
             this.Line1});
-            this.Size = new System.Drawing.Size(240,56);
+            this.Size = new System.Drawing.Size(300,70);
 
         }
         internal Smobiler.Core.Controls.Label lblOR_NO;

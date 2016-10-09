@@ -46,10 +46,10 @@ namespace COMSSmobilerDemo.Message
             // 
             this.lblNOTE.DataMember = "NO";
             this.lblNOTE.DisplayMember = "NOTE";
-            this.lblNOTE.FontSize = 14;
-            this.lblNOTE.Location = new System.Drawing.Point(36,0);
+            this.lblNOTE.FontSize = 18;
+            this.lblNOTE.Location = new System.Drawing.Point(45,0);
             this.lblNOTE.Name = "lblNOTE";
-            this.lblNOTE.Size = new System.Drawing.Size(204,24);
+            this.lblNOTE.Size = new System.Drawing.Size(255,30);
             this.lblNOTE.TabIndex = 3;
             this.lblNOTE.ZIndex = 2;
             // 
@@ -59,9 +59,9 @@ namespace COMSSmobilerDemo.Message
             this.Image1.BorderRadius = 4;
             this.Image1.DataMember = "STATEDESC";
             this.Image1.DisplayMember = "STATEDESC";
-            this.Image1.Location = new System.Drawing.Point(4,6);
+            this.Image1.Location = new System.Drawing.Point(5,8);
             this.Image1.Name = "Image1";
-            this.Image1.Size = new System.Drawing.Size(28,28);
+            this.Image1.Size = new System.Drawing.Size(35,35);
             this.Image1.TabIndex = 5;
             this.Image1.ZIndex = 1;
             // 
@@ -69,20 +69,20 @@ namespace COMSSmobilerDemo.Message
             // 
             this.lblNOTE1.DataMember = "STATE";
             this.lblNOTE1.DisplayMember = "NOTE1";
-            this.lblNOTE1.FontSize = 10;
+            this.lblNOTE1.FontSize = 13;
             this.lblNOTE1.ForeColor = System.Drawing.Color.Gray;
-            this.lblNOTE1.Location = new System.Drawing.Point(36,24);
+            this.lblNOTE1.Location = new System.Drawing.Point(45,30);
             this.lblNOTE1.Name = "lblNOTE1";
-            this.lblNOTE1.Size = new System.Drawing.Size(204,16);
+            this.lblNOTE1.Size = new System.Drawing.Size(255,20);
             this.lblNOTE1.TabIndex = 6;
             this.lblNOTE1.ZIndex = 3;
             // 
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new System.Drawing.Point(0,40);
+            this.Line1.Location = new System.Drawing.Point(0,50);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.Size(240,2);
+            this.Line1.Size = new System.Drawing.Size(300,3);
             this.Line1.TabIndex = 7;
             this.Line1.ZIndex = 4;
             // 
@@ -94,7 +94,7 @@ namespace COMSSmobilerDemo.Message
             this.lblNOTE,
             this.lblNOTE1,
             this.Line1});
-            this.Size = new System.Drawing.Size(240,40);
+            this.Size = new System.Drawing.Size(300,50);
 
         }
         internal Smobiler.Core.Controls.Label lblNOTE;

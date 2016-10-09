@@ -53,28 +53,28 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
             textTabBarItem1,
             textTabBarItem2});
-            this.TextTabBar1.Location = new System.Drawing.Point(20, 10);
+            this.TextTabBar1.Location = new System.Drawing.Point(25,13);
             this.TextTabBar1.Name = "TextTabBar1";
             this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.TextTabBar1.SelectForeColor = System.Drawing.Color.White;
-            this.TextTabBar1.Size = new System.Drawing.Size(200, 28);
+            this.TextTabBar1.Size = new System.Drawing.Size(250,35);
             this.TextTabBar1.TabIndex = 2;
             this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
             // 
             // GridView1
             // 
             this.GridView1.Layout = "frmRightLayout";
-            this.GridView1.Location = new System.Drawing.Point(0, 254);
+            this.GridView1.Location = new System.Drawing.Point(0,318);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(240, 146);
+            this.GridView1.Size = new System.Drawing.Size(300,183);
             this.GridView1.TabIndex = 4;
             this.GridView1.ZIndex = 6;
             // 
             // TextTabBar2
             // 
             this.TextTabBar2.BackColor = System.Drawing.Color.White;
-            this.TextTabBar2.FontSize = 8F;
+            this.TextTabBar2.FontSize = 10;
             this.TextTabBar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             textTabBarItem3.Text = "Bubble";
             textTabBarItem4.Text = "Scatter";
@@ -83,10 +83,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             textTabBarItem3,
             textTabBarItem4,
             textTabBarItem5});
-            this.TextTabBar2.Location = new System.Drawing.Point(0, 38);
+            this.TextTabBar2.Location = new System.Drawing.Point(0,48);
             this.TextTabBar2.Name = "TextTabBar2";
             this.TextTabBar2.SelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.TextTabBar2.Size = new System.Drawing.Size(240, 20);
+            this.TextTabBar2.Size = new System.Drawing.Size(300,25);
             this.TextTabBar2.TabIndex = 5;
             this.TextTabBar2.Visible = false;
             this.TextTabBar2.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);

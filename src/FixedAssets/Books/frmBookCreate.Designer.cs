@@ -68,7 +68,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.Size(70, 28);
+            this.Label1.Size = new System.Drawing.Size(88, 35);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "Í¼ÊéÃû³Æ";
             this.Label1.ZIndex = 1;
@@ -79,10 +79,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.txtBOOKNAME.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtBOOKNAME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.txtBOOKNAME.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.txtBOOKNAME.Location = new System.Drawing.Point(70, 0);
+            this.txtBOOKNAME.Location = new System.Drawing.Point(88, 0);
             this.txtBOOKNAME.Name = "txtBOOKNAME";
-            this.txtBOOKNAME.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.txtBOOKNAME.Size = new System.Drawing.Size(170, 28);
+            this.txtBOOKNAME.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.txtBOOKNAME.Size = new System.Drawing.Size(213, 35);
             this.txtBOOKNAME.TabIndex = 3;
             this.txtBOOKNAME.WaterMarkText = "£¨±ØÌî£©";
             this.txtBOOKNAME.ZIndex = 2;
@@ -92,24 +92,24 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label2.Location = new System.Drawing.Point(0, 28);
+            this.Label2.Location = new System.Drawing.Point(0, 35);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.Size(240, 28);
+            this.Label2.Size = new System.Drawing.Size(300, 35);
             this.Label2.TabIndex = 4;
             this.Label2.Text = "Èë¿âÊýÁ¿";
             this.Label2.ZIndex = 3;
             // 
             // nrcQty
             // 
-            this.nrcQty.Location = new System.Drawing.Point(70, 28);
+            this.nrcQty.Location = new System.Drawing.Point(88, 35);
             this.nrcQty.MaxValue = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.nrcQty.Name = "nrcQty";
-            this.nrcQty.Size = new System.Drawing.Size(170, 28);
+            this.nrcQty.Size = new System.Drawing.Size(213, 35);
             this.nrcQty.TabIndex = 5;
             this.nrcQty.ZIndex = 4;
             // 
@@ -118,10 +118,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label3.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label3.Location = new System.Drawing.Point(0, 56);
+            this.Label3.Location = new System.Drawing.Point(0, 70);
             this.Label3.Name = "Label3";
             this.Label3.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label3.Size = new System.Drawing.Size(70, 28);
+            this.Label3.Size = new System.Drawing.Size(88, 35);
             this.Label3.TabIndex = 6;
             this.Label3.Text = "µ¥¼Û";
             this.Label3.ZIndex = 5;
@@ -133,10 +133,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.txtPRICE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.txtPRICE.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
             this.txtPRICE.InputType = Smobiler.Core.TextBoxInputType.Number;
-            this.txtPRICE.Location = new System.Drawing.Point(70, 56);
+            this.txtPRICE.Location = new System.Drawing.Point(88, 70);
             this.txtPRICE.Name = "txtPRICE";
-            this.txtPRICE.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.txtPRICE.Size = new System.Drawing.Size(134, 28);
+            this.txtPRICE.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.txtPRICE.Size = new System.Drawing.Size(168, 35);
             this.txtPRICE.TabIndex = 7;
             this.txtPRICE.WaterMarkText = "0.00";
             this.txtPRICE.ZIndex = 6;
@@ -147,10 +147,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.Label6.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.Label6.Location = new System.Drawing.Point(204, 56);
+            this.Label6.Location = new System.Drawing.Point(255, 70);
             this.Label6.Name = "Label6";
-            this.Label6.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.Label6.Size = new System.Drawing.Size(36, 28);
+            this.Label6.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.Label6.Size = new System.Drawing.Size(45, 35);
             this.Label6.TabIndex = 8;
             this.Label6.Text = "Ôª";
             this.Label6.ZIndex = 7;
@@ -160,10 +160,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label10.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label10.Location = new System.Drawing.Point(0, 90);
+            this.Label10.Location = new System.Drawing.Point(0, 113);
             this.Label10.Name = "Label10";
             this.Label10.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label10.Size = new System.Drawing.Size(70, 28);
+            this.Label10.Size = new System.Drawing.Size(88, 35);
             this.Label10.TabIndex = 9;
             this.Label10.Text = "¹ºÂòÊ±¼ä";
             this.Label10.ZIndex = 8;
@@ -174,10 +174,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.dpkDATE.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.dpkDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.dpkDATE.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.dpkDATE.Location = new System.Drawing.Point(70, 90);
+            this.dpkDATE.Location = new System.Drawing.Point(88, 113);
             this.dpkDATE.Name = "dpkDATE";
-            this.dpkDATE.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.dpkDATE.Size = new System.Drawing.Size(170, 28);
+            this.dpkDATE.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.dpkDATE.Size = new System.Drawing.Size(213, 35);
             this.dpkDATE.TabIndex = 10;
             this.dpkDATE.ZIndex = 9;
             // 
@@ -186,10 +186,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label13.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label13.Location = new System.Drawing.Point(0, 118);
+            this.Label13.Location = new System.Drawing.Point(0, 148);
             this.Label13.Name = "Label13";
             this.Label13.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label13.Size = new System.Drawing.Size(240, 28);
+            this.Label13.Size = new System.Drawing.Size(300, 35);
             this.Label13.TabIndex = 11;
             this.Label13.Text = "Í¼Æ¬";
             this.Label13.ZIndex = 10;
@@ -198,13 +198,12 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             // 
             this.imgbtn.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.imgbtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.imgbtn.FontSize = 8F;
+            this.imgbtn.FontSize = 10F;
             this.imgbtn.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
-            this.imgbtn.Location = new System.Drawing.Point(70, 118);
+            this.imgbtn.Location = new System.Drawing.Point(88, 148);
             this.imgbtn.Name = "imgbtn";
             this.imgbtn.ResourceID = "Camera";
-            this.imgbtn.Size = new System.Drawing.Size(170, 28);
-            this.imgbtn.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.imgbtn.Size = new System.Drawing.Size(213, 35);
             this.imgbtn.TabIndex = 12;
             this.imgbtn.ZIndex = 11;
             this.imgbtn.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.imgbtn_Click);
@@ -221,9 +220,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.img1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.img1.Enlarged = true;
             this.img1.ID = "";
-            this.img1.Location = new System.Drawing.Point(0, 146);
+            this.img1.Location = new System.Drawing.Point(0, 183);
             this.img1.Name = "img1";
-            this.img1.Size = new System.Drawing.Size(60, 60);
+            this.img1.Size = new System.Drawing.Size(75, 75);
             this.img1.TabIndex = 13;
             this.img1.Visible = false;
             // 
@@ -234,9 +233,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.btndelimg1.ForeColor = System.Drawing.Color.Red;
             this.btndelimg1.HoverBackColor = System.Drawing.Color.White;
             this.btndelimg1.HoverForeColor = System.Drawing.Color.Red;
-            this.btndelimg1.Location = new System.Drawing.Point(0, 206);
+            this.btndelimg1.Location = new System.Drawing.Point(0, 258);
             this.btndelimg1.Name = "btndelimg1";
-            this.btndelimg1.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btndelimg1.TabIndex = 14;
             this.btndelimg1.Text = "É¾³ý";
             this.btndelimg1.Visible = false;
@@ -248,9 +246,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.img2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.img2.Enlarged = true;
             this.img2.ID = "";
-            this.img2.Location = new System.Drawing.Point(60, 146);
+            this.img2.Location = new System.Drawing.Point(75, 183);
             this.img2.Name = "img2";
-            this.img2.Size = new System.Drawing.Size(60, 60);
+            this.img2.Size = new System.Drawing.Size(75, 75);
             this.img2.TabIndex = 15;
             this.img2.Visible = false;
             // 
@@ -261,9 +259,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.btndelimg2.ForeColor = System.Drawing.Color.Red;
             this.btndelimg2.HoverBackColor = System.Drawing.Color.White;
             this.btndelimg2.HoverForeColor = System.Drawing.Color.Red;
-            this.btndelimg2.Location = new System.Drawing.Point(60, 206);
+            this.btndelimg2.Location = new System.Drawing.Point(75, 258);
             this.btndelimg2.Name = "btndelimg2";
-            this.btndelimg2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btndelimg2.TabIndex = 16;
             this.btndelimg2.Text = "É¾³ý";
             this.btndelimg2.Visible = false;
@@ -275,9 +272,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.img3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.img3.Enlarged = true;
             this.img3.ID = "";
-            this.img3.Location = new System.Drawing.Point(120, 146);
+            this.img3.Location = new System.Drawing.Point(150, 183);
             this.img3.Name = "img3";
-            this.img3.Size = new System.Drawing.Size(60, 60);
+            this.img3.Size = new System.Drawing.Size(75, 75);
             this.img3.TabIndex = 17;
             this.img3.Visible = false;
             // 
@@ -288,9 +285,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.btndelimg3.ForeColor = System.Drawing.Color.Red;
             this.btndelimg3.HoverBackColor = System.Drawing.Color.White;
             this.btndelimg3.HoverForeColor = System.Drawing.Color.Red;
-            this.btndelimg3.Location = new System.Drawing.Point(120, 206);
+            this.btndelimg3.Location = new System.Drawing.Point(150, 258);
             this.btndelimg3.Name = "btndelimg3";
-            this.btndelimg3.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btndelimg3.TabIndex = 18;
             this.btndelimg3.Text = "É¾³ý";
             this.btndelimg3.Visible = false;
@@ -302,9 +298,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.img4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.img4.Enlarged = true;
             this.img4.ID = "";
-            this.img4.Location = new System.Drawing.Point(180, 146);
+            this.img4.Location = new System.Drawing.Point(225, 183);
             this.img4.Name = "img4";
-            this.img4.Size = new System.Drawing.Size(60, 60);
+            this.img4.Size = new System.Drawing.Size(75, 75);
             this.img4.TabIndex = 19;
             this.img4.Visible = false;
             // 
@@ -315,9 +311,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.btndelimg4.ForeColor = System.Drawing.Color.Red;
             this.btndelimg4.HoverBackColor = System.Drawing.Color.White;
             this.btndelimg4.HoverForeColor = System.Drawing.Color.Red;
-            this.btndelimg4.Location = new System.Drawing.Point(180, 206);
+            this.btndelimg4.Location = new System.Drawing.Point(225, 258);
             this.btndelimg4.Name = "btndelimg4";
-            this.btndelimg4.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btndelimg4.TabIndex = 20;
             this.btndelimg4.Text = "É¾³ý";
             this.btndelimg4.Visible = false;
@@ -329,9 +324,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.img5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.img5.Enlarged = true;
             this.img5.ID = "";
-            this.img5.Location = new System.Drawing.Point(0, 226);
+            this.img5.Location = new System.Drawing.Point(0, 283);
             this.img5.Name = "img5";
-            this.img5.Size = new System.Drawing.Size(60, 60);
+            this.img5.Size = new System.Drawing.Size(75, 75);
             this.img5.TabIndex = 21;
             this.img5.Visible = false;
             // 
@@ -342,9 +337,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.btndelimg5.ForeColor = System.Drawing.Color.Red;
             this.btndelimg5.HoverBackColor = System.Drawing.Color.White;
             this.btndelimg5.HoverForeColor = System.Drawing.Color.Red;
-            this.btndelimg5.Location = new System.Drawing.Point(0, 286);
+            this.btndelimg5.Location = new System.Drawing.Point(0, 358);
             this.btndelimg5.Name = "btndelimg5";
-            this.btndelimg5.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btndelimg5.TabIndex = 22;
             this.btndelimg5.Text = "É¾³ý";
             this.btndelimg5.Visible = false;
@@ -356,9 +350,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.img9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.img9.Enlarged = true;
             this.img9.ID = "";
-            this.img9.Location = new System.Drawing.Point(0, 306);
+            this.img9.Location = new System.Drawing.Point(0, 383);
             this.img9.Name = "img9";
-            this.img9.Size = new System.Drawing.Size(60, 60);
+            this.img9.Size = new System.Drawing.Size(75, 75);
             this.img9.TabIndex = 23;
             this.img9.Visible = false;
             // 
@@ -369,9 +363,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.btndelimg9.ForeColor = System.Drawing.Color.Red;
             this.btndelimg9.HoverBackColor = System.Drawing.Color.White;
             this.btndelimg9.HoverForeColor = System.Drawing.Color.Red;
-            this.btndelimg9.Location = new System.Drawing.Point(0, 366);
+            this.btndelimg9.Location = new System.Drawing.Point(0, 458);
             this.btndelimg9.Name = "btndelimg9";
-            this.btndelimg9.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btndelimg9.TabIndex = 24;
             this.btndelimg9.Text = "É¾³ý";
             this.btndelimg9.Visible = false;
@@ -383,9 +376,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.img6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.img6.Enlarged = true;
             this.img6.ID = "";
-            this.img6.Location = new System.Drawing.Point(60, 226);
+            this.img6.Location = new System.Drawing.Point(75, 283);
             this.img6.Name = "img6";
-            this.img6.Size = new System.Drawing.Size(60, 60);
+            this.img6.Size = new System.Drawing.Size(75, 75);
             this.img6.TabIndex = 25;
             this.img6.Visible = false;
             // 
@@ -396,9 +389,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.btndelimg6.ForeColor = System.Drawing.Color.Red;
             this.btndelimg6.HoverBackColor = System.Drawing.Color.White;
             this.btndelimg6.HoverForeColor = System.Drawing.Color.Red;
-            this.btndelimg6.Location = new System.Drawing.Point(60, 286);
+            this.btndelimg6.Location = new System.Drawing.Point(75, 358);
             this.btndelimg6.Name = "btndelimg6";
-            this.btndelimg6.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btndelimg6.TabIndex = 26;
             this.btndelimg6.Text = "É¾³ý";
             this.btndelimg6.Visible = false;
@@ -410,9 +402,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.img7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.img7.Enlarged = true;
             this.img7.ID = "";
-            this.img7.Location = new System.Drawing.Point(120, 226);
+            this.img7.Location = new System.Drawing.Point(150, 283);
             this.img7.Name = "img7";
-            this.img7.Size = new System.Drawing.Size(60, 60);
+            this.img7.Size = new System.Drawing.Size(75, 75);
             this.img7.TabIndex = 27;
             this.img7.Visible = false;
             // 
@@ -423,9 +415,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.btndelimg7.ForeColor = System.Drawing.Color.Red;
             this.btndelimg7.HoverBackColor = System.Drawing.Color.White;
             this.btndelimg7.HoverForeColor = System.Drawing.Color.Red;
-            this.btndelimg7.Location = new System.Drawing.Point(120, 286);
+            this.btndelimg7.Location = new System.Drawing.Point(150, 358);
             this.btndelimg7.Name = "btndelimg7";
-            this.btndelimg7.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btndelimg7.TabIndex = 28;
             this.btndelimg7.Text = "É¾³ý";
             this.btndelimg7.Visible = false;
@@ -437,9 +428,9 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.img8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.img8.Enlarged = true;
             this.img8.ID = "";
-            this.img8.Location = new System.Drawing.Point(180, 226);
+            this.img8.Location = new System.Drawing.Point(225, 283);
             this.img8.Name = "img8";
-            this.img8.Size = new System.Drawing.Size(60, 60);
+            this.img8.Size = new System.Drawing.Size(75, 75);
             this.img8.TabIndex = 29;
             this.img8.Visible = false;
             // 
@@ -450,9 +441,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.btndelimg8.ForeColor = System.Drawing.Color.Red;
             this.btndelimg8.HoverBackColor = System.Drawing.Color.White;
             this.btndelimg8.HoverForeColor = System.Drawing.Color.Red;
-            this.btndelimg8.Location = new System.Drawing.Point(180, 286);
+            this.btndelimg8.Location = new System.Drawing.Point(225, 358);
             this.btndelimg8.Name = "btndelimg8";
-            this.btndelimg8.Style = Smobiler.Core.Controls.ButtonStyle.custom;
             this.btndelimg8.TabIndex = 30;
             this.btndelimg8.Text = "É¾³ý";
             this.btndelimg8.Visible = false;

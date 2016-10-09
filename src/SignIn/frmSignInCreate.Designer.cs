@@ -61,7 +61,7 @@ namespace COMSSmobilerDemo.SignIn
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.Size(70, 28);
+            this.Label1.Size = new System.Drawing.Size(88, 35);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "类型";
             this.Label1.ZIndex = 1;
@@ -72,11 +72,10 @@ namespace COMSSmobilerDemo.SignIn
             this.btntype.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btntype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btntype.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btntype.Location = new System.Drawing.Point(70, 0);
+            this.btntype.Location = new System.Drawing.Point(88, 0);
             this.btntype.Name = "btntype";
-            this.btntype.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btntype.Size = new System.Drawing.Size(150, 28);
-            this.btntype.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btntype.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.btntype.Size = new System.Drawing.Size(188, 35);
             this.btntype.TabIndex = 3;
             this.btntype.Text = "选择（必填）";
             this.btntype.ZIndex = 2;
@@ -87,10 +86,9 @@ namespace COMSSmobilerDemo.SignIn
             this.btntype2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btntype2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btntype2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btntype2.Location = new System.Drawing.Point(220, 0);
+            this.btntype2.Location = new System.Drawing.Point(275, 0);
             this.btntype2.Name = "btntype2";
-            this.btntype2.Size = new System.Drawing.Size(20, 28);
-            this.btntype2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btntype2.Size = new System.Drawing.Size(25, 35);
             this.btntype2.TabIndex = 4;
             this.btntype2.Text = ">";
             this.btntype2.ZIndex = 3;
@@ -101,10 +99,10 @@ namespace COMSSmobilerDemo.SignIn
             this.Label2.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label2.Location = new System.Drawing.Point(0, 34);
+            this.Label2.Location = new System.Drawing.Point(0, 43);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.Size(70, 28);
+            this.Label2.Size = new System.Drawing.Size(88, 35);
             this.Label2.TabIndex = 5;
             this.Label2.Text = "时间";
             this.Label2.ZIndex = 4;
@@ -114,10 +112,10 @@ namespace COMSSmobilerDemo.SignIn
             this.Label4.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label4.Location = new System.Drawing.Point(0, 136);
+            this.Label4.Location = new System.Drawing.Point(0, 170);
             this.Label4.Name = "Label4";
             this.Label4.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label4.Size = new System.Drawing.Size(70, 28);
+            this.Label4.Size = new System.Drawing.Size(88, 35);
             this.Label4.TabIndex = 7;
             this.Label4.Text = "打卡类型";
             // 
@@ -127,11 +125,10 @@ namespace COMSSmobilerDemo.SignIn
             this.btnPunchCardType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnPunchCardType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.btnPunchCardType.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.btnPunchCardType.Location = new System.Drawing.Point(70, 136);
+            this.btnPunchCardType.Location = new System.Drawing.Point(88, 170);
             this.btnPunchCardType.Name = "btnPunchCardType";
-            this.btnPunchCardType.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.btnPunchCardType.Size = new System.Drawing.Size(150, 28);
-            this.btnPunchCardType.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnPunchCardType.Padding = new Smobiler.Core.Padding(0F, 0F, 5F, 0F);
+            this.btnPunchCardType.Size = new System.Drawing.Size(188, 35);
             this.btnPunchCardType.TabIndex = 8;
             this.btnPunchCardType.Text = "选择（必填）";
             this.btnPunchCardType.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btntype2_Click);
@@ -141,10 +138,9 @@ namespace COMSSmobilerDemo.SignIn
             this.btnPunchCardType2.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.btnPunchCardType2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnPunchCardType2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnPunchCardType2.Location = new System.Drawing.Point(220, 136);
+            this.btnPunchCardType2.Location = new System.Drawing.Point(275, 170);
             this.btnPunchCardType2.Name = "btnPunchCardType2";
-            this.btnPunchCardType2.Size = new System.Drawing.Size(20, 28);
-            this.btnPunchCardType2.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnPunchCardType2.Size = new System.Drawing.Size(25, 35);
             this.btnPunchCardType2.TabIndex = 9;
             this.btnPunchCardType2.Text = ">";
             this.btnPunchCardType2.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btntype2_Click);
@@ -155,10 +151,10 @@ namespace COMSSmobilerDemo.SignIn
             this.lblDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
             this.lblDate.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblDate.Location = new System.Drawing.Point(70, 34);
+            this.lblDate.Location = new System.Drawing.Point(88, 43);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblDate.Size = new System.Drawing.Size(170, 28);
+            this.lblDate.Padding = new Smobiler.Core.Padding(0F, 0F, 30F, 0F);
+            this.lblDate.Size = new System.Drawing.Size(213, 35);
             this.lblDate.TabIndex = 10;
             this.lblDate.ZIndex = 5;
             // 
@@ -166,10 +162,10 @@ namespace COMSSmobilerDemo.SignIn
             // 
             this.lblAddress.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.lblAddress.Location = new System.Drawing.Point(70, 62);
+            this.lblAddress.Location = new System.Drawing.Point(88, 78);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Padding = new Smobiler.Core.Padding(2F, 5F, 12F, 0F);
-            this.lblAddress.Size = new System.Drawing.Size(170, 48);
+            this.lblAddress.Size = new System.Drawing.Size(213, 60);
             this.lblAddress.TabIndex = 11;
             this.lblAddress.Text = "正在定位...";
             this.lblAddress.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
@@ -198,11 +194,10 @@ namespace COMSSmobilerDemo.SignIn
             this.btnAddress.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Left;
             this.btnAddress.HoverBackColor = System.Drawing.Color.White;
             this.btnAddress.HoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            this.btnAddress.Location = new System.Drawing.Point(70, 110);
+            this.btnAddress.Location = new System.Drawing.Point(88, 138);
             this.btnAddress.Name = "btnAddress";
             this.btnAddress.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.btnAddress.Size = new System.Drawing.Size(170, 20);
-            this.btnAddress.Style = Smobiler.Core.Controls.ButtonStyle.custom;
+            this.btnAddress.Size = new System.Drawing.Size(213, 25);
             this.btnAddress.TabIndex = 12;
             this.btnAddress.Text = "地点微调";
             this.btnAddress.ZIndex = 8;
@@ -210,25 +205,25 @@ namespace COMSSmobilerDemo.SignIn
             // 
             // MapView1
             // 
-            this.MapView1.Location = new System.Drawing.Point(0, 62);
+            this.MapView1.Location = new System.Drawing.Point(0, 78);
             this.MapView1.Name = "MapView1";
-            this.MapView1.Size = new System.Drawing.Size(70, 68);
+            this.MapView1.Size = new System.Drawing.Size(88, 85);
             this.MapView1.TabIndex = 13;
             // 
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line1.Location = new System.Drawing.Point(4, 130);
+            this.Line1.Location = new System.Drawing.Point(5, 163);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.Size(240, 2);
+            this.Line1.Size = new System.Drawing.Size(300, 3);
             this.Line1.TabIndex = 14;
             // 
             // line2
             // 
             this.line2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.line2.Location = new System.Drawing.Point(0, 62);
+            this.line2.Location = new System.Drawing.Point(0, 78);
             this.line2.Name = "line2";
-            this.line2.Size = new System.Drawing.Size(240, 2);
+            this.line2.Size = new System.Drawing.Size(300, 3);
             this.line2.TabIndex = 15;
             // 
             // frmSignInCreate
