@@ -46,10 +46,10 @@ namespace COMSSmobilerDemo.Leave
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Layout = "frmLeaveGrid_Layout";
-            this.GridView1.Location = new System.Drawing.Point(0,58);
+            this.GridView1.Location = new System.Drawing.Point(0, 58);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(300,438);
+            this.GridView1.Size = new System.Drawing.Size(300, 438);
             this.GridView1.TabIndex = 4;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             this.GridView1.UpSlippling += new System.EventHandler(this.GridView1_UpSlippling);
@@ -59,6 +59,7 @@ namespace COMSSmobilerDemo.Leave
             // 
             this.addnew.IconID = "!\\ue148043146223";
             this.addnew.Name = "addnew";
+            this.addnew.SelectIconID = "!\\ue148043146223";
             this.addnew.Text = "ÐÂÔö";
             // 
             // TextTabBar1
@@ -76,11 +77,11 @@ namespace COMSSmobilerDemo.Leave
             this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
             textTabBarItem1,
             textTabBarItem2});
-            this.TextTabBar1.Location = new System.Drawing.Point(25,13);
+            this.TextTabBar1.Location = new System.Drawing.Point(25, 13);
             this.TextTabBar1.Name = "TextTabBar1";
             this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.TextTabBar1.SelectForeColor = System.Drawing.Color.White;
-            this.TextTabBar1.Size = new System.Drawing.Size(250,35);
+            this.TextTabBar1.Size = new System.Drawing.Size(250, 35);
             this.TextTabBar1.TabIndex = 8;
             this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
             // 
@@ -102,6 +103,7 @@ namespace COMSSmobilerDemo.Leave
             this.RightSlipping += new System.EventHandler(this.frmLeaveGrid_RightSlipping);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmLeaveGrid";
 
         }
         internal Smobiler.Core.Controls.GridView GridView1;

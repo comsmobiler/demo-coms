@@ -331,6 +331,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             // 
             this.Scrap.IconID = "!\\ue327043146223";
             this.Scrap.Name = "Scrap";
+            this.Scrap.SelectIconID = "!\\ue327043146223";
             this.Scrap.Text = "报废";
             // 
             // Label12
@@ -599,12 +600,14 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             // 
             this.Transfer.IconID = "!\\ue915043146223";
             this.Transfer.Name = "Transfer";
+            this.Transfer.SelectIconID = "!\\ue915043146223";
             this.Transfer.Text = "转移";
             // 
             // Edit
             // 
             this.Edit.IconID = "!\\ue22b043146223";
             this.Edit.Name = "Edit";
+            this.Edit.SelectIconID = "!\\ue22b043146223";
             this.Edit.Text = "编辑";
             // 
             // PopList1
@@ -615,6 +618,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             // 
             this.Record.IconID = "!\\ue85d043146223";
             this.Record.Name = "Record";
+            this.Record.SelectIconID = "!\\ue85d043146223";
             this.Record.Text = "使用记录";
             // 
             // Label22

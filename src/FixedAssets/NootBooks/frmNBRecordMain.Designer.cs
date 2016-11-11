@@ -36,6 +36,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Border = new Smobiler.Core.Border(0, 1, 0, 0);
+            this.GridView1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.GridView1.Layout = "frmNBRecordLayout";
             this.GridView1.Location = new System.Drawing.Point(0, 12);
             this.GridView1.Name = "GridView1";
@@ -50,6 +51,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             // 
             this.add.IconID = "!\\ue148043146223";
             this.add.Name = "add";
+            this.add.SelectIconID = "!\\ue148043146223";
             this.add.Text = "ÐÂÔö";
             // 
             // frmNBRecordMain

@@ -207,6 +207,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             // 
             this.save.IconID = "!\\ue161043146223";
             this.save.Name = "save";
+            this.save.SelectIconID = "!\\ue161043146223";
             this.save.Text = "±£´æ";
             // 
             // PopList1

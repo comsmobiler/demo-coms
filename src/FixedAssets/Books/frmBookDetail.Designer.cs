@@ -48,7 +48,6 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.Label16 = new Smobiler.Core.Controls.Label();
             this.GridView1 = new Smobiler.Core.Controls.GridView();
             this.Edit = new Smobiler.Core.Controls.ToolbarItem();
-            this.print = new Smobiler.Core.Controls.ToolbarItem();
             this.Record = new Smobiler.Core.Controls.ToolbarItem();
             // 
             // Label1
@@ -287,14 +286,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             // 
             this.Edit.IconID = "!\\ue22b043146223";
             this.Edit.Name = "Edit";
+            this.Edit.SelectIconID = "!\\ue22b043146223";
             this.Edit.Text = "编辑";
-            // 
-            // print
-            // 
-            this.print.IconID = "!\\ue8ad043146223";
-            this.print.Name = "print";
-            this.print.Text = "批量打印";
-            this.print.Visible = false;
             // 
             // Record
             // 
@@ -328,7 +321,6 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.TitleText = "图书详情";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.Edit,
-            this.print,
             this.Record});
             this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.None, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223))))));
             this.Load += new System.EventHandler(this.frmBookDetail_Load);
@@ -357,7 +349,6 @@ namespace COMSSmobilerDemo.FixedAssets.Books
         internal Smobiler.Core.Controls.Label Label16;
         internal Smobiler.Core.Controls.GridView GridView1;
         internal Smobiler.Core.Controls.ToolbarItem Edit;
-        internal Smobiler.Core.Controls.ToolbarItem print;
         internal Smobiler.Core.Controls.ToolbarItem Record;
 
         #endregion

@@ -175,6 +175,7 @@ namespace COMSSmobilerDemo.SignIn
             // 
             this.SignIn.IconID = "!\\ue161043146223";
             this.SignIn.Name = "SignIn";
+            this.SignIn.SelectIconID = "!\\ue161043146223";
             this.SignIn.Text = "Ç©µ½";
             // 
             // Gps1

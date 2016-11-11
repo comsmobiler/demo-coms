@@ -157,6 +157,7 @@ namespace COMSSmobilerDemo.Leave
             // 
             this.Confirm.IconID = "!\\ue065043146223";
             this.Confirm.Name = "Confirm";
+            this.Confirm.SelectIconID = "!\\ue065043146223";
             this.Confirm.Text = "…Û∫À";
             // 
             // Label8
@@ -247,6 +248,7 @@ namespace COMSSmobilerDemo.Leave
             // 
             this.CopyTo.IconID = "!\\ue2bc043146223";
             this.CopyTo.Name = "CopyTo";
+            this.CopyTo.SelectIconID = "!\\ue2bc043146223";
             this.CopyTo.Text = "≥≠ÀÕ";
             // 
             // Label7

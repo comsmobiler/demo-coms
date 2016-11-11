@@ -126,6 +126,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.save.IconID = "!\\ue065043146223";
             this.save.Name = "save";
+            this.save.SelectIconID = "!\\ue065043146223";
             this.save.Text = "…Û≈˙";
             // 
             // txtRB_REASON

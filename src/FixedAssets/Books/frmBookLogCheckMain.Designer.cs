@@ -29,8 +29,8 @@ namespace COMSSmobilerDemo.FixedAssets.Books
 
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.TextTabBarItem textTabBarItem5 = new Smobiler.Core.Controls.TextTabBarItem();
-            Smobiler.Core.Controls.TextTabBarItem textTabBarItem6 = new Smobiler.Core.Controls.TextTabBarItem();
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem1 = new Smobiler.Core.Controls.TextTabBarItem();
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem2 = new Smobiler.Core.Controls.TextTabBarItem();
             this.GridView1 = new Smobiler.Core.Controls.GridView();
             this.add = new Smobiler.Core.Controls.ToolbarItem();
             this.TextTabBar1 = new Smobiler.Core.Controls.TextTabBar();
@@ -39,10 +39,10 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Layout = "frmBookLogLayout";
-            this.GridView1.Location = new System.Drawing.Point(0,58);
+            this.GridView1.Location = new System.Drawing.Point(0, 58);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(300,500);
+            this.GridView1.Size = new System.Drawing.Size(300, 500);
             this.GridView1.TabIndex = 2;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             this.GridView1.UpSlippling += new System.EventHandler(this.GridView1_UpSlippling);
@@ -52,6 +52,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             // 
             this.add.IconID = "!\\ue148043146223";
             this.add.Name = "add";
+            this.add.SelectIconID = "!\\ue148043146223";
             this.add.Text = "新增";
             // 
             // TextTabBar1
@@ -62,18 +63,18 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.TextTabBar1.BorderRadius = 2;
             this.TextTabBar1.BorderSize = 0.2F;
             this.TextTabBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            textTabBarItem5.Text = "我借阅的";
-            textTabBarItem5.Value = "BookL";
-            textTabBarItem6.Text = "所有的";
-            textTabBarItem6.Value = "AllBookL";
+            textTabBarItem1.Text = "我借阅的";
+            textTabBarItem1.Value = "BookL";
+            textTabBarItem2.Text = "所有的";
+            textTabBarItem2.Value = "AllBookL";
             this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
-            textTabBarItem5,
-            textTabBarItem6});
-            this.TextTabBar1.Location = new System.Drawing.Point(25,13);
+            textTabBarItem1,
+            textTabBarItem2});
+            this.TextTabBar1.Location = new System.Drawing.Point(25, 13);
             this.TextTabBar1.Name = "TextTabBar1";
             this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.TextTabBar1.SelectForeColor = System.Drawing.Color.White;
-            this.TextTabBar1.Size = new System.Drawing.Size(250,35);
+            this.TextTabBar1.Size = new System.Drawing.Size(250, 35);
             this.TextTabBar1.TabIndex = 3;
             this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
             // 

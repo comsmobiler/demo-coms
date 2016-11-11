@@ -58,7 +58,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Label1.Name = "Label1";
             this.Label1.Padding = new Smobiler.Core.Padding(2F, 5F, 0F, 0F);
-            this.Label1.Size = new System.Drawing.Size(88,60);
+            this.Label1.Size = new System.Drawing.Size(88, 60);
             this.Label1.TabIndex = 2;
             this.Label1.Text = "成本中心";
             this.Label1.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
@@ -71,10 +71,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.lblRB_COSTCENTER.DataMember = "RB_COSTCENTER";
             this.lblRB_COSTCENTER.DisplayMember = "RB_COSTCENTER";
             this.lblRB_COSTCENTER.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.lblRB_COSTCENTER.Location = new System.Drawing.Point(88,0);
+            this.lblRB_COSTCENTER.Location = new System.Drawing.Point(88, 0);
             this.lblRB_COSTCENTER.Name = "lblRB_COSTCENTER";
             this.lblRB_COSTCENTER.Padding = new Smobiler.Core.Padding(0F, 5F, 12F, 0F);
-            this.lblRB_COSTCENTER.Size = new System.Drawing.Size(213,60);
+            this.lblRB_COSTCENTER.Size = new System.Drawing.Size(213, 60);
             this.lblRB_COSTCENTER.TabIndex = 3;
             this.lblRB_COSTCENTER.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             this.lblRB_COSTCENTER.ZIndex = 2;
@@ -84,10 +84,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label4.Border = new Smobiler.Core.Border(0, 1, 0, 1);
             this.Label4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label4.Location = new System.Drawing.Point(0,68);
+            this.Label4.Location = new System.Drawing.Point(0, 68);
             this.Label4.Name = "Label4";
             this.Label4.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label4.Size = new System.Drawing.Size(88,35);
+            this.Label4.Size = new System.Drawing.Size(88, 35);
             this.Label4.TabIndex = 4;
             this.Label4.Text = "报销金额";
             this.Label4.ZIndex = 3;
@@ -100,10 +100,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.lblRB_AMOUNT.DisplayMember = "RBROW_AMOUNT";
             this.lblRB_AMOUNT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.lblRB_AMOUNT.HorizontalAlignment = Smobiler.Core.HorizontalAlignment.Right;
-            this.lblRB_AMOUNT.Location = new System.Drawing.Point(88,68);
+            this.lblRB_AMOUNT.Location = new System.Drawing.Point(88, 68);
             this.lblRB_AMOUNT.Name = "lblRB_AMOUNT";
             this.lblRB_AMOUNT.Padding = new Smobiler.Core.Padding(0F, 0F, 12F, 0F);
-            this.lblRB_AMOUNT.Size = new System.Drawing.Size(213,35);
+            this.lblRB_AMOUNT.Size = new System.Drawing.Size(213, 35);
             this.lblRB_AMOUNT.TabIndex = 5;
             this.lblRB_AMOUNT.Text = "250.00";
             this.lblRB_AMOUNT.ZIndex = 4;
@@ -112,11 +112,11 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.txtRB_REASON.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.txtRB_REASON.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.txtRB_REASON.Location = new System.Drawing.Point(0,178);
+            this.txtRB_REASON.Location = new System.Drawing.Point(0, 178);
             this.txtRB_REASON.Multiline = true;
             this.txtRB_REASON.Name = "txtRB_REASON";
             this.txtRB_REASON.Padding = new Smobiler.Core.Padding(2F, 5F, 12F, 0F);
-            this.txtRB_REASON.Size = new System.Drawing.Size(300,88);
+            this.txtRB_REASON.Size = new System.Drawing.Size(300, 88);
             this.txtRB_REASON.TabIndex = 9;
             this.txtRB_REASON.Visible = false;
             this.txtRB_REASON.WaterMarkText = "填写理由";
@@ -124,12 +124,11 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             // CheckBox1
             // 
-            this.CheckBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(121)))), ((int)(((byte)(252)))));
             this.CheckBox1.Border = new Smobiler.Core.Border(1);
             this.CheckBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.CheckBox1.Location = new System.Drawing.Point(250,115);
+            this.CheckBox1.Location = new System.Drawing.Point(250, 115);
             this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.Size(20,20);
+            this.CheckBox1.Size = new System.Drawing.Size(20, 20);
             this.CheckBox1.TabIndex = 10;
             this.CheckBox1.UnCheckedBackColor = System.Drawing.Color.White;
             this.CheckBox1.ZIndex = 6;
@@ -139,23 +138,22 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.Label2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label2.Location = new System.Drawing.Point(0,108);
+            this.Label2.Location = new System.Drawing.Point(0, 108);
             this.Label2.Name = "Label2";
             this.Label2.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label2.Size = new System.Drawing.Size(300,35);
+            this.Label2.Size = new System.Drawing.Size(300, 35);
             this.Label2.TabIndex = 11;
             this.Label2.Text = "通过审批";
             this.Label2.ZIndex = 5;
             // 
             // CheckBox2
             // 
-            this.CheckBox2.BackColor = System.Drawing.Color.White;
             this.CheckBox2.Border = new Smobiler.Core.Border(1);
             this.CheckBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.CheckBox2.Checked = false;
-            this.CheckBox2.Location = new System.Drawing.Point(250,150);
+            this.CheckBox2.Location = new System.Drawing.Point(250, 150);
             this.CheckBox2.Name = "CheckBox2";
-            this.CheckBox2.Size = new System.Drawing.Size(20,20);
+            this.CheckBox2.Size = new System.Drawing.Size(20, 20);
             this.CheckBox2.TabIndex = 12;
             this.CheckBox2.UnCheckedBackColor = System.Drawing.Color.White;
             this.CheckBox2.ZIndex = 9;
@@ -166,10 +164,10 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label3.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.Label3.Location = new System.Drawing.Point(0,143);
+            this.Label3.Location = new System.Drawing.Point(0, 143);
             this.Label3.Name = "Label3";
             this.Label3.Padding = new Smobiler.Core.Padding(2F, 0F, 0F, 0F);
-            this.Label3.Size = new System.Drawing.Size(300,35);
+            this.Label3.Size = new System.Drawing.Size(300, 35);
             this.Label3.TabIndex = 13;
             this.Label3.Text = "拒绝报销";
             this.Label3.ZIndex = 8;
@@ -178,14 +176,15 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.save.IconID = "!\\ue065043146223";
             this.save.Name = "save";
+            this.save.SelectIconID = "!\\ue065043146223";
             this.save.Text = "审核";
             // 
             // Line3
             // 
             this.Line3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Line3.Location = new System.Drawing.Point(0,143);
+            this.Line3.Location = new System.Drawing.Point(0, 143);
             this.Line3.Name = "Line3";
-            this.Line3.Size = new System.Drawing.Size(300,3);
+            this.Line3.Size = new System.Drawing.Size(300, 3);
             this.Line3.TabIndex = 21;
             this.Line3.ZIndex = 7;
             // 
@@ -194,9 +193,9 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.Label9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Label9.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.Label9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.Label9.FontSize = 3;
+            this.Label9.FontSize = 3F;
             this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(300,13);
+            this.Label9.Size = new System.Drawing.Size(300, 13);
             this.Label9.TabIndex = 18;
             // 
             // frmRBConfirm
@@ -221,6 +220,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmRBConfirm_ToolbarItemClick);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmRBConfirm";
 
         }
         internal Smobiler.Core.Controls.Label Label1;

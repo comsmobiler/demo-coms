@@ -132,12 +132,14 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.save.IconID = "!\\ue161043146223";
             this.save.Name = "save";
+            this.save.SelectIconID = "!\\ue161043146223";
             this.save.Text = "±£´æ";
             // 
             // delete
             // 
             this.delete.IconID = "!\\ue888043146223";
             this.delete.Name = "delete";
+            this.delete.SelectIconID = "!\\ue888043146223";
             this.delete.Text = "É¾³ý";
             // 
             // Label4

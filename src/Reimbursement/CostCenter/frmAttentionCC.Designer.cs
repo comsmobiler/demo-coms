@@ -44,7 +44,7 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter
             this.GridView1.Layout = "frmAttentionCCDt";
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(300,498);
+            this.GridView1.Size = new System.Drawing.Size(300, 498);
             this.GridView1.TabIndex = 3;
             this.GridView1.ItemClick += new Smobiler.Core.Controls.GridViewItemClickEventHandler(this.GridView1_ItemClick);
             // 
@@ -52,6 +52,7 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter
             // 
             this.save.IconID = "!\\ue161043146223";
             this.save.Name = "save";
+            this.save.SelectIconID = "!\\ue161043146223";
             this.save.Text = "±£´æ";
             // 
             // frmAttentionCC
@@ -67,6 +68,7 @@ namespace COMSSmobilerDemo.Reimbursement.CostCenter
             this.Load += new System.EventHandler(this.frmAttentionCC_Load);
             this.TitleImageClick += new System.EventHandler(this.MobileForm_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmAttentionCC";
 
         }
         internal Smobiler.Core.Controls.GridView GridView1;

@@ -75,7 +75,8 @@ namespace COMSSmobilerDemo
             {
                 string userid = e.Cell.Items["lblUSER_ID"].Text;
                 if (string.IsNullOrEmpty(userid) == false)
-                {
+                { 
+                    //添加用户
                     string token = im.CreateUser(userid, userid, ".\\Image\\" + e.Cell.Items["imgPortraitUri"].DefaultValue + ".PNG");
                     if (im != null)
                     {
@@ -160,7 +161,7 @@ namespace COMSSmobilerDemo
                 }
                  //添加群组到数据库
                 //....
-
+                //
                 im.CreateGroup(users, "G0001", txtGroup.Text.Trim());
                 MessageBox.Show("群组已添加", (Object s, MessageBoxHandlerArgs args) => Close());
 

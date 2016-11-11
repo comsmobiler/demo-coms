@@ -38,8 +38,8 @@ namespace COMSSmobilerDemo.Reimbursement.RB
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.TextTabBarItem textTabBarItem3 = new Smobiler.Core.Controls.TextTabBarItem();
-            Smobiler.Core.Controls.TextTabBarItem textTabBarItem4 = new Smobiler.Core.Controls.TextTabBarItem();
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem1 = new Smobiler.Core.Controls.TextTabBarItem();
+            Smobiler.Core.Controls.TextTabBarItem textTabBarItem2 = new Smobiler.Core.Controls.TextTabBarItem();
             this.SX = new Smobiler.Core.Controls.ToolbarItem();
             this.xfadd = new Smobiler.Core.Controls.ToolbarItem();
             this.GridView1 = new Smobiler.Core.Controls.GridView();
@@ -51,22 +51,24 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.SX.IconID = "!\\ue88b043146223";
             this.SX.Name = "SX";
+            this.SX.SelectIconID = "!\\ue88b043146223";
             this.SX.Text = "筛选";
             // 
             // xfadd
             // 
             this.xfadd.IconID = "!\\ue148043146223";
             this.xfadd.Name = "xfadd";
+            this.xfadd.SelectIconID = "!\\ue148043146223";
             this.xfadd.Text = "消费记录";
             // 
             // GridView1
             // 
             this.GridView1.AllowSlip = true;
             this.GridView1.Layout = "frmConsumptionLayout";
-            this.GridView1.Location = new System.Drawing.Point(0,58);
+            this.GridView1.Location = new System.Drawing.Point(0, 58);
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(300,435);
+            this.GridView1.Size = new System.Drawing.Size(300, 435);
             this.GridView1.TabIndex = 15;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             // 
@@ -74,6 +76,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.RBadd.IconID = "!\\ue148043146223";
             this.RBadd.Name = "RBadd";
+            this.RBadd.SelectIconID = "!\\ue148043146223";
             this.RBadd.Text = "报销单";
             // 
             // TextTabBar1
@@ -84,18 +87,18 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             this.TextTabBar1.BorderRadius = 2;
             this.TextTabBar1.BorderSize = 0.2F;
             this.TextTabBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
-            textTabBarItem3.Text = "消费记录";
-            textTabBarItem3.Value = "xf";
-            textTabBarItem4.Text = "报销";
-            textTabBarItem4.Value = "bx";
+            textTabBarItem1.Text = "消费记录";
+            textTabBarItem1.Value = "xf";
+            textTabBarItem2.Text = "报销";
+            textTabBarItem2.Value = "bx";
             this.TextTabBar1.Items.AddRange(new Smobiler.Core.Controls.TextTabBarItem[] {
-            textTabBarItem3,
-            textTabBarItem4});
-            this.TextTabBar1.Location = new System.Drawing.Point(25,13);
+            textTabBarItem1,
+            textTabBarItem2});
+            this.TextTabBar1.Location = new System.Drawing.Point(25, 13);
             this.TextTabBar1.Name = "TextTabBar1";
             this.TextTabBar1.SelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(146)))), ((int)(((byte)(223)))));
             this.TextTabBar1.SelectForeColor = System.Drawing.Color.White;
-            this.TextTabBar1.Size = new System.Drawing.Size(250,35);
+            this.TextTabBar1.Size = new System.Drawing.Size(250, 35);
             this.TextTabBar1.TabIndex = 18;
             this.TextTabBar1.ItemClick += new Smobiler.Core.Controls.TabBarItemClickEventHandler(this.TextTabBar1_ItemClick);
             // 
@@ -103,6 +106,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.Report.IconID = "!\\ue01d043146223";
             this.Report.Name = "Report";
+            this.Report.SelectIconID = "!\\ue01d043146223";
             this.Report.Text = "报表";
             // 
             // frmRBMain

@@ -37,7 +37,6 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.save = new Smobiler.Core.Controls.ToolbarItem();
             this.PopList1 = new Smobiler.Core.Controls.PopList();
             this.btnBOOKSN2 = new Smobiler.Core.Controls.Button();
-            this.btnBOOKSN = new Smobiler.Core.Controls.BarcodeButton();
             this.Label4 = new Smobiler.Core.Controls.Label();
             this.btnState2 = new Smobiler.Core.Controls.Button();
             this.btnState = new Smobiler.Core.Controls.Button();
@@ -76,7 +75,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.txtBOOKSNID.Location = new System.Drawing.Point(88, 0);
             this.txtBOOKSNID.Name = "txtBOOKSNID";
             this.txtBOOKSNID.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.txtBOOKSNID.Size = new System.Drawing.Size(163, 35);
+            this.txtBOOKSNID.Size = new System.Drawing.Size(187, 35);
             this.txtBOOKSNID.TabIndex = 5;
             this.txtBOOKSNID.WaterMarkText = "£¨±ØÌî£©";
             this.txtBOOKSNID.ZIndex = 2;
@@ -112,6 +111,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             // 
             this.save.IconID = "!\\ue161043146223";
             this.save.Name = "save";
+            this.save.SelectIconID = "!\\ue161043146223";
             this.save.Text = "±£´æ";
             // 
             // PopList1
@@ -124,24 +124,13 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.btnBOOKSN2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnBOOKSN2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnBOOKSN2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnBOOKSN2.Location = new System.Drawing.Point(250, 0);
+            this.btnBOOKSN2.Location = new System.Drawing.Point(275, 0);
             this.btnBOOKSN2.Name = "btnBOOKSN2";
             this.btnBOOKSN2.Size = new System.Drawing.Size(25, 35);
             this.btnBOOKSN2.TabIndex = 9;
             this.btnBOOKSN2.Text = ">";
             this.btnBOOKSN2.ZIndex = 29;
             this.btnBOOKSN2.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnpop_Click);
-            // 
-            // btnBOOKSN
-            // 
-            this.btnBOOKSN.Border = new Smobiler.Core.Border(0, 0, 0, 1);
-            this.btnBOOKSN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnBOOKSN.FontSize = 10F;
-            this.btnBOOKSN.Location = new System.Drawing.Point(275, 0);
-            this.btnBOOKSN.Name = "btnBOOKSN";
-            this.btnBOOKSN.ResourceID = "!\\uf029000000000";
-            this.btnBOOKSN.Size = new System.Drawing.Size(25, 35);
-            this.btnBOOKSN.TabIndex = 10;
             // 
             // Label4
             // 
@@ -188,7 +177,6 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.ComponentControls.AddRange(new Smobiler.Core.ComponentBase[] {
             this.PopList1});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.btnBOOKSN,
             this.Label1,
             this.Label2,
             this.Label4,
@@ -219,7 +207,6 @@ namespace COMSSmobilerDemo.FixedAssets.Books
         internal Smobiler.Core.Controls.ToolbarItem save;
         internal Smobiler.Core.Controls.PopList PopList1;
         internal Smobiler.Core.Controls.Button btnBOOKSN2;
-        internal Smobiler.Core.Controls.BarcodeButton btnBOOKSN;
         internal Smobiler.Core.Controls.Label Label4;
         internal Smobiler.Core.Controls.Button btnState2;
         internal Smobiler.Core.Controls.Button btnState;

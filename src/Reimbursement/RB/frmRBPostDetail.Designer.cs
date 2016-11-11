@@ -125,6 +125,7 @@ namespace COMSSmobilerDemo.Reimbursement.RB
             // 
             this.Post.IconID = "!\\ue876043146223";
             this.Post.Name = "Post";
+            this.Post.SelectIconID = "!\\ue876043146223";
             this.Post.Text = "ÀÕ…Û";
             // 
             // txtRB_REASON

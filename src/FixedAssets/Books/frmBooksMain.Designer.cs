@@ -38,7 +38,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.GridView1.Layout = "frmBooksLayout";
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(300,500);
+            this.GridView1.Size = new System.Drawing.Size(300, 500);
             this.GridView1.TabIndex = 2;
             this.GridView1.CellClick += new Smobiler.Core.Controls.GridViewCellClickEventHandler(this.GridView1_CellClick);
             this.GridView1.UpSlippling += new System.EventHandler(this.GridView1_UpSlippling);
@@ -48,6 +48,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             // 
             this.add.IconID = "!\\ue148043146223";
             this.add.Name = "add";
+            this.add.SelectIconID = "!\\ue148043146223";
             this.add.Text = "Èë¿â";
             // 
             // frmBooksMain

@@ -301,7 +301,7 @@ namespace COMSSmobilerDemo
                 string tokenuser = Client.Session["UserID"].ToString();
                 if (System.String.IsNullOrEmpty(tokenuser) == false)
                 {
-                    //在融云用户初始化，如若报“toke失效”请去融云中查看token是否失效
+                    //在融云用户初始化，如若报“toke失效”请去融云中查看token是否有效
                     im.InitialToken(tokenuser, tokenuser, "");
                 }
                 else

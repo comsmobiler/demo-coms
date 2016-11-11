@@ -45,13 +45,14 @@ namespace COMSSmobilerDemo.Leave
             this.GridView1.Layout = "frmLCopyToUserLayout";
             this.GridView1.Name = "GridView1";
             this.GridView1.ShowGridLines = false;
-            this.GridView1.Size = new System.Drawing.Size(300,500);
+            this.GridView1.Size = new System.Drawing.Size(300, 500);
             this.GridView1.TabIndex = 2;
             // 
             // CopyTo
             // 
             this.CopyTo.IconID = "!\\ue2bc043146223";
             this.CopyTo.Name = "CopyTo";
+            this.CopyTo.SelectIconID = "!\\ue2bc043146223";
             this.CopyTo.Text = "³­ËÍ";
             // 
             // frmLCopyToUser
@@ -68,6 +69,7 @@ namespace COMSSmobilerDemo.Leave
             this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmLCopyToUser_ToolbarItemClick);
             this.TitleImageClick += new System.EventHandler(this.frmLCopyToUser_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
+            this.Name = "frmLCopyToUser";
 
         }
         internal Smobiler.Core.Controls.GridView GridView1;
