@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMSSmobilerDemo", "src\COMSSmobilerDemo.csproj", "{D8571F7B-5FA8-418F-945E-877CFDBBCB50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMSSmobilerDemo2010", "src\COMSSmobilerDemo2010.csproj", "{D8571F7B-5FA8-418F-945E-877CFDBBCB50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
