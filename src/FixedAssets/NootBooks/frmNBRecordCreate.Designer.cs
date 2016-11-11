@@ -43,7 +43,6 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.Label4 = new Smobiler.Core.Controls.Label();
             this.save = new Smobiler.Core.Controls.ToolbarItem();
             this.PopList1 = new Smobiler.Core.Controls.PopList();
-            this.btnNB_CODE = new Smobiler.Core.Controls.BarcodeButton();
             this.btnNBR_LOCATION = new Smobiler.Core.Controls.Button();
             this.btnNBR_LOCATION2 = new Smobiler.Core.Controls.Button();
             // 
@@ -68,7 +67,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.txtNB_EQNO.Location = new System.Drawing.Point(88, 0);
             this.txtNB_EQNO.Name = "txtNB_EQNO";
             this.txtNB_EQNO.Padding = new Smobiler.Core.Padding(0F, 0F, 2F, 0F);
-            this.txtNB_EQNO.Size = new System.Drawing.Size(163, 35);
+            this.txtNB_EQNO.Size = new System.Drawing.Size(187, 35);
             this.txtNB_EQNO.TabIndex = 3;
             this.txtNB_EQNO.WaterMarkText = "£¨±ØÌî£©";
             this.txtNB_EQNO.ZIndex = 2;
@@ -78,7 +77,7 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.btnCODE2.Border = new Smobiler.Core.Border(0, 0, 0, 1);
             this.btnCODE2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.btnCODE2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(99)))), ((int)(((byte)(99)))));
-            this.btnCODE2.Location = new System.Drawing.Point(250, 0);
+            this.btnCODE2.Location = new System.Drawing.Point(275, 0);
             this.btnCODE2.Name = "btnCODE2";
             this.btnCODE2.Size = new System.Drawing.Size(25, 35);
             this.btnCODE2.TabIndex = 4;
@@ -215,17 +214,6 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.PopList1.Name = "PopList1";
             this.PopList1.Selected += new System.EventHandler(this.PopList1_Selected);
             // 
-            // btnNB_CODE
-            // 
-            this.btnNB_CODE.Border = new Smobiler.Core.Border(0, 0, 0, 1);
-            this.btnNB_CODE.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.btnNB_CODE.FontSize = 10F;
-            this.btnNB_CODE.Location = new System.Drawing.Point(275, 0);
-            this.btnNB_CODE.Name = "btnNB_CODE";
-            this.btnNB_CODE.ResourceID = "!\\uf029000000000";
-            this.btnNB_CODE.Size = new System.Drawing.Size(25, 35);
-            this.btnNB_CODE.TabIndex = 19;
-            // 
             // btnNBR_LOCATION
             // 
             this.btnNBR_LOCATION.Border = new Smobiler.Core.Border(0, 0, 0, 1);
@@ -258,7 +246,6 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
             this.ComponentControls.AddRange(new Smobiler.Core.ComponentBase[] {
             this.PopList1});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.btnNB_CODE,
             this.Label1,
             this.txtNB_EQNO,
             this.Label4,
@@ -300,7 +287,6 @@ namespace COMSSmobilerDemo.FixedAssets.NootBooks
         internal Smobiler.Core.Controls.Label Label4;
         internal Smobiler.Core.Controls.ToolbarItem save;
         internal Smobiler.Core.Controls.PopList PopList1;
-        internal Smobiler.Core.Controls.BarcodeButton btnNB_CODE;
         internal Smobiler.Core.Controls.Button btnNBR_LOCATION;
         internal Smobiler.Core.Controls.Button btnNBR_LOCATION2;
         #endregion

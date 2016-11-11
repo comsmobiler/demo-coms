@@ -76,15 +76,14 @@ namespace COMSSmobilerDemo.WorkDocument
             gaugeViewAxisLine1,
             gaugeViewAxisLine2,
             gaugeViewAxisLine3});
-            this.GaugeView1.AxisTickLength = 2F;
+            this.GaugeView1.AxisLineWidth = 10F;
             this.GaugeView1.Location = new System.Drawing.Point(0, 60);
             this.GaugeView1.MaxValue = 150F;
             this.GaugeView1.Name = "GaugeView1";
             this.GaugeView1.PointerColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.GaugeView1.PointerLength = 40F;
-            this.GaugeView1.PointerWidth = 10F;
+            this.GaugeView1.PointerWidth = 25F;
             this.GaugeView1.Size = new System.Drawing.Size(300, 225);
-            this.GaugeView1.SplitLineLength = 4F;
+            this.GaugeView1.SplitLineLength = 10F;
             this.GaugeView1.TabIndex = 3;
             this.GaugeView1.Title = "绩效完成率";
             // 

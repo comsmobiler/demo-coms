@@ -7,11 +7,20 @@ using Smobiler.Core.Controls;
 using COMSSmobilerDemo.Reimbursement.RB;
 using COMSSmobilerDemo.Reimbursement.CostCenter;
 using COMSSmobilerDemo.Message;
+using Smobiler.Core.Plugin.RongIM;
 namespace COMSSmobilerDemo
 {
     partial class frmMune : Smobiler.Core.MobileForm
     {
         internal string ToolBarName = "";
+        IM im;
+        /// <summary>
+        /// appKey和appSecret请去融云注册应用：http://www.rongcloud.cn/
+        /// IM是仅限于打包版，开发版不支持
+        /// </summary>
+        string  appKey  = "z3v5yqkbvzdn0";
+        string appSecret = "YixaaKHE83zPj";
+        
         /// <summary>
         /// 显示左侧栏
         /// </summary>
@@ -35,10 +44,10 @@ namespace COMSSmobilerDemo
                     case "":
                         this.Close();
                         break;
-                    case "imgindex":
-                    case "btnindex":
-                        this.CloseSlider();
-                        break;
+                    //case "imgindex":
+                    //case "btnindex":
+                    //    this.CloseSlider();
+                    //    break;
                     case "imginfo":
                     case "btninfo":
                         frmInfo frm = new frmInfo();
@@ -219,8 +228,10 @@ namespace COMSSmobilerDemo
         /// <param name="e"></param>
         private void frmMune_Load(object sender, EventArgs e)
         {
+            InitialIM(appKey, appSecret);
             ScreenGestures();
             Bind();
+            
         }
 
         private void Bind()
@@ -252,5 +263,68 @@ namespace COMSSmobilerDemo
                 });
             }
         }
+
+
+        private void ProcessToolBarName(string toolBarName)
+        {
+            try
+            {
+                switch (toolBarName)
+                {
+                    case "Content":
+                        frmContacts frm = new frmContacts();
+                        frm.im = im;
+                        this.Redirect(frm, (MobileForm sender1, object args) => ProcessLeftMenuFormName(frm.toolBarName));
+                        break;
+                    case "Mes":
+                        im.StartConversationList();
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 初始化数据
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="secret"></param>
+        /// <remarks></remarks>
+        private void InitialIM(string key, string secret)
+        {
+            im = new IM(this.Client.SessionID, key, secret);
+            if (System.String.IsNullOrEmpty(im.Token) == true)
+            {
+                string tokenuser = Client.Session["UserID"].ToString();
+                if (System.String.IsNullOrEmpty(tokenuser) == false)
+                {
+                    //在融云用户初始化，如若报“toke失效”请去融云中查看token是否失效
+                    im.InitialToken(tokenuser, tokenuser, "");
+                }
+                else
+                {
+                    MessageBox.Show("TokenUser Not Be NullOrEmpty!");
+                }
+            }
+            else
+            {
+                im.InitialToken();
+            }
+        }
+        /// <summary>
+        /// toolbar事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void frmMune_ToolbarItemClick(object sender, ToolbarClickEventArgs e)
+        {
+            ProcessToolBarName(e.Name);
+        }
+
+
+
     }
 }

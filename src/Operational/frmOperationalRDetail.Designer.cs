@@ -39,7 +39,6 @@ namespace COMSSmobilerDemo.Operational
             this.NodeView1.ItemDefaultIcon = "";
             this.NodeView1.Location = new System.Drawing.Point(0, 35);
             this.NodeView1.Name = "NodeView1";
-            this.NodeView1.ResourcePath = null;
             this.NodeView1.Size = new System.Drawing.Size(300, 440);
             this.NodeView1.TabIndex = 2;
             this.NodeView1.ItemClicked += new System.EventHandler(this.NodeView1_ItemClicked);

@@ -12,7 +12,7 @@ namespace COMSSmobilerDemo
 {
     public partial class frmLogon : Smobiler.Core.MobileForm
     {
-         DateTime taosttime  ;
+        DateTime toasttime;
         ///登录事件
         private void btn_Logo_Click(object sender, System.EventArgs e)
         {
@@ -43,6 +43,7 @@ namespace COMSSmobilerDemo
                     });
                 }
 
+                Client.Session["UserID"] =  UserID;
                 frmMune  frm = new frmMune ();
                 this.Redirect(frm, (MobileForm sender1, object args) =>
                 {
@@ -164,13 +165,13 @@ namespace COMSSmobilerDemo
         {
            if (e.KeyCode == KeyCode.Back) 
            {
-                if ( taosttime.AddSeconds(3) >= DateTime.Now )
+               if (toasttime.AddSeconds(3) >= DateTime.Now)
                 {
                     Client.Exit(false);
                 }
                else 
                 {
-                    taosttime = DateTime.Now;
+                    toasttime = DateTime.Now;
                     Toast("再按一次退出应用", ToastLength.SHORT);
                 }
            }

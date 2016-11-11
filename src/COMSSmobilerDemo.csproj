@@ -38,6 +38,12 @@
     <Reference Include="Smobiler.Core">
       <HintPath>D:\SearchingProject\BaseProject\APP\Code\Smobiler.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Smobiler.Core.Plugin">
+      <HintPath>Dll\Smobiler.Core.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Smobiler.Core.Plugin.RongIM">
+      <HintPath>Dll\Smobiler.Core.Plugin.RongIM.dll</HintPath>
+    </Reference>
     <Reference Include="Smobiler.Utility, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a049c84bba5d5e7a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,6 +62,8 @@
     <Compile Include="common\BookSNInfo.cs" />
     <Compile Include="common\ConsumptionInfo.cs" />
     <Compile Include="common\CostCenterInfo.cs" />
+    <Compile Include="common\frmContact.cs" />
+    <Compile Include="common\frmGroup.cs" />
     <Compile Include="common\LeaveInfo.cs" />
     <Compile Include="common\MessageInfo.cs" />
     <Compile Include="common\NBInfo.cs" />
@@ -185,6 +193,18 @@
     <Compile Include="FixedAssets\NootBooks\Layout\frmNBRecordLayout.Designer.cs">
       <DependentUpon>frmNBRecordLayout.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddContact.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmAddContact.Designer.cs">
+      <DependentUpon>frmAddContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContacts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmContacts.Designer.cs">
+      <DependentUpon>frmContacts.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHelp.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -209,11 +229,41 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Layout\frmAddUserLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layout\frmAddUserLayout.Designer.cs">
+      <DependentUpon>frmAddUserLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\frmContentLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layout\frmContentLayout.Designer.cs">
+      <DependentUpon>frmContentLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\frmGroupLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layout\frmGroupLayout.Designer.cs">
+      <DependentUpon>frmGroupLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layout\frminfoFootBarLayout.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Layout\frminfoFootBarLayout.Designer.cs">
       <DependentUpon>frminfoFootBarLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\frmJoinGUserFootbarLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layout\frmJoinGUserFootbarLayout.Designer.cs">
+      <DependentUpon>frmJoinGUserFootbarLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\frmJoinGUserLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layout\frmJoinGUserLayout.Designer.cs">
+      <DependentUpon>frmJoinGUserLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="Layout\frmMenuLayout.cs">
       <SubType>Component</SubType>
@@ -704,6 +754,12 @@
     <EmbeddedResource Include="FixedAssets\NootBooks\Layout\frmNBRecordLayout.resx">
       <DependentUpon>frmNBRecordLayout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddContact.resx">
+      <DependentUpon>frmAddContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContacts.resx">
+      <DependentUpon>frmContacts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHelp.resx">
       <DependentUpon>frmHelp.cs</DependentUpon>
     </EmbeddedResource>
@@ -716,8 +772,23 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Layout\frmAddUserLayout.resx">
+      <DependentUpon>frmAddUserLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\frmContentLayout.resx">
+      <DependentUpon>frmContentLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\frmGroupLayout.resx">
+      <DependentUpon>frmGroupLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Layout\frminfoFootBarLayout.resx">
       <DependentUpon>frminfoFootBarLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\frmJoinGUserFootbarLayout.resx">
+      <DependentUpon>frmJoinGUserFootbarLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\frmJoinGUserLayout.resx">
+      <DependentUpon>frmJoinGUserLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layout\frmMenuLayout.resx">
       <DependentUpon>frmMenuLayout.cs</DependentUpon>

@@ -488,7 +488,7 @@ namespace COMSSmobilerDemo.FixedAssets.Books
             this.img8,
             this.btndelimg8});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
-            this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
+            this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))), Smobiler.Core.HorizontalAlignment.Left);
             this.TitleText = "Õº È»Îø‚";
             this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
             this.save});

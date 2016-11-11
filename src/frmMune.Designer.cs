@@ -54,6 +54,9 @@ namespace COMSSmobilerDemo
             this.IconMenuView1 = new Smobiler.Core.Controls.IconMenuView();
             this.Gps1 = new Smobiler.Core.Controls.GPS();
             this.SliderView1 = new Smobiler.Core.Controls.SliderView();
+            this.Work = new Smobiler.Core.Controls.ToolbarItem();
+            this.Content = new Smobiler.Core.Controls.ToolbarItem();
+            this.Mes = new Smobiler.Core.Controls.ToolbarItem();
             // 
             // IconMenuView1
             // 
@@ -130,6 +133,27 @@ namespace COMSSmobilerDemo
             this.SliderView1.TabIndex = 16;
             this.SliderView1.ZIndex = 1;
             // 
+            // Work
+            // 
+            this.Work.IconID = "!\\ue8f9022137217";
+            this.Work.Name = "Work";
+            this.Work.SelectIconID = "!\\ue8f9022137217";
+            this.Work.Text = "工作";
+            // 
+            // Content
+            // 
+            this.Content.IconID = "!\\ue7fd022137217";
+            this.Content.Name = "Content";
+            this.Content.SelectIconID = "!\\ue7fd022137217";
+            this.Content.Text = "联系人";
+            // 
+            // Mes
+            // 
+            this.Mes.IconID = "!\\ue0bf022137217";
+            this.Mes.Name = "Mes";
+            this.Mes.SelectIconID = "!\\ue0bf022137217";
+            this.Mes.Text = "消息";
+            // 
             // frmMune
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
@@ -142,8 +166,14 @@ namespace COMSSmobilerDemo
             this.LeftFormLayout = "frmMenuLayout";
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("!\\ue5d2255255255", System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(97)))), ((int)(((byte)(164))))), System.Drawing.Color.White);
             this.TitleText = "菜单";
+            this.Toolbar.AddRange(new Smobiler.Core.Controls.ToolbarItem[] {
+            this.Work,
+            this.Content,
+            this.Mes});
+            this.ToolbarStyle = new Smobiler.Core.ToolBarSytle(Smobiler.Core.ToolbarSelectStyle.Select, System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145))))), System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249))))), System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145))))));
             this.LeftLayoutItemClick += new Smobiler.Core.MobileFormLayoutItemClickEventHandler(this.frmMune_LeftLayoutItemClick);
             this.Load += new System.EventHandler(this.frmMune_Load);
+            this.ToolbarItemClick += new Smobiler.Core.ToolbarItemClickEventHandler(this.frmMune_ToolbarItemClick);
             this.TitleImageClick += new System.EventHandler(this.frmMune_TitleImageClick);
             this.KeyDown += new Smobiler.Core.KeyDownEventHandler(this.MobileForm_KeyDown);
             this.Name = "frmMune";
@@ -152,6 +182,9 @@ namespace COMSSmobilerDemo
         internal Smobiler.Core.Controls.IconMenuView IconMenuView1;
         internal Smobiler.Core.Controls.GPS Gps1;
         internal Smobiler.Core.Controls.SliderView SliderView1;
+        internal Smobiler.Core.Controls.ToolbarItem Work;
+        internal Smobiler.Core.Controls.ToolbarItem Content;
+        internal Smobiler.Core.Controls.ToolbarItem Mes;
         #endregion
 
     }

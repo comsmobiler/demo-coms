@@ -121,7 +121,7 @@ namespace COMSSmobilerDemo
         /// <param name="e"></param>
         private void imgbtnPhone_Click(object sender, EventArgs e)
         {
-            TelCall("10086");
+            Client.TelCall("10086");
         }
         /// <summary>
         /// 添加到通讯录

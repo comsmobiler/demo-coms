@@ -168,6 +168,7 @@ namespace COMSSmobilerDemo.RecipientsItems
             this.lblITEM_NOTE.Padding = new Smobiler.Core.Padding(0F, 5F, 30F, 0F);
             this.lblITEM_NOTE.Size = new System.Drawing.Size(213, 100);
             this.lblITEM_NOTE.TabIndex = 11;
+            this.lblITEM_NOTE.VerticalAlignment = Smobiler.Core.VerticalAlignment.Top;
             // 
             // Label6
             // 
