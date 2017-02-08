@@ -18,8 +18,8 @@ namespace COMSSmobilerDemo
         /// appKey和appSecret请去融云注册应用：http://www.rongcloud.cn/
         /// IM是仅限于打包版，开发版不支持
         /// </summary>
-        string  appKey  = "z3v5yqkbvzdn0";
-        string appSecret = "YixaaKHE83zPj";
+        string  appKey  = "qd46yzrfquikf";
+        string appSecret = "S7mrvlz8Q2";
         
         /// <summary>
         /// 显示左侧栏

@@ -50,9 +50,9 @@ namespace COMSSmobilerDemo.SignIn
             this.Gps1 = new Smobiler.Core.Controls.GPS();
             this.PopList1 = new Smobiler.Core.Controls.PopList();
             this.btnAddress = new Smobiler.Core.Controls.Button();
-            this.MapView1 = new Smobiler.Core.Controls.MapView();
             this.Line1 = new Smobiler.Core.Controls.Line();
             this.line2 = new Smobiler.Core.Controls.Line();
+            this.mapTagView1 = new Smobiler.Core.Controls.MapTagView();
             // 
             // Label1
             // 
@@ -204,13 +204,6 @@ namespace COMSSmobilerDemo.SignIn
             this.btnAddress.ZIndex = 8;
             this.btnAddress.Click += new Smobiler.Core.Controls.ButtonBase.ClickEventHandler(this.btnAddress_Click);
             // 
-            // MapView1
-            // 
-            this.MapView1.Location = new System.Drawing.Point(0, 78);
-            this.MapView1.Name = "MapView1";
-            this.MapView1.Size = new System.Drawing.Size(88, 85);
-            this.MapView1.TabIndex = 13;
-            // 
             // Line1
             // 
             this.Line1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
@@ -226,6 +219,13 @@ namespace COMSSmobilerDemo.SignIn
             this.line2.Name = "line2";
             this.line2.Size = new System.Drawing.Size(300, 3);
             this.line2.TabIndex = 15;
+            // 
+            // mapTagView1
+            // 
+            this.mapTagView1.Location = new System.Drawing.Point(0, 78);
+            this.mapTagView1.Name = "mapTagView1";
+            this.mapTagView1.Size = new System.Drawing.Size(88, 85);
+            this.mapTagView1.TabIndex = 16;
             // 
             // frmSignInCreate
             // 
@@ -243,9 +243,9 @@ namespace COMSSmobilerDemo.SignIn
             this.lblDate,
             this.lblAddress,
             this.btnAddress,
-            this.MapView1,
             this.Line1,
-            this.line2});
+            this.line2,
+            this.mapTagView1});
             this.StatusBarStyle = Smobiler.Core.StatusBarStyle.Default;
             this.TitleStyle = new Smobiler.Core.MobileFormTitleStyle("Exit", System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(50))))));
             this.TitleText = "Ç©µ½Â¼Èë";
@@ -273,10 +273,9 @@ namespace COMSSmobilerDemo.SignIn
         internal Smobiler.Core.Controls.PopList PopList1;
         internal Smobiler.Core.Controls.Button btnAddress;
         #endregion
-        internal Smobiler.Core.Controls.MapView MapView1;
         internal Smobiler.Core.Controls.Line Line1;
         private Smobiler.Core.Controls.Line line2;
-
+        private Smobiler.Core.Controls.MapTagView mapTagView1;
     }
 
 
